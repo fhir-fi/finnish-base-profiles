@@ -9,6 +9,8 @@ and [some more details](https://fhir.fi).
 
 The profiles will be based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
+The implementation guide based on the main branch of this repo is published at https://fhir.fi/finnish-base-profiles/.
+
 ## Resources under work 
 
 * Appointment
