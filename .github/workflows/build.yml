@@ -1,0 +1,25 @@
+# This workflow will setup IG publisher, run sushi 
+# It should also publish results (TBD)
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup IG publisher
+      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_updatePublisher.sh && ./_updatePublisher.sh --yes"
+    - name: Generate
+      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_genonce.sh  && ./_genonce.sh"
+    - name: Publish results (TBD)
+      run: echo "Generation complete. Ready to publish follwing dirs:" `ls output`
+
