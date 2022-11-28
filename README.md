@@ -60,6 +60,7 @@ With requirements installed locally:
 ./_genonce.sh
 ```
 
+Or use the `.bat` versions of the scripts on a Windows machine.
 
 With docker: 
 
