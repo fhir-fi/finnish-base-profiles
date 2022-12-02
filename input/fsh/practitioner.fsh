@@ -12,3 +12,9 @@ Description: "This is a profile for finnish practitioner"
  
 * identifier contains SSN 0..1
 * identifier[SSN].system = #urn:oid:1.2.246.21
+
+* identifier contains Terhikki 0..1
+* identifier[Terhikki].system = #urn:oid:1.2.246.537.26
+
+* identifier contains SV 0..1
+* identifier[SV].system = #urn:oid:1.2.246.537.25
