@@ -11,10 +11,6 @@ memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-
 
 The profiles will be based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
-## Published Snapshot
-
-The working version of the IG is published at https://fhir.fi/finnish-base-profiles/.
-
 ## Companion Specifications
 
 See also the repo for [Finnish Implementation Guide for SMART App
