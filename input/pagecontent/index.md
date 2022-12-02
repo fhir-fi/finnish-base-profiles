@@ -20,7 +20,7 @@ The working version of the IG is published at https://fhir.fi/finnish-base-profi
 See also the repo for [Finnish Implementation Guide for SMART App
 Launch]([https://github.com/fhir-fi/finnish-base-profiles](https://github.com/fhir-fi/finnish-smart)).
 
-## Resources to be Profiled 
+## Resources to be Profiled
 
 * Appointment
 * Condition
