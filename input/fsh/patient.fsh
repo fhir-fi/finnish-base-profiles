@@ -17,6 +17,7 @@ Description: "A finnish core profile of the Patient resource."
 * identifier ^slicing.rules = #openAtEnd
 * identifier ^slicing.description = "When using the Finnish personal identifier, identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
+* identifier ^short = "Identifier contains Finnish personal identity code which can be official or temporary."
 
 * identifier contains SSN 0..1
 * identifier[SSN].system = #urn:oid:1.2.246.21
