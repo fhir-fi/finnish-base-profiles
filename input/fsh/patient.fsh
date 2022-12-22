@@ -6,8 +6,9 @@ Description: "A finnish core profile of the Patient resource."
 * meta.security ^slicing.discriminator.type = #value
 * meta.security ^slicing.discriminator.path = "system"
 * meta.security ^slicing.rules = #openAtEnd
-* meta.security ^slicing.description = "Information about non-disclosure (turvakielto) SHALL be handled in meta.security."
+* meta.security ^slicing.description = ""
 * meta.security ^slicing.ordered = false
+  * ^short = "Information about non-disclosure (turvakielto) SHALL be handled in meta.security."
 
 * meta.security contains non-disclosure 0..1
 * meta.security[non-disclosure].system = "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
@@ -17,7 +18,7 @@ Description: "A finnish core profile of the Patient resource."
 * identifier ^slicing.rules = #openAtEnd
 * identifier ^slicing.description = "When using the Finnish personal identifier, identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
-* identifier ^short = "Identifier contains Finnish personal identity code which can be official or temporary."
+  * ^short = "Identifier contains Finnish personal identity code which can be official or temporary."
 
 * identifier contains SSN 0..1
 * identifier[SSN].system = #urn:oid:1.2.246.21
@@ -29,6 +30,7 @@ Extension: MunicipalityCode
 Id: municipality-code
 Title: "MunicipalityCode"
 Description: "Extension for home municipality"
+* . ^short = "Municipality presents the home municipality of the patients. This information is relevant for ex. in billing and listing available healthcare services."
 * value[x] only Coding
 * valueCoding 1..1
   * system = #urn:oid:1.2.246.537.6.21.2003
