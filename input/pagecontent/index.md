@@ -13,7 +13,6 @@ There is a separate [Finnish Implementation Guide for SMART App
 Launch](https://fhir.fi/finnish-smart/) that describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
-
 ## Why Do We Need Finnish FHIR Base Profiles?
 
 Better flow of information between systems is one of the key enablers for digitalization and
@@ -26,15 +25,16 @@ coded and communicated, and how. The base HL7 FHIR standard does an excellent jo
 global consensus where it exists. At the same time, it specifically allows and encourages smaller
 communities to come up with more specific profiles and implementation guides.
 
-In many cases, the HL7 FHIR standard allows for several ways to implement a functionality. This
+In many cases, the HL7 FHIR standard allows for several ways to implement a functionality. There
+are increasing concerns that without a coordinated approach implementers will choose different ways
+to implement some features, and this will lead to challenges for interoperability. This
 implementation guide attempts to define a consensus within the Finnish FHIR implementers on which
 ways we have considered the best fit for use cases in Finland.
 
 In this implementation guide we also describe the code systems and identifiers that are specific
 to the Finnish healthcare system.
 
-
-## Notable FHIR implementations in Finland
+## Notable FHIR Implementations in Finland
 
 There are dozens of FHIR enabled systems and applications implemented and in use in Finland. This
 list does not attempt to be a complete list of all implementations. Rather, it is included here for
@@ -78,8 +78,8 @@ prominent Finnish electronic health record systems and has several native FHIR A
 ### EskoSystems
 
 The [Esko APTJ](https://eskosystems.fi/tuoteperhe/integraatiot/) by Esko Systems is also one of the
-prominent Finnish electronic health record systems. It ses several FHIR APIs internally, and offers
-a SMART App Launch method to interact with third party systems.
+prominent Finnish electronic health record systems. It uses several FHIR APIs internally, and
+offers a SMART App Launch method to interact with third party systems.
 
 ### Learn more
 
@@ -91,7 +91,6 @@ There's a lot going on!
 
 To learn about the current status, please contact [HL7 Finland](https://www.hl7.fi/). We're happy
 to give you an overview.
-
 
 ## Profiling Approach
 
@@ -112,7 +111,7 @@ resources and the REST interface.
 
 ### International Aspects
 
-Our main intent is still to limit profiling specific to Finland. Durinig the process, we actively
+Our main intent is still to limit profiling specific to Finland. During the process, we actively
 monitor other national base profiles. We attempt to harmonize our base profiles with already
 published base profiles from other Nordic countries, specifically the Danish
 [DK Core](https://hl7.dk/fhir/core) and the Norwegian
@@ -139,7 +138,6 @@ We also publish examples, as we think they are another good way to interoperabil
 Also, where we cannot find consensus and agree on one single approach, we attempt to
 document all different approaches used.
 
-
 ## Getting Involved
 
 We want this implementation guide to be useful for you.
@@ -158,7 +156,7 @@ memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-
 [some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
 even be compensated for your efforts.
 
-There are sevaral ways to get involved.
+There are several ways to get involved.
 
 ### Open an Issue in GitHub
 
