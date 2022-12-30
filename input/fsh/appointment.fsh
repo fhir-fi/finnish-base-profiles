@@ -1,5 +1,5 @@
-Profile: FinnishCoreAppointment
+Profile: FinnishBaseAppointment
 Parent: Appointment
-Id: finnish-core-appointment
-Title: "Finnish Core Appointment"
+Id: finnish-base-appointment
+Title: "Finnish Base Appointment"
 Description: "This is a profile for Finnish appointment."

@@ -1,5 +1,5 @@
-Profile: FinnishCoreHealthcareService
+Profile: FinnishBaseHealthcareService
 Parent: HealthcareService
-Id: finnish-core-healthcare-service
-Title: "Finnish Core Healthcare Service"
+Id: finnish-base-healthcare-service
+Title: "Finnish Base Healthcare Service"
 Description: "This is a profile for Finnish healthcare service."

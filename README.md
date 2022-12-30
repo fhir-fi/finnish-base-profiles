@@ -72,4 +72,4 @@ docker-compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
 docker-compose run runner bash -c "cd /workdir && ./_genonce.sh"
 ```
 
-Html output will be generated to `output/StructureDefinition-FinnishCorePatient.html`.
+Html output will be generated to `output/StructureDefinition-FinnishBasePatient.html`.

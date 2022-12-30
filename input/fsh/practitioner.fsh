@@ -1,7 +1,7 @@
-Profile: FinnishCorePractitioner
+Profile: FinnishBasePractitioner
 Parent: Practitioner
-Id: Finnish-core-practitioner
-Title: "Finnish Core Practitioner Profile"
+Id: finnish-base-practitioner
+Title: "Finnish Base Practitioner Profile"
 Description: "This is a profile for finnish practitioner"
 * id 1..1
 

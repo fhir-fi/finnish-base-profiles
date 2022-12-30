@@ -1,5 +1,5 @@
-Profile: FinnishCoreOrganization
+Profile: FinnishBaseOrganization
 Parent: Organization
-Id: finnish-core-organization
-Title: "Finnish Core Organization"
+Id: finnish-base-organization
+Title: "Finnish Base Organization"
 Description: "This is a profile for Finnish organization."

@@ -1,6 +1,6 @@
-Profile: FinnishCorePatient
+Profile: FinnishBasePatient
 Parent: Patient
-Description: "A finnish core profile of the Patient resource."
+Description: "A Finnish Base profile of the Patient resource."
 * id 1..1
 
 * meta.security ^slicing.discriminator.type = #value
