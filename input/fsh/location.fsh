@@ -1,5 +1,5 @@
-Profile: FinnishBaseLocation
+Profile: FiBaseLocation
 Parent: Location
-Id: finnish-base-location
-Title: "Finnish Base Location"
-Description: "This is a base profile for Finnish location resource."
+Id: fi-base-location
+Title: "FI Base Location"
+Description: "This is the Finnish base profile for the Location resource."

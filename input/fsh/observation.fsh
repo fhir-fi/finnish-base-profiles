@@ -1,5 +1,5 @@
-Profile: FinnishBaseObservation
+Profile: FiBaseObservation
 Parent: Observation
-Id: finnish-base-observation
-Title: "Finnish Base Observation"
-Description: "This is a base profile for Finnish observation resource."
+Id: fi-base-observation
+Title: "FI Base Observation"
+Description: "This is the Finnish base profile for the Observation resource."

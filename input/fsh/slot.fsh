@@ -1,5 +1,5 @@
-Profile: FinnishBaseSlot
+Profile: FiBaseSlot
 Parent: Slot
-Id: finnish-base-slot
-Title: "Finnish Base Slot"
-Description: "This is a profile for Finnish schedule slot."
+Id: fi-base-slot
+Title: "FI Base Slot"
+Description: "This is the Finnish base profile for the Slot resource."

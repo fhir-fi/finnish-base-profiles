@@ -1,8 +1,8 @@
-Profile: FinnishBasePractitioner
+Profile: FiBasePractitioner
 Parent: Practitioner
-Id: finnish-base-practitioner
-Title: "Finnish Base Practitioner Profile"
-Description: "This is a profile for finnish practitioner"
+Id: fi-base-practitioner
+Title: "FI Base Practitioner Profile"
+Description: "This is the Finnish base profile for the Practitioner resource."
 * id 1..1
 
 * identifier ^slicing.discriminator.type = #value

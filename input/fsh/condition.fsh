@@ -1,5 +1,5 @@
-Profile: FinnishBaseCondition
+Profile: FiBaseCondition
 Parent: Condition
-Id: finnish-base-condition
-Title: "Finnish Base Condition"
-Description: "This is a base profile for Finnish condition resource."
+Id: fi-base-condition
+Title: "FI Base Condition"
+Description: "This is the Finnish base profile for the Condition resource."

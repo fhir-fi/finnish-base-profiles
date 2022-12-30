@@ -1,5 +1,5 @@
-Profile: FinnishBaseConsent
+Profile: FiBaseConsent
 Parent: Consent
-Id: finnish-base-consent
-Title: "Finnish Base Consent Profile"
-Description: "This is a profile for finnish consent information"
+Id: fi-base-consent
+Title: "FI Base Consent Profile"
+Description: "This is the Finnish base profile for the Consent resource."
