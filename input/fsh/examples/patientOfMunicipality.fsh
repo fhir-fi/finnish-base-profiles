@@ -19,6 +19,7 @@ Usage: #example
 * address.line[+] = "37910 Akaa"
 * communication.language.coding.system = #urn:oid:2.16.840.1.113883.4.642.3.20
 * communication.language.coding.code = #fi
+* active = true
 * extension[MunicipalityCode].valueCoding.system = #urn:oid:1.2.246.537.6.21.2003
 * extension[MunicipalityCode].valueCoding.code = #020
 * extension[MunicipalityCode].valueCoding.display = "Akaa"
