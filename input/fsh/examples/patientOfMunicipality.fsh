@@ -1,8 +1,9 @@
-Instance: PatientExample
+Instance: PatientOfMunicipality
 InstanceOf: FinnishBasePatient
-Description: "An example of a Finnish Base patient."
+Title: "Patient - with the MunicipalityCode extension."
+Description: "An example of a Finnish Base patient with the MunicipalityCode extension."
 Usage: #example
-* id = "01234"
+* id = "patient-of-municipality"
 * identifier.system = #urn:oid:1.2.246.21
 * identifier.use = #official
 * identifier.value = "010190-999Y"
