@@ -208,7 +208,7 @@ Third Party IP. The licensee alone is responsible for identifying and obtaining 
 licenses or authorizations to utilize Third Party IP in connection with the specification or
 otherwise.
 
-See also http://hl7.org/fhir/license.html
+See also [http://hl7.org/fhir/license.html](http://hl7.org/fhir/license.html).
 
 Following is a non-exhaustive list of third-party artifacts and terminologies that may require a
 separate license:
