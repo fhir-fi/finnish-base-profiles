@@ -41,11 +41,10 @@ parameters:
 
 menu:
   Home: index.html
-  Table of Contents: toc.html
+#  Table of Contents: toc.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
-  Downloads: downloads.html
-
 #  Examples: examples.html
 #  Artifacts: artifacts.html
+  Downloads: downloads.html
