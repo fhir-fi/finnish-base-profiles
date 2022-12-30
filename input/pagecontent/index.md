@@ -2,7 +2,7 @@
 
 This implementation guide specifies the Finnish FHIR base profiles.
 
-It builds on top of the [International Patient Access](http://build.fhir.org/ig/HL7/fhir-ipa/)
+It builds on top of the [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
 specification.
 
 The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
@@ -117,7 +117,7 @@ published base profiles from other Nordic countries, specifically the Danish
 [no-basis-Profiles](https://simplifier.net/HL7Norwayno-basis/~introduction).
 
 The Finnish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](http://build.fhir.org/ig/HL7/fhir-ipa/)
+[International Patient Access (IPA) specification](https://build.fhir.org/ig/HL7/fhir-ipa/)
 and we will keep the specifications conformant. Should we find any constraints in IPA that we
 can't adhere to, the main resolution should be to affect the IPA specification and search for
 wider consensus and shared understanding.
@@ -126,7 +126,7 @@ Other notable national base profiles under our radar are the
 [US Core](https://hl7.org/fhir/us/core/), the
 [Canadian baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/), the Swiss
 [CH Core](http://fhir.ch/ig/ch-core/index.html), and the Australian
-[AU Base](http://build.fhir.org/ig/hl7au/au-fhir-base/).
+[AU Base](http://hl7.org.au/fhir/4.0.0/).
 
 #### Profiles and Examples
 
