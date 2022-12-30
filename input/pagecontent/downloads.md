@@ -31,7 +31,7 @@ Expansions as FHIR Bundle resources:
 
 All example files included in this IG:
 * [JSON](examples.json.zip)
-* [TTL](exampless.ttl.zip)
+* [TTL](examples.ttl.zip)
 * [XML](examples.xml.zip)
 
 ### FHIR Tools
