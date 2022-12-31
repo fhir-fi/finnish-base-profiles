@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fiphr-cs-insulincode",
+  "url": "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode",
+  "version": "1.0",
+  "name": "fiphr-cs-insulincode",
+  "title": "Code System Finnish PHR Insulin Code",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-02-17T00:00:00+00:00",
+  "publisher": "Kela ",
+  "description": "Finnish PHR Insulin Code System, includes codes indicating what kind of insulin has been administered.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ins-short-fast",
+      "definition": "A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System.",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Lyhytvaikutteinen insuliini"
+        },
+        {
+          "language": "sv",
+          "value": "Direktverkande insulin"
+        },
+        {
+          "language": "en",
+          "value": "Fast-acting insulin"
+        }
+      ]
+    },
+    {
+      "code": "ins-intermediate-long",
+      "definition": "A code for intermediate and long acting insulins, for example insulins that could be included in the groups A10AC, A10AD and A10AE of the ATC Code System.",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Pitkävaikutteinen insuliini"
+        },
+        {
+          "language": "sv",
+          "value": "Långverkande insulin"
+        },
+        {
+          "language": "en",
+          "value": "Intermediate-acting insulin"
+        }
+      ]
+    }
+  ]
+}

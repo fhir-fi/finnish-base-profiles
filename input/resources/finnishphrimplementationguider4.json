@@ -1,0 +1,230 @@
+{
+  "resourceType": "ImplementationGuide",
+  "url": "/guide/FinnishPHRImplementationGuideR4?version=current",
+  "version": "1.1.0",
+  "name": "Finnish PHR Implementation Guide R4",
+  "status": "draft",
+  "fhirVersion": [
+    "4.0.0"
+  ],
+  "definition": {
+    "page": {
+      "nameUrl": "FinnishPHRImplementationGuideHomePage.md",
+      "title": "Finnish PHR Implementation Guide Home Page",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "Notesrelatedtoallresourcetypes.md",
+          "title": "Notes related to all resource types",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "HowtoproducecontentforFinnishPHRImplementationGuide.md",
+          "title": "How to produce content for Finnish PHR Implementation Guide",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FinnishPHRPatientProfile-duplicate-2.md",
+          "title": "Finnish PHR Patient Profile",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FinnishPHRObservationProfiles-duplicate-2.md",
+          "title": "Finnish PHR Observation Profiles",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FinnishPHRVitalSignsProfiles.md",
+              "title": "Finnish PHR Vital Signs Profiles",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "FinnishPHRVitalSignsBaseProfile.md",
+                  "title": "Finnish PHR Vital Signs Base Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRBloodGlucoseProfile.md",
+                  "title": "Finnish PHR Blood Glucose Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRBloodPressureProfile.md",
+                  "title": "Finnish PHR Blood Pressure Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRBodyWeightprofile.md",
+                  "title": "Finnish PHR Body Weight profile",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "FinnishPHRFitnessProfiles.md",
+              "title": "Finnish PHR Fitness Profiles",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "FinnishPHRFitnessBaseProfile.md",
+                  "title": "Finnish PHR Fitness Base Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRStepsTakenProfile.md",
+                  "title": "Finnish PHR Steps Taken Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRModeratetoVigorousPhysicalActivityTimeProfile.md",
+                  "title": "Finnish PHR Moderate to Vigorous Physical Activity Time Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRMETbystandardRMRProfile.md",
+                  "title": "Finnish PHR MET by standard RMR Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRExerciseTrackingprofile.md",
+                  "title": "Finnish PHR Exercise Tracking profile",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "FinnishPHRNutritionProfiles.md",
+              "title": "Finnish PHR Nutrition Profiles",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "FinnishPHRNutritionBaseprofile.md",
+                  "title": "Finnish PHR Nutrition Base profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRMacronutrientIntakeProfile.md",
+                  "title": "Finnish PHR Macronutrient Intake Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "FinnishPHRCalorieIntakeProfile.md",
+                  "title": "Finnish PHR Calorie Intake Profile",
+                  "generation": "markdown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameUrl": "FinnishPHRMedicationProfiles.md",
+          "title": "Finnish PHR Medication Profiles",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FinnishPHRInsulinDosingProfile.md",
+              "title": "Finnish PHR Insulin Dosing Profile",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "FinnishPHRQuestionnaireProfiles.md",
+          "title": "Finnish PHR Questionnaire Profiles",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FinnishPHRQuestionnaireprofile.md",
+              "title": "Finnish PHR Questionnaire profile",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "FinnishPHRQuestionnaireResponseprofile.md",
+              "title": "Finnish PHR QuestionnaireResponse profile",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "FinnishPHRQuestionnaires.md",
+          "title": "Finnish PHR Questionnaires",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FinnishPHRSelfCareProfiles.md",
+          "title": "Finnish PHR SelfCare Profiles",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FinnishPHRSelfCarePlanProfile.md",
+              "title": "Finnish PHR SelfCarePlan Profile",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "FinnishPHRSelfCareGoalProfile.md",
+              "title": "Finnish PHR SelfCareGoal Profile",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "FinnishPHRSpirometryProfiles.md",
+          "title": "Finnish PHR Spirometry Profiles",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FinnishPHRSpirometryStudyProfile.md",
+              "title": "Finnish PHR Spirometry Study Profile",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "FinnishPHRSpirometryMeasurementProfile.md",
+              "title": "Finnish PHR Spirometry Measurement Profile",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "FinnishPHRSpirometryResultProfile.md",
+              "title": "Finnish PHR Spirometry Result Profile",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "FinnishPHRSpirometryBreathProfile.md",
+              "title": "Finnish PHR Spirometry Breath Profile",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "ExtensionsusedinFinnishPHR.md",
+          "title": "Extensions used in Finnish PHR",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ValueSetsusedinFinnishPHR.md",
+          "title": "Value Sets used in Finnish PHR",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CodeSystemsusedinFinnishPHR.md",
+          "title": "Code Systems used in Finnish PHR",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CapabilityStatement.md",
+          "title": "Capability Statement",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "SearchFunctionality.md",
+          "title": "Search Functionality",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "TableofContents.md",
+          "title": "Table of Contents",
+          "generation": "markdown"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-fitnessresult",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-fitnessresult",
+  "version": "1.1",
+  "name": "fiphr-vs-fitnessresult",
+  "title": "Value Set Finnish PHR Fitness Results",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-12-21T13:54:00+02:00",
+  "publisher": "W2E",
+  "description": "This value set indicates the allowed fitness or physical activity result types in Finnish PHR. The concept Daily Activity fitness panel (62812-3) is a grouping structure for a set of physical activity, and for convenience also vital sign, measurements and includes related links (with type=has-member) to the Observations in this set or the parallel Finnish PHR Vital Signs value set (e.g. steps taken, minimum or maximum heart rate, calories burned, moderate to vigorous physical activity minutes, sedentary activity minutes, sleep episodes and exercises).",
+  "copyright": "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "55421-2",
+            "display": "Calories burned",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Energiankulutus"
+              },
+              {
+                "language": "sv",
+                "value": "Energiförbrukning"
+              },
+              {
+                "language": "en",
+                "value": "Calories burned"
+              }
+            ]
+          },
+          {
+            "code": "41979-6",
+            "display": "Calories burned in 24h",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Energiankulutus vuorokaudessa"
+              },
+              {
+                "language": "sv",
+                "value": "Energiförbrukning 24h"
+              },
+              {
+                "language": "en",
+                "value": "Calories burned in 24h"
+              }
+            ]
+          },
+          {
+            "code": "41980-4",
+            "display": "Weekly calories burned",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Energiankulutus viikossa"
+              },
+              {
+                "language": "sv",
+                "value": "Energiförbrukning i en vecka"
+              },
+              {
+                "language": "en",
+                "value": "Weekly calories burned"
+              }
+            ]
+          },
+          {
+            "code": "55430-3",
+            "display": "Distance",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kuljettu matka"
+              },
+              {
+                "language": "sv",
+                "value": "Distans"
+              },
+              {
+                "language": "en",
+                "value": "Distance"
+              }
+            ]
+          },
+          {
+            "code": "41953-1",
+            "display": "Distance reached in 24h",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kuljettu matka vuorokaudessa"
+              },
+              {
+                "language": "sv",
+                "value": "Distans per 24h"
+              },
+              {
+                "language": "en",
+                "value": "Distance reached in 24h"
+              }
+            ]
+          },
+          {
+            "code": "41955-6",
+            "display": "Distance reached in a week",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kuljettu matka viikossa"
+              },
+              {
+                "language": "sv",
+                "value": "Distans per vecka"
+              },
+              {
+                "language": "en",
+                "value": "Distance reached in a week"
+              }
+            ]
+          },
+          {
+            "code": "66334-4",
+            "display": "Steps",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Askelmäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Steg"
+              },
+              {
+                "language": "en",
+                "value": "Steps"
+              }
+            ]
+          },
+          {
+            "code": "41950-7",
+            "display": "Daily steps",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Päivittäinen askelmäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Steg per dag"
+              },
+              {
+                "language": "en",
+                "value": "Daily steps"
+              }
+            ]
+          },
+          {
+            "code": "41952-3",
+            "display": "Weekly steps",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Viikoittainen askelmäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Steg per vecka"
+              },
+              {
+                "language": "en",
+                "value": "Weekly steps"
+              }
+            ]
+          },
+          {
+            "code": "82290-8",
+            "display": "Weekly moderate to vigorous physical activity in minutes",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Viikoittainen kohtuullisen ja raskaan liikunnan määrä minuutteina"
+              },
+              {
+                "language": "sv",
+                "value": "Måttlig eller hård aktivitet per vecka, minuter"
+              },
+              {
+                "language": "en",
+                "value": "Weekly moderate to vigorous physical activity in minutes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa",
+        "concept": [
+          {
+            "code": "82290-8-24h",
+            "display": "Daily moderate to vigorous physical activity in minutes",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Päivittäinen kohtuullisen ja raskaan liikunnan määrä minuutteina"
+              },
+              {
+                "language": "sv",
+                "value": "Måttlig eller hård aktivitet per dag, minuter"
+              },
+              {
+                "language": "en",
+                "value": "Daily moderate to vigorous physical activity in minutes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

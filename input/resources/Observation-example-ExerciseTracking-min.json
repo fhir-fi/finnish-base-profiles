@@ -1,0 +1,77 @@
+{
+  "resourceType": "Observation",
+  "id": "71831b54-1a80-47c5-ba84-0180a5eb784b",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Exercise tracking (55409-7)<br />Time: 26.11.2019<br />Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:6288f477-90ef-424a-b6e3-da4ff18a058e"
+    },
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:00000000-5cb1-fef8-16b6-835409677fb6"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code": "fitness",
+          "display": "Fitness"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55409-7",
+        "display": "Exercise tracking panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectiveDateTime": "2019-11-26",
+  "issued": "2019-11-26T12:00:00+03:00",
+  "performer": [
+    {
+      "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "73985-4",
+            "display": "Exercise activity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.246.537.6.301",
+            "code": "B1504",
+            "display": "Orienteering"
+          }
+        ]
+      }
+    }
+  ]
+}

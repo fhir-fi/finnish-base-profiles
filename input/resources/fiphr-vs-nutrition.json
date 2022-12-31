@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-nutrition",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition",
+  "version": "1.0",
+  "name": "fiphr-vs-nutrition",
+  "title": "Value Set Finnish PHR Nutrition",
+  "status": "active",
+  "date": "2019-10-23T09:00:00+02:00",
+  "publisher": "Kela",
+  "description": "Finnish PHR Nutrition Value Set that defines codes for Nutrition.",
+  "copyright": "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8999-5",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Arvio nautitusta nestemäärästä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppskattat oralt vätskeintag"
+              },
+              {
+                "language": "en",
+                "value": "Fluid intake oral Estimated"
+              }
+            ]
+          },
+          {
+            "code": "9052-2",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kokonaisenergiamäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Totalt energiintag"
+              },
+              {
+                "language": "en",
+                "value": "Calorie intake total"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

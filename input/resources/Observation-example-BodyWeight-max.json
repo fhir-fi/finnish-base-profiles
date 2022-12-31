@@ -1,0 +1,127 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Body weight (29463-7) <br />Time: 20.11.2017 11:46<br />Result: Result: 78 kg</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:3ca3ffc6-234e-481c-b0f3-37c05e14c8e2"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.own.com",
+          "code": "OwnCode123"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body weight"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27113001",
+        "display": "Body weight (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+  },
+  "effectiveDateTime": "2017-11-20T11:46:00+02:00",
+  "issued": "2017-11-20T11:46:00+02:00",
+  "performer": [
+    {
+      "reference": "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+    }
+  ],
+  "valueQuantity": {
+    "value": 95,
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  },
+  "note": [
+    {
+      "text": "Note"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N",
+          "display": "Normal"
+        }
+      ]
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 55,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      },
+      "high": {
+        "value": 150,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      },
+      "appliesTo": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248153007",
+              "display": "Male"
+            }
+          ],
+          "text": "Normal range"
+        }
+      ],
+      "age": {
+        "low": {
+          "value": 15,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "high": {
+          "value": 100,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        }
+      },
+      "text": "Age"
+    }
+  ]
+}

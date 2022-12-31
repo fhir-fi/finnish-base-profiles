@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-insulincode",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-insulincode",
+  "version": "1.0",
+  "name": "fiphr-vs-insulincode",
+  "title": "Value Set Finnish PHR Insulin Code ",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-02-17T10:00:00+00:00",
+  "publisher": "Kela",
+  "description": "A Finnish PHR value set for the codes to be used with insulin dosing. Includes VNR codes (reference to the national VNR code system) or specific codes to indicate what kind of insulin has been administered.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.246.537.6.55"
+      },
+      {
+        "system": "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"
+      }
+    ]
+  }
+}

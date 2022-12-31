@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fiphr-cs-consentcategory",
+  "url": "http://phr.kanta.fi/fiphr-cs-consentcategory",
+  "version": "1.0",
+  "name": "fiphr-cs-consentcategory",
+  "title": "Code System Finnish PHR Consent Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-03-16T10:39:00+02:00",
+  "publisher": "Kela",
+  "description": "Finnish PHR Consent Category codes",
+  "caseSensitive": true,
+  "valueSet": "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers",
+      "definition": "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Suostumus hyvinvointitietojen luovuttamiseen Omatietovarannosta sosiaali- ja terveydenhuollon palvelunantajille"
+        },
+        {
+          "language": "sv",
+          "value": "Samtycke till att uppgifter om en persons välbefinnande lämnas ut från Datalagret för egna uppgifter till tillhandahållare av tjänster inom social- och hälsovården"
+        },
+        {
+          "language": "en",
+          "value": "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers"
+        }
+      ]
+    }
+  ]
+}

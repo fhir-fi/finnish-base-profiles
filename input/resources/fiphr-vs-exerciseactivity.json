@@ -1,0 +1,904 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-exerciseactivity",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseactivity",
+  "version": "1.1",
+  "name": "fiphr-vs-exerciseactivity",
+  "title": "Value Set Finnish PHR Exercise Activity",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-06-21",
+  "publisher": "DigitalWells",
+  "description": "Finnish PHR Exercise Activity value set",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.246.537.6.301",
+        "concept": [
+          {
+            "code": "A0101",
+            "display": "Basketball",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Koripallo"
+              },
+              {
+                "language": "sv",
+                "value": "Basketboll"
+              },
+              {
+                "language": "en",
+                "value": "Basketball"
+              }
+            ]
+          },
+          {
+            "code": "A0109",
+            "display": "Soccer",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Jalkapallo"
+              },
+              {
+                "language": "sv",
+                "value": "Fotboll"
+              },
+              {
+                "language": "en",
+                "value": "Soccer"
+              }
+            ]
+          },
+          {
+            "code": "A0112",
+            "display": "Volleyball",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lentopallo"
+              },
+              {
+                "language": "sv",
+                "value": "Volleyboll"
+              },
+              {
+                "language": "en",
+                "value": "Volleyball"
+              }
+            ]
+          },
+          {
+            "code": "A0203",
+            "display": "Ice hockey",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Jääkiekko"
+              },
+              {
+                "language": "sv",
+                "value": "Ishockey"
+              },
+              {
+                "language": "en",
+                "value": "Ice hockey"
+              }
+            ]
+          },
+          {
+            "code": "A0250",
+            "display": "Baseball",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pesäpallo"
+              },
+              {
+                "language": "sv",
+                "value": "Boboll"
+              },
+              {
+                "language": "en",
+                "value": "Baseball"
+              }
+            ]
+          },
+          {
+            "code": "A0251",
+            "display": "Floorball",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Salibandy"
+              },
+              {
+                "language": "sv",
+                "value": "Innebandy"
+              },
+              {
+                "language": "en",
+                "value": "Floorball"
+              }
+            ]
+          },
+          {
+            "code": "B0405",
+            "display": "Rowing or paddling",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Soutu tai melonta"
+              },
+              {
+                "language": "sv",
+                "value": "Rodd eller paddling"
+              },
+              {
+                "language": "en",
+                "value": "Rowing or paddling"
+              }
+            ]
+          },
+          {
+            "code": "B0450",
+            "display": "Rowing indoors",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Soutu soutulaitteella"
+              },
+              {
+                "language": "sv",
+                "value": "Rodd med roddmaskin"
+              },
+              {
+                "language": "en",
+                "value": "Rowing indoors"
+              }
+            ]
+          },
+          {
+            "code": "B0507",
+            "display": "Swimming",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Uinti"
+              },
+              {
+                "language": "sv",
+                "value": "Simning"
+              },
+              {
+                "language": "en",
+                "value": "Swimming"
+              }
+            ]
+          },
+          {
+            "code": "B0550",
+            "display": "Aquajogging",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Vesijuoksu"
+              },
+              {
+                "language": "sv",
+                "value": "Vattenlöpning"
+              },
+              {
+                "language": "en",
+                "value": "Aquajogging"
+              }
+            ]
+          },
+          {
+            "code": "B0551",
+            "display": "Water aerobics",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Vesivoimistelu"
+              },
+              {
+                "language": "sv",
+                "value": "Vattengymnastik"
+              },
+              {
+                "language": "en",
+                "value": "Water aerobics"
+              }
+            ]
+          },
+          {
+            "code": "B0603",
+            "display": "Ice skating",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Luistelu"
+              },
+              {
+                "language": "sv",
+                "value": "Skridskoåkning"
+              },
+              {
+                "language": "en",
+                "value": "Ice skating"
+              }
+            ]
+          },
+          {
+            "code": "B0606",
+            "display": "Cross-country skiing",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Maastohiihto"
+              },
+              {
+                "language": "sv",
+                "value": "Längdskidåkning"
+              },
+              {
+                "language": "en",
+                "value": "Cross-country skiing"
+              }
+            ]
+          },
+          {
+            "code": "B0655",
+            "display": "Snowshoeing",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lumikenkäkävely"
+              },
+              {
+                "language": "sv",
+                "value": "Snöskogång"
+              },
+              {
+                "language": "en",
+                "value": "Snowshoeing"
+              }
+            ]
+          },
+          {
+            "code": "B0701",
+            "display": "Aerobics",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Aerobic"
+              },
+              {
+                "language": "sv",
+                "value": "Aerobics"
+              },
+              {
+                "language": "en",
+                "value": "Aerobics"
+              }
+            ]
+          },
+          {
+            "code": "B0702",
+            "display": "Jogging",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Hölkkä"
+              },
+              {
+                "language": "sv",
+                "value": "Joggning"
+              },
+              {
+                "language": "en",
+                "value": "Jogging"
+              }
+            ]
+          },
+          {
+            "code": "B0718",
+            "display": "Walking",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kävely"
+              },
+              {
+                "language": "sv",
+                "value": "Gång"
+              },
+              {
+                "language": "en",
+                "value": "Walking"
+              }
+            ]
+          },
+          {
+            "code": "B0719",
+            "display": "Yoga",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Jooga"
+              },
+              {
+                "language": "sv",
+                "value": "Yoga"
+              },
+              {
+                "language": "en",
+                "value": "Yoga"
+              }
+            ]
+          },
+          {
+            "code": "B0720",
+            "display": "Running",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Juoksu"
+              },
+              {
+                "language": "sv",
+                "value": "Löpning"
+              },
+              {
+                "language": "en",
+                "value": "Running"
+              }
+            ]
+          },
+          {
+            "code": "B0721",
+            "display": "Stretching",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Venyttely"
+              },
+              {
+                "language": "sv",
+                "value": "Töjning"
+              },
+              {
+                "language": "en",
+                "value": "Stretching"
+              }
+            ]
+          },
+          {
+            "code": "B0750",
+            "display": "Nordic walking",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Sauvakävely"
+              },
+              {
+                "language": "sv",
+                "value": "Stavgång"
+              },
+              {
+                "language": "en",
+                "value": "Nordic walking"
+              }
+            ]
+          },
+          {
+            "code": "B0755",
+            "display": "Pilates",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pilates"
+              },
+              {
+                "language": "sv",
+                "value": "Pilates"
+              },
+              {
+                "language": "en",
+                "value": "Pilates"
+              }
+            ]
+          },
+          {
+            "code": "B0756",
+            "display": "Asahi",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Asahi"
+              },
+              {
+                "language": "sv",
+                "value": "Asahi"
+              },
+              {
+                "language": "en",
+                "value": "Asahi"
+              }
+            ]
+          },
+          {
+            "code": "B0852",
+            "display": "Home gymnastics",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kotivoimistelu"
+              },
+              {
+                "language": "sv",
+                "value": "Hemgymnastik"
+              },
+              {
+                "language": "en",
+                "value": "Home gymnastics"
+              }
+            ]
+          },
+          {
+            "code": "B0855",
+            "display": "Hula hooping",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Hulavanteen pyöritys"
+              },
+              {
+                "language": "sv",
+                "value": "Rockring rotation"
+              },
+              {
+                "language": "en",
+                "value": "Hula hooping"
+              }
+            ]
+          },
+          {
+            "code": "B0953",
+            "display": "Solo dance",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Yksintanssi"
+              },
+              {
+                "language": "sv",
+                "value": "Solodans"
+              },
+              {
+                "language": "en",
+                "value": "Solo dance"
+              }
+            ]
+          },
+          {
+            "code": "B0954",
+            "display": "Partner dance",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Paritanssi"
+              },
+              {
+                "language": "sv",
+                "value": "Pardans"
+              },
+              {
+                "language": "en",
+                "value": "Partner dance"
+              }
+            ]
+          },
+          {
+            "code": "B1001",
+            "display": "Badminton",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Sulkapallo"
+              },
+              {
+                "language": "sv",
+                "value": "Badminton"
+              },
+              {
+                "language": "en",
+                "value": "Badminton"
+              }
+            ]
+          },
+          {
+            "code": "B1003",
+            "display": "Squash",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Squash"
+              },
+              {
+                "language": "sv",
+                "value": "Squash"
+              },
+              {
+                "language": "en",
+                "value": "Squash"
+              }
+            ]
+          },
+          {
+            "code": "B1005",
+            "display": "Tennis",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Tennis"
+              },
+              {
+                "language": "sv",
+                "value": "Tennis"
+              },
+              {
+                "language": "en",
+                "value": "Tennis"
+              }
+            ]
+          },
+          {
+            "code": "B1006",
+            "display": "Padel",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Padel"
+              },
+              {
+                "language": "sv",
+                "value": "Padel"
+              },
+              {
+                "language": "en",
+                "value": "Padel"
+              }
+            ]
+          },
+          {
+            "code": "B1102",
+            "display": "Boccia",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Boccia"
+              },
+              {
+                "language": "sv",
+                "value": "Boccia"
+              },
+              {
+                "language": "en",
+                "value": "Boccia"
+              }
+            ]
+          },
+          {
+            "code": "B1109",
+            "display": "Golf",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Golf"
+              },
+              {
+                "language": "sv",
+                "value": "Golf"
+              },
+              {
+                "language": "en",
+                "value": "Golf"
+              }
+            ]
+          },
+          {
+            "code": "B1110",
+            "display": "Bowling",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Keilailu"
+              },
+              {
+                "language": "sv",
+                "value": "Bowling"
+              },
+              {
+                "language": "en",
+                "value": "Bowling"
+              }
+            ]
+          },
+          {
+            "code": "B1116",
+            "display": "Disc golf",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Frisbeegolf"
+              },
+              {
+                "language": "sv",
+                "value": "Discgolf"
+              },
+              {
+                "language": "en",
+                "value": "Disc golf"
+              }
+            ]
+          },
+          {
+            "code": "B1306",
+            "display": "Kettlebell training",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kahvakuulaharjoittelu"
+              },
+              {
+                "language": "sv",
+                "value": "Kettlebellträning"
+              },
+              {
+                "language": "en",
+                "value": "Kettlebell training"
+              }
+            ]
+          },
+          {
+            "code": "B1350",
+            "display": "Gym training",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kuntosaliharjoittelu"
+              },
+              {
+                "language": "sv",
+                "value": "Gymträning"
+              },
+              {
+                "language": "en",
+                "value": "Gym training"
+              }
+            ]
+          },
+          {
+            "code": "B1351",
+            "display": "Circuit training",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kuntopiiri"
+              },
+              {
+                "language": "sv",
+                "value": "Cirkelträning"
+              },
+              {
+                "language": "en",
+                "value": "Circuit training"
+              }
+            ]
+          },
+          {
+            "code": "B1504",
+            "display": "Orienteering",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Suunnistus"
+              },
+              {
+                "language": "sv",
+                "value": "Orientering"
+              },
+              {
+                "language": "en",
+                "value": "Orienteering"
+              }
+            ]
+          },
+          {
+            "code": "B1507",
+            "display": "Stair climbing",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Portaiden kiipeäminen"
+              },
+              {
+                "language": "sv",
+                "value": "Trappklättring"
+              },
+              {
+                "language": "en",
+                "value": "Stair climbing"
+              }
+            ]
+          },
+          {
+            "code": "B1702",
+            "display": "Mountain biking",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Maastopyöräily"
+              },
+              {
+                "language": "sv",
+                "value": "Terrängcykling"
+              },
+              {
+                "language": "en",
+                "value": "Mountain biking"
+              }
+            ]
+          },
+          {
+            "code": "B1706",
+            "display": "Cycling",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pyöräily"
+              },
+              {
+                "language": "sv",
+                "value": "Cykling"
+              },
+              {
+                "language": "en",
+                "value": "Cycling"
+              }
+            ]
+          },
+          {
+            "code": "B1711",
+            "display": "Kick scootering",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Potkulautailu"
+              },
+              {
+                "language": "sv",
+                "value": "Sparkcykling"
+              },
+              {
+                "language": "en",
+                "value": "Kick scootering"
+              }
+            ]
+          },
+          {
+            "code": "B1751",
+            "display": "Cycling indoors",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pyöräily kuntopyörällä"
+              },
+              {
+                "language": "sv",
+                "value": "Cykling med motionscykel"
+              },
+              {
+                "language": "en",
+                "value": "Cycling indoors"
+              }
+            ]
+          },
+          {
+            "code": "D2001",
+            "display": "Household work",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kotityöt"
+              },
+              {
+                "language": "sv",
+                "value": "Hushållsarbete"
+              },
+              {
+                "language": "en",
+                "value": "Household work"
+              }
+            ]
+          },
+          {
+            "code": "D2002",
+            "display": "Yard work",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pihatyöt"
+              },
+              {
+                "language": "sv",
+                "value": "Gårdsarbete"
+              },
+              {
+                "language": "en",
+                "value": "Yard work"
+              }
+            ]
+          },
+          {
+            "code": "D2003",
+            "display": "Berry or mushroom picking",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Marjastus tai sienestys"
+              },
+              {
+                "language": "sv",
+                "value": "Bär- eller svampplockning"
+              },
+              {
+                "language": "en",
+                "value": "Berry or mushroom picking"
+              }
+            ]
+          },
+          {
+            "code": "D2006",
+            "display": "Forest work",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Metsätyöt"
+              },
+              {
+                "language": "sv",
+                "value": "Skogsarbete"
+              },
+              {
+                "language": "en",
+                "value": "Forest work"
+              }
+            ]
+          },
+          {
+            "code": "C99",
+            "display": "Other activity",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Muu aktiviteetti"
+              },
+              {
+                "language": "sv",
+                "value": "Annan aktivitet"
+              },
+              {
+                "language": "en",
+                "value": "Other activity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

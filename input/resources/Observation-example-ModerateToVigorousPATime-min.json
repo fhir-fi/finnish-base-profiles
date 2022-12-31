@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime"
+    ]
+  },
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:187e0c12-8dd2-67e2-99b2-bf273a9549222"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br />Time: 20.11.2017 11:46<br />Result: 76 min </div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code": "fitness",
+          "display": "Fitness"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "82290-8",
+        "display": "Weekly moderate to vigorous physical activity in minutes"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectivePeriod": {
+    "start": "2017-11-30T02:00:00.936+02:00",
+    "end": "2017-12-02T02:00:00.936+02:00"
+  },
+  "issued": "2012-02-02T10:00:00.936+02:00",
+  "performer": [
+    {
+      "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+    }
+  ],
+  "valueQuantity": {
+    "value": 76,
+    "unit": "min",
+    "system": "http://unitsofmeasure.org",
+    "code": "min"
+  }
+}
