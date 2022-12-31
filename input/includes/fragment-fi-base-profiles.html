@@ -1,0 +1,19 @@
+<ul>
+  {%- for r_hash in site.data.structuredefinitions -%}
+  {%- assign r_type = r_hash[0] | split: '/' | first -%}
+  {%- assign r = r_hash[1] -%}
+  {%- if r.kind == "resource" %}
+  {%- unless r.example %}
+  {%- unless r.type == "Extension" %}
+  {%- assign prefix = r_type | slice: 0, 8 -%}
+  {%- if prefix == "fi-base-" -%}
+  <li>
+    <a href="{{r.path}}">{{r.title}}</a>
+    <p>{{r.description}}</p>
+  </li>
+  {%- endif -%}
+  {%- endunless %}
+  {%- endunless %}
+  {%- endif %}
+  {% endfor %}
+</ul>
