@@ -1,5 +1,6 @@
 {
   "resourceType": "CarePlan",
+  "id": "care-plan-optional",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4",

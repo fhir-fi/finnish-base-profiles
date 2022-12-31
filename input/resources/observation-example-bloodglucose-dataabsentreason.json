@@ -1,5 +1,6 @@
 {
   "resourceType": "Observation",
+  "id": "bloodglucose-data-absent",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose"

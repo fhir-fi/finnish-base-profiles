@@ -1,5 +1,6 @@
 {
   "resourceType": "Observation",
+  "id": "bloodpressure-max",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure"

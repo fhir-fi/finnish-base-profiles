@@ -1,5 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
+  "id": "kanta-phr-ig",
   "url": "/guide/FinnishPHRImplementationGuideR4?version=current",
   "version": "1.1.0",
   "name": "Finnish PHR Implementation Guide R4",

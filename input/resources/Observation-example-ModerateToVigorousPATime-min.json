@@ -1,5 +1,6 @@
 {
   "resourceType": "Observation",
+  "id": "mtvpa-min",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime"
