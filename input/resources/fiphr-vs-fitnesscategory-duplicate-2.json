@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "fiphr-vs-fitnesscategory",
+  "id": "fiphr-vs-fitnesscategory-2",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",

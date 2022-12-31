@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "bodyweight-max",
+  "id": "bodyweight-min",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight"
