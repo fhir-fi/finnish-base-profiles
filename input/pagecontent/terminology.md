@@ -12,11 +12,8 @@ the terminologies for up-to-date information.
 When terminologies are not available in FHIR format, this implementation guide links to the
 definitions published elsewhere.
 
-### ValueSets
-
-<ul>
-{% include list-simple-valuesets.xhtml %}
-</ul>
+Also please note that most code systems used in this guide are defined in the base FHIR
+specification. They are not replicated here.
 
 ### CodeSystems
   
@@ -24,17 +21,35 @@ definitions published elsewhere.
 {% include list-simple-codesystems.xhtml %}
 </ul>
 
+See the [FHIR terminology section](https://hl7.org/fhir/terminologies-systems.html) for a complete
+discussion on code systems and a list of codes system names used in FHIR.
+
+### ValueSets
+
+<ul>
+{% include list-simple-valuesets.xhtml %}
+</ul>
+
+See also the
+[value sets defined in the FHIR specification](https://hl7.org/fhir/terminologies-valuesets.html).
+
 ### ConceptMaps
 
 <ul>
 {% include list-simple-conceptmaps.xhtml %}
 </ul>
 
+See also the [mappings between value sets](https://hl7.org/fhir/terminologies-conceptmaps.html)
+defined in the main FHIR specification. 
+
 ### NamingSystems
 
 <ul>
 {% include list-simple-namingsystems.xhtml %}
 </ul>
+
+See also the [known identifier systems](https://hl7.org/fhir/identifier-registry.html) of the main
+FHIR specification.
 
 ### Terminologies not available in FHIR format
 
