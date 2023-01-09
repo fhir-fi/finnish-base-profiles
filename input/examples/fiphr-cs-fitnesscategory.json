@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fiphr-cs-fitnesscategory",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+  "version": "1.0",
+  "name": "fiphr-cs-fitnesscategory",
+  "title": "Code System Finnish PHR Fitness Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-03-16T10:45:00+02:00",
+  "publisher": "W2E",
+  "description": "Observation category code for Finnish PHR Fitness Category",
+  "caseSensitive": true,
+  "valueSet": "http://phr.kanta.fi/ValueSet/fitness-category",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "fitness",
+      "display": "Fitness",
+      "definition": "Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week."
+    }
+  ]
+}

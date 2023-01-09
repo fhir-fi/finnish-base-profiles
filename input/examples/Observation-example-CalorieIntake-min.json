@@ -1,0 +1,74 @@
+{
+  "resourceType": "Observation",
+  "id": "542ae72e-c3b0-404f-8c06-8f77441e89f7",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-05-17T13:15:04.491+03:00",
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake"
+    ]
+  },
+  "language": "fi",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"> Mittaustulos<b>Boldattuu </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>Patient/c78aca7d-a983-4989-aa8f-68436068cd26</td></tr></tbody></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication",
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "usecaseWebApp"
+        },
+        {
+          "url": "applicationId",
+          "valueString": "usecaseWebApp"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38r"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+          "code": "nutrition",
+          "display": "Nutrition"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9052-2",
+        "display": "Calorie intake total"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectiveDateTime": "2019-05-17",
+  "issued": "2019-05-17T13:15:02.781+03:00",
+  "performer": [
+    {
+      "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+    }
+  ],
+  "valueQuantity": {
+    "value": 2600,
+    "unit": "kcal",
+    "system": "http://unitsofmeasure.org",
+    "code": "kcal"
+  }
+}

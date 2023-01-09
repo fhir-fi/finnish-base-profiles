@@ -1,0 +1,302 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-vitalsigns",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns",
+  "version": "1.2",
+  "name": "fiphr-vs-vitalsigns",
+  "title": "Value Set Finnish PHR Vital Signs",
+  "status": "active",
+  "date": "2020-04-03T09:00:00+02:00",
+  "publisher": "Kela",
+  "description": "This value set indicates the allowed vital sign result types in Finnish PRH. The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+  "copyright": "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "9279-1",
+            "display": "Respiratory rate",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Hengitystiheys"
+              },
+              {
+                "language": "sv",
+                "value": "Andningsfrekvens"
+              }
+            ]
+          },
+          {
+            "code": "8867-4",
+            "display": "Heart rate",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Syke"
+              },
+              {
+                "language": "sv",
+                "value": "Puls"
+              }
+            ]
+          },
+          {
+            "code": "41924-2",
+            "display": "Heart rate 24 hour mean",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Sydämen syke 24 h keskiarvo"
+              },
+              {
+                "language": "sv",
+                "value": "Hjärtats puls 24 h genomsnittspuls"
+              }
+            ]
+          },
+          {
+            "code": "8883-1",
+            "display": "Heart rate 24 hour minimum",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Sydämen syke 24 h minimiarvo"
+              },
+              {
+                "language": "sv",
+                "value": "Hjärtats puls 24 h minimivärde"
+              }
+            ]
+          },
+          {
+            "code": "8873-2",
+            "display": "Heart rate 24 hour maximum",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Sydämen syke 24 h maksimiarvo"
+              },
+              {
+                "language": "sv",
+                "value": "Hjärtats puls 24 h maximivärde"
+              }
+            ]
+          },
+          {
+            "code": "8310-5",
+            "display": "Body temperature",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kehon lämpö"
+              },
+              {
+                "language": "sv",
+                "value": "Kroppstemperatur"
+              }
+            ]
+          },
+          {
+            "code": "8331-1",
+            "display": "Oral temperature",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lämpö, suu"
+              },
+              {
+                "language": "sv",
+                "value": "Temperatur, munnen"
+              }
+            ]
+          },
+          {
+            "code": "8332-9",
+            "display": "Rectal temperature",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lämpö, peräsuoli"
+              },
+              {
+                "language": "sv",
+                "value": "Temperatur, ändtarmen"
+              }
+            ]
+          },
+          {
+            "code": "76011-6",
+            "display": "Ear temperature",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lämpö, korva"
+              },
+              {
+                "language": "sv",
+                "value": "Termperatur, örat"
+              }
+            ]
+          },
+          {
+            "code": "8328-7",
+            "display": "Axillary temperature",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Lämpö, kainalo"
+              },
+              {
+                "language": "sv",
+                "value": "Temperatur, armhålan"
+              }
+            ]
+          },
+          {
+            "code": "8302-2",
+            "display": "Body height",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Pituus"
+              },
+              {
+                "language": "sv",
+                "value": "Längd"
+              }
+            ]
+          },
+          {
+            "code": "29463-7",
+            "display": "Body weight",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Paino"
+              },
+              {
+                "language": "sv",
+                "value": "Vikt"
+              }
+            ]
+          },
+          {
+            "code": "85354-9",
+            "display": "Blood pressure panel with all children optional",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Verenpaine"
+              },
+              {
+                "language": "sv",
+                "value": "Blodtryck"
+              }
+            ]
+          },
+          {
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Systolinen verenpaine"
+              },
+              {
+                "language": "sv",
+                "value": "Systoliskt blodtryck"
+              }
+            ]
+          },
+          {
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Diastolinen verenpaine"
+              },
+              {
+                "language": "sv",
+                "value": "Diastoliskt blodtryck"
+              }
+            ]
+          },
+          {
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Verensokeri"
+              },
+              {
+                "language": "sv",
+                "value": "Blodsocker"
+              }
+            ]
+          },
+          {
+            "code": "14743-9",
+            "display": "Glucose [Moles/volume] in Capillary blood by Glucometer",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Verensokeri verensokerimittarilla"
+              },
+              {
+                "language": "sv",
+                "value": "Blodsocker med blodsockermätare"
+              }
+            ]
+          },
+          {
+            "code": "14745-4",
+            "display": "Glucose [Moles/volume] in Body fluid",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Kudossokeri"
+              },
+              {
+                "language": "sv",
+                "value": "Vävnadssocker"
+              }
+            ]
+          },
+          {
+            "code": "19935-6",
+            "display": "Maximum expiratory gas flow Respiratory system airway by Peak flow meter",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo"
+              },
+              {
+                "language": "sv",
+                "value": "Maximalt utandningsflöde med PEF-mätare"
+              }
+            ]
+          },
+          {
+            "code": "8280-0",
+            "display": "Waist Circumference at umbilicus by Tape measure",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Vyötärönympärys"
+              },
+              {
+                "language": "sv",
+                "value": "Midjemått"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

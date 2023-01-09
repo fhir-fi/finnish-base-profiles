@@ -1,0 +1,86 @@
+{
+  "resourceType": "Observation",
+  "id": "bloodpressure-min",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Blood pressure (85354-9)<br />Time: 20.11.2017 11:46<br />Result: Systolic blood pressure (8480-6): 95 mm[Hg], Diastolic blood pressure (8462-4): 65 mm[Hg]</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:3ca3ffc6-234e-481c-b0f3-37c05e14c8e2"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+  },
+  "effectiveDateTime": "2017-11-20T11:46:00+02:00",
+  "issued": "2017-11-20T11:46:00+02:00",
+  "performer": [
+    {
+      "reference": "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 95,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 65,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}

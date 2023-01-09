@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-consentcategory",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory",
+  "version": "1.0",
+  "name": "fiphr-vs-consentcategory",
+  "title": "Value Set Finnish PHR Consent Category",
+  "status": "active",
+  "date": "2018-03-16T13:52:00+02:00",
+  "publisher": "Kela",
+  "description": "Finnish PHR Consent Category value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://phr.kanta.fi/fiphr-cs-consentcategory"
+      }
+    ]
+  }
+}
