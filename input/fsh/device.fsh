@@ -1,5 +1,5 @@
-Profile: FinnishCoreDevice
+Profile: FiBaseDevice
 Parent: Device
-Id: finnish-core-device
-Title: "Finnish Core Device"
-Description: "This is base profile for Finnish device resource."
+Id: fi-base-device
+Title: "FI Base Device"
+Description: "This is the Finnish base profile for the Device resource."

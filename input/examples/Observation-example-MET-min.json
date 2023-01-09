@@ -1,0 +1,108 @@
+{
+  "resourceType": "Observation",
+  "id": "48983b8b-ead3-4206-9583-fcdd40d762b6",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandardrmr"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Metabolic equivalent of task by standard resting metabolic rate (82260-1)<br />Time: 26.11.2019<br />Result: Standard resting metabolic rate (82284-1): 3.5 ml/kg/min, Measured metabolic equivalent of task (82261-9): 9.0 MET, Adjusted metabolic equivalent of task (82271-8): 10.7 MET, Source for adjusted metabolic equivalent of task (82283-3): Harris-Benedict male</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:ba688ba1-eb58-401f-83b8-81cced8d5190"
+    },
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:00000001-5cb1-fef8-16b6-835409677fb6"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code": "fitness",
+          "display": "Fitness"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "82260-1",
+        "display": "Metabolic equivalent of task by standard resting metabolic rate panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectiveDateTime": "2019-11-26",
+  "issued": "2019-11-26T12:00:00+03:00",
+  "performer": [
+    {
+      "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "82284-1",
+            "display": "Standard resting metabolic rate"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3.5,
+        "unit": "ml/kg/min",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL/kg/min"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "82261-9",
+            "display": "Measured metabolic equivalent of task"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 9.0,
+        "unit": "MET",
+        "system": "http://unitsofmeasure.org",
+        "code": "[MET]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "82271-8",
+            "display": "Adjusted metabolic equivalent of task"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 10.7,
+        "unit": "MET",
+        "system": "http://unitsofmeasure.org",
+        "code": "[MET]"
+      }
+    }
+  ]
+}

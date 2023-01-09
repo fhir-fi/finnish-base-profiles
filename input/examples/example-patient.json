@@ -1,0 +1,19 @@
+{
+  "resourceType": "Patient",
+  "id": "36749a02-1710-44e7-aa76-0e934eb7860a",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-03-13T14:01:59.834+02:00",
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient"
+    ]
+  },
+  "language": "fi",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:36749a02-1710-44e7-aa76-0e934eb7860a"
+    }
+  ],
+  "active": true
+}

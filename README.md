@@ -13,12 +13,12 @@ The profiles will be based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
 ## Published Snapshot
 
-The working version of the IG is published at https://fhir.fi/finnish-base-profiles/.
+The working version of the IG is published at https://fhir.fi/fi-base-profiles/.
 
 ## Companion Specifications
 
 See also the repo for [Finnish Implementation Guide for SMART App
-Launch]([https://github.com/fhir-fi/finnish-base-profiles](https://github.com/fhir-fi/finnish-smart)).
+Launch](https://github.com/fhir-fi/finnish-smart).
 
 ## Resources to be Profiled 
 
@@ -72,4 +72,4 @@ docker-compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
 docker-compose run runner bash -c "cd /workdir && ./_genonce.sh"
 ```
 
-Html output will be generated to `output/StructureDefinition-FinnishCorePatient.html`.
+Html output will be generated to `output/StructureDefinition-FiBasePatient.html`.

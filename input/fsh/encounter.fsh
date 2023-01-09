@@ -1,5 +1,5 @@
-Profile: FinnishCoreEncounter
+Profile: FiBaseEncounter
 Parent: Encounter
-Id: finnish-core-encounter
-Title: "Finnish Core Encounter"
-Description: "This is a profile for Finnish encounter."
+Id: fi-base-encounter
+Title: "FI Base Encounter"
+Description: "This is the Finnish base profile for the Encounter resource."

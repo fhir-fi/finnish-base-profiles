@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyheight"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\t<b>Code:</b> Body height (8302-2)<br />\r\n\t\t<b>Time:</b> 20.11.2020 11:46<br />\r\n\t\t<b>Result:</b> 182 cm </div>"
+  },
+  "id": "1153859e-0c86-1000-abb8-511d0000b222",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:be18620b-ee17-4bd6-8304-102fdd12222c"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://hl7.org/fhir/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "8302-2",
+        "display": "Body height",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/36749a02-1710-44e7-aa76-0e934eb4321a"
+  },
+  "effectiveDateTime": "2020-11-20T11:46:00+02:00",
+  "performer": [
+    {
+      "reference": "Patient/36749a02-1710-44e7-aa76-0e934eb4321a"
+    }
+  ],
+  "valueQuantity": {
+    "value": "182",
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  }
+}

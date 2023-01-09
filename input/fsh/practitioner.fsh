@@ -1,8 +1,8 @@
-Profile: FinnishCorePractitioner
-Parent: Practitioner
-Id: Finnish-core-practitioner
-Title: "Finnish Core Practitioner Profile"
-Description: "This is a profile for finnish practitioner"
+Profile: FiBasePractitioner
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner
+Id: fi-base-practitioner
+Title: "FI Base Practitioner"
+Description: "This is the Finnish base profile for the Practitioner resource."
 * id 1..1
 
 * identifier ^slicing.discriminator.type = #value

@@ -1,0 +1,42 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "a4d97476-39fa-46c6-bf2e-1fb153a7bbe2",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-05-27T13:04:55.345+03:00",
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n      Name of the medication: Actrapid <br/>\r\n      VNRCode: Glucose In Blood (15074-8) <br/>\r\n      Type of insulin: Fast-acting insulin (ins-short-fast) <br/>\r\n      Time: 18.5.2019 15:05 \r\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:2bc59f2d-5e28-4d1b-a403-bf3a27b1610c"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode",
+        "code": "ins-short-fast",
+        "display": "Fast-acting insulin"
+      },
+      {
+        "system": "http://ownSystem.fi/CodeSystem/cs-insulincode",
+        "code": "1234",
+        "display": "Fast  insulin"
+      }
+    ],
+    "text": "A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System."
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectiveDateTime": "2020-10-05"
+}

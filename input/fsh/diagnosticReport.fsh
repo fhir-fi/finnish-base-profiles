@@ -1,5 +1,5 @@
-Profile: FinnishCoreDiagnosticReport
+Profile: FiBaseDiagnosticReport
 Parent: DiagnosticReport
-Id: finnish-core-diagnostic-report
-Title: "Finnish Core Diagnostic Report"
-Description: "This is a base profile for Finnish DiagnosticReport resource."
+Id: fi-base-diagnostic-report
+Title: "FI Base DiagnosticReport"
+Description: "This is the Finnish base profile for the DiagnosticReport resource."
