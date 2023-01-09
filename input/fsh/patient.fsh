@@ -1,6 +1,8 @@
-Profile: FinnishCorePatient
-Parent: Patient
-Description: "A finnish core profile of the Patient resource."
+Profile: FiBasePatient
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
+Id: fi-base-patient
+Title: "FI Base Patient"
+Description: "This is the Finnish base profile for the Patient resource."
 * id 1..1
 
 * meta.security ^slicing.discriminator.type = #value

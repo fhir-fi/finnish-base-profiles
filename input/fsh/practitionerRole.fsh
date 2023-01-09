@@ -1,5 +1,5 @@
-Profile: FinnishCorePractitionerRole
-Parent: PractitionerRole
-Id: finnish-core-practitioner-role
-Title: "Finnish Core Practitioner Role Profile"
-Description: "This is core profile for Finnish practitioner role."
+Profile: FiBasePractitionerRole
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitionerrole
+Id: fi-base-practitioner-role
+Title: "FI Base PractitionerRole Profile"
+Description: "This is the Finnish base profile for the PractitionerRole resource."
