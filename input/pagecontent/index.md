@@ -167,7 +167,7 @@ better. Please do be in touch in one of the ways listed below.
 #### Open an Issue in GitHub
 
 The source code of this implementation guide is maintained in a
-[publicly accessible repository](https://github.com/fhir-fi/fi-base-profiles) in GitHub.
+[publicly accessible repository](https://github.com/fhir-fi/finnish-base-profiles) in GitHub.
 Issues opened in that GitHub repo are very welcome. They help the team pick up any proposed changes
 or additions and to discuss them publicly.
 
