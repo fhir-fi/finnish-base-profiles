@@ -18,9 +18,9 @@ Description: "This is the Finnish base profile for the Patient resource."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
-* identifier ^slicing.description = "When using the Finnish personal identifier, identifier.system SHALL be #urn:oid:1.2.246.21."
+* identifier ^slicing.description = "When using the official Finnish personal identifier code, identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
-  * ^short = "Identifier contains Finnish personal identity code which can be official or temporary."
+  * ^short = "Identifier contains Finnish personal identity code which can be official or temporary. Other identifier may also be included."
 
 * identifier contains SSN 0..1
 * identifier[SSN].system = #urn:oid:1.2.246.21

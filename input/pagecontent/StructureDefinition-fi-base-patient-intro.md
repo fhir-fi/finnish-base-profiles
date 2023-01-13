@@ -4,11 +4,13 @@ The Finnish Core Patient profile is intended to encapsulate the most common and 
 
 ### Patient identifier
 
-Patient indentifier has two basic use codes: Official and Temp. Official identifier, aka the personal identifier code (PIC), shall follow the guidelines implemented by Finnish agency [Digital And Population Data Services Agency](https://dvv.fi/en/personal-identity-code).
+Patient indentifier has two basic uses in Finnish healthcare: Official and Temporary. Official identifier, aka the personal identifier code (PIC), is granted and handled by [Digital And Population Data Services Agency](https://dvv.fi/en/personal-identity-code). Temporary identifier is defined by Kanta Services ([Temporary identifier](https://www.kanta.fi/en/system-developers/test-etiquette#:~:text=various%20Kanta%20Services.-,Temporary%20identifier,-Temporary%20identifiers%20are)). In addition Kanta also defines set of [test identity codes](https://www.kanta.fi/en/system-developers/test-etiquette#:~:text=events%20is%20forbidden.-,Test%20ID%20and%20other%20identification%20data,-Only%20900%2Dseries) which are being used in many healthcare systems regardless of Kanta integration.
+
+Other identifiers could also be used to identify the patient. These indentifiers are usually system spesific and not necessarily used in other circumstances. Nevertheless it would be appropriate to distinguish these identifiers properly from each other.
 
 ### Use of non-disclosure information
 
-Finnish citizens that have requested name and address protection ([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) should be labeled with the security label as follows:
+Finnish citizens that have requested name and address protection ([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) are labeled with the security label. The preferred way to do this is shown below.
  
  ```
  <Patient xmlns="http://hl7.org/fhir">
