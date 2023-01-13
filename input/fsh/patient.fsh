@@ -1,6 +1,8 @@
-Profile: FinnishCorePatient
-Parent: Patient
-Description: "A finnish core profile of the Patient resource."
+Profile: FiBasePatient
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
+Id: fi-base-patient
+Title: "FI Base Patient"
+Description: "This is the Finnish base profile for the Patient resource."
 * id 1..1
 
 * meta.security ^slicing.discriminator.type = #value
@@ -34,3 +36,12 @@ Description: "Extension for home municipality"
 * value[x] only Coding
 * valueCoding 1..1
   * system = #urn:oid:1.2.246.537.6.21.2003
+
+Extension: PatientProfession
+Id: patient-profession
+Title: "Patient Profession Extension"
+Description: "Extension for presenting patient profession."
+* . ^short = "Patient Profession"
+* value[x] only Coding
+* valueCoding 1..1
+  * system = #urn:oid:1.2.246.537.6.74

@@ -1,5 +1,5 @@
-Profile: FinnishCoreSchedule
+Profile: FiBaseSchedule
 Parent: Schedule
-Id: finnish-core-schedule
-Title: "Finnish Core Schedule"
-Description: "This profile is for Finnish core schedule."
+Id: fi-base-schedule
+Title: "FI Base Schedule"
+Description: "This is the Finnish base profile for the Schedule resource."

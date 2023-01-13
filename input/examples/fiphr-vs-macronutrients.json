@@ -1,0 +1,124 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-macronutrients",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-macronutrients",
+  "version": "1.0",
+  "name": "fiphr-vs-macronutrients",
+  "title": "Value Set Finnish PHR Macronutrients",
+  "status": "active",
+  "date": "2019-10-14T11:00:00+02:00",
+  "publisher": "Kela",
+  "description": "Finnish PHR Macronutrition Value Set that defines codes for Macronutrients.",
+  "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "9059-7",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Arvioitu hiilihydraattimäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppskattat kolhydratintag"
+              },
+              {
+                "language": "en",
+                "value": "Carbohydrate intake Estimated"
+              }
+            ]
+          },
+          {
+            "code": "9060-5",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Mitattu hiilihydraattimäärä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppmätt kolhydratintag"
+              },
+              {
+                "language": "en",
+                "value": "Carbohydrate intake Measured"
+              }
+            ]
+          },
+          {
+            "code": "9066-2",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Arvioitu rasvan määrä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppskattat fettintag"
+              },
+              {
+                "language": "en",
+                "value": "Fat intake Estimated"
+              }
+            ]
+          },
+          {
+            "code": "9067-0",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Mitattu rasvan määrä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppmätt fettintag"
+              },
+              {
+                "language": "en",
+                "value": "Fat intake Measured"
+              }
+            ]
+          },
+          {
+            "code": "9079-5",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Arvioitu proteiinin määrä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppskattat proteinintag"
+              },
+              {
+                "language": "en",
+                "value": "Protein intake Estimated"
+              }
+            ]
+          },
+          {
+            "code": "9080-3",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Mitattu proteiinin määrä"
+              },
+              {
+                "language": "sv",
+                "value": "Uppmätt proteinintag"
+              },
+              {
+                "language": "en",
+                "value": "Protein intake Measured"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

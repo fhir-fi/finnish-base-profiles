@@ -1,0 +1,881 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+  "id": "fiphr-cs-careplancategory",
+  "name": "fiphr-cs-careplancategory",
+  "version": "2.1",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-06-05",
+  "description": "Indicates the plan category.",
+  "title": "Finnish PHR CarePlan Category code system",
+  "caseSensitive": true,
+  "publisher": "SoteDigi Oy",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Hengitystietulehdus tai -oire",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Hengitystietulehdus tai -oire"
+        },
+        {
+          "language": "sv",
+          "value": "Luftvägsinfektion eller -symtom"
+        },
+        {
+          "language": "en",
+          "value": "Respiratory infection or symptom"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "Yskä",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Yskä"
+        },
+        {
+          "language": "sv",
+          "value": "Hosta"
+        },
+        {
+          "language": "en",
+          "value": "Cough"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Virtsatietulehdus tai -oire (18–65v. naiset)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Virtsatietulehdus tai -oire (18–65v. naiset)"
+        },
+        {
+          "language": "sv",
+          "value": "Urinvägsinfektion- eller symtom (kvinnor 18–65 år)"
+        },
+        {
+          "language": "en",
+          "value": "Urinary tract infection or symptom (women aged 18–65)"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Korvan kipu tai lukkoisuus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Korvan kipu tai lukkoisuus"
+        },
+        {
+          "language": "sv",
+          "value": "Ont i öronen eller lock för örat"
+        },
+        {
+          "language": "en",
+          "value": "Earache or ear plugging"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Kurkkukipu tai nieluoire",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Kurkkukipu tai nieluoire"
+        },
+        {
+          "language": "sv",
+          "value": "Halsont eller svalgsymtom"
+        },
+        {
+          "language": "en",
+          "value": "Sore throat or throat symptom"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "display": "Ripuli",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Ripuli"
+        },
+        {
+          "language": "sv",
+          "value": "Diarré"
+        },
+        {
+          "language": "en",
+          "value": "Diarrhoea"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "display": "Alaselkäkipu tai -vamma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Alaselkäkipu tai -vamma"
+        },
+        {
+          "language": "sv",
+          "value": "Ländryggssmärta eller -skada"
+        },
+        {
+          "language": "en",
+          "value": "Lower back pain or injury"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "display": "Närästys",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Närästys"
+        },
+        {
+          "language": "sv",
+          "value": "Halsbränna"
+        },
+        {
+          "language": "en",
+          "value": "Heartburn"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "display": "Olkapään kipu, jäykkyys tai vamma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Olkapään kipu, jäykkyys tai vamma"
+        },
+        {
+          "language": "sv",
+          "value": "Smärta, stelhet eller skada i skuldran"
+        },
+        {
+          "language": "en",
+          "value": "Shoulder pain, stiffness or injury"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "Päänsärky",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Päänsärky"
+        },
+        {
+          "language": "sv",
+          "value": "Huvudvärk"
+        },
+        {
+          "language": "en",
+          "value": "Headache"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Peräaukon seudun oire",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Peräaukon seudun oire"
+        },
+        {
+          "language": "sv",
+          "value": "Symtom vid ändtarmsöppningen"
+        },
+        {
+          "language": "en",
+          "value": "Anal region symptom"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Polven oire tai vamma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Polven oire tai vamma"
+        },
+        {
+          "language": "sv",
+          "value": "Symtom eller skada i knät"
+        },
+        {
+          "language": "en",
+          "value": "Knee symptom or injury"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Silmän oire",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Silmän oire"
+        },
+        {
+          "language": "sv",
+          "value": "Symtom i öga"
+        },
+        {
+          "language": "en",
+          "value": "Eye symptom"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Sukupuolitaudin oire",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Sukupuolitaudin oire"
+        },
+        {
+          "language": "sv",
+          "value": "Symtom på könssjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Sexually transmitted disease symptom"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Terveystarkastus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Terveystarkastus"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll"
+        },
+        {
+          "language": "en",
+          "value": "Health check-up"
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "display": "Henkilökohtainen apu",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Henkilökohtainen apu"
+        },
+        {
+          "language": "sv",
+          "value": "Personlig assistans"
+        },
+        {
+          "language": "en",
+          "value": "Personal assistance"
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "display": "Liikkuminen kodin ulkopuolella",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Liikkuminen kodin ulkopuolella"
+        },
+        {
+          "language": "sv",
+          "value": "Mobilitet utanför hemmet"
+        },
+        {
+          "language": "en",
+          "value": "Moving outside the home"
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "display": "Maahanmuuttajan hyvinvointi",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Maahanmuuttajan hyvinvointi"
+        },
+        {
+          "language": "sv",
+          "value": "Invandrarens välbefinnande"
+        },
+        {
+          "language": "en",
+          "value": "Well-being of an immigrant"
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "display": "Omaishoidon tuki",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Omaishoidon tuki"
+        },
+        {
+          "language": "sv",
+          "value": "Stöd för närståendevård"
+        },
+        {
+          "language": "en",
+          "value": "Informal care support"
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "display": "Läheishoitajan tarkastus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Läheishoitajan tarkastus"
+        },
+        {
+          "language": "sv",
+          "value": "Kontroll för anhörig omsorgsgivare"
+        },
+        {
+          "language": "en",
+          "value": "Check-up of an informal carer"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "display": "Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll för femteklassist, föräldrar (borttagen)"
+        },
+        {
+          "language": "en",
+          "value": "Health check-up of a fifth-grader, parents (removed)"
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "display": "Viitosluokkalaisen terveystarkastus, lapsi (poistettu)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Viitosluokkalaisen terveystarkastus, lapsi (poistettu)"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll för femteklassist, barn (borttagen)"
+        },
+        {
+          "language": "en",
+          "value": "Health check-up of a fifth-grader, child (removed)"
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "display": "Yleinen hyvinvointikysely (WHOQOL-BREF)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Yleinen hyvinvointikysely (WHOQOL-BREF)"
+        },
+        {
+          "language": "sv",
+          "value": "Allmän välfärdsenkät (WHOQOL-BREF)"
+        },
+        {
+          "language": "en",
+          "value": "General well-being survey (WHOQOL-BREF)"
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "display": "Elämäntilannekysely (3X10D)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Elämäntilannekysely (3X10D)"
+        },
+        {
+          "language": "sv",
+          "value": "Enkät om livssituation (3X10D)"
+        },
+        {
+          "language": "en",
+          "value": "Life-situation survey (3X10D)"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "display": "Opiskeluterveydenhuollon esitiedot",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Opiskeluterveydenhuollon esitiedot"
+        },
+        {
+          "language": "sv",
+          "value": "Förhandsuppgifter för studerandehälsovården"
+        },
+        {
+          "language": "en",
+          "value": "Preliminary information for student health care"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "display": "Suun terveydentila, lapset ja nuoret",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Suun terveydentila, lapset ja nuoret"
+        },
+        {
+          "language": "sv",
+          "value": "Munhälsa, barn och unga"
+        },
+        {
+          "language": "en",
+          "value": "Oral health status, children and young persons"
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "display": "Omaishoitajan jaksaminen",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Omaishoitajan jaksaminen"
+        },
+        {
+          "language": "sv",
+          "value": "Närståendevårdarens ork"
+        },
+        {
+          "language": "en",
+          "value": "Family carer ability to cope"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "display": "Puolitoistavuotiaan laaja terveystarkastus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Puolitoistavuotiaan laaja terveystarkastus"
+        },
+        {
+          "language": "sv",
+          "value": "Omfattande hälsokontroll för barn, 18 månader"
+        },
+        {
+          "language": "en",
+          "value": "Extensive health check-up of a one-and-a-half-year-old"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "display": "Yötyötä tekevän työterveystarkastus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Yötyötä tekevän työterveystarkastus"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll för nattarbetande"
+        },
+        {
+          "language": "en",
+          "value": "Occupational health check-up of a night worker"
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "display": "Kohonnut verenpaine",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Kohonnut verenpaine"
+        },
+        {
+          "language": "sv",
+          "value": "Hypertoni"
+        },
+        {
+          "language": "en",
+          "value": "High blood pressure"
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "display": "Yläkoululaisen terveystarkastus, vanhemmat (poistettu)",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Yläkoululaisen terveystarkastus, vanhemmat (poistettu)"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll för högstadieelev, föräldrar (borttagen)"
+        },
+        {
+          "language": "en",
+          "value": "Health check-up of an upper comprehensive school pupil, parents (removed)"
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "display": "Viitosluokkalaisen terveystarkastus, vanhemmat",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Viitosluokkalaisen terveystarkastus, vanhemmat"
+        },
+        {
+          "language": "sv",
+          "value": "Hälsokontroll för femteklassist, föräldrar"
+        },
+        {
+          "language": "en",
+          "value": "Health check-up of a fifth-grader, parents"
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "display": "Hampaiden tai suun oire tai vamma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Hampaiden tai suun oire tai vamma"
+        },
+        {
+          "language": "sv",
+          "value": "Symtom eller skada i tänder eller mun"
+        },
+        {
+          "language": "en",
+          "value": "Teeth or mouth symptom or injury"
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "display": "Suun terveydentila, aikuiset",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Suun terveydentila, aikuiset"
+        },
+        {
+          "language": "sv",
+          "value": "Munhälsa, vuxna"
+        },
+        {
+          "language": "en",
+          "value": "Oral health status, adults"
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "display": "Äitiysneuvolan esitiedot",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Äitiysneuvolan esitiedot"
+        },
+        {
+          "language": "sv",
+          "value": "Förhandsuppgifter till mödrarådgivningen"
+        },
+        {
+          "language": "en",
+          "value": "Preliminary information for the maternity clinic"
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "display": "Hyvinvointitarkastus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Hyvinvointitarkastus"
+        },
+        {
+          "language": "sv",
+          "value": "Välfärdsenkät"
+        },
+        {
+          "language": "en",
+          "value": "Well-being check-up"
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "display": "Suunnitelma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Suunnitelma"
+        },
+        {
+          "language": "sv",
+          "value": "Plan"
+        },
+        {
+          "language": "en",
+          "value": "Plan"
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "display": "Liikuntaohjelma askeltajille",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Liikuntaohjelma askeltajille"
+        },
+        {
+          "language": "sv",
+          "value": "Stegprogrammet"
+        },
+        {
+          "language": "en",
+          "value": "Exercise programme for walkers and runners"
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "display": "Lääkärintodistus, pyyntö",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Lääkärintodistus, pyyntö"
+        },
+        {
+          "language": "sv",
+          "value": "Läkarintyg, begäran"
+        },
+        {
+          "language": "en",
+          "value": "Medical certificate, request"
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "display": "Diabetes, riskitesti",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Diabetes, riskitesti"
+        },
+        {
+          "language": "sv",
+          "value": "Diabetes, risktest"
+        },
+        {
+          "language": "en",
+          "value": "Diabetes, risk test"
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "display": "Yleinen oirearvio",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Yleinen oirearvio"
+        },
+        {
+          "language": "sv",
+          "value": "Allmän symtombedömning"
+        },
+        {
+          "language": "en",
+          "value": "General symptom assessment"
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "display": "Painonhallinta",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Painonhallinta"
+        },
+        {
+          "language": "sv",
+          "value": "Viktkontroll"
+        },
+        {
+          "language": "en",
+          "value": "Weight management"
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "display": "Tupakoinnin lopettamisen valmennusohjelma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Tupakoinnin lopettamisen valmennusohjelma"
+        },
+        {
+          "language": "sv",
+          "value": "Coachningsprogram för att sluta röka"
+        },
+        {
+          "language": "en",
+          "value": "Coaching programme for quitting smoking"
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "display": "Terveellinen ravinto -valmennusohjelma",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Terveellinen ravinto -valmennusohjelma"
+        },
+        {
+          "language": "sv",
+          "value": "Coachningsprogrammet Hälsosam näring"
+        },
+        {
+          "language": "en",
+          "value": "Healthy nutrition coaching programme"
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "display": "Univalmennus",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Univalmennus"
+        },
+        {
+          "language": "sv",
+          "value": "Sömncoachning"
+        },
+        {
+          "language": "en",
+          "value": "Sleep coaching"
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "display": "Avoin palvelupyyntö",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Avoin palvelupyyntö"
+        },
+        {
+          "language": "sv",
+          "value": "Öppen servicebegäran"
+        },
+        {
+          "language": "en",
+          "value": "Open service request"
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "display": "Raskausdiabeteksen jälkiseuranta",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Raskausdiabeteksen jälkiseuranta"
+        },
+        {
+          "language": "sv",
+          "value": "Uppföljning av graviditetsdiabetes"
+        },
+        {
+          "language": "en",
+          "value": "Gestational diabetes follow-up"
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "display": "Koronavirustauti",
+      "designation": [
+        {
+          "language": "fi",
+          "value": "Koronavirustauti"
+        },
+        {
+          "language": "sv",
+          "value": "Coronavirusinfektion"
+        },
+        {
+          "language": "en",
+          "value": "Coronavirus disease"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "kanta-phr-capabilitystatement-at",
+  "url": "http://phr.kanta.fi/capabilitystatementATR4",
+  "version": "1.1.0",
+  "name": "Finnish PHR's capability statement for acceptance testing R4",
+  "status": "draft",
+  "publisher": "Kela",
+  "contact": [
+    {
+      "name": "kantakehitys@kanta.fi"
+    }
+  ],
+  "date": "2021-11-25",
+  "description": "The capability statement for Kanta PHR service client software acceptance testing environment",
+  "kind": "requirements",
+  "software": {
+    "name": "Omatietovaranto",
+    "version": "1.1",
+    "releaseDate": "2021-11-25"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "See implementation guide for details",
+      "security": {
+        "cors": true,
+        "service": [
+          {
+            "text": "OAuth"
+          }
+        ],
+        "description": "The usage of OAuth 2.0 with Finnish PHR can be found at kanta.fi"
+      },
+      "resource": [
+        {
+          "type": "CarePlan",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update",
+              "documentation": "SupportingInfo isn't validated with update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "CarePlan.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "CarePlan.meta.lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "date",
+              "definition": "CarePlan.period",
+              "type": "date",
+              "documentation": "Time period the plan covers"
+            },
+            {
+              "name": "patient",
+              "definition": "CarePlan.subject",
+              "type": "reference",
+              "documentation": "Who care plan is for"
+            },
+            {
+              "name": "status",
+              "definition": "CarePlan.status",
+              "type": "token",
+              "documentation": "Status of the plan"
+            },
+            {
+              "name": "identifier",
+              "definition": "CarePlan.identfier",
+              "type": "token",
+              "documentation": "Return careplans with this external identifier"
+            },
+            {
+              "name": "category",
+              "definition": "CarePlan.category",
+              "type": "token",
+              "documentation": "The category for a particular careplan"
+            },
+            {
+              "name": "supporting-info",
+              "definition": "CarePlan.supportingInfo",
+              "type": "reference",
+              "documentation": "Reference to supporting info"
+            },
+            {
+              "name": "_total",
+              "definition": "Total count of resources",
+              "type": "special",
+              "documentation": "Total count of resources"
+            }
+          ]
+        },
+        {
+          "type": "Observation",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "delete",
+              "documentation": "Only the source of the resource or Omakanta can delete resources"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "Observation.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "Observation.meta.lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "date",
+              "definition": "Observation.effective[x]",
+              "type": "date",
+              "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period. AND operator is supported."
+            },
+            {
+              "name": "patient",
+              "definition": "Observation.subject",
+              "type": "reference",
+              "documentation": "The patient that the observation is about, mandatory search parameter"
+            },
+            {
+              "name": "code",
+              "definition": "Observation.code",
+              "type": "token",
+              "documentation": "The code of the observation type. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://loinc.org will be used."
+            },
+            {
+              "name": "identifier",
+              "definition": "Observation.identifier",
+              "type": "token",
+              "documentation": "The unique id for a particular observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "category",
+              "definition": "Observation.category",
+              "type": "token",
+              "documentation": "The classification of the type of observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "_total",
+              "definition": "Total count of resources",
+              "type": "special",
+              "documentation": "Total count of resources"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": true,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "Patient.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            }
+          ]
+        },
+        {
+          "type": "MedicationAdministration",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "delete",
+              "documentation": "Only the source of the resource or Omakanta can delete resources"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "MedicationAdministration.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "MedicationAdministration.meta.lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "effective-time",
+              "definition": "MedicationAdministration.effectiveTime[x]",
+              "type": "date",
+              "documentation": "Date administration happened (or did not happen)"
+            },
+            {
+              "name": "patient",
+              "definition": "MedicationAdministration.patient",
+              "type": "reference",
+              "documentation": "The identity of a patient to list administrations for, mandatory search parameter"
+            },
+            {
+              "name": "identifier",
+              "definition": "MedicationAdministration.identifier",
+              "type": "token",
+              "documentation": "Return administrations with this external identifier. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "code",
+              "definition": "MedicationAdministration.medication[x]",
+              "type": "token",
+              "documentation": "Return administrations of this medication code. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode will be used."
+            },
+            {
+              "name": "_total",
+              "definition": "Total count of resources",
+              "type": "special",
+              "documentation": "Total count of resources"
+            }
+          ]
+        },
+        {
+          "type": "Questionnaire",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allow only identifier parameter"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "Questionnaire.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "Questionnaire.meta.lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "code",
+              "definition": "Questionnaire.item.code",
+              "type": "token",
+              "documentation": "A code that corresponds to the questionnaire or one of its groups. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "identifier",
+              "definition": "Questionnaire.identifier",
+              "type": "token",
+              "documentation": "An identifier for the questionnaire. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "url",
+              "definition": "Questionnaire.url",
+              "type": "uri",
+              "documentation": "The logical URL for the questionnaire"
+            },
+            {
+              "name": "_total",
+              "definition": "Total count of resources",
+              "type": "special",
+              "documentation": "Total count of resources"
+            }
+          ]
+        },
+        {
+          "type": "QuestionnaireResponse",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allow only identifier parameter"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "QuestionnaireResponse.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "QuestionnaireResponse.meta.lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "questionnaire",
+              "definition": "QuestionnaireResponse.questionnaire",
+              "type": "reference",
+              "documentation": "The questionnaire the answers are provided for"
+            },
+            {
+              "name": "patient",
+              "definition": "QuestionnaireResponse.subject",
+              "type": "reference",
+              "documentation": "The patient that is the subject of the questionnaire, mandatory search parameter"
+            },
+            {
+              "name": "authored",
+              "definition": "\tQuestionnaireResponse.authored",
+              "type": "date",
+              "documentation": "When the questionnaire was authored"
+            },
+            {
+              "name": "identifier",
+              "definition": "QuestionnaireResponse.identifier",
+              "type": "token",
+              "documentation": "The unique identifier for the questionnaire response. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+            },
+            {
+              "name": "_total",
+              "definition": "Total count of resources",
+              "type": "special",
+              "documentation": "Total count of resources"
+            }
+          ]
+        },
+        {
+          "type": "ValueSet",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "ValueSet.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "url",
+              "definition": "ValueSet.url",
+              "type": "uri",
+              "documentation": "The logical URL for the value set"
+            }
+          ]
+        },
+        {
+          "type": "StructureDefinition",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "StructureDefinition.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "url",
+              "definition": "StructureDefinition.url",
+              "type": "uri",
+              "documentation": "The uri that identifies the structure definition"
+            }
+          ]
+        },
+        {
+          "type": "CodeSystem",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create",
+              "documentation": "Conditional create allows only the use of identifier as condition"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "versioning": "versioned-update",
+          "readHistory": true,
+          "updateCreate": false,
+          "conditionalCreate": true,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal",
+            "enforced",
+            "local"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "CodeSystem.id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "url",
+              "definition": "CodeSystem.url",
+              "type": "uri",
+              "documentation": "The uri that identifies the code system"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

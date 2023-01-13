@@ -1,0 +1,112 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-sourceforadjustedmet",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet",
+  "version": "1.0",
+  "name": "fiphr-vs-sourceforadjustedmet",
+  "title": "Value Set Finnish PHR Source for Adjusted MET",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-02-24",
+  "publisher": "DigitalWells",
+  "description": "Finnish PHR Source for Adjusted MET value set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA26234-7",
+            "display": "Wilms 2014 male",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Wilms 2014 miehet"
+              },
+              {
+                "language": "sv",
+                "value": "Wilms 2014 manlig"
+              },
+              {
+                "language": "en",
+                "value": "Wilms 2014 male"
+              }
+            ]
+          },
+          {
+            "code": "LA26235-4",
+            "display": "Wilms 2014 female",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Wilms 2014 naiset"
+              },
+              {
+                "language": "sv",
+                "value": "Wilms 2014 kvinnlig"
+              },
+              {
+                "language": "en",
+                "value": "Wilms 2014 female"
+              }
+            ]
+          },
+          {
+            "code": "LA26236-2",
+            "display": "Harris-Benedict male",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Harris-Benedict miehet"
+              },
+              {
+                "language": "sv",
+                "value": "Harris-Benedict manlig"
+              },
+              {
+                "language": "en",
+                "value": "Harris-Benedict male"
+              }
+            ]
+          },
+          {
+            "code": "LA26237-0",
+            "display": "Harris-Benedict female",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Harris-Benedict naiset"
+              },
+              {
+                "language": "sv",
+                "value": "Harris-Benedict kvinnlig"
+              },
+              {
+                "language": "en",
+                "value": "Harris-Benedict female"
+              }
+            ]
+          },
+          {
+            "code": "LA46-8",
+            "display": "Other, specify",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Muu, tarkenna"
+              },
+              {
+                "language": "sv",
+                "value": "Annat, specificera"
+              },
+              {
+                "language": "en",
+                "value": "Other, specity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

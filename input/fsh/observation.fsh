@@ -1,5 +1,5 @@
-Profile: FinnishCoreObservation
-Parent: Observation
-Id: finnish-core-observation
-Title: "Finnish Core Observation"
-Description: "This is a base profile for Finnish observation resource."
+Profile: FiBaseObservation
+Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation
+Id: fi-base-observation
+Title: "FI Base Observation"
+Description: "This is the Finnish base profile for the Observation resource."

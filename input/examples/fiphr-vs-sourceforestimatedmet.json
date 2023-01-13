@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fiphr-vs-sourceforestimatedmet",
+  "url": "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet",
+  "version": "1.0",
+  "name": "fiphr-vs-sourceforestimatedmet",
+  "title": "Value Set Finnish PHR Source for Estimated MET",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-02-04",
+  "publisher": "DigitalWells",
+  "description": "Finnish PHR Source for Estimated MET value set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA26238-8",
+            "display": "Compendium of Physical Activities",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Compendium of Physical Activities"
+              },
+              {
+                "language": "sv",
+                "value": "Compendium of Physical Activities"
+              },
+              {
+                "language": "en",
+                "value": "Compendium of Physical Activities"
+              }
+            ]
+          },
+          {
+            "code": "LA26239-6",
+            "display": "Modified Bruce protocol",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Modifioitu Bruce-protokolla"
+              },
+              {
+                "language": "sv",
+                "value": "Modifierat Bruce-protokoll"
+              },
+              {
+                "language": "en",
+                "value": "Modified Bruce protocol"
+              }
+            ]
+          },
+          {
+            "code": "LA26240-4",
+            "display": "Balke protocol",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Balke-protokolla"
+              },
+              {
+                "language": "sv",
+                "value": "Balke-protokoll"
+              },
+              {
+                "language": "en",
+                "value": "Balke protocol"
+              }
+            ]
+          },
+          {
+            "code": "LA46-8",
+            "display": "Other, specify",
+            "designation": [
+              {
+                "language": "fi",
+                "value": "Muu, tarkenna"
+              },
+              {
+                "language": "sv",
+                "value": "Annat, specificera"
+              },
+              {
+                "language": "en",
+                "value": "Other, specity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

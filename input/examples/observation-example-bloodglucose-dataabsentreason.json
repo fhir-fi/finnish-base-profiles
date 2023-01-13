@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "bloodglucose-data-absent",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br />Time: 20.11.2017 11:46<br /> result: error</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:206fc986-517a-4054-bc0a-03eb906c9571"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "14743-9",
+        "display": "Glucose [Moles/volume] in Capillary blood by Glucometer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+  },
+  "effectiveDateTime": "2017-11-20T11:46:00+02:00",
+  "issued": "2017-11-20T11:46:00+02:00",
+  "performer": [
+    {
+      "reference": "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+    }
+  ],
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "error",
+        "display": "Error"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code"
+    }
+  ]
+}
