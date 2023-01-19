@@ -53,3 +53,33 @@ FHIR specification.
 
 ### Terminologies not available in FHIR format
 
+#### National Code Server
+
+The Finnish Institute for Health and Welfare maintains a
+[National code server of social welfare and health care](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-list-page.xhtml),
+only in Finnish language. The standardised data structures required by the electronic client data
+systems in social welfare and health care as well as the central code sets of the statistical and
+register data collection are all published on the code server.
+
+The code sets are available on the Code server free of charge.
+
+The responsibility for the contents of the code sets on the code server belongs to THL as laid down
+by law,
+[Act on the Electronic Processing of Client Data in Social and Health Care, 9 Feb, 159/2007 (in Finnish)](http://www.finlex.fi/fi/laki/ajantasa/2007/20070159).
+The technical maintenance of the code server is the responsibility of the Social Insurance
+Institution of Finland (Kela).
+
+The Code Service forms a part of Kanta, the national patient data system. The Code Service
+maintains nationally integrated data structures and code sets for electronic patient case
+histories. The Code server also develops registration practices for the client data in social
+welfare.
+
+#### Laboratory
+
+Most systems and services in Finland use the laboratory test codes and names specified in the
+[laboratory test name set](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=88&versionKey=120)
+by Kuntaliitto.
+
+Upcoming European legislation, like that for the European Health Data Space introduces some
+pressure to adopt LOINC codes too. Therefore systems SHOULD include LOINC codes in adddition to the
+national Kuntaliitto codes, where a LOINC code is known.
