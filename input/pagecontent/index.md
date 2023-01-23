@@ -120,20 +120,25 @@ resources and the REST interface.
 Our main intent is still to limit profiling specific to Finland. During the process, we actively
 monitor other national base profiles. We attempt to harmonize our base profiles with already
 published base profiles from other Nordic countries, specifically the Danish
-[DK Core](https://hl7.dk/fhir/core) and the Norwegian
-[no-basis-Profiles](https://simplifier.net/HL7Norwayno-basis/~introduction).
+[DK Core](https://hl7.dk/fhir/core), the Norwegian
+[no-basis-Profiles](https://simplifier.net/HL7Norwayno-basis/~introduction),
+and the [Swedish Base Profiles](https://hl7.se/fhir/ig/base/).
 
 The Finnish FHIR base profiles derive from the
 [International Patient Access (IPA) specification](https://build.fhir.org/ig/HL7/fhir-ipa/)
-and we will keep the specifications conformant. Should we find any constraints in IPA that we
-can't adhere to, the main resolution should be to affect the IPA specification and search for
-wider consensus and shared understanding.
+where applicable, and we will keep the specifications conformant. Should we find any constraints in
+IPA that we can't adhere to, the main resolution should be to affect the IPA specification and
+search for wider consensus and shared understanding.
 
 Other notable national base profiles under our radar are the
 [US Core](https://hl7.org/fhir/us/core/), the
 [Canadian baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/), the Swiss
 [CH Core](http://fhir.ch/ig/ch-core/index.html), and the Australian
 [AU Base](http://hl7.org.au/fhir/4.0.0/).
+
+See also the
+[National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations)
+page in HL7 International's Confluence.
 
 #### Profiles and Examples
 

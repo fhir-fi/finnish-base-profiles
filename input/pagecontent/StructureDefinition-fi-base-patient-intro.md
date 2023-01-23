@@ -1,12 +1,74 @@
 ### Scope and Usage
 
-The Finnish Core Patient profile is intended to encapsulate the most common and basic data model of patients in Finnish healthcare systems covering both primary sector, secondary sector (specialty doctors and hospitals) and municipality cases. The profile also presents data that is compulsory information in parts of Finnish legislation. As such the profile should be usable in most Finnish contexts.
+The Finnish Core Patient profile is intended to encapsulate the most common and basic data model of
+patients in Finnish social and healthcare systems. The profile also defines how to present data
+defined in Finnish legislation. As such the profile should be usable in most Finnish contexts.
 
-### Patient identifier
+### Identifying information
 
-Patient indentifier has two basic uses in Finnish healthcare: Official and Temporary. Official identifier, aka the personal identifier code (PIC), is granted and handled by [Digital And Population Data Services Agency](https://dvv.fi/en/personal-identity-code). Temporary identifier is defined by Kanta Services ([Temporary identifier](https://www.kanta.fi/en/system-developers/test-etiquette#:~:text=various%20Kanta%20Services.-,Temporary%20identifier,-Temporary%20identifiers%20are)). In addition Kanta also defines set of [test identity codes](https://www.kanta.fi/en/system-developers/test-etiquette#:~:text=events%20is%20forbidden.-,Test%20ID%20and%20other%20identification%20data,-Only%20900%2Dseries) which are being used in many healthcare systems regardless of Kanta integration.
+In the context of Finnish national social and healthcare, the
+[defined identifying information](https://yhteistyotilat.fi/wiki08/display/JULPOKY/7+Potilaan+perustiedot)
+for a person are
+* first (given) name
+* family name
+* name history
+* national person identifier
+* temporary identifier
+* time of birth
+* gender
+* time of death.
 
-Other identifiers could also be used to identify the patient. These indentifiers are usually system spesific and not necessarily used in other circumstances. Nevertheless it would be appropriate to distinguish these identifiers properly from each other.
+The unique identifier is the national person identifier.
+
+#### Patient identifier
+
+There are two versions of the national person identifier for people living in Finland.
+
+The [official Personal Identifier Code](https://dvv.fi/en/personal-identity-code) (PIC) is granted
+by the Digital And Population Data Services Agency. The `oid` for the official PIC is `1.2.246.21`.
+
+When an official PIC is not known or cannot be used for other reasons, a system may generate a
+[Temporary Identifier](https://www.kanta.fi/en/system-developers/test-etiquette#Temporary%20identifier).
+The `oid` for the temporary identifier is `1.2.246.10.<organization>.22.<year>`, where
+`<organization>` is the official identifier (y-tunnus) of the organization and `<year>` the year
+when the temporary identifier is generated.
+
+The identifiers are presented to human readers in the 11 character format, without any oid
+information.
+
+When a PIC is used for an Patient instance, the value of the `identifier.use` field SHOULD be
+[`official`](https://build.fhir.org/codesystem-identifier-use.html#identifier-use-official) and the
+value of the `identifier.type` SHOULD be `NNFIN` (see https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html).
+
+When the `identifier.type` is `NNFIN`, the value of the identifier SHALL be a Finnish national PIC.
+
+In addition to person identifiers for people living in Finland, systems may use **test identifiers**
+that have a special range in the PIC format (the eighth character is `9`). For instance,
+`020516C903K`.
+
+#### Other identifiers
+
+Other identifiers can also be used to identify the patient. In many cases the national patient
+identifier is not required. In these cases systems should assign another unique identifier for
+patients. Note that these identifiers MAY be different for different apps, for instance. They
+SHOULD still be the same when the same app asks for the patient information multiple times. 
+
+### Additional Information
+
+#### Name
+
+Systems SHOULD populate the `.name.text` field and clients SHOULD use that version of the name,
+when available.
+
+Clients SHOULD be prepared for cases where the name is not available. Systems may allow individuals
+to limit the amount of information that is being shared with FHIR apps. Some privacy aware systems
+do not share names or any demographic information by default.
+
+
+#### Times
+
+Both time of birth and time of death SHOULD be recorded with the time component, if known. If the
+time of day is not known, the date SHALL be recorded as a date only, without the time component.
 
 ### Use of non-disclosure information
 
@@ -29,4 +91,7 @@ Finnish citizens that have requested name and address protection ([Non-disclosur
 
 ### Presenting guardian information
 
-In some cases a guardian could be appointed to the patient if the patients is for ex. incapable of managing one's matters due to an illness. In these situations guardian's informations shall be presented with [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) resource with relationship type [GUARD](http://hl7.org/fhir/R4/v3/RoleCode/cs.html#:~:text=3-,GUARD,-guardian).
+In some cases, a guardian could be appointed to the patient if the patients is for ex. incapable of
+managing one's matters due to an illness. In these situations, the guardian's information shall be
+presented with [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) resource with the
+relationship type [GUARD](http://hl7.org/fhir/R4/v3/RoleCode/cs.html#:~:text=3-,GUARD,-guardian).
