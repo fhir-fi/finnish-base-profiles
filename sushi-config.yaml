@@ -2,7 +2,7 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fi.fhir.base
+id: hl7.fhir.fi.base
 canonical: http://fhir.fi/finnish-base-profiles
 name: FinnishBaseProfiles
 title: Finnish Base Profiles
