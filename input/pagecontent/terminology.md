@@ -74,12 +74,47 @@ maintains nationally integrated data structures and code sets for electronic pat
 histories. The Code server also develops registration practices for the client data in social
 welfare.
 
-#### Laboratory
+#### Snomed CT
+
+Finland became a member of SNOMED International in November 2019. 
+
+To make best use of SNOMED CT with available resources, Finland has chosen not to translate the
+whole terminology. Instead, the aim is to focus on two national reference sets that meet local
+needs in areas where there is international experience and models showing implementation success.
+
+The first target is an obvious one: standardizing the terminology and codes for anatomic pathology
+in the clinical laboratories. Finnish pathology laboratories have used SNOMED 2 since 1980’s. But
+lack of coordination eventually resulted in several dialects and variance between hospitals. Now
+the ongoing project aims at national reference set to help the biobanks, regional and national
+quality registers and structured reporting on individual patient basis.
+
+The other chosen application for SNOMED CT is patient problem list. Finland decided to use CORE
+Problem List as foundation for the local effort. CORE Problem List originated from a respectable
+group of medical institutions in the U.S. and is maintained by the National Medical Library thus
+making the acceptance of the reference set by clinicians so much easier. The ongoing project
+translates terminology into Finnish and when finished will cover terms for both professionals and
+patients.
+
+For international interoperability, FHIR implementations SHOULD use SNOMED CT codes when they are
+available, even if a translation is not available in Finnish or Swedish.
+
+#### FinLOINC
+
+FinLOINC - The Physiological Measurements classification contains results and findings of clinical
+measurements that describe the patient's condition. FinLOINC is based on the Logical Observation
+Identifiers Names and Codes (LOINC®) nomenclature maintained by Regenstrief Institute, covering
+only a small part of it.
+
+The classification is used to describe the physiological measurements in the core information of
+medical records.
+
+#### Laboratory Test Codes
 
 Most systems and services in Finland use the laboratory test codes and names specified in the
 [laboratory test name set](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=88&versionKey=120)
 by Kuntaliitto.
 
 Upcoming European legislation, like that for the European Health Data Space introduces some
-pressure to adopt LOINC codes too. Therefore systems SHOULD include LOINC codes in adddition to the
-national Kuntaliitto codes, where a LOINC code is known.
+pressure to adopt LOINC codes too. Therefore, and for international interoperability in general,
+systems SHOULD include LOINC codes in adddition to the national Kuntaliitto codes, where a LOINC
+code is known.
