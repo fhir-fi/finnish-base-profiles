@@ -3,15 +3,15 @@
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.fi.base
-canonical: http://fhir.fi/finnish-base-profiles
+canonical: https://hl7.fi/fhir/finnish-base-profiles
 name: FinnishBaseProfiles
 title: Finnish Base Profiles
 description: A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 1.0.0-rc1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#FI "Finland" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -43,10 +43,8 @@ parameters:
 
 menu:
   Home: index.html
-#  Table of Contents: toc.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
   Examples: examples.html
-#  Artifacts: artifacts.html
   Downloads: downloads.html
