@@ -8,7 +8,7 @@ specification.
 The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
 <blockquote class="stu-note">
-  <strong>This documentation and set of artefacts are still undergoing development, and they are in
+  <strong>This documentation and set of artifacts are still undergoing development, and they are in
   DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
   working on this specification. This is a DRAFT specification that has not yet been validated by
   the community of users and implementers.

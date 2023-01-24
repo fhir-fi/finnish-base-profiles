@@ -25,7 +25,7 @@ Profiles, valuesets, and other definitions included in this IG in different file
 
 Expansions as FHIR Bundle resources:
 * JSON [expansions.json.zip](expansions.json.zip)
-* XML [expansions.xml.zip]()
+* XML [expansions.xml.zip](expansions.xml.zip)
 
 ### Examples
 
