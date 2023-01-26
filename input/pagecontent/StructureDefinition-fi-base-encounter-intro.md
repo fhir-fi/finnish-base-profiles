@@ -29,12 +29,12 @@ these problems, the encounter should not be kept `in-progress` when the patient 
 (if there is a need for "recycling" the ward period encounter, it should be set to `finished` and 
 then back to `in-progress` upon return from the ICU).  
 
-#### Why not use Location.manangingOrganization?
+#### Why not use Location.managingOrganization?
 `Encounter`s `location` -field is a reference to `Location` that has a field 
-`manangingOrganization`. Use of this to find the organization responsible for the patient is 
-problematic. `Location.manangingOrganization` might change for different reasons (a room is 
+`managingOrganization`. Use of this to find the organization responsible for the patient is 
+problematic. `Location.managingOrganization` might change for different reasons (a room is 
 assigned to another organization) and this would have an unexpected effect on the 
-responsibility-concern. `Location.manangingOrganization` is "too far" from the encounter to be 
+responsibility-concern. `Location.managingOrganization` is "too far" from the encounter to be 
 useful in this context.
 
 #### Querying by physical location
