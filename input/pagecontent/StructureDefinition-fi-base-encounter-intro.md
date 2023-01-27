@@ -11,7 +11,7 @@ There are key points to consider when forming the search criteria:
 * We are interested only in `in-progress` encounters, so we need to filter by `status`.
 * We are most likely interested in querying by organizational hierarchy, the organizational unit (ward) responsible for the patient (not physical location).
 
-Organizational ward should be stored in `serviceProvider`. 
+Organizational ward should be communicated using the `serviceProvider` property. 
 
 FHIR request parameters:
 `GET /Encounter`
