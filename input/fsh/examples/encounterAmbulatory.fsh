@@ -14,3 +14,4 @@ Usage: #example
 * period.start = "2022-02-28T15:03:00+02:00"
 * period.end = "2022-02-28T15:33:00+02:00"
 * serviceProvider.reference = "Organization/1.2.246.10.2085212.10.1314"
+* extension[ServiceEvent].valueOid = "urn:oid:1.2.3.4.5"

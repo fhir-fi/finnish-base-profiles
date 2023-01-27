@@ -16,3 +16,4 @@ Usage: #example
 * location[0].status = #active
 * location[0].period.start = "2022-02-27T01:03:00+02:00"
 * location[0].location.reference = "Location/id-for-bed-3"
+* extension[ServiceEvent].valueOid = "urn:oid:1.2.3.4.6"
