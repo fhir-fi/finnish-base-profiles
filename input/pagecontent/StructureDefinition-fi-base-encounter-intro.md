@@ -6,6 +6,41 @@
 Many systems have a need to answer the question: "How to find patients/encounters that are at ward
 X at moment T?". 
 
+Here's an example encounter:
+
+ ```
+{
+  "resourceType": "Encounter",
+  "id": "id-for-encounter",
+  "status": "in-progress",
+  "class": {
+    "system": "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+    "code": "IMP",
+    "display": "inpatient encounter"
+  },
+  "subject": {
+    "reference": "Patient/id-for-patient"
+  },
+  "period": {
+    "start": "2022-02-27T01:03:00+02:00"
+  },
+  "serviceProvider": {
+    "reference": "Organization/id-for-ward"
+  },
+  "location": [
+    {
+      "status": "active",
+      "period": {
+        "start": "2022-02-27T01:03:00+02:00"
+      },
+      "location": {
+        "reference": "Location/id-for-bed-3"
+      }
+    }
+  ]
+}
+ ```
+
 There are key points to consider when forming the search criteria:
 * We are most likely interested only in `IMP` (inpatient encounter) encounters, so we should filter by `class`.
 * We are interested only in `in-progress` encounters, so we need to filter by `status`.
