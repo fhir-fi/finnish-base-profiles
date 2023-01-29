@@ -1,0 +1,77 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "medication-administration-insulin-dose-temporary-basal-rate-kanta-en",
+  "meta": {
+    "profile": [
+      "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4"
+    ]
+  },
+  "language": "en",
+  "text": {
+    "status": "generated",
+    "div": "<div lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">Type of insulin: Fast-acting insulin<br />Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br />Time: 9/4/2021 17:23:17 - 17:28:16<br />Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:b03ebc59-36fa-5ad8-ab77-abea501a1fbe",
+      "use": "official"
+    },
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:d8c858f6-6c4d-4282-92a6-6a1878b269e8",
+      "use": "secondary"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "411531001",
+        "display": "Short-acting insulin (substance)"
+      },
+      {
+        "system": "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode",
+        "code": "ins-short-fast",
+        "display": "Fast-acting insulin"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "67866001",
+        "display": "Insulin (substance)"
+      }
+    ],
+    "text": "Fast-acting insulin"
+  },
+  "subject": {
+    "reference": "Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a"
+  },
+  "effectivePeriod": {
+    "start": "2021-09-04T17:23:17.000+03:00",
+    "end": "2021-09-04T17:28:16.000+03:00"
+  },
+  "dosage": {
+    "dose": {
+      "unit": "IU",
+      "system": "http://unitsofmeasure.org",
+      "code": "[iU]",
+      "value": 0.06544777777777777
+    },
+    "rateRatio": {
+      "numerator": {
+        "value": 0.788,
+        "unit": "IU",
+        "system": "http://unitsofmeasure.org",
+        "code": "[iU]"
+      },
+      "denominator": {
+        "value": 0.8883248730964466,
+        "unit": "h",
+        "system": "http://unitsofmeasure.org",
+        "code": "h"
+      }
+    },
+    "text": "Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)"
+  }
+}

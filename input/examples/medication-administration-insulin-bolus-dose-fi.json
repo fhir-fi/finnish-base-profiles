@@ -1,0 +1,72 @@
+{
+    "resourceType": "MedicationAdministration",
+    "id": "medication-administration-insulin-bolus-dose-fi",
+    "meta": {
+      "profile": [
+        "http://roche.com/fhir/rdc/StructureDefinition/medication-administration"
+      ]
+    },
+    "language": "fi",
+    "text": {
+      "status": "generated",
+      "div": "<div lang=\"fi\" xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>"
+    },
+    "identifier": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:a41e3987-cb6f-5224-8ea2-2a5a35125a22",
+        "use": "official",
+        "assigner": {
+          "type": "Organization",
+          "reference": "https://www.sensotrend.com/"
+        }
+      },
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:c9494ac9-9303-4650-ae95-2b1cf95e32c0",
+        "assigner": {
+          "type": "Organization",
+          "reference": "https://www.tidepool.org/"
+        }
+      }
+    ],
+    "status": "completed",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "411531001",
+          "display": "Short-acting insulin (substance)"
+        },
+        {
+          "system": "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode",
+          "code": "ins-short-fast",
+          "display": "Lyhytvaikutteinen insuliini"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "67866001",
+          "display": "Insulin (substance)"
+        }
+      ],
+      "text": "Lyhytvaikutteinen insuliini"
+    },
+    "subject": {
+      "reference": "Patient/7257379"
+    },
+    "effectiveDateTime": "2021-09-04T19:13:48.000+03:00",
+    "device": [
+      {
+        "display": "tandemCIQ1002717799999"
+      }
+    ],
+    "dosage": {
+      "dose": {
+        "unit": "IU",
+        "system": "http://unitsofmeasure.org",
+        "code": "[iU]",
+        "value": 1.06542
+      },
+      "text": "Lyhytvaikutteinen insuliini 1.07 ky"
+    }
+  }

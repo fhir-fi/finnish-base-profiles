@@ -43,6 +43,18 @@ resources:
     name: Kanta PHR - Insulin dosage mandatory
     description: An example insulin dosage with mandatory elements.
     exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv:
+    name: MedicationAdministration example of insulin basal dose
+    description: A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-dose-temporary-basal-rate-kanta-en:
+    name: MedicationAdministration example of temporary basal rate
+    description: A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-bolus-dose-fi:
+    name: MedicationAdministration example of insulin dose
+    description: A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
   Observation/bloodglucose-as-text:
     name: Kanta PHR - blood glucose result as text
     description: This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code.
