@@ -67,10 +67,69 @@ resources:
     name: Kanta PHR - blood pressure mandatory
     description: An example blood pressure measurement with mandatory elements.
     exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
-  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Observation/bodyweight-max:
+    name: Kanta PHR - body weight optional
+    description: An example body weight measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bodyweight-min:
+    name: Kanta PHR - body weight mandatory
+    description: An example body weight measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8:
+    name: Kanta PHR - calorie intake optional
+    description: An example calorie intake measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7:
+    name: Kanta PHR - calorie intake mandatory
+    description: An example calorie intake measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/2894b2e6-7ebf-4c33-93e4-31935effff22:
+    name: Kanta PHR - carbohydrate intake optional
+    description: An example estimated carbohydrate intake measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/2894b2e6-7ebf-4c33-93e4-31935effff21:
+    name: Kanta PHR - carbohydrate intake mandatory
+    description: An example estimated carbohydrate intake measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/71831b54-1a80-47c5-ba84-0180a5eb784b:
+    name: Kanta PHR - exercise tracking optional
+    description: An example exercise tracking measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/71831b54-1a80-47c5-ba84-0180a5eb784a:
+    name: Kanta PHR - exercise tracking mandatory
+    description: An example exercise tracking measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/48983b8b-ead3-4206-9583-fcdd40d762b7:
+    name: Kanta PHR - MET measurement optional
+    description: An example MET measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/48983b8b-ead3-4206-9583-fcdd40d762b6:
+    name: Kanta PHR - MET measurement mandatory
+    description: An example MET measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/mtvpa-max:
+    name: Kanta PHR - physical activity optional
+    description: An example physical activity measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/mtvpa-min:
+    name: Kanta PHR - physical activity mandatory
+    description: An example physical activity measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9:
+    name: Kanta PHR - step count optional
+    description: An example step count measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8:
+    name: Kanta PHR - step count mandatory
+    description: An example step count measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+
+
+#  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
+#    name: Kanta PHR - patient
+#    description: An example patient.
+#    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-patient
+  
 
 pages:
   index.md:
