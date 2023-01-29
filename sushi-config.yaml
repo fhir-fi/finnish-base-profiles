@@ -47,7 +47,7 @@ resources:
     name: MedicationAdministration example of insulin basal dose
     description: A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish.
     exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
-  MedicationAdministration/medication-administration-insulin-dose-temporary-basal-rate-kanta-en:
+  MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en:
     name: MedicationAdministration example of temporary basal rate
     description: A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English.
     exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration

@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationAdministration",
-  "id": "medication-administration-insulin-dose-temporary-basal-rate-kanta-en",
+  "id": "medication-administration-insulin-dose-temp-basal-rate-kanta-en",
   "meta": {
     "profile": [
       "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4"
