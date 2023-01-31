@@ -22,6 +22,127 @@ publisher:
 dependencies:
   hl7.fhir.uv.ipa: 0.1.0
 
+resources:
+  Bundle/diabetes-data-bundle:
+    name: Patient generated glucose observations and insulin administrations as a bundle, in Finnish
+    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Bundle/diabetes-data-bundle-kantaphr-r4-en:
+    name: Patient generated glucose observations and insulin administrations as a bundle, in English
+    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Bundle/diabetes-data-bundle-kantaphr-sv:
+    name: Patient generated glucose observations and insulin administrations as a bundle, in Swedish
+    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3:
+    name: Kanta PHR - Insulin dosage optional
+    description: An example insulin dosage with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2:
+    name: Kanta PHR - Insulin dosage mandatory
+    description: An example insulin dosage with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv:
+    name: MedicationAdministration example of insulin basal dose
+    description: A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en:
+    name: MedicationAdministration example of temporary basal rate
+    description: A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationAdministration/medication-administration-insulin-bolus-dose-fi:
+    name: MedicationAdministration example of insulin dose
+    description: A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  Observation/bloodglucose-as-text:
+    name: Kanta PHR - blood glucose result as text
+    description: This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bloodglucose-data-absent:
+    name: Kanta PHR - blood glucose with data absent
+    description: This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bloodglucose-max:
+    name: Kanta PHR - blood glucose optional
+    description: An example blood glucose measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bloodglucose-min:
+    name: Kanta PHR - blood glucose mandatory
+    description: An example blood glucose measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bloodpressure-max:
+    name: Kanta PHR - blood pressure optional
+    description: An example blood pressure measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bloodpressure-min:
+    name: Kanta PHR - blood pressure mandatory
+    description: An example blood pressure measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bodyweight-max:
+    name: Kanta PHR - body weight optional
+    description: An example body weight measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/bodyweight-min:
+    name: Kanta PHR - body weight mandatory
+    description: An example body weight measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8:
+    name: Kanta PHR - calorie intake optional
+    description: An example calorie intake measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7:
+    name: Kanta PHR - calorie intake mandatory
+    description: An example calorie intake measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/2894b2e6-7ebf-4c33-93e4-31935effff22:
+    name: Kanta PHR - carbohydrate intake optional
+    description: An example estimated carbohydrate intake measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/2894b2e6-7ebf-4c33-93e4-31935effff21:
+    name: Kanta PHR - carbohydrate intake mandatory
+    description: An example estimated carbohydrate intake measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/71831b54-1a80-47c5-ba84-0180a5eb784b:
+    name: Kanta PHR - exercise tracking optional
+    description: An example exercise tracking measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/71831b54-1a80-47c5-ba84-0180a5eb784a:
+    name: Kanta PHR - exercise tracking mandatory
+    description: An example exercise tracking measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/48983b8b-ead3-4206-9583-fcdd40d762b7:
+    name: Kanta PHR - MET measurement optional
+    description: An example MET measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/48983b8b-ead3-4206-9583-fcdd40d762b6:
+    name: Kanta PHR - MET measurement mandatory
+    description: An example MET measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/mtvpa-max:
+    name: Kanta PHR - physical activity optional
+    description: An example physical activity measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/mtvpa-min:
+    name: Kanta PHR - physical activity mandatory
+    description: An example physical activity measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9:
+    name: Kanta PHR - step count optional
+    description: An example step count measurement with optional elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8:
+    name: Kanta PHR - step count mandatory
+    description: An example step count measurement with mandatory elements.
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+
+
+#  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
+#    name: Kanta PHR - patient
+#    description: An example patient.
+#    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-patient
+  
+
 pages:
   index.md:
     title: Home
