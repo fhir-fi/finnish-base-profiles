@@ -1,6 +1,7 @@
 Instance: AT-340
-InstanceOf: HealthcareService
+InstanceOf: FiBaseHealthcareService
 Usage: #example
+Description: "HealthcareService example which describes general practitioner services by using THL code systems."
 * id = "healthcareService-example"
 * active = true
 * appointmentRequired = true
