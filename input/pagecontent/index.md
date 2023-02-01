@@ -14,6 +14,15 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
   the community of users and implementers.
 </blockquote>
 
+<blockquote id="canonicals-note" class="stu-note">
+  <strong>This version of the implementation guide uses canonical URLs that differ from the ones
+  used published version.</strong> This CI version of the guide is published at
+  [https://fhir.fi/finnish-base-profiles](https://fhir.fi/finnish-base-profiles). However, the
+  official release will be published in
+  [https://hl7.fi/fhir/finnish-base-profiles](https://hl7.fi/fhir/finnish-base-profiles) and will
+  also use that address for the base of canonical URLs in the guide.
+</blockquote>
+
 #### Companion Specifications
 
 There is a separate [Finnish Implementation Guide for SMART App
