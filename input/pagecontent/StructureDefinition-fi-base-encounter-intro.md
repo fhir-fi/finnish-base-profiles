@@ -1,10 +1,50 @@
 ### Scope and Usage
 
-### Relation to Finnish Palvelutapahtuma
+The Finnish Core Encounter profile is intended to encapsulate the most common and basic data model
+of encounters in Finnish healthcare systems. The profile also defines how to communicate context
+to the Kanta registry. As such the profile should be usable in most Finnish contexts.
 
-TODO describe relation
+### Relation to Finnish *palvelutapahtuma*
 
-See the national spec https://www.kanta.fi/jarjestelmakehittajat/liite-2-palvelutapahtumien-esimerkkeja
+[Kanta](https://www.kanta.fi/) is the Finnish national central registry of health and social
+welfare information. It has a specification for Palvelutapahtuma, this is typically translated as
+service-event or encompassing encounter.
+
+The scope of *palvelutapahtuma* is [described](https://www.kanta.fi/jarjestelmakehittajat/liite-2-palvelutapahtumien-esimerkkeja)
+in Kanta-documentation (in finnish). It's scope is not always the same as encounter's. Encounter and
+*palvelutapahtuma* will overlap as concepts (depending on implementation). Some encounters clearly align
+with *palvelutapahtuma* while others don't. *Palvelutapahtuma* may contain multiple encounters. For example
+a series of treatments is considered to be a singular *palvelutapahtuma*, but systems most likely want
+to express each visit as a separate encounter (see kanta doc for the description of "hoitosarja",
+there are other examples too).
+
+For deeper techical details, se Kanta [HL7 V3 Medical Records specification](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-medical-records)
+(this again in finnish).
+
+#### Why does encounter need this information?
+
+Kanta HL7 V3 Medical Records specification requires that both queries and archivals transmit
+*palvelutapahtuma*'s OID identifier on each request. A client application that is integrated to a
+patient administration system (one that masters the data of encounters) often needs to create and
+query Kanta Medical records. Encounter is the best "vessel" we have to transmit this information.
+
+For example a laboratory information system may have it's own Kanta Medical Records capabilities
+and will archive lab results directly to Kanta. It receives encounter id in SMART App Launch
+context. Laboratory system can resolve Palvelutapahtuma`s OID identifier by fetching the encounter
+resource.
+
+#### How to communicate palvelutapahtuma via FHIR encounter?
+
+First thing is to identify the appropriate aggregation level of encounter. If encounter is not
+representing a *palvelutapahtuma*, but is a lower level encounter (some systems call these
+*prosessitapahtuma*), parentOf -should be used to point to upper level encounter (up until
+*palvelutapahtuma* -level is reached).
+
+*Palvelutapahtuma* -encounter is identified by identifier. When encounter has identifier with
+`use=official` it SHOULD be considered as palvelutapahtuma and that identifier should be the
+OID of *palvelutapahtuma*.
+
+Other levels of encounter that are not *palvelutapahtuma*, MUST not contain `use=official` identifier.
 
 ### Organizational responsibility
 
