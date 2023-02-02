@@ -156,8 +156,6 @@ pages:
     title: Examples
   downloads.md:
     title: Downloads
-  history.md:
-    title: Version History
 
 parameters: 
   ipa-comparison: "{last}" # "{current}" | "{last}"
