@@ -30,12 +30,12 @@ the first quarter of 2023 and published on the second quarter of 2023.
         <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v0.4.0" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
       <tr>
-        <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/">2023-02-02</a></td>
+        <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/">2023-02-01</a></td>
         <td>0.3.0</td><td>CI Snapshot, use the color theme from the main FHIR specification</td>
         <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v0.3.0" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.3/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
       <tr>
-        <td><a href="https://hl7.fi/fhir/finnish-base-profiles/0.2/">2023-01-24</a></td>
+        <td><a href="https://hl7.fi/fhir/finnish-base-profiles/0.2/">2023-01-09</a></td>
         <td>0.2.0</td><td>CI Snapshot, first version available on the HL7 Finland site.</td>
         <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.2/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.2/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.2/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v0.2.0" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.2/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
