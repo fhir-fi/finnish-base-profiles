@@ -7,7 +7,7 @@ Usage: #example
 * identifier.use = #official
 * identifier.system = #urn:oid:1.2.246.537.6.202.2008
 * identifier.value = "1.2.246.10.2085212.10.1314"
-* name = "Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema,SoTe kuntayhtymä Saarikka"
+* name = "Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka"
 * partOf.reference = "Organization/1.2.246.10.2085212.10.1306"
 * address[0].type = #postal
 * address[0].line[0] = "Honkalehdontie 9"
