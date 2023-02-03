@@ -9,67 +9,79 @@ the [running
 memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#), and
 [some more details](https://fhir.fi).
 
-The profiles will be based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
+The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
-## Published Snapshot
+Read more about the profiling work in the [index page](input/pagecontent/index.md).
 
-The working version of the IG is published at https://fhir.fi/finnish-base-profiles/.
+## Published Snapshots
+
+### On build.fhir.org
+The results of each commit to this repository are published automatically at the build.fhir.org
+infrastructure. You can locate the built snapshot with the branch name. For instance, the latest
+commit to the `master` branch is published at
+[https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master).
+
+You can also browse the [list of all IG builds](https://fhir.github.io/auto-ig-builder/builds.html).
+
+Similarly the debug info related to the build can be found with the branch name. The build log of
+the latest commit to the `master` branch is at
+[https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master/build.log](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master/build.log).
+
+You can also track the build info at the
+[committers/notification](https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build/)
+channel on the [chat.fhir.org](https://chat.fhir.org) Zulip forum.
+
+### On fhir.fi
+
+The results of the latest commit to the `master` branch are also published in
+(fhir.fi/finnish-base-profiles/)[https://fhir.fi/finnish-base-profiles/].
+
+### On hl7.fi
+
+The official publishing location of the implementation guide is at
+[hl7.fi/fhir/finnish-base-profiles/](https://hl7.fi/fhir/finnish-base-profiles/).
+
+Occasionally snapshots are also published there. The published versions are listed on the
+[Version History](https://hl7.fi/fhir/finnish-base-profiles/history.html) page.
 
 ## Companion Specifications
 
-See also the repo for [Finnish Implementation Guide for SMART App
-Launch](https://github.com/fhir-fi/finnish-smart).
+See also the repo for
+[Finnish Implementation Guide for SMART App Launch](https://github.com/fhir-fi/finnish-smart).
 
-## Resources to be Profiled 
+## Development
 
-* Appointment
-* Condition
-* Device (?)
-* DiagnosticReport
-* Encounter
-* EpisodeOfCare
-* HealthcareService
-* Location
-* Medication (?)
-* MedicationRequest (?)
-* MedicationStatement (?)
-* MedicationAdministration (?)
-* Observation
-* Organization (*)
-* Patient (*)
-* Practitioner (*)
-* PractitionerRole
-* Schedule
-* Slot
-
-(*) The work has started with Patient, Practitioner, and Organization. These should support the implementation guide for SMART App Launch.
-
-(?) Profiling device and medication related resources will be started if we identify implementers who have used these resources and feel there is a need for profiling. Sensotrend uses MedicationAdministration, in Finland with the Kanta PHR, but sees no need for a Finnish profile.
-
-
-## Required Tools
+### Required Tools
 * NodeJS 18 
 * Java 17
 * Jekyll (ruby)
 
 Or you can use docker, see [Dockerfile](Dockerfile). 
 
-## Quick Start
+### Quick Start
 
-With requirements installed locally: 
+With the above requirements installed locally, run
+
+#### On OSX, Linux, or Unix
 
 ``` bash
 ./_updatePublisher.sh --yes
 ./_genonce.sh
 ```
 
-Or use the `.bat` versions of the scripts on a Windows machine.
+#### On Windows
+```
+./_updatePublisher.bat --yes
+./_genonce.bat
+```
 
-With docker: 
+### Using Docker
+
+Run
 
 ``` bash
 docker-compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
 docker-compose run runner bash -c "cd /workdir && ./_genonce.sh"
 ```
 
-Html output will be generated to `output/StructureDefinition-FiBasePatient.html`.
+The implementation guide will be generated to the `output/` directory.
