@@ -4,18 +4,23 @@ Many of these terminologies are not maintained by HL7 Finland, rather they are p
 maintained elsewhere and included into this implementation guide to raise awareness of their
 existence.
 
-When terminologies are readily available in FHIR format, they are imported into this implementation
-guide. However, this is currently a manual process and there is no guarantee that the terminologies
-are kept up to date with official versions. Readers are encouraged to check the original source of
-the terminologies for up-to-date information.
+This version of this implementation guide does not define any terminologies. There are other, more
+use case specific implementation guides that may define terminologies for their use cases. See for
+instance:
+* [Finnish Appointment IG](https://simplifier.net/finnishappointment) for scheduling
+* [Finnish PHR STU3](https://simplifier.net/FinnishPHR) and
+  [Finnish PHR R4](https://simplifier.net/FinnishPHRR4) for health and wellbeing data in the
+  national Personal Health Record platform Kanta PHR
+* [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) for prescriptions
+* [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) for welfare and social
+  affairs
 
-When terminologies are not available in FHIR format, this implementation guide links to the
-definitions published elsewhere.
+Most code systems used in this guide are defined in the base FHIR specification. They are not
+replicated here, but some essential concepts are presented below.
 
-Also please note that most code systems used in this guide are defined in the base FHIR
-specification. They are not replicated here.
+### FHIR Terminologies
 
-### CodeSystems
+#### CodeSystems
   
 <ul>
 {% include list-simple-codesystems.xhtml %}
@@ -24,34 +29,37 @@ specification. They are not replicated here.
 See the [FHIR terminology section](https://hl7.org/fhir/terminologies-systems.html) for a complete
 discussion on code systems and a list of codes system names used in FHIR.
 
-### ValueSets
+#### ValueSets
 
 <ul>
 {% include list-simple-valuesets.xhtml %}
 </ul>
 
-See also the
+See the
 [value sets defined in the FHIR specification](https://hl7.org/fhir/terminologies-valuesets.html).
 
-### ConceptMaps
+#### ConceptMaps
 
 <ul>
 {% include list-simple-conceptmaps.xhtml %}
 </ul>
 
-See also the [mappings between value sets](https://hl7.org/fhir/terminologies-conceptmaps.html)
-defined in the main FHIR specification. 
+See the [mappings between value sets](https://hl7.org/fhir/terminologies-conceptmaps.html) defined
+in the main FHIR specification. 
 
-### NamingSystems
+#### NamingSystems
 
 <ul>
 {% include list-simple-namingsystems.xhtml %}
 </ul>
 
-See also the [known identifier systems](https://hl7.org/fhir/identifier-registry.html) of the main
-FHIR specification.
+See the [known identifier systems](https://hl7.org/fhir/identifier-registry.html) of the main FHIR
+specification.
 
 ### Terminologies not available in FHIR format
+
+There are several terminologies and terminology servers that don't yet offer their contents in FHIR
+format. However, many of these terminologies are essential in Finnish healthcare and social care.
 
 #### National Code Server
 
@@ -76,7 +84,9 @@ welfare.
 
 #### Snomed CT
 
-Finland became a member of SNOMED International in November 2019. 
+Finland
+[became a member of SNOMED International](https://www.snomed.org/our-stakeholders/member/finland)
+in November 2019. 
 
 To make best use of SNOMED CT with available resources, Finland has chosen not to translate the
 whole terminology. Instead, the aim is to focus on two national reference sets that meet local
@@ -95,15 +105,18 @@ making the acceptance of the reference set by clinicians so much easier. The ong
 translates terminology into Finnish and when finished will cover terms for both professionals and
 patients.
 
+[Read more](https://thl.fi/fi/web/tiedonhallinta-sosiaali-ja-terveysalalla/koodistopalvelu/snomed-ct)
+(in Finnish).
+
 For international interoperability, FHIR implementations SHOULD use SNOMED CT codes when they are
 available, even if a translation is not available in Finnish or Swedish.
 
 #### FinLOINC
 
-FinLOINC - The Physiological Measurements classification contains results and findings of clinical
-measurements that describe the patient's condition. FinLOINC is based on the Logical Observation
-Identifiers Names and Codes (LOINC®) nomenclature maintained by Regenstrief Institute, covering
-only a small part of it.
+[FinLOINC - The Physiological Measurements classification](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=273&versionKey=350)
+contains results and findings of clinical measurements that describe the patient's condition.
+FinLOINC is based on the Logical Observation Identifiers Names and Codes (LOINC®) nomenclature
+maintained by Regenstrief Institute, covering only a small part of it.
 
 The classification is used to describe the physiological measurements in the core information of
 medical records.

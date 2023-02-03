@@ -1,20 +1,21 @@
-Below are two lists of Finnish FHIR profiles.
+Profiles set additional constraints for the FHIR base resources and help tighter interoperability
+between systems.
 
-### FI Base Profiles
+### Finnish Base Profiles
 
-This is the list of FHIR resources profiled for use in Finland, published and maintained by HL7
-Finland.
+This is the list of base profiles for FHIR resources for use in Finland, published and maintained
+by HL7 Finland.
 
 {% include fragment-fi-base-profiles.html %}
 
-### Kanta PHR Profiles
+### Other Finnish Profiles
 
-This is the list of profiles from the Kanta PHR, where a lot of early profiling has been done.
-It is worth noting that these profiles are more restrictive than the national base profiles. They
-are still listed here, to increase awareness of work already done and to act as inspiration.
-
-Note that there is no guarantee that these profiles are kept in sync with the Kanta profiles. For
-up-to-date information, please refer to the
-[Finnish PHR implementation guide](https://simplifier.net/FinnishPHRR4).
-
-{% include fragment-other-profiles.html %}
+There are other, more use case specific profiles defined in other implementation guides. For
+instance:
+* [Finnish Appointment IG](https://simplifier.net/finnishappointment) for scheduling
+* [Finnish PHR STU3](https://simplifier.net/FinnishPHR) and
+  [Finnish PHR R4](https://simplifier.net/FinnishPHRR4) for health and wellbeing data in the
+  national Personal Health Record platform Kanta PHR
+* [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) for prescriptions
+* [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) for welfare and social
+  affairs
