@@ -4,7 +4,7 @@ This profile sets minimum expectations for the Procedure resource to search and 
 
 ### Main procedure and sub-procedures
 
-In many cases more than one procedure are being performed during one encounter. Usually this means that one of the procedures is the main procedure and others are sub-procedures. Latter ones could be performed in supporting or assisting means (e.g. Anaesthesia) or their task is to describe how the main procedure was performed (e.g. using robot for performing the procedure). This conjunction between different procedures is done by using `partOf` reference. Examples of this can be found from [Examples](./examples.html#Procedure) page.
+In many cases more than one procedure are being performed during one encounter. Usually this means that one of the procedures is the main procedure and others are sub-procedures. Latter ones could be performed in supporting or assisting purpose (e.g. Anaesthesia) or their task is to describe how the main procedure was performed (e.g. using robot for performing the procedure). This conjunction between different procedures is done by using `partOf` reference. Examples of this can be found from [Examples](./examples.html#Procedure) page.
 
 ### Code systems
 
