@@ -25,6 +25,11 @@ the first quarter of 2023 and published on the second quarter of 2023.
         <td>(last commit)</td><td>Current Development build (about 15min behind version control, may be incoherent and change rapidly)</td><td><a title="Home Page" href="https://fhir.fi/finnish-base-profiles/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://fhir.fi/finnish-base-profiles/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://fhir.fi/finnish-base-profiles/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package" href="https://fhir.fi/finnish-base-profiles/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
       <tr>
+        <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/0.5/">2023-02-07</a></td>
+        <td>0.5.0</td><td>CI Snapshot, remove Kanta PHR content</td>
+        <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.5/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.5/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.5/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v0.5.0" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.5/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
+      </tr>
+      <tr>
         <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/">2023-02-02</a></td>
         <td>0.4.0</td><td>CI Snapshot, use the blue & white theme</td>
         <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v0.4.0" href="https://www.hl7.fi/fhir/finnish-base-profiles/0.4/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
@@ -42,3 +47,20 @@ the first quarter of 2023 and published on the second quarter of 2023.
     </tbody>
   </table>
 </div>
+
+### Build Snapshots on build.fhir.org
+In addition to versions published here, each change to the implementation guide is automatically
+built and published in the build.fhir.org infrastructure. You can locate the built snapshot with
+the branch name. For instance, the latest commit to the `master` branch is published at
+[https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master).
+
+You can also browse the [list of all IG builds](https://fhir.github.io/auto-ig-builder/builds.html).
+
+Similarly the debug info related to the build can be found with the branch name. The build log of
+the latest commit to the `master` branch is at
+[https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master/build.log](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master/build.log).
+
+You can also track the build info at the
+[committers/notification](https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build/)
+channel on the [chat.fhir.org](https://chat.fhir.org) Zulip forum.
+
