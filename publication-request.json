@@ -1,0 +1,15 @@
+{
+  "package-id" : "hl7.fhir.fi.base",
+  "version" : "0.5.0",
+  "path" : "https://hl7.fi/fhir/finnish-base-profiles/0.5/",
+  "mode" : "working",
+  "status" : "draft",
+  "sequence" : "Releases",
+  "desc" : "CI snapshot",
+  "descmd" : "Snapshot from CI to test publishing pipeline",
+  "changes" : "First test of publish pipeline",
+  "title" : "Finnish base Profiles",
+  "ci-build" : "https://fhir.fi/finnish-base-profiles/",
+  "category" : "National Base",
+  "introduction" : "A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland"
+}
