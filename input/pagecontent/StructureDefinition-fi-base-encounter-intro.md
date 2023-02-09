@@ -30,7 +30,7 @@ query Kanta Medical records. Encounter is the best "vessel" we have to transmit 
 
 For example a laboratory information system may have it's own Kanta Medical Records capabilities
 and will archive lab results directly to Kanta. It receives encounter id in SMART App Launch
-context. Laboratory system can resolve Palvelutapahtuma`s OID identifier by fetching the encounter
+context. Laboratory system can resolve Palvelutapahtuma´s OID identifier by fetching the encounter
 resource.
 
 #### How to communicate palvelutapahtuma via FHIR encounter?
