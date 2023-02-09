@@ -1,0 +1,47 @@
+{
+    "resourceType": "Organization",
+    "id": "1.2.246.10.31045308.10002.0",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:oid:1.2.246.537.6.202.2008",
+            "value": "1.2.246.10.31045308.10002.0"
+        }
+    ],
+    "active": true,
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/3.1.0/CodeSystem-organization-type",
+                    "code": "govt"
+                }
+            ]
+        }
+    ],
+    "name": "Esko-Testi pp HVA",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "0404040404"
+        }
+    ],
+    "address": [
+        {
+            "type": "postal",
+            "line": [
+                "Sairaalarinne 1"
+            ],
+            "city": "Oulu",
+            "postalCode": "90100"
+        },
+        {
+            "type": "physical",
+            "line": [
+                "Sairaalarinne 1"
+            ],
+            "city": "Oulu",
+            "postalCode": "90100"
+        }
+    ]
+}

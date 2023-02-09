@@ -135,6 +135,10 @@ resources:
     name: Kanta PHR - step count mandatory
     description: An example step count measurement with mandatory elements.
     exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Organization/1.2.246.10.31045308.10002.0:
+    name: A high level organization
+    description: SOTE-toimintayksikko -level organization
+    exampleCanonical: http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-organization
 
 
 #  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
