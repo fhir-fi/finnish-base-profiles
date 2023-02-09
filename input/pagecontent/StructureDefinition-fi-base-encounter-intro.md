@@ -1,8 +1,8 @@
 ### Scope and Usage
 
 The Finnish Core Encounter profile is intended to encapsulate the most common and basic data model
-of encounters in Finnish healthcare systems. The profile also defines how to communicate context
-to the Kanta registry. As such the profile should be usable in most Finnish contexts.
+of encounters in Finnish healthcare systems. The profile also defines encounter's relation to the
+Kanta registry. As such the profile should be usable in most Finnish contexts.
 
 ### Relation to Finnish *palvelutapahtuma*
 
