@@ -30,7 +30,7 @@ query Kanta Medical records. Encounter is the best "vessel" we have to transmit 
 
 For example a laboratory information system may have it's own Kanta Medical Records capabilities
 and will archive lab results directly to Kanta. It receives encounter id in SMART App Launch
-context. Laboratory system can resolve Palvelutapahtuma´s OID identifier by fetching the encounter
+context. Laboratory system can resolve *palvelutapahtuma*'s OID identifier by fetching the encounter
 resource.
 
 #### How to communicate palvelutapahtuma via FHIR encounter?
@@ -44,7 +44,7 @@ representing a *palvelutapahtuma*, but is a lower level encounter (some systems 
 `use=official` it SHOULD be considered as palvelutapahtuma and that identifier should be the
 OID of *palvelutapahtuma*.
 
-Other levels of encounter that are not *palvelutapahtuma*, MUST not contain `use=official` identifier.
+Other levels of encounter that are not *palvelutapahtuma*, MUST NOT contain `use=official` identifier.
 
 ### Organizational responsibility
 
