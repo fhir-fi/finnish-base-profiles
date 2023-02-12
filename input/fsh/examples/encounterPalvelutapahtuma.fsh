@@ -27,7 +27,7 @@ Usage: #example
 * partOf = Reference(EncounterPalvelutapahtuma) 
 * subject.reference = "Patient/id-for-patient"
 * period.start = "2022-02-27T01:03:00+02:00"
-* serviceProvider.type = #serviceProvider
+* serviceProvider.type = #ServiceProvider
 * serviceProvider.identifier.value = "1.2.246.10.8286189.10.100013"
 * location[0].status = #active
 * location[0].period.start = "2022-02-27T01:03:00+02:00"
@@ -47,6 +47,6 @@ Usage: #example
 * subject.reference = "Patient/id-for-patient"
 * period.start = "2022-02-28T12:03:00+02:00"
 * period.end = "2022-02-28T12:18:00+02:00"
-* serviceProvider.type = #serviceProvider
+* serviceProvider.type = #ServiceProvider
 * serviceProvider.identifier.value = "1.2.246.10.8286189.10.100014"
 
