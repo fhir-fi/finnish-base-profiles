@@ -19,7 +19,7 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 #### Companion Specifications
 
 There is a separate [Finnish Implementation Guide for SMART App
-Launch](https://fhir.fi/finnish-smart/) that describes how the
+Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
 ### Why Do We Need Finnish FHIR Base Profiles?
