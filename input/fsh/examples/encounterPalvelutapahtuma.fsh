@@ -12,8 +12,7 @@ Usage: #example
 * class.display = "inpatient encounter"
 * subject.reference = "Patient/id-for-patient"
 * period.start = "2022-02-27T01:03:00+02:00"
-* serviceProvider.type = #ServiceProvider
-* serviceProvider.identifier.value = "1.2.246.10.8286189.10.100012"
+* serviceProvider.reference = "Organization/1.2.246.10.8286189.10.100012"
 
 Instance: EncounterPartOfPalvelutapahtuma
 InstanceOf: FiBaseEncounter
