@@ -160,16 +160,16 @@ pages:
     title: Examples
   downloads.md:
     title: Downloads
+  history.md:
+    title: Version History
 
 parameters: 
   ipa-comparison: "{last}" # "{current}" | "{last}"
 
 menu:
   Home: index.html
-#  Table of Contents: toc.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
   Examples: examples.html
-#  Artifacts: artifacts.html
   Downloads: downloads.html
