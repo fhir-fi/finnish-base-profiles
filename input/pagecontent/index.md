@@ -12,7 +12,7 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
   DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
   working on this specification. This is a DRAFT specification that is currently under review by
   the members of HL7 Finland. If you are interested in participating the formal review process,
-  please contact Timo Kaskinen, the chair of the FL7 Finlnad Technical Committee, or Mikael
+  please contact Timo Kaskinen, the chair of the FL7 Finland Technical Committee, or Mikael
   Rinnetmäki, responsible for publication of this implementation guide.
 </blockquote>
 
