@@ -10,14 +10,16 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 <blockquote class="stu-note">
   <strong>This documentation and set of artifacts are still undergoing development, and they are in
   DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
-  working on this specification. This is a DRAFT specification that has not yet been validated by
-  the community of users and implementers.
+  working on this specification. This is a DRAFT specification that is currently under review by
+  the members of HL7 Finland. If you are interested in participating the formal review process,
+  please contact Timo Kaskinen, the chair of the FL7 Finlnad Technical Committee, or Mikael
+  Rinnetmäki, responsible for publication of this implementation guide.
 </blockquote>
 
 #### Companion Specifications
 
 There is a separate [Finnish Implementation Guide for SMART App
-Launch](https://fhir.fi/finnish-smart/) that describes how the
+Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
 ### Why Do We Need Finnish FHIR Base Profiles?
