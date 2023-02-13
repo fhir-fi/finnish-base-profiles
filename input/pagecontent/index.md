@@ -161,6 +161,22 @@ memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-
 [some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
 even be compensated for your efforts.
 
+The team involved in creating the first version of the specification includes
+* Arto Huusko, CGI Oyj
+* Janne Heikkinen, BCB Medical Oy
+* Jari Kariniemi, Kymenlaakson hyvinvointialue
+* Jari Vuonos, Apotti Oy
+* Joni Hirviniemi, Fujitsu
+* Jyrki Soikkeli, Apotti Oy
+* Marko Kaukonen, BCB Medical Oy
+* Markus Lind, Buddy Healthcare Oy
+* Markus Suonpää, CGI Finland Oyj
+* Mika Jylhä, Esko Systems Oy
+* Mika Lentovaara, HUS
+* Mika Tuomainen, Kela
+* Mikael Rinnetmäki, Sensotrend Oy
+* Tero Pekkola, Esko Systems Oy
+
 ### Collaboration
 
 We want this implementation guide to be useful for you.
