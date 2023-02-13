@@ -7,7 +7,7 @@ Description: "This is the Finnish base profile for the Practitioner resource."
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
 * identifier ^slicing.description = "In Finland there are at least four diffent kinds of indentifiers: SSO, Terhikki-number, doctor identification number (SV, yksilöintitunnus) and -	organisation specific personnel mnemonic."
  
 * identifier contains SSN 0..1
