@@ -3,11 +3,12 @@ Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
 Id: fi-base-patient
 Title: "FI Base Patient"
 Description: "This is the Finnish base profile for the Patient resource."
+* ^status = #draft
 * id 1..1
 
 * meta.security ^slicing.discriminator.type = #value
 * meta.security ^slicing.discriminator.path = "system"
-* meta.security ^slicing.rules = #openAtEnd
+* meta.security ^slicing.rules = #open
 * meta.security ^slicing.description = ""
 * meta.security ^slicing.ordered = false
   * ^short = "Information about non-disclosure (turvakielto) SHALL be handled in meta.security."
@@ -16,14 +17,15 @@ Description: "This is the Finnish base profile for the Patient resource."
 * meta.security[non-disclosure].system = "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
 
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.discriminator.path = "use"
+* identifier ^slicing.rules = #open
 * identifier ^slicing.description = "When using the official Finnish personal identifier code, identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
   * ^short = "Identifier contains Finnish personal identity code which can be official or temporary. Other identifier may also be included."
 
-* identifier contains SSN 0..1
-* identifier[SSN].system = #urn:oid:1.2.246.21
+* identifier contains PIC 0..1
+* identifier[PIC].use = #official
+* identifier[PIC].system = #urn:oid:1.2.246.21
 
 * extension contains MunicipalityCode named municipality 0..1
 * extension contains interpreterRequired named interpreterRequired 0..1
