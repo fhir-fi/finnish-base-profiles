@@ -13,7 +13,7 @@
         {
             "coding": [
                 {
-                    "system": "http://terminology.hl7.org/3.1.0/CodeSystem-organization-type",
+                    "system": "http://hl7.org/fhir/ValueSet/organization-type",
                     "code": "govt"
                 }
             ]
@@ -22,7 +22,8 @@
     "name": "Esko-Testi pp HVA",
     "telecom": [
         {
-            "system": "phone",
+            "system": "http://hl7.org/fhir/contact-point-system",
+            "code": "phone",
             "value": "0404040404"
         }
     ],
