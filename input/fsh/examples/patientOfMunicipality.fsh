@@ -12,8 +12,10 @@ Usage: #example
 * name
   * given = "Testi"
   * family = "Henkilö"
-* telecom.system = #phone
-* telecom.value = "+358401234657"
+* telecom
+  * system = "http://hl7.org/fhir/contact-point-system"
+  * code = #phone
+  * value = "+358401234657"
 * address.use = #home
 * address.line[0] = "Testikatu 1"
 * address.line[+] = "37910 Akaa"
