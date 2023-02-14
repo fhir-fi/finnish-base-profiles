@@ -17,7 +17,7 @@ jurisdiction: urn:iso:std:iso:3166#FI "Finland" # https://www.hl7.org/fhir/value
 publisher:
   name: HL7 Finland
   url: https://www.hl7.fi/
-  # email: mikael@sensotrend.com
+  email: mikael@sensotrend.com
 
 dependencies:
   hl7.fhir.uv.ipa: 0.1.0
