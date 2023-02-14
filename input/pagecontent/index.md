@@ -12,7 +12,7 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
   DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
   working on this specification. This is a DRAFT specification that is currently under review by
   the members of HL7 Finland. If you are interested in participating the formal review process,
-  please contact Timo Kaskinen, the chair of the FL7 Finlnad Technical Committee, or Mikael
+  please contact Timo Kaskinen, the chair of the FL7 Finland Technical Committee, or Mikael
   Rinnetmäki, responsible for publication of this implementation guide.
 </blockquote>
 
@@ -160,6 +160,22 @@ See the
 memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#), and
 [some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
 even be compensated for your efforts.
+
+The team involved in creating the first version of the specification includes
+* Arto Huusko, CGI Oyj
+* Janne Heikkinen, BCB Medical Oy
+* Jari Kariniemi, Kymenlaakson hyvinvointialue
+* Jari Vuonos, Apotti Oy
+* Joni Hirviniemi, Fujitsu
+* Jyrki Soikkeli, Apotti Oy
+* Marko Kaukonen, BCB Medical Oy
+* Markus Lind, Buddy Healthcare Oy
+* Markus Suonpää, CGI Finland Oyj
+* Mika Jylhä, Esko Systems Oy
+* Mika Lentovaara, HUS
+* Mika Tuomainen, Kela
+* Mikael Rinnetmäki, Sensotrend Oy
+* Tero Pekkola, Esko Systems Oy
 
 ### Collaboration
 
