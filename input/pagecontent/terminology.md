@@ -131,3 +131,9 @@ Upcoming European legislation, like that for the European Health Data Space intr
 pressure to adopt LOINC codes too. Therefore, and for international interoperability in general,
 systems SHOULD include LOINC codes in adddition to the national Kuntaliitto codes, where a LOINC
 code is known.
+
+#### Medication Codes
+
+Finland uses the [ATC code system](https://www.whocc.no/) for codifying medicines.
+
+
