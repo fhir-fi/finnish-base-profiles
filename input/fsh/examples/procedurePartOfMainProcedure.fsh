@@ -1,5 +1,5 @@
 Instance: ColonBiopsy
-InstanceOf: Procedure
+InstanceOf: FiBaseProcedure
 Usage: #example
 Title: "Biopsy of Colon procedure example"
 Description: "Sub-procedure for Colotomy procedure."
