@@ -34,7 +34,7 @@ channel on the [chat.fhir.org](https://chat.fhir.org) Zulip forum.
 ### On fhir.fi
 
 The results of the latest commit to the `master` branch are also published in
-(fhir.fi/finnish-base-profiles/)[https://fhir.fi/finnish-base-profiles/].
+[fhir.fi/finnish-base-profiles/](https://fhir.fi/finnish-base-profiles/).
 
 ### On hl7.fi
 
