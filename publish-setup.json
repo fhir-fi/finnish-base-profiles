@@ -1,0 +1,14 @@
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "https://hl7.fi/fhir",
+    "server" : "apache",
+    "org" : "HL7 Finland",
+    "search-template" : "searchform.template.html",
+    "index-template" : "index.template"
+  },
+  "feeds" : {
+    "package" : "package-feed.xml",
+    "publication" : "publication-feed.xml"
+  }
+}
