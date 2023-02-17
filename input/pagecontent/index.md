@@ -24,7 +24,7 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
   <p>This ballot cycle is considered a <strong>Standard for Trial Use</strong> ballot in the <a
   href="https://confluence.hl7.org/display/HL7/HL7+Balloting">HL7 Balloting process</a>.</p>
   <p>HL7 Finland does not use the HL7 Ballot Desktop or the Jira Ballot Process, rather feedback is
-  gathered through email to <a href="mailto:mikael@sensotrend.com">mikael@sensotrend.com</a> and <a
+  gathered through email to <a href="mailto:timo.kaskinen@nhg.fi">timo.kaskinen@nhg.fi</a> and <a
   href="https://github.com/fhir-fi/finnish-base-profiles/issues">issues in the GitHub
   repository</a> of the implementation guide.</p>
   <p>The main purpose of the ballot cycle is to solicit feedback from the wider FHIR community. The
