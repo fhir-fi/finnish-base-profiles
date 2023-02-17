@@ -22,8 +22,7 @@
     "name": "Esko-Testi pp HVA",
     "telecom": [
         {
-            "system": "http://hl7.org/fhir/contact-point-system",
-            "code": "phone",
+            "system": "phone",
             "value": "0404040404"
         }
     ],
