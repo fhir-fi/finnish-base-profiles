@@ -1,5 +1,5 @@
 Profile: FiBasePatient
-Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient
+Parent: Patient
 Id: fi-base-patient
 Title: "FI Base Patient"
 Description: "This is the Finnish base profile for the Patient resource."
