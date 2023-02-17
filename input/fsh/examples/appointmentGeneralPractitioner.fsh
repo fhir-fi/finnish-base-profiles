@@ -30,3 +30,4 @@ Description: "Appointment example to general practitioner."
 * serviceType = urn:oid:1.2.246.537.6.49.201501#EEA
 * start = "2023-01-20T10:00:00+02:00"
 * status = #fulfilled
+* slot = Reference(FreeSlot)
