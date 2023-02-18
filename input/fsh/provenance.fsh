@@ -16,5 +16,5 @@ Description: "Extension RegisterTypeCode. (Required for Kanta Medical Records qu
 Extension: RegisterSpecifier
 Id: register-specifier
 Title: "RegisterSpecifier"
-Description: "Extension Rekisterin tarkenne (Required for Kanta Medical Records queries)."
+Description: "Extension Register Specifier (Rekisterin tarkenne in finnish) (Required for Kanta Medical Records queries)."
 * value[x] only string

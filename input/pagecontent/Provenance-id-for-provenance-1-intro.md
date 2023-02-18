@@ -1,6 +1,6 @@
 #### How to communicate Kanta custodian and register information
 
-In this example Kanta custodian information (finnish rekisterinpitäjä) is communicated in agent.
+In this example Kanta custodian information (Finnish rekisterinpitäjä) is communicated in agent.
 It refers to organization via identifier, custodian registry is not part of finnish
 SOTE-organization registry (it uses it's own registry 1.2.246.537.6.40174) so it might not exist as
 an organization resource.
