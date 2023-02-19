@@ -1,3 +1,8 @@
+<p class="stu-note">This Finnish base profile for the Condition resource is still very early in
+development, and implementer feedback is appreciated in many aspects. There are many TODO parts
+intentionally left in this draft version. See also the foreseen <a
+href="#further-development-needs">further development needs</a> below.</p>
+
 ### Scope and Usage
 
 Use cases:
