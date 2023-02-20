@@ -1,7 +1,7 @@
 Instance: DiagnosisSimple
 InstanceOf: FiBaseCondition
 Title: "Condition - an example diagnosis"
-Description: "An example of a FI Base diagnosis."
+Description: "An example of a diagnosis using the FiBaseCondition pofile."
 Usage: #example
 * id = "id-for-diagnosis-1"
 * category[0].coding.system = #urn:oid:1.2.246.537.6.12.2002

@@ -1,6 +1,6 @@
 #### Identifying that this is a diagnosis
 
-This is an example encounter diagnosis (in finnish called "käyntidiagnoosi", even for ward periods).
+This is an example encounter diagnosis (in Finnish called *käyntidiagnoosi*, even for ward periods).
 
 `category` code `166` tells that it is a diagnosis (using the Kanta code system).
 

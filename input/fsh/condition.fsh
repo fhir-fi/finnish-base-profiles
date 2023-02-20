@@ -45,7 +45,7 @@ Description: "Diagnoosin ulkoinen syy"
 
 Extension: TODO
 Id: condition-TODO
-Title: "	Diagnoosin tapaturmatyyppi"
+Title: "Diagnoosin tapaturmatyyppi"
 Description: "koodilla ilmaistu tieto vamman, sairauden tai kuoleman aiheuttaneen tapaturman tyypistä"
 * value[x] only Coding
 
