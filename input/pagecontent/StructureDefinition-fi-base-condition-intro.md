@@ -10,17 +10,19 @@ Use cases:
 * Diagnosis -based conditions and Finnish Kayntisyy
 * Other usages?
 
-### Diagnosis -based conditions and Finnish Kayntisyy
+### Diagnosis -based conditions and Finnish *käyntisyy*
 
-A condition isn't always a diagnosis. `category` is used to identify that a condition is a diagnosis
-or Finnish *käyntisyy*. To identify that a condition is a diagnosis or Finnish *käyntisyy*, the
-`category` -field MUST contain code `166` from Finnish [AR/YDIN - Näkymät](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=226&versionKey=301)
+A condition isn't always a diagnosis. `category` is used to identify that a condition is a diagnosis.
+To identify that a condition is a diagnosis or Finnish *käyntisyy*, the `category` -field MUST
+contain code `166` from Finnish [AR/YDIN - Näkymät](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=226&versionKey=301)
 -code system.
+
+TODO is ok to use `166`` for Finnish *käyntisyy* also? Having a category code would clean up this
+profile. We would not need an extension.
 
 THL has a data model for Finnish diagnosis in code server:
 [THL/Tietosisältö - Diagnoosit](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=543&versionKey=1543)
 ("THL specification").
-.
 
 #### Diagnosis Code Systems
 
@@ -92,14 +94,14 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-#### Käyntisyy
+#### Is not authored by a medical doctor (*Käyntisyy*)
 
 Some conditions are very much like diagnosis but the asserter is not a medical doctor. THL
 specification identifies these as *käyntisyy*.
 
-Extension `isKayntisyy` with value `true` MUST be used when condition is a *käyntisyy*. It MAY be
-used with value `false` on medical doctor asserted diagnosis, but absence of this extension SHALL
-be interpreted as not being a *käyntisyy*.
+Extension `isNotAuthoredByMedicalDoctor` with value `true` MUST be used when condition is a *käyntisyy*.
+It MAY be used with value `false` on medical doctor asserted diagnosis, but absence of this extension
+SHALL be interpreted as not being a *käyntisyy*.
 
 In THL specification, this data is codeId 23: Käyntisyy.
 

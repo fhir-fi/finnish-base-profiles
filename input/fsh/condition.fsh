@@ -5,14 +5,14 @@ Title: "FI Base Condition"
 Description: "This is the Finnish base profile for the Condition resource."
 * ^status = #draft
 
-* extension contains IsKayntisyy named isKayntisyy 0..1
+* extension contains IsNotAuthoredByMedicalDoctor named isNotAuthoredByMedicalDoctor 0..1
 * extension contains Sport named sport 0..1
 * extension contains EndocrinologicalDisorder named endocrinologicalDisorder 0..1
 
-Extension: IsKayntisyy
-Id: condition-is-kayntisyy
-Title: "Is a kayntisyy"
-Description: "tieto siitä, onko kyse muun terveydenhuollon ammattihenkilön kuin lääkärin kirjaamasta käynnin tai hoitojakson syystä"
+Extension: IsNotAuthoredByMedicalDoctor
+Id: condition-is-not-authored-by-medical-doctor
+Title: "Is not authored by medical doctor"
+Description: "Information on whether the reason for the visit or treatment period is recorded by a healthcare professional other than a doctor."
 * value[x] only boolean
 
 Extension: Sport
