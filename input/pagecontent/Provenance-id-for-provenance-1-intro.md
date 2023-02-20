@@ -7,8 +7,8 @@ an organization resource.
 
 RegisterTypeCode requires the registerTypeCode extension. It's a coded value from following code systems:
 
-* 1.2.246.537.5.40150.2009 for healthcare
-* 1.2.246.537.6.1264.201701 for social care
+* Code `1.2.246.537.5.40150.2009` for healthcare
+* Code `1.2.246.537.6.1264.201701` for social care
 
 RegisterSpecifier requires the registerSpecifier extension.
 
