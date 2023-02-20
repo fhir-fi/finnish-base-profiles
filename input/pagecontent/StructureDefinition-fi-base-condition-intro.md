@@ -17,7 +17,7 @@ To identify that a condition is a diagnosis or Finnish *käyntisyy*, the `catego
 contain code `166` from Finnish [AR/YDIN - Näkymät](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=226&versionKey=301)
 -code system.
 
-TODO is ok to use `166`` for Finnish *käyntisyy* also? Having a category code would clean up this
+TODO is ok to use `166` for Finnish *käyntisyy* also? Having a category code would clean up this
 profile. We would not need an extension.
 
 THL has a data model for Finnish diagnosis in code server:
