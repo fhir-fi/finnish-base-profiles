@@ -32,4 +32,4 @@ Usage: #example
 * onsetDateTime = "2023-01-05T02:06:24+03:00"
 * clinicalStatus = #active
 
-* extension[IsKayntisyy].valueBoolean = false
+* extension[IsNotAuthoredByMedicalDoctor].valueBoolean = false
