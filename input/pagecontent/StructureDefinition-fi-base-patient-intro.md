@@ -12,7 +12,7 @@ cardinality restrictions to Patient.name and Patient.identifier. We specifically
 Patient.name should be a mandatory element. The Finnish PHR, for instance, does not include the
 name of the patient in the Patient resource. This is why the Finnish Base Patient profile derives
 from the Patient resource of the main FHIR specification. For additional details, please see the <a
-href="https://jira.hl7.org/browse/FHIR-40451">issue FHIR-40451</a> in HL7 International's Jira.<p>
+href="https://jira.hl7.org/browse/FHIR-40451">issue FHIR-40451</a> in HL7 International's Jira.</p>
 
 ### Identifying information
 
