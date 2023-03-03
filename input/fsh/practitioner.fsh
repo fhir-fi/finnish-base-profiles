@@ -8,10 +8,10 @@ Description: "This is the Finnish base profile for the Practitioner resource."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "In Finland there are at least four diffent kinds of indentifiers: SSO, Terhikki-number, doctor identification number (SV, yksilöintitunnus) and -	organisation specific personnel mnemonic."
+* identifier ^slicing.description = "In Finland there are at least four diffent kinds of indentifiers: PIC, Terhikki-number, doctor identification number (SV, yksilöintitunnus) and -	organisation specific personnel mnemonic."
  
-* identifier contains SSN 0..1
-* identifier[SSN].system = #urn:oid:1.2.246.21
+* identifier contains PIC 0..1
+* identifier[PIC].system = #urn:oid:1.2.246.21
 
 * identifier contains Terhikki 0..1
 * identifier[Terhikki].system = #urn:oid:1.2.246.537.26
