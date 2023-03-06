@@ -2,7 +2,7 @@ Profile: FiBaseImmunization
 Parent: IPAImmunization
 Id: fi-base-immunization
 Title: "Fi Base Immunization"
-Description: "This profile describes the base information regarding immunization in Finnish healthcare."
+Description: ""
 * ^status = #draft
 
 * vaccineCode.coding ^slicing.discriminator.type = #value
