@@ -13,3 +13,10 @@ In some cases the practitioner who performed the addministration is not be the s
 ## Finnish National Vaccination Register
 
 All vaccinations in Finland are recorded into Kanta's Patient Data Repository and Hilmo system. Eventually these system determine the required information, at least when recording vaccination. It is highly recommended to familiarize onself with the [specification](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=644&versionKey=1572) when applying this profile although all of the fields may not be relevant in given use case.
+
+## ATC and VNR codes
+
+The Anatomical Therapeutic Chemical (ATC) classification is maintained by The Finnish Medicines Agency Fimea. Classification divides drugs into groups according to which organ or organ system they affect and by their chemical, pharmacological and therapeutic properties. The Nordic Article Number (VNR) is an  identification code for a specific article of medicine with marketing authorisation in the Nordic countries. More informations about both subjects can be found at the links below.
+
+[ATC codes](https://www.fimea.fi/web/en/databases_and_registers/atc-codes)
+[VNR](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://wiki.vnr.fi/wp-content/uploads/2019/02/Nordic-Article-Numbers-Nordic-instructions-ver-2.0.pdf)
