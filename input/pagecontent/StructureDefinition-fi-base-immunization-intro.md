@@ -16,7 +16,8 @@ All vaccinations in Finland are recorded into Kanta's Patient Data Repository an
 
 ## ATC and VNR codes
 
-The Anatomical Therapeutic Chemical (ATC) classification is maintained by The Finnish Medicines Agency Fimea. Classification divides drugs into groups according to which organ or organ system they affect and by their chemical, pharmacological and therapeutic properties. The Nordic Article Number (VNR) is an  identification code for a specific article of medicine with marketing authorisation in the Nordic countries. More informations about both subjects can be found at the links below.
+The Anatomical Therapeutic Chemical (ATC) classification is controlled by the World Health Organization (WHO) and The Finnish Medicines Agency Fimea is maintaining the Finnish version of the classification. The classification divides drugs into groups according to which organ or organ system they affect and by their chemical, pharmacological and therapeutic properties. The Nordic Article Number (VNR) is an  identification code for a specific article of medicine with marketing authorisation in the Nordic countries. More informations about both subjects can be found at the links below.
 
-[ATC codes](https://www.fimea.fi/web/en/databases_and_registers/atc-codes)
+[WHO ATC classification](https://www.whocc.no/atc_ddd_index/) | 
+[Finnish ATC codes](https://www.fimea.fi/web/en/databases_and_registers/atc-codes) | 
 [VNR](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://wiki.vnr.fi/wp-content/uploads/2019/02/Nordic-Article-Numbers-Nordic-instructions-ver-2.0.pdf)
