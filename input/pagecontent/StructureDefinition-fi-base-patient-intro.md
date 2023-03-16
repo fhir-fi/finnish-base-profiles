@@ -35,7 +35,7 @@ The unique identifier is the national person identifier.
 There are two versions of the national person identifier for people living in Finland.
 
 The [official Personal Identifier Code](https://dvv.fi/en/personal-identity-code) (PIC) is granted
-by the Digital And Population Data Services Agency. The `oid` for the official PIC is `1.2.246.21`.
+by the Digital And Population Data Services Agency. The `oid` for the official PIC is `1.2.246.21`. PIC also abbreviated as HETU.
 
 When an official PIC is not known or cannot be used for other reasons, a system may generate a
 [Temporary Identifier](https://www.kanta.fi/en/system-developers/test-etiquette#Temporary%20identifier).
