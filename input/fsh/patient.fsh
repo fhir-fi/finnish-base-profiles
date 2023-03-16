@@ -19,12 +19,12 @@ Description: "This is the Finnish base profile for the Patient resource."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "When using the official Finnish personal identifier code, identifier.system SHALL be #urn:oid:1.2.246.21. PIC also abbreviated as HETU."
+* identifier ^slicing.description = "When using the official Finnish personal identifier code (PIC, also known as HETU), identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
   * ^short = "Identifier contains Finnish personal identity code which can be official or temporary. Other identifier may also be included."
 
 * identifier contains PIC 0..1
-  * ^short = "PIC also abbreviated as HETU."
+  * ^short = "PIC (aka HETU)."
 * identifier[PIC].use = #official
 * identifier[PIC].system = #urn:oid:1.2.246.21
 
