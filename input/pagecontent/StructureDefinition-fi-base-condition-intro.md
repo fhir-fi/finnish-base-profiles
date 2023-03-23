@@ -106,17 +106,6 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-#### Is not authored by a medical doctor (*Käyntisyy*)
-
-Some conditions are very much like diagnosis but the asserter is not a medical doctor. THL
-specification identifies these as *käyntisyy*.
-
-Extension `isNotAuthoredByMedicalDoctor` with value `true` MUST be used when condition is a *käyntisyy*.
-It MAY be used with value `false` on medical doctor asserted diagnosis, but absence of this extension
-SHALL be interpreted as not being a *käyntisyy*.
-
-
-
 #### Type of sport in injury cases
 
 Extension `sport`.
