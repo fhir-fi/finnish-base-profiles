@@ -1,3 +1,10 @@
+CodeSystem: FiBaseConditionCategory
+Id: fi-base-condition-category
+Title: "Finnish Condition categories"
+Description: "Additional categories for the Finnish Base Condition profile"
+* #reason-for-visit "Reason for visit"
+    "Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."
+
 Profile: FiBaseCondition
 Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition
 Id: fi-base-condition
@@ -5,15 +12,8 @@ Title: "FI Base Condition"
 Description: "This is the Finnish base profile for the Condition resource."
 * ^status = #draft
 
-* extension contains IsNotAuthoredByMedicalDoctor named isNotAuthoredByMedicalDoctor 0..1
 * extension contains Sport named sport 0..1
 * extension contains EndocrinologicalDisorder named endocrinologicalDisorder 0..1
-
-Extension: IsNotAuthoredByMedicalDoctor
-Id: condition-is-not-authored-by-medical-doctor
-Title: "Is not authored by medical doctor"
-Description: "Information on whether the reason for the visit or treatment period is recorded by a healthcare professional other than a doctor."
-* value[x] only boolean
 
 Extension: Sport
 Id: condition-sport
