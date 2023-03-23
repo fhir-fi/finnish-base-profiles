@@ -7,8 +7,9 @@ href="#further-development-needs">further development needs</a> below.</p>
 
 Use cases:
 
-* Diagnosis -based conditions and Finnish Kayntisyy
-* Other usages?
+* Diagnosis -based conditions and Finnish *kayntisyy*, asserted by a healthcare professional
+* Reason given by patient for requesting/acquiring healthcare service. Finnish *tulosyy*
+* Other usages for various needs
 
 ### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
 
@@ -18,7 +19,7 @@ for visit that is asserted by an nurse or some other healthcare professional.
 To identify that a condition resource is a reason for visit, it MUST contain `category` code
 `reason-for-visit`.
 
-A reason for visit condition needs to be further categorized to make the distinction between 
+A reason for visit condition needs to be further categorized to make the distinction between
 clinician asserted diagnosis and other *käyntisyy* conditions. When condition is a clinician
 asserted diagnosis it MUST contain another `category` code `encounter-diagnosis`. When condition
 is not asserted by a clincian it MUST NOT contain `encounter-diagnosis` category code.
@@ -55,6 +56,11 @@ In THL specification, this data is codeId 1: Diagnoosi.
 In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-koodille". This MAY be
 in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
 Other codes, like symptom and accident type SHOULD NOT be repetitions of `code`.
+
+More than one code may be used in `code`. Currently ICD-10, ICPC2 are supported by THL, in near
+future ICD-11, SNOMED and ORPHA will become supported too). Additional codes may be expressed by
+repeating coding. Other codes like sympton SHOULD not be communicated via `code`, repetitions
+should represent the same concept (see [CodeableConcept datatype specification](https://www.hl7.org/fhir/datatypes.html#CodeableConcept)).
 
 #### Symptom code
 
@@ -106,9 +112,9 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-#### Type of sport in injury cases
+#### Type of physical exercise during which injury occurred
 
-Extension `sport`.
+Extension `physicalExcercise`.
 
 TODO add example.
 
@@ -124,23 +130,26 @@ In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
 #### 28 Aiheuttajan ATC-koodi
 
-TODO define extension and example
+Extension `conditionCausedByMedication`  
+
+TODO example
 
 #### 3 Diagnoosin ulkoinen syy
 
-TODO define extension and example
+Extension `conditionExternalCause`
+
+TODO  example
 
 #### 4 Diagnoosin tapaturmatyyppi
 
-TODO define extension and example
+Extension `conditionCategorizationOfAccident`
+TODO d example
 
 #### 5 Haittavaikutuksen aiheuttaja
 
-TODO define extension and example
+Extension `externalCauseOfAdverseEffect`
 
-#### Other category usages
-
-`category` SHOULD also contain the standard `encounter-diagnosis`.
+TODO  example
 
 #### Further development needs
 
