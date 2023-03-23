@@ -10,19 +10,31 @@ Use cases:
 * Diagnosis -based conditions and Finnish Kayntisyy
 * Other usages?
 
-### Diagnosis -based conditions and Finnish *käyntisyy*
+### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
 
-A condition isn't always a diagnosis. `category` is used to identify that a condition is a diagnosis.
-To identify that a condition is a diagnosis or Finnish *käyntisyy*, the `category` -field MUST
-contain code `166` from Finnish [AR/YDIN - Näkymät](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=226&versionKey=301)
--code system.
+Reason for visit may be a diagnosis asserted by a clinician / medical doctor or some other reason
+for visit that is asserted by an nurse or some other healthcare professional.
 
-TODO is ok to use `166` for Finnish *käyntisyy* also? Having a category code would clean up this
-profile. We would not need an extension.
+To identify that a condition resource is a reason for visit, it MUST contain `category` code
+`reason-for-visit`.
 
-THL has a data model for Finnish diagnosis in code server:
+A reason for visit condition needs to be further categorized to make the distinction between 
+clinician asserted diagnosis and other *käyntisyy* conditions. When condition is a clinician
+asserted diagnosis it MUST contain another `category` code `encounter-diagnosis`. When condition
+is not asserted by a clincian it MUST NOT contain `encounter-diagnosis` category code.
+
+THL has a data model for Finnish diagnosis (including *käyntisyy*) in code server:
 [THL/Tietosisältö - Diagnoosit](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=543&versionKey=1543)
 ("THL specification").
+
+Categories match to THL specification in following way:
+
+* when `reason-for-visit` is present --> This is a diagnosis or *käyntisyy* as identifed by THL specification
+    * (There are many other kind of conditions in FHIR that don't have this category)
+* when additionally `encounter-diagnosis` is present --> This is a diagnosis and is not a *käyntisyy*
+    * In THL specification, codeId 23: Käyntisyy has value False
+* when `encounter-diagnosis` is not present --> This is a *käyntisyy*
+    * In THL specification, codeId 23: Käyntisyy has value True
 
 #### Diagnosis Code Systems
 
@@ -103,7 +115,7 @@ Extension `isNotAuthoredByMedicalDoctor` with value `true` MUST be used when con
 It MAY be used with value `false` on medical doctor asserted diagnosis, but absence of this extension
 SHALL be interpreted as not being a *käyntisyy*.
 
-In THL specification, this data is codeId 23: Käyntisyy.
+
 
 #### Type of sport in injury cases
 
@@ -121,15 +133,20 @@ TODO add example.
 
 In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
-#### 28	Aiheuttajan ATC-koodi
+#### 28 Aiheuttajan ATC-koodi
+
 TODO define extension and example
 
-#### 3	Diagnoosin ulkoinen syy
+#### 3 Diagnoosin ulkoinen syy
+
 TODO define extension and example
 
-#### 4	Diagnoosin tapaturmatyyppi
+#### 4 Diagnoosin tapaturmatyyppi
+
 TODO define extension and example
-#### 5	Haittavaikutuksen aiheuttaja
+
+#### 5 Haittavaikutuksen aiheuttaja
+
 TODO define extension and example
 
 #### Other category usages
@@ -143,7 +160,7 @@ mapping work to be done. Following list contains most relevant parts that need w
 
 * Use of `problem-list-item` for long term diagnosis ("Pitkäaikaisdiagnoosi" or "Pysyvä diagnoosi" in finnish)? The conceptual mapping is not staightforward.
 * THL Tietosisältö 10 Tiedon lähde
-  *  extension?
+    * extension?
 * THL Tietosisältö 15 Diagnoosin päättymisen toteajan nimi
 * THL Tietosisältö 17 Diagnoosin päättymisen syy
 * THL Tietosisältö 18 Diagnoosin päättymisen syyn tarkenne
