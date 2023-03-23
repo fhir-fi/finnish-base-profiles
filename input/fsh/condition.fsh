@@ -1,9 +1,3 @@
-CodeSystem: FiBaseConditionCategory
-Id: fi-base-condition-category
-Title: "Finnish Condition categories"
-Description: "Additional categories for the Finnish Base Condition profile"
-* #reason-for-visit "Reason for visit"
-    "Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."
 
 Profile: FiBaseCondition
 Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition
@@ -56,3 +50,10 @@ Description: "koodilla ilmaistu tieto haittavaikutuksen ulkoisesta syystä sillo
 * value[x] only Coding
 
   */
+
+CodeSystem: FiBaseConditionCategory
+Id: fi-base-condition-category
+Title: "Finnish Condition categories"
+Description: "Additional categories for the Finnish Base Condition profile"
+* #reason-for-visit "Reason for visit"
+    "Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."

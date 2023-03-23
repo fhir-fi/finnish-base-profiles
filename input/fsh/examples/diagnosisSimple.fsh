@@ -1,7 +1,7 @@
 Instance: DiagnosisSimple
 InstanceOf: FiBaseCondition
 Title: "Condition - an example diagnosis"
-Description: "An example of a diagnosis using the FiBaseCondition pofile. This is asserted by a clinician."
+Description: "An example of a diagnosis using the FiBaseCondition pofile. This diagnosis is asserted by a clinician."
 Usage: #example
 * id = "id-for-diagnosis-1"
 * category[0].coding.system = #https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category
