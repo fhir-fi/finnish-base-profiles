@@ -208,7 +208,7 @@ Especially the Kanta specific implementation guides for
 [Finnish PHR](https://simplifier.net/FinnishPHRR4),
 [Kanta FHIR Prescription](https://simplifier.net/PrescriptionR4), and
 [Kanta sosiaalihuolto](https://simplifier.net/Kanta-sosiaalihuolto-R4) are closer to national Core
-profiles.
+profile specifications.
 
 Currently there is no formal process synchronizing the profiles in this implementation guide with
 the more use case driven ones listed here. We hope that future updates of the use case specific
