@@ -14,7 +14,7 @@ name of the patient in the Patient resource. This is why the Finnish Base Patien
 from the Patient resource of the main FHIR specification. For additional details, please see the <a
 href="https://jira.hl7.org/browse/FHIR-40451">issue FHIR-40451</a> in HL7 International's Jira.</p>
 
-### Identifying information
+#### Identifying information
 
 In the context of Finnish national social and healthcare, the
 [defined identifying information](https://yhteistyotilat.fi/wiki08/display/JULPOKY/7+Potilaan+perustiedot)
@@ -30,7 +30,7 @@ for a person are
 
 The unique identifier is the national person identifier.
 
-#### Patient identifier
+##### Patient identifier
 
 There are two versions of the national person identifier for people living in Finland.
 
@@ -57,16 +57,16 @@ In addition to person identifiers for people living in Finland, systems may use 
 that have a special range in the PIC format (the eighth character is `9`). For instance,
 `020516C903K`.
 
-#### Other identifiers
+##### Other identifiers
 
 Other identifiers can also be used to identify the patient. In many cases the national patient
 identifier is not required. In these cases systems should assign another unique identifier for
 patients. Note that these identifiers MAY be different for different apps, for instance. They
 SHOULD still be the same when the same app asks for the patient information multiple times. 
 
-### Additional Information
+#### Additional Information
 
-#### Name
+##### Name
 
 Systems SHOULD populate the `.name.text` field and clients SHOULD use that version of the name,
 when available.
@@ -76,12 +76,12 @@ to limit the amount of information that is being shared with FHIR apps. Some pri
 do not share names or any demographic information by default.
 
 
-#### Times
+##### Times
 
 Both time of birth and time of death SHOULD be recorded with the time component, if known. If the
 time of day is not known, the date SHALL be recorded as a date only, without the time component.
 
-### Use of non-disclosure information
+#### Use of non-disclosure information
 
 Finnish citizens that have requested name and address protection ([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) are labeled with the security label. The preferred way to do this is shown below.
  
@@ -100,7 +100,7 @@ Finnish citizens that have requested name and address protection ([Non-disclosur
 
  Use of this label should be interpreted according to the law, rouhgly meaning that only personnel using systems in public/official affairs are allowed to see name and address for the patient/citizen.
 
-### Presenting guardian information
+#### Presenting guardian information
 
 In some cases, a guardian could be appointed to the patient if the patients is for ex. incapable of
 managing one's matters due to an illness. In these situations, the guardian's information shall be
