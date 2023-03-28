@@ -172,10 +172,10 @@ published base profiles from other Nordic countries, specifically the Danish
 and the [Swedish Base Profiles](https://hl7.se/fhir/ig/base/).
 
 The Finnish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](https://build.fhir.org/ig/HL7/fhir-ipa/)
-where applicable, and we will keep the specifications conformant. Should we find any constraints in
-IPA that we can't adhere to, the main resolution should be to affect the IPA specification and
-search for wider consensus and shared understanding.
+[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/) where applicable,
+and we will keep the specifications conformant. Should we find any constraints in IPA that we can't
+adhere to, the main resolution should be to affect the IPA specification and search for wider
+consensus and shared understanding.
 
 Other notable national base profiles under our radar are the
 [US Core](https://hl7.org/fhir/us/core/), the
