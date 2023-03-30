@@ -10,7 +10,7 @@ Use cases:
 * Diagnosis -based conditions and Finnish Kayntisyy
 * Other usages?
 
-### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
+#### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
 
 Reason for visit may be a diagnosis asserted by a clinician / medical doctor or some other reason
 for visit that is asserted by an nurse or some other healthcare professional.
@@ -36,13 +36,13 @@ Categories match to THL specification in following way:
 * when `encounter-diagnosis` is not present --> This is a *käyntisyy*
     * In THL specification, codeId 23: Käyntisyy has value True
 
-#### Diagnosis Code Systems
+##### Diagnosis Code Systems
 
 When using [Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
 it's usage has special rules. These are described below. For reference and detailed specifications,
 see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet).
 
-#### Diagnosis code (reason)
+##### Diagnosis code (reason)
 
 `code` SHALL only contain the reason code.
 
@@ -56,7 +56,7 @@ In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-k
 in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
 Other codes, like symptom and accident type SHOULD NOT be repetitions of `code`.
 
-#### Symptom code
+##### Symptom code
 
 Symptom code SHOULD be communicated via `evidence`.
 
@@ -67,38 +67,38 @@ field) used here.
 
 In THL specification, this data is codeId 26: Diagnoosin tai käyntisyyn oirekoodi.
 
-#### When name differs from code.display
+##### When name differs from code.display
 
 Medical doctor may make some adjustments to the name of the diagnosis. `code.display` MUST be the
 original name from the codesystem and `code.text` MAY contain adjusted name for the diagnosis.
 
 In THL specification, this data is codeId 21: Diagnoosin tai käyntisyyn nimi.
 
-#### Primary/main diagnosis (or käyntisyy)
+##### Primary/main diagnosis (or käyntisyy)
 
 Use `category` code from "AR/YDIN - Diagnoosin /toimenpiteen ensisijaisuus" (1.2.246.537.5.40005.2003).
 
 In THL specification, this data is codeId 2: Diagnoosin tai käyntisyyn ensisijaisuus.
 
-#### Permanence (finnish "pysyvyys")
+##### Permanence (finnish "pysyvyys")
 
 Use `category` code from  "AR/YDIN - Pysyvyys" versiosta (1.2.246.537.5.40003.2003).
 
 In THL specification, this data is codeId 8: Diagnoosin pysyvyys.
 
-#### Onset
+##### Onset
 
 Standard `onset` SHOULD be used.
 
 In THL specification, this data is codeId 12: Diagnoosin tai käyntisyyn toteamispäivä.
 
-#### Abatement
+##### Abatement
 
 Standard `abatement` MAY be used.
 
 In THL specification, this data is codeId 16: Diagnoosin päättymispäivä.
 
-#### Asserter
+##### Asserter
 
 Standard `asserter` MAY be used.
 
@@ -106,7 +106,7 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-#### Is not authored by a medical doctor (*Käyntisyy*)
+##### Is not authored by a medical doctor (*Käyntisyy*)
 
 Some conditions are very much like diagnosis but the asserter is not a medical doctor. THL
 specification identifies these as *käyntisyy*.
@@ -117,7 +117,7 @@ SHALL be interpreted as not being a *käyntisyy*.
 
 
 
-#### Type of sport in injury cases
+##### Type of sport in injury cases
 
 Extension `sport`.
 
@@ -125,7 +125,7 @@ TODO add example.
 
 In THL specification, this data is codeId: 24 Tapaturman liikuntalaji.
 
-#### Endocrinological disorder
+##### Endocrinological disorder
 
 Extension `endocrinologicalDisorder`.
 
@@ -133,27 +133,27 @@ TODO add example.
 
 In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
-#### 28 Aiheuttajan ATC-koodi
+##### 28 Aiheuttajan ATC-koodi
 
 TODO define extension and example
 
-#### 3 Diagnoosin ulkoinen syy
+##### 3 Diagnoosin ulkoinen syy
 
 TODO define extension and example
 
-#### 4 Diagnoosin tapaturmatyyppi
+##### 4 Diagnoosin tapaturmatyyppi
 
 TODO define extension and example
 
-#### 5 Haittavaikutuksen aiheuttaja
+##### 5 Haittavaikutuksen aiheuttaja
 
 TODO define extension and example
 
-#### Other category usages
+##### Other category usages
 
 `category` SHOULD also contain the standard `encounter-diagnosis`.
 
-#### Further development needs
+##### Further development needs
 
 Finnish diagnosis has some data that is not yet modeled in this profile. There is more modeling and
 mapping work to be done. Following list contains most relevant parts that need work:
@@ -169,7 +169,7 @@ mapping work to be done. Following list contains most relevant parts that need w
 * THL Tietosisältö 7 Diagnoosin tai käyntisyyn varmuusaste
 * THL Tietosisältö 9 Diagnoosin tai käyntisyyn episoditunnus
 
-#### Links
+##### Links
 
 * [Suomalainen tautien kirjaamisen ohjekirja](https://thl.fi/documents/10531/124365/Opas%202012%2017.pdf)
 national guide for the use if ICD-10.
