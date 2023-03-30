@@ -1,3 +1,5 @@
+### Scope and Usage
+
 #### How to find a patient in a ward?
 
 Many systems have a need to answer the question: "How to find patients/encounters that are at ward X

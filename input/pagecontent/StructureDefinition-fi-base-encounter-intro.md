@@ -4,7 +4,7 @@ The Finnish Core Encounter profile is intended to encapsulate the most common an
 of encounters in Finnish healthcare systems. The profile also defines encounter's relation to the
 Kanta registry. As such the profile should be usable in most Finnish contexts.
 
-### Relation to Finnish *palvelutapahtuma*
+#### Relation to Finnish *palvelutapahtuma*
 
 [Kanta](https://www.kanta.fi/) is the Finnish national central registry of health and social
 welfare information. It has a specification for Palvelutapahtuma, this is typically translated as
@@ -21,7 +21,7 @@ there are other examples too).
 For deeper techical details, se Kanta [HL7 V3 Medical Records specification](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-medical-records)
 (this again in finnish).
 
-#### Why does encounter need this information?
+##### Why does encounter need this information?
 
 Kanta HL7 V3 Medical Records specification requires that both queries and archivals transmit
 *palvelutapahtuma*'s OID identifier on each request. A client application that is integrated to a
@@ -33,7 +33,7 @@ and will archive lab results directly to Kanta. It receives encounter id in SMAR
 context. Laboratory system can resolve *palvelutapahtuma*'s OID identifier by fetching the encounter
 resource.
 
-#### How to communicate palvelutapahtuma via FHIR encounter?
+##### How to communicate palvelutapahtuma via FHIR encounter?
 
 First thing is to identify the appropriate aggregation level of encounter. If encounter is not
 representing a *palvelutapahtuma*, but is a lower level encounter (some systems call these
@@ -46,7 +46,7 @@ OID of *palvelutapahtuma*.
 
 Other levels of encounter that are not *palvelutapahtuma*, MUST NOT contain `use=official` identifier.
 
-### Organizational responsibility
+#### Organizational responsibility
 
 The unit responsible for the encounter should be communicated using the `serviceProvider` property.
 

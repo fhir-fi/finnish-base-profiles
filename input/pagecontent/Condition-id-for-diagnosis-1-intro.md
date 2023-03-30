@@ -1,3 +1,5 @@
+### Scope and Usage
+
 #### Identifying that this is a diagnosis
 
 This is an example encounter diagnosis (in Finnish called *käyntidiagnoosi*, even for ward periods).
