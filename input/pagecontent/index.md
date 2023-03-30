@@ -12,17 +12,17 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
   <p><strong>This documentation and set of artifacts are still undergoing development, and they are
   in DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
   working on this specification. This is a DRAFT specification that is currently under review by
-  the members of <a href="https://www.hl7.fi">HL7 Finland</a>. If you are interested in
-  participating to the formal review process, please contact Timo Kaskinen, the chair of the FL7
-  Finland Technical Committee, or Mikael Rinnetmäki, responsible for publication of this
-  implementation guide.</p>
-  <p>This version of this implementation guide is frozen and published as a base for the official
-  ballot within HL7 Finland. The p
-  See also the <a
+  the members of <a href="https://www.hl7.fi">HL7 Finland</a>.</p>
+  <p>The <a href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc2/">version 1.0.0-rc2</a> of
+  this implementation guide is frozen and published as a base for the official ballot within HL7
+  Finland. See also the <a
   href="https://www.hl7.fi/ennakkoilmoitus-alkavasta-fhir-perusprofilointimaarittelyjen-lausuntokierroksesta/">formal
   announcement</a> in HL7 Finland's website (in Finnish only).</p>
   <p>This ballot cycle is considered a <strong>Standard for Trial Use</strong> ballot in the <a
   href="https://confluence.hl7.org/display/HL7/HL7+Balloting">HL7 Balloting process</a>.</p>
+  <p>If you are interested in participating to the formal review process, please contact Timo
+  Kaskinen, the chair of the FL7 Finland Technical Committee, or Mikael Rinnetmäki, responsible for
+  publication of this implementation guide.</p>
   <p>HL7 Finland does not use the HL7 Ballot Desktop or the Jira Ballot Process, rather feedback is
   gathered through email to <a href="mailto:timo.kaskinen@nhg.fi">timo.kaskinen@nhg.fi</a> and <a
   href="https://github.com/fhir-fi/finnish-base-profiles/issues">issues in the GitHub
@@ -172,10 +172,10 @@ published base profiles from other Nordic countries, specifically the Danish
 and the [Swedish Base Profiles](https://hl7.se/fhir/ig/base/).
 
 The Finnish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](https://build.fhir.org/ig/HL7/fhir-ipa/)
-where applicable, and we will keep the specifications conformant. Should we find any constraints in
-IPA that we can't adhere to, the main resolution should be to affect the IPA specification and
-search for wider consensus and shared understanding.
+[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/) where applicable,
+and we will keep the specifications conformant. Should we find any constraints in IPA that we can't
+adhere to, the main resolution should be to affect the IPA specification and search for wider
+consensus and shared understanding.
 
 Other notable national base profiles under our radar are the
 [US Core](https://hl7.org/fhir/us/core/), the
@@ -186,6 +186,36 @@ Other notable national base profiles under our radar are the
 See also the
 [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations)
 page in HL7 International's Confluence.
+
+#### Baseline and Core Profiles
+
+The FHIR community is currently figuring out how different implementation guides interact and can
+be layered. See, for instance, the layering approach in the
+[Norwegian base profiles](https://simplifier.net/guide/no-basis-entities-individuals/introduction?version=current)
+and the explanation on the
+[Canadian Baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/#base-vs-baseline-vs-core)
+specification.
+
+According to those terms, this version of this implementation guide is closest to the national
+baseline profile. Its main purpose is to inform implementers of approaches already chosen, and
+thereby avoid re-implementing the wheel in a different form for new implementations.
+
+There are other, more use case specific FHIR implementation guides in Finland. For instance, the
+[Finnish Appointment IG](https://simplifier.net/finnishappointment) presents the basic approach and
+profiles for scheduling.
+
+Especially the Kanta specific implementation guides for
+[Finnish PHR](https://simplifier.net/FinnishPHRR4),
+[Kanta FHIR Prescription](https://simplifier.net/PrescriptionR4), and
+[Kanta sosiaalihuolto](https://simplifier.net/Kanta-sosiaalihuolto-R4) are closer to national Core
+profile specifications.
+
+Currently there is no formal process synchronizing the profiles in this implementation guide with
+the more use case driven ones listed here. We hope that future updates of the use case specific
+implementation guides would derive their profiles from the base profiles presented here.
+
+This implementation guide may also in the future be extended to cover Core profiles, in addition to
+the Base profiles of this first version.
 
 #### Profiles and Examples
 
@@ -221,6 +251,9 @@ The team involved in creating the first version of the specification includes
 * Mika Tuomainen, Kela
 * Mikael Rinnetmäki, Sensotrend Oy
 * Tero Pekkola, Esko Systems Oy
+
+Each published major version of this implementation guide goes through the ballot and voting
+processes of HL7 Finland.
 
 ### Collaboration
 
@@ -273,29 +306,18 @@ technical area of standardisation. It cannot influence organisational and contra
 This document is licensed under Creative Commons
 [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) Public Domain Dedication.
 
-HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png"
-style="float: none; margin: 0px; padding: 0px; vertical-align: bottom"/>&reg; are trademarks owned
-by Health Level Seven International, registered with the United States Patent and Trademark Office.
-
 This implementation guide contains and references intellectual property owned by third parties
 ("Third Party IP"). Acceptance of these License Terms does not grant any rights with respect to
 Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary
 licenses or authorizations to utilize Third Party IP in connection with the specification or
 otherwise.
 
+HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png"
+style="float: none; margin: 0px; padding: 0px; vertical-align: bottom"/>&reg; are trademarks owned
+by Health Level Seven International, registered with the United States Patent and Trademark Office.
+
 See also [http://hl7.org/fhir/license.html](http://hl7.org/fhir/license.html).
 
-Following is a non-exhaustive list of third-party artifacts and terminologies that may require a
-separate license:
+#### Other Intellectual Property Statements
 
-**SNOMED Clinical Terms® (SNOMED CT®)**
-This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED
-International (former known as International Health Terminology Standards Development Organisation
-IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American
-Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of SNOMED International.
-
-**Logical Observation Identifiers Names and Codes LOINC**
-This material contains content from LOINC® (http://loinc.org). The LOINC table, LOINC codes, and
-LOINC panels and forms file are copyright © 1995-2013, Regenstrief Institute, Inc. and the Logical
-Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
-license at http://loinc.org/terms-of-use.
+{% include ip-statements.xhtml %}

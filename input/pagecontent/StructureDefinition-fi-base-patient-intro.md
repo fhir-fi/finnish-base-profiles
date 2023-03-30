@@ -4,17 +4,7 @@ The Finnish Core Patient profile is intended to encapsulate the most common and 
 patients in Finnish social and healthcare systems. The profile also defines how to present data
 defined in Finnish legislation. As such the profile should be usable in most Finnish contexts.
 
-<p class="stu-note">The Finnish Base Profiles specification does its best to confom to the <a
-href="https://build.fhir.org/ig/HL7/fhir-ipa/">International Patient Access (IPA)</a>
-specification. All profiles in this implementation guide derive from the IPA profile, if such a
-profile is available - except this Patient profile. This is due to the IPA specification imposing
-cardinality restrictions to Patient.name and Patient.identifier. We specifically don't believe the
-Patient.name should be a mandatory element. The Finnish PHR, for instance, does not include the
-name of the patient in the Patient resource. This is why the Finnish Base Patient profile derives
-from the Patient resource of the main FHIR specification. For additional details, please see the <a
-href="https://jira.hl7.org/browse/FHIR-40451">issue FHIR-40451</a> in HL7 International's Jira.</p>
-
-#### Identifying information
+### Identifying information
 
 In the context of Finnish national social and healthcare, the
 [defined identifying information](https://yhteistyotilat.fi/wiki08/display/JULPOKY/7+Potilaan+perustiedot)
@@ -48,8 +38,9 @@ The identifiers are presented to human readers in the 11 character format, witho
 information.
 
 When a PIC is used for an Patient instance, the value of the `identifier.use` field SHOULD be
-[`official`](https://build.fhir.org/codesystem-identifier-use.html#identifier-use-official) and the
-value of the `identifier.type` SHOULD be `NNFIN` (see https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html).
+[`official`](https://www.hl7.org/fhir/codesystem-identifier-use.html#identifier-use-official) and
+the value of the `identifier.type` SHOULD be `NNFIN` (from the 
+[HL7 Termonilogy](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html)).
 
 When the `identifier.type` is `NNFIN`, the value of the identifier SHALL be a Finnish national PIC.
 

@@ -20,7 +20,7 @@ publisher:
   email: mikael@sensotrend.com
 
 dependencies:
-  hl7.fhir.uv.ipa: 0.1.0
+  hl7.fhir.uv.ipa: 1.0.0
 
 resources:
   Bundle/diabetes-data-bundle:
