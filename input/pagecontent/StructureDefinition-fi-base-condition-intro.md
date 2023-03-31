@@ -200,8 +200,6 @@ In THL specification, this data is codeId: 4 Diagnoosin tapaturmatyyppi
 
 Extension `causeOfAdverseEffect`
 
-TODO  example
-
 In THL specification, this data is codeId: 5 Haittavaikutuksen aiheuttaja
 
 #### Further development needs
