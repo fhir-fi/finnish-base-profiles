@@ -125,13 +125,20 @@ In THL specification, this data is codeId 21: Diagnoosin tai käyntisyyn nimi.
 
 #### Primary/main diagnosis (or käyntisyy)
 
-Use `category` code from "AR/YDIN - Diagnoosin /toimenpiteen ensisijaisuus" (1.2.246.537.5.40005.2003).
+Extension `primaryCondition` is used to express whether this is the primary/main condition for encounter.
+
+Extension is a code from terminology "AR/YDIN - Diagnoosin /toimenpiteen ensisijaisuus" (1.2.246.537.5.40005.2003).
 
 In THL specification, this data is codeId 2: Diagnoosin tai käyntisyyn ensisijaisuus.
 
 #### Permanence (finnish "pysyvyys")
 
-Use `category` code from  "AR/YDIN - Pysyvyys" versiosta (1.2.246.537.5.40003.2003).
+Extension `permanence` is used to express the condition is permanent or not.
+
+Extension is a code from terminology "AR/YDIN - Pysyvyys" (1.2.246.537.5.40003.2003).
+
+This information has some relation to `clinicalStatus`, but "AR/YDIN - Pysyvyys" can't be mapped to
+clinicalStatus codes (doing so would redefine clinicalStatus).
 
 In THL specification, this data is codeId 8: Diagnoosin pysyvyys.
 

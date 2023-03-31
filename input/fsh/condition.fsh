@@ -5,12 +5,30 @@ Title: "FI Base Condition"
 Description: "This is the Finnish base profile for the Condition resource."
 * ^status = #draft
 
+* extension contains PrimaryCondition named primaryCondition 0..1
+* extension contains Permanence named permanence 0..1
 * extension contains PhysicalExcercise named physicalExcercise 0..1
 * extension contains EndocrinologicalDisorder named endocrinologicalDisorder 0..1
 * extension contains ConditionCausedByMedication named conditionCausedByMedication 0..1
 * extension contains ConditionExternalCause named conditionExternalCause 0..1
 * extension contains ConditionCategorizationOfAccident named conditionCategorizationOfAccident 0..1
 * extension contains ExternalCauseOfAdverseEffect named externalCauseOfAdverseEffect 0..1
+
+Extension: PrimaryCondition
+Id: condition-primary
+Title: "Primary condition for encounter"
+Description: "Encoded information of whether this is the primary/main condition for encounter."
+* value[x] only Coding
+* valueCoding 1..1
+  * system = #urn:oid:1.2.246.537.5.40005.2003
+
+Extension: Permanence
+Id: condition-permanence
+Title: "Permanence of condition"
+Description: "Encoded information of whether this is the permanent."
+* value[x] only Coding
+* valueCoding 1..1
+  * system = #urn:oid:1.2.246.537.5.40003.2003
 
 Extension: PhysicalExcercise
 Id: condition-physical-excercise

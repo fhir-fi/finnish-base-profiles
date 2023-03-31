@@ -10,14 +10,6 @@ Usage: #example
 * category[1].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category
 * category[1].coding.code = #encounter-diagnosis
 
-* category[2].coding.system = #urn:oid:1.2.246.537.5.40005.2003
-* category[2].coding.code = #PAA
-* category[2].coding.display = "Päädiagnoosi tai päätoimenpide"
-
-* category[3].coding.system = #urn:1.2.246.537.5.40003.2003
-* category[3].coding.code = #PYS
-* category[3].coding.display = "Pysyväisluonteinen"
-
 * subject = Reference(PatientOfMunicipality)
 * code.coding.system = #1.2.246.537.6.1.1999
 * code.coding.code = #H36.03
@@ -30,3 +22,11 @@ Usage: #example
 
 * onsetDateTime = "2023-01-05T02:06:24+03:00"
 * clinicalStatus = #active
+
+* extension[PrimaryCondition].valueCoding.system = #urn:oid:1.2.246.537.5.40005.2003
+* extension[PrimaryCondition].valueCoding.code = #PAA
+* extension[PrimaryCondition].valueCoding.display = "Päädiagnoosi tai päätoimenpide"
+
+* extension[Permanence].valueCoding.system = #urn:oid:1.2.246.537.5.40003.2003
+* extension[Permanence].valueCoding.code = #PYS
+* extension[Permanence].valueCoding.display = "Pysyväisluonteinen"
