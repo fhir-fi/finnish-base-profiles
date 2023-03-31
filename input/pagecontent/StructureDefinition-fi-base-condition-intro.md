@@ -58,10 +58,32 @@ In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-k
 in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
 Other codes, like symptom and accident type SHOULD NOT be repetitions of `code`.
 
-More than one code may be used in `code`. Currently ICD-10, ICPC2 are supported by THL, in near
-future ICD-11, SNOMED and ORPHA will become supported too). Additional codes may be expressed by
-repeating coding. Other codes like sympton SHOULD not be communicated via `code`, repetitions
-should represent the same concept (see [CodeableConcept datatype specification](https://www.hl7.org/fhir/datatypes.html#CodeableConcept)).
+More than one code may be used in `code` (in `code`'s repetitions of `coding`). `code` itself cannot
+be repeated. Currently ICD-10, ICPC2 are supported by THL, in near future ICD-11, SNOMED and ORPHA
+will become supported too). Additional codes may be expressed by repeating coding. Other codes like
+sympton SHOULD not be communicated via `code`, repetitions should represent the same concept (see
+[CodeableConcept datatype specification](https://www.hl7.org/fhir/datatypes.html#CodeableConcept)).
+
+Here's a valid example of repeating `code.coding` (`code` is not repeating, but `coding` has
+repetitions expressing the same information in two code systems):
+
+``` json
+  "code" : {
+    "coding" : [
+      {
+        "system" : "1.2.246.537.6.1.1999",
+        "code" : "H36.03",
+        "display" : "Proliferatiivinen diabeettinen retinopatia"
+      },
+      {
+        "system" : "1.2.246.537.6.31.2007",
+        "code" : "F83",
+        "display" : "Retinopatia, verkkokalvon rappeuma"
+      }
+    ],
+    "text" : "..."
+  },
+```
 
 #### Symptom code
 
@@ -71,6 +93,26 @@ When using Finnish ICD-10, code MUST NOT contain special characters (`+` after t
 code indicates symptom). Pre-built pairs (like E85.9+I68.0) code . SHALL be broken down to
 constituent parts and the code part indicating symptom (in case of in case of E85.9+I68.0, `Koodi2`
 field) used here.
+
+For example:
+
+``` json
+"evidence" : [
+    {
+      "code" : [
+        {
+          "coding" : [
+            {
+              "system" : "1.2.246.537.6.1.1999",
+              "code" : "E11.3",
+              "display" : "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+```
 
 In THL specification, this data is codeId 26: Diagnoosin tai käyntisyyn oirekoodi.
 
