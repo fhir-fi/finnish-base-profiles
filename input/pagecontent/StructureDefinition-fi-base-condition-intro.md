@@ -41,7 +41,8 @@ Categories match to THL specification in following way:
 
 When using [Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
 it's usage has special rules. These are described below. For reference and detailed specifications,
-see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet).
+see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet)
+version 5.11 or later.
 
 #### Diagnosis code (reason)
 
