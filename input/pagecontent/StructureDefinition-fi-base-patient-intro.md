@@ -4,16 +4,6 @@ The Finnish Core Patient profile is intended to encapsulate the most common and 
 patients in Finnish social and healthcare systems. The profile also defines how to present data
 defined in Finnish legislation. As such the profile should be usable in most Finnish contexts.
 
-<p class="stu-note">The Finnish Base Profiles specification does its best to confom to the <a
-href="https://build.fhir.org/ig/HL7/fhir-ipa/">International Patient Access (IPA)</a>
-specification. All profiles in this implementation guide derive from the IPA profile, if such a
-profile is available - except this Patient profile. This is due to the IPA specification imposing
-cardinality restrictions to Patient.name and Patient.identifier. We specifically don't believe the
-Patient.name should be a mandatory element. The Finnish PHR, for instance, does not include the
-name of the patient in the Patient resource. This is why the Finnish Base Patient profile derives
-from the Patient resource of the main FHIR specification. For additional details, please see the <a
-href="https://jira.hl7.org/browse/FHIR-40451">issue FHIR-40451</a> in HL7 International's Jira.</p>
-
 ### Identifying information
 
 In the context of Finnish national social and healthcare, the
@@ -30,7 +20,7 @@ for a person are
 
 The unique identifier is the national person identifier.
 
-#### Patient identifier
+##### Patient identifier
 
 There are two versions of the national person identifier for people living in Finland.
 
@@ -48,8 +38,9 @@ The identifiers are presented to human readers in the 11 character format, witho
 information.
 
 When a PIC is used for an Patient instance, the value of the `identifier.use` field SHOULD be
-[`official`](https://build.fhir.org/codesystem-identifier-use.html#identifier-use-official) and the
-value of the `identifier.type` SHOULD be `NNFIN` (see https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html).
+[`official`](https://www.hl7.org/fhir/codesystem-identifier-use.html#identifier-use-official) and
+the value of the `identifier.type` SHOULD be `NNFIN` (from the 
+[HL7 Termonilogy](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html)).
 
 When the `identifier.type` is `NNFIN`, the value of the identifier SHALL be a Finnish national PIC.
 
@@ -57,16 +48,16 @@ In addition to person identifiers for people living in Finland, systems may use 
 that have a special range in the PIC format (the eighth character is `9`). For instance,
 `020516C903K`.
 
-#### Other identifiers
+##### Other identifiers
 
 Other identifiers can also be used to identify the patient. In many cases the national patient
 identifier is not required. In these cases systems should assign another unique identifier for
 patients. Note that these identifiers MAY be different for different apps, for instance. They
 SHOULD still be the same when the same app asks for the patient information multiple times. 
 
-### Additional Information
+#### Additional Information
 
-#### Name
+##### Name
 
 Systems SHOULD populate the `.name.text` field and clients SHOULD use that version of the name,
 when available.
@@ -76,12 +67,12 @@ to limit the amount of information that is being shared with FHIR apps. Some pri
 do not share names or any demographic information by default.
 
 
-#### Times
+##### Times
 
 Both time of birth and time of death SHOULD be recorded with the time component, if known. If the
 time of day is not known, the date SHALL be recorded as a date only, without the time component.
 
-### Use of non-disclosure information
+#### Use of non-disclosure information
 
 Finnish citizens that have requested name and address protection ([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) are labeled with the security label. The preferred way to do this is shown below.
  
@@ -100,7 +91,7 @@ Finnish citizens that have requested name and address protection ([Non-disclosur
 
  Use of this label should be interpreted according to the law, rouhgly meaning that only personnel using systems in public/official affairs are allowed to see name and address for the patient/citizen.
 
-### Presenting guardian information
+#### Presenting guardian information
 
 In some cases, a guardian could be appointed to the patient if the patients is for ex. incapable of
 managing one's matters due to an illness. In these situations, the guardian's information shall be
