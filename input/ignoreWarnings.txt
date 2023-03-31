@@ -3,3 +3,22 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+
+# These examples are fake code systems - they're not expected to be checked
+Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
+Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
+Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
+Code System URI 'http://example.oma' is unknown so the code cannot be validated
+
+
+# IT WOULD BE NICE TO BE ABLE TO SUPPRESS THESE ERRORS TOO, BUT THEY ARE ERRORS, NOT WARNINGS.
+# The examples imported from Kanta PHR are not expected to be complete with all references
+# Unable to resolve resource with reference 'Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86'
+# Unable to resolve resource with reference 'Patient/36749a02-1710-44e7-aa76-0e934eb4321a'
+# Unable to resolve resource with reference 'Patient/7257379'
+# Unable to resolve resource with reference 'Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a'
+# Unable to resolve resource with reference 'Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde'
+# Unable to resolve resource with reference 'Patient/cafbe8e7-38fe-4807-b995-6770e5390365'
+# Unable to resolve resource with reference 'Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad'
+# Unable to resolve resource with reference 'Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c'
