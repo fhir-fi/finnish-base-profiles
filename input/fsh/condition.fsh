@@ -12,7 +12,7 @@ Description: "This is the Finnish base profile for the Condition resource."
 * extension contains ConditionCausedByMedication named conditionCausedByMedication 0..1
 * extension contains ConditionExternalCause named conditionExternalCause 0..1
 * extension contains ConditionCategorizationOfAccident named conditionCategorizationOfAccident 0..1
-* extension contains ExternalCauseOfAdverseEffect named externalCauseOfAdverseEffect 0..1
+* extension contains CauseOfAdverseEffect named causeOfAdverseEffect 0..1
 
 Extension: PrimaryCondition
 Id: condition-primary
@@ -62,10 +62,10 @@ Title: "Categorization of the type of accident"
 Description: "Encoded categorization of the type of accident leading to injury, illness or death."
 * value[x] only Coding
 
-Extension: ExternalCauseOfAdverseEffect
-Id: condition-external-cause-of-adverse-effect
-Title: "External cause of an adverse effect"
-Description: "Encoded information on the external cause of an adverse effect, when involving a procedure or medication"
+Extension: CauseOfAdverseEffect
+Id: condition-cause-of-adverse-effect
+Title: "Cause of an adverse effect"
+Description: "Encoded information on the cause of an adverse effect, when involving a procedure or medication"
 * value[x] only Coding
 
 CodeSystem: FiBaseConditionCategory
