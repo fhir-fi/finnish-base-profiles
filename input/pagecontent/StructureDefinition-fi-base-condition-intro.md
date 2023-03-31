@@ -178,28 +178,37 @@ TODO add example.
 
 In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
-#### 28 Aiheuttajan ATC-koodi
+#### Medication that caused this condition
 
 Extension `conditionCausedByMedication`  
 
 TODO example
 
-#### 3 Diagnoosin ulkoinen syy
+In THL specification, this data is codeId: 28 Aiheuttajan ATC-koodi
+
+#### External cause for diagnosis
 
 Extension `conditionExternalCause`
 
 TODO  example
 
-#### 4 Diagnoosin tapaturmatyyppi
+In THL specification, this data is codeId: 3 Diagnoosin ulkoinen syy
+
+#### Categorization of the type of accident
 
 Extension `conditionCategorizationOfAccident`
-TODO d example
 
-#### 5 Haittavaikutuksen aiheuttaja
+TODO  example
+
+In THL specification, this data is codeId: 4 Diagnoosin tapaturmatyyppi
+
+#### External cause of an adverse effect
 
 Extension `externalCauseOfAdverseEffect`
 
 TODO  example
+
+In THL specification, this data is codeId: 5 Haittavaikutuksen aiheuttaja
 
 #### Further development needs
 

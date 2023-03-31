@@ -46,8 +46,8 @@ Description: "Code for Endocrinological disorder."
 
 Extension: ConditionCausedByMedication
 Id: condition-caused-by-medication
-Title: "Aiheuttajan ATC-koodi"
-Description: "potilaan terveydentilan aiheuttanutta lääkeainetta kuvaava diagnoosikoodi"
+Title: "Medication that caused this condition"
+Description: "Encoded information of medication that caused this condition. Uses ATC-coding."
 * value[x] only Coding
 
 Extension: ConditionExternalCause
