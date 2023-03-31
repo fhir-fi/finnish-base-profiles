@@ -87,6 +87,10 @@ resources:
     name: Kanta PHR - body weight mandatory
     description: An example body weight measurement with mandatory elements.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/1153859e-0c86-1000-abb8-511d0000b222:
+    name: Kanta PHR - body height
+    description: An example body height measurement.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8:
     name: Kanta PHR - calorie intake optional
     description: An example calorie intake measurement with optional elements.
@@ -139,12 +143,10 @@ resources:
     name: A high level organization
     description: SOTE-toimintayksikko -level organization
     exampleCanonical: http://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
-
-
-#  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
-#    name: Kanta PHR - patient
-#    description: An example patient.
-#    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   
 
 pages:
