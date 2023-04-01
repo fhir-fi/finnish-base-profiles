@@ -7,7 +7,7 @@ Usage: #example
 * identifier.use = #official
 * identifier.value = "1.2.246.10.6794809.14011.2023.200035"
 * status = #in-progress
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
 * class.display = "inpatient encounter"
 * subject.reference = "Patient/id-for-patient"
@@ -21,7 +21,7 @@ Description: "An example of a FI Base encounter which is part of another encount
 Usage: #example
 * id = "id-for-child-encounter"
 * status = #in-progress
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
 * class.display = "inpatient encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 
@@ -40,7 +40,7 @@ Description: "An example of a FI Base encounter which is part of another encount
 Usage: #example
 * id = "id-for-child-encounter-2"
 * status = #finished
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #OBSENC
 * class.display = "observation encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 

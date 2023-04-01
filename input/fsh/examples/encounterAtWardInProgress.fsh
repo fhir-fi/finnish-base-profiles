@@ -7,7 +7,7 @@ Usage: #example
 * identifier.use = #usual
 * identifier.value = "id-for-ward-encounter"
 * status = #in-progress
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
 * class.display = "inpatient encounter"
 * subject.reference = "Patient/id-for-patient"

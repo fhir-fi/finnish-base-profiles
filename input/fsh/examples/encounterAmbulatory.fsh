@@ -7,7 +7,7 @@ Usage: #example
 * identifier.use = #usual
 * identifier.value = "id-for-visit"
 * status = #finished
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #AMB
 * class.display = "ambulatory"
 * subject.reference = "Patient/id-for-patient"
