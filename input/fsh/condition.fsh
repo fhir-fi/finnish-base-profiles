@@ -5,6 +5,8 @@ Title: "FI Base Condition"
 Description: "This is the Finnish base profile for the Condition resource."
 * ^status = #draft
 
+* subject only Reference(FiBasePatient)
+
 * extension contains PrimaryCondition named primaryCondition 0..1
 * extension contains Permanence named permanence 0..1
 * extension contains PhysicalExcercise named physicalExcercise 0..1
