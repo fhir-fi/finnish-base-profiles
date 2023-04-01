@@ -10,7 +10,7 @@ Usage: #example
 * class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
 * class.display = "inpatient encounter"
-* subject.reference = "Patient/id-for-patient"
+* subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-27T01:03:00+02:00"
 * serviceProvider.reference = "Organization/1.2.246.10.8286189.10.100012"
 
@@ -25,7 +25,7 @@ Usage: #example
 * class.code = #IMP
 * class.display = "inpatient encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 
-* subject.reference = "Patient/id-for-patient"
+* subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-27T01:03:00+02:00"
 * serviceProvider.type = #ServiceProvider
 * serviceProvider.identifier.value = "1.2.246.10.8286189.10.100013"
@@ -44,7 +44,7 @@ Usage: #example
 * class.code = #OBSENC
 * class.display = "observation encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 
-* subject.reference = "Patient/id-for-patient"
+* subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-28T12:03:00+02:00"
 * period.end = "2022-02-28T12:18:00+02:00"
 * serviceProvider.type = #ServiceProvider
