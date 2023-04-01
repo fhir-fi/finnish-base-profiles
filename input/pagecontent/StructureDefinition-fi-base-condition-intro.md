@@ -82,7 +82,7 @@ repetitions expressing the same information in two code systems):
       }
     ],
     "text" : "..."
-  },
+  }
 ```
 
 #### Symptom code
@@ -216,6 +216,7 @@ mapping work to be done. Following list contains most relevant parts that need w
 * THL Tietosisältö 20 Diagnoosin päättymisen toteajan palveluyksikkö
 * THL Tietosisältö 22 Episodin nimi
 * THL Tietosisältö 7 Diagnoosin tai käyntisyyn varmuusaste
+    * map to [verificationStatus codes](https://hl7.org/fhir/R4/valueset-condition-ver-status.html)?
 * THL Tietosisältö 9 Diagnoosin tai käyntisyyn episoditunnus
 
 #### Links
