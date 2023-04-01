@@ -11,13 +11,15 @@ Usage: #example
 * category[1].coding.code = #encounter-diagnosis
 
 * subject = Reference(PatientOfMunicipality)
-* code.coding.system = #1.2.246.537.6.1.1999
+* code.coding.system = #urn:oid:1.2.246.537.6.1.1999
 * code.coding.code = #T81.9
 * code.coding.display = "Määrittämätön toimenpidekomplikaatio"
 * code.text = "Määrittämätön toimenpidekomplikaatio"
 
 * onsetDateTime = "2023-01-05T02:06:24+03:00"
-* clinicalStatus = #active
+
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.system = #http://terminology.hl7.org/CodeSystem/condition-clinical
 
 * extension[PrimaryCondition].valueCoding.system = #urn:oid:1.2.246.537.5.40005.2003
 * extension[PrimaryCondition].valueCoding.code = #SIVU
@@ -27,10 +29,10 @@ Usage: #example
 * extension[Permanence].valueCoding.code = #KER
 * extension[Permanence].valueCoding.display = "Kertaluonteinen"
 
-* extension[ConditionExternalCause].valueCoding.system = #1.2.246.537.6.1.1999
+* extension[ConditionExternalCause].valueCoding.system = #urn:oid:1.2.246.537.6.1.1999
 * extension[ConditionExternalCause].valueCoding.code = #Y60.0
 * extension[ConditionExternalCause].valueCoding.display = "Leikkauksen yhteydessä vahingossa syntynyt haava, punktio, perforaatio tai verenvuoto"
 
-* extension[CauseOfAdverseEffect].valueCoding.system = #1.2.246.537.6.2.2007
+* extension[CauseOfAdverseEffect].valueCoding.system = #urn:oid:1.2.246.537.6.2.2007
 * extension[CauseOfAdverseEffect].valueCoding.code = #JAB10
 * extension[CauseOfAdverseEffect].valueCoding.display = "Nivustyrän korjaus"
