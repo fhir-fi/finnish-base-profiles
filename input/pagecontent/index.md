@@ -106,6 +106,10 @@ The part where HL7 FHIR is used the most is the [Kanta PHR](https://www.kanta.fi
 health record platform for storing and exchanging health and wellbeing data produced and governed
 by citizens. This part of Kanta is also the one most open to application developers.
 
+Kanta has also implemented a FHIR APIs for
+[prescription data](https://simplifier.net/PrescriptionR4) and for
+[social welfare services](https://simplifier.net/Kanta-sosiaalihuolto-R4).
+
 #### Omaolo
 
 [Omaolo](https://www.omaolo.fi) is a collection of services developed by DigiFinland, a publicly
@@ -138,8 +142,9 @@ offers a SMART App Launch method to interact with third party systems.
 
 The [FHIR Demo 2022](https://fhir.fi/en/demo2022/index.html) showcase presented integrations
 implemented between a dozen platforms and more than a dozen FHIR apps, all based on HL7 FHIR.
+The [FHIR Demo 2023](https://fhir.fi/en/demo2023/) continues the tradition.
 
-Even that showcase did not cover the full extent to which HL7 FHIR is being used in Finland.
+Even those showcases do not cover the full extent to which HL7 FHIR is being used in Finland.
 There's a lot going on!
 
 To learn about the current status, please contact [HL7 Finland](https://www.hl7.fi/). We're happy
