@@ -11,7 +11,7 @@ Use cases:
 * Reason given by patient for requesting/acquiring healthcare service. Finnish *tulosyy*
 * Other usages for various needs
 
-### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
+#### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
 
 Reason for visit may be a diagnosis asserted by a clinician / medical doctor or some other reason
 for visit that is asserted by an nurse or some other healthcare professional.
@@ -37,14 +37,14 @@ Categories match to THL specification in following way:
 * when `encounter-diagnosis` is not present --> This is a *käyntisyy*
     * In THL specification, codeId 23: Käyntisyy has value True
 
-#### Diagnosis Code Systems
+##### Diagnosis Code Systems
 
 When using [Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
 it's usage has special rules. These are described below. For reference and detailed specifications,
 see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet)
 version 5.11 or later.
 
-#### Diagnosis code (reason)
+##### Diagnosis code (reason)
 
 `code` SHALL only contain the reason code.
 
@@ -85,7 +85,7 @@ repetitions expressing the same information in two code systems):
   }
 ```
 
-#### Symptom code
+##### Symptom code
 
 Symptom code SHOULD be communicated via `evidence`.
 
@@ -116,14 +116,14 @@ For example:
 
 In THL specification, this data is codeId 26: Diagnoosin tai käyntisyyn oirekoodi.
 
-#### When name differs from code.display
+##### When name differs from code.display
 
 Medical doctor may make some adjustments to the name of the diagnosis. `code.display` MUST be the
 original name from the codesystem and `code.text` MAY contain adjusted name for the diagnosis.
 
 In THL specification, this data is codeId 21: Diagnoosin tai käyntisyyn nimi.
 
-#### Primary/main diagnosis (or käyntisyy)
+##### Primary/main diagnosis (or käyntisyy)
 
 Extension `primaryCondition` is used to express whether this is the primary/main condition for encounter.
 
@@ -131,7 +131,7 @@ Extension is a code from terminology "AR/YDIN - Diagnoosin /toimenpiteen ensisij
 
 In THL specification, this data is codeId 2: Diagnoosin tai käyntisyyn ensisijaisuus.
 
-#### Permanence (finnish "pysyvyys")
+##### Permanence (finnish "pysyvyys")
 
 Extension `permanence` is used to express the condition is permanent or not.
 
@@ -142,19 +142,19 @@ clinicalStatus codes (doing so would redefine clinicalStatus).
 
 In THL specification, this data is codeId 8: Diagnoosin pysyvyys.
 
-#### Onset
+##### Onset
 
 Standard `onset` SHOULD be used.
 
 In THL specification, this data is codeId 12: Diagnoosin tai käyntisyyn toteamispäivä.
 
-#### Abatement
+##### Abatement
 
 Standard `abatement` MAY be used.
 
 In THL specification, this data is codeId 16: Diagnoosin päättymispäivä.
 
-#### Asserter
+##### Asserter
 
 Standard `asserter` MAY be used.
 
@@ -162,7 +162,7 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-#### Type of physical exercise during which injury occurred
+##### Type of physical exercise during which injury occurred
 
 Extension `physicalExcercise`.
 
@@ -170,7 +170,7 @@ TODO add example.
 
 In THL specification, this data is codeId: 24 Tapaturman liikuntalaji.
 
-#### Endocrinological disorder
+##### Endocrinological disorder
 
 Extension `endocrinologicalDisorder`.
 
@@ -178,31 +178,31 @@ TODO add example.
 
 In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
-#### Medication that caused this condition
+##### Medication that caused this condition
 
 Extension `conditionCausedByMedication`  
 
 In THL specification, this data is codeId: 28 Aiheuttajan ATC-koodi
 
-#### External cause for diagnosis
+##### External cause for diagnosis
 
 Extension `conditionExternalCause`
 
 In THL specification, this data is codeId: 3 Diagnoosin ulkoinen syy
 
-#### Categorization of the type of accident
+##### Categorization of the type of accident
 
 Extension `conditionCategorizationOfAccident`
 
 In THL specification, this data is codeId: 4 Diagnoosin tapaturmatyyppi
 
-#### Cause of an adverse effect
+##### Cause of an adverse effect
 
 Extension `causeOfAdverseEffect`
 
 In THL specification, this data is codeId: 5 Haittavaikutuksen aiheuttaja
 
-#### Further development needs
+##### Further development needs
 
 Finnish diagnosis has some data that is not yet modeled in this profile. There is more modeling and
 mapping work to be done. Following list contains most relevant parts that need work:
