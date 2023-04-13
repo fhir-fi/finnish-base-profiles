@@ -21,7 +21,7 @@ Description: "Appointment example to general practitioner."
 * participant[+].actor = Reference(PractitionerLicensedPhysician)
 * participant[=].required = #required
 * participant[=].status = #accepted
-* participant[=].type = http://hl7.org/fhir/v3/ParticipationType#PPRF
+* participant[=].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF
 * participant[+].actor = Reference(LocationExample)
 * participant[=].status = #accepted
 * participant[+].actor = Reference(AT-340)
