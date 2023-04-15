@@ -10,7 +10,7 @@ Usage: #example
 * class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
 * class.display = "inpatient encounter"
-* subject.reference = "Patient/patient-of-municipalityt"
+* subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-27T01:03:00+02:00"
 * serviceProvider.reference = "Organization/1.2.246.10.8286189.10.100012"
 * location[0].status = #active
