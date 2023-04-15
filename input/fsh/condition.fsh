@@ -91,5 +91,6 @@ Id: fi-base-condition-category
 Title: "Finnish Condition categories"
 Description: "Additional categories for the Finnish Base Condition profile"
 * ^experimental = false
+* ^caseSensitive  = true
 * #reason-for-visit "Reason for visit"
     "Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."
