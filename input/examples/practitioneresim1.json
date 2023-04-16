@@ -1,0 +1,50 @@
+{
+  "resourceType": "Practitioner",
+  "id": "practitioneresim1",
+  "identifier": {
+    "system": "urn:oid:1.2.246.537.25",
+    "value": "000018"
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "van der Knaapi",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "van"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "der"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Knaapi"
+          }
+        ]
+      },
+      "given": [
+        "Lars",
+        "Matias"
+      ]
+    },
+    {
+      "use": "nickname",
+      "given": [
+        "Lars"
+      ]
+    }
+  ],
+  "qualification": {
+    "code": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.246.537.6.140.2008",
+          "code": "034"
+        }
+      ]
+    }
+  }
+}
