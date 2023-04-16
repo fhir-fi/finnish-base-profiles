@@ -215,6 +215,10 @@ resources:
     name: Kanta PHR - patient
     description: An example patient.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   Patient/7257379:
     name: HAPI reference server patient
     description: An example patient to make Observation and MedicationAdministration examples complete.
