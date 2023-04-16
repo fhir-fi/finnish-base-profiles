@@ -199,6 +199,10 @@ resources:
     name: Simple Organization example
     description: An example Organization from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
+  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
     name: Kanta PHR - patient
     description: An example patient.
