@@ -1,0 +1,43 @@
+{
+  "resourceType": "Patient",
+  "id": "patientesim1",
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.246.21",
+      "value": "250810A999Y"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "van der Hentenryck",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "van"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "der"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Hentenryck"
+          }
+        ]
+      },
+      "given": [
+        "Karen",
+        "Erika"
+      ]
+    },
+    {
+      "use": "nickname",
+      "given": [
+        "Karen"
+      ]
+    }
+  ],
+  "birthDate": "2010-08-25"
+}

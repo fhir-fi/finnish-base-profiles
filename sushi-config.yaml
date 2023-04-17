@@ -8,7 +8,7 @@ name: FinnishBaseProfiles
 title: Finnish Base Profiles
 description: A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 1.0.0-rc7
+version: 1.0.0-rc8
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,16 +25,24 @@ dependencies:
 resources:
   Bundle/diabetes-data-bundle:
     name: Patient generated glucose observations and insulin administrations as a bundle, in Finnish
-    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump.
+    description: A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Bundle/diabetes-data-bundle-kantaphr-r4-en:
     name: Patient generated glucose observations and insulin administrations as a bundle, in English
-    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles.
+    description: A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Bundle/diabetes-data-bundle-kantaphr-sv:
     name: Patient generated glucose observations and insulin administrations as a bundle, in Swedish
-    description: A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles.
+    description: A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Medication/medicationesim1:
+    name: Myyntiluvallinen lääkevalmiste
+    description: An example Medication instance from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication
+  Medication/medicationesim2:
+    name: Myyntiluvallinen lääkevalmiste, joka on PKV-lääke
+    description: An example Medication instance from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication
   MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3:
     name: Kanta PHR - Insulin dosage optional
     description: An example insulin dosage with optional elements.
@@ -55,6 +63,46 @@ resources:
     name: MedicationAdministration example of insulin dose
     description: A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration
+  MedicationRequest/medicationrequestesim1:
+    name: "1 tabletti 2 kertaa päivässä"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim2:
+    name: "2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim3:
+    name: "1-2 tablettia kerran päivässä"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim4:
+    name: "1-2 tablettia 1-3 kertaa päivässä"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim5:
+    name: "Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim6:
+    name: "Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim7A:
+    name: "1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim7B:
+    name: "1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim8:
+    name: "Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+  MedicationRequest/medicationrequestesim9:
+    name: "Tarvittaessa 1-2 tippaa 3-4 tunnin välein"
+    description: An example MedicationRequest from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
   Observation/bloodglucose-as-text:
     name: Kanta PHR - blood glucose result as text
     description: This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code.
@@ -127,6 +175,10 @@ resources:
     name: Kanta PHR - physical activity mandatory
     description: An example physical activity measurement with mandatory elements.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/1153859e-0c86-1000-abb8-511d0000b222:
+    name: Kanta PHR - body height optional
+    description: An example body height measurement with optional elements.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9:
     name: Kanta PHR - step count optional
     description: An example step count measurement with optional elements.
@@ -138,14 +190,55 @@ resources:
   Organization/1.2.246.10.31045308.10002.0:
     name: A high level organization
     description: SOTE-toimintayksikko -level organization
-    exampleCanonical: http://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
-
-
-#  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
-#    name: Kanta PHR - patient
-#    description: An example patient.
-#    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
+  Organization/organizationesim1:
+    name: Testi terveysasema
+    description: An example Organization from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
+  Organization/organizationesim2:
+    name: Simple Organization example
+    description: An example Organization from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
+  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/cafbe8e7-38fe-4807-b995-6770e5390365:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c:
+    name: Kanta PHR - patient
+    description: An example patient.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/7257379:
+    name: HAPI reference server patient
+    description: An example patient to make Observation and MedicationAdministration examples complete.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/patientesim1:
+    name: Karen van der Hentenryck
+    description: An example patient from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Practitioner/practitioneresim1:
+    name: Lars van der Knaapi
+    description: An example practitioner from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner
+  PractitionerRole/practitionerRoleesim1:
+    name: A simple practitioner role
+    description: An example PractitionerRole instance from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role
 
 pages:
   index.md:
