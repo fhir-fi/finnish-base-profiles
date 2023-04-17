@@ -58,4 +58,6 @@ Id: vaccination-recorder
 Title: "Vaccination Recorder"
 Description: "Vaccination recorder may not be the same person who performed the addministration."
 * . ^short = "Vaccination recorder may not be the same person who performed the addministration."
+* ^context.type = #element
+* ^context.expression = "Immunization"
 * value[x] only Reference(Practitioner)
