@@ -202,7 +202,8 @@ resources:
   Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
     name: Kanta PHR - patient
     description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient  Patient/patientesim1:
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/patientesim1:
     name: Karen van der Hentenryck
     description: An example patient from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
