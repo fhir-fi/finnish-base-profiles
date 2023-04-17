@@ -45,7 +45,7 @@
     "text": "Fast-acting insulin"
   },
   "subject": {
-    "reference": "Patient/patient-of-municipality"
+    "reference": "Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a"
   },
   "effectivePeriod": {
     "start": "2021-09-04T17:23:17.000+03:00",

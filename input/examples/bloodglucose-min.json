@@ -38,13 +38,13 @@
     ]
   },
   "subject": {
-    "reference": "Patient/patient-of-municipality"
+    "reference": "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde"
   },
   "effectiveDateTime": "2020-10-05",
   "issued": "2019-12-05T09:21:37.130+02:00",
   "performer": [
     {
-      "reference": "Patient/patient-of-municipality"
+      "reference": "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde"
     }
   ],
   "valueQuantity": {

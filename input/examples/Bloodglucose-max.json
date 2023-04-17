@@ -65,13 +65,13 @@
     ]
   },
   "subject": {
-    "reference": "Patient/patient-of-municipality"
+    "reference": "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c"
   },
   "effectiveDateTime": "2020-10-05",
   "issued": "2019-12-05T09:21:37.130+02:00",
   "performer": [
     {
-      "reference": "Patient/patient-of-municipality"
+      "reference": "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c"
     }
   ],
   "valueQuantity": {
