@@ -1,0 +1,50 @@
+{
+  "resourceType": "Medication",
+  "id": "medicationesim2",
+  "extension": [
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/drug",
+      "valueString": "DIAPAM"
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct",
+      "valueCoding": {
+        "system": "urn:oid:1.2.246.537.6.604.2014",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength",
+      "valueString": "5 mg"
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/narcotic",
+      "valueBoolean": false
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/CNSdrug",
+      "valueCoding": {
+        "system": "urn:oid:1.2.246.537.5.40118.2006",
+        "code": "Z"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.246.537.6.55.2004",
+      "value": "469437"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.246.537.6.32.2007",
+        "code": "N05BA01",
+        "display": "diatsepaami"
+      }
+    ]
+  },
+  "form": {
+    "text": "tabletti"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Medication",
+  "id": "medicationesim1",
+  "extension": [
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/drug",
+      "valueString": "CARDACE"
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct",
+      "valueCoding": {
+        "system": "urn:oid:1.2.246.537.6.604.2014",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength",
+      "valueString": "5 mg"
+    },
+    {
+      "url": "http://resepti.kanta.fi/StructureDefinition/extension/narcotic",
+      "valueBoolean": false
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.246.537.6.55.2004",
+      "value": "403048"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.246.537.6.32.2007",
+        "code": "C09AA05",
+        "display": "ramipriili"
+      }
+    ]
+  },
+  "form": {
+    "text": "tabletti"
+  }
+}

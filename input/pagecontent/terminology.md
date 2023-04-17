@@ -134,6 +134,10 @@ code is known.
 
 #### Medication Codes
 
-Finland uses the [ATC code system](https://www.whocc.no/) for codifying medicines.
+Finland uses the [ATC classification](https://www.whocc.no/) for codifying medicines. See the
+[Finnish localized version](https://www.fimea.fi/web/en/databases_and_registers/atc-codes).
+The classification divides drugs into groups according to which organ or organ system they affect
+and by their chemical, pharmacological and therapeutic properties
 
-
+Finland uses the Nordic Article Number ([VNR](https://wiki.vnr.fi/)) system for identification
+codes of specific articles of medicine with marketing authorisation in the Nordic countries.
