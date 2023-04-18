@@ -8,7 +8,7 @@ name: FinnishBaseProfiles
 title: Finnish Base Profiles
 description: A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 1.0.0-rc9
+version: 1.0.0-rc10
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -199,33 +199,9 @@ resources:
     name: Simple Organization example
     description: An example Organization from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
-  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
     name: Kanta PHR - patient
     description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/cafbe8e7-38fe-4807-b995-6770e5390365:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c:
-    name: Kanta PHR - patient
-    description: An example patient.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/7257379:
-    name: HAPI reference server patient
-    description: An example patient to make Observation and MedicationAdministration examples complete.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   Patient/patientesim1:
     name: Karen van der Hentenryck

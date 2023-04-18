@@ -13,5 +13,5 @@ Description: "Sub-procedure for Colotomy procedure."
 * code.coding[0].code = #76164006
 * code.text = "Biopsy of colon"
 * subject = Reference(PatientOfMunicipality)
-* performer.actor = Reference(Practitioner/example)
-* location = Reference(Location/1)
+* performer.actor = Reference(PractitionerLicensedPhysician)
+* location = Reference(LocationExample)

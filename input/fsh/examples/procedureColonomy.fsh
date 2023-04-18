@@ -15,5 +15,5 @@ Description: "This example describes main procedure, colotomy, with reference to
 * code.text = "Colotomy"
 * performedDateTime = "2022-06-08T09:00:00.000Z"
 * subject = Reference(PatientOfMunicipality)
-* performer.actor = Reference(Practitioner/example)
-* location = Reference(Location/1)
+* performer.actor = Reference(PractitionerLicensedPhysician)
+* location = Reference(LocationExample)
