@@ -30,12 +30,19 @@ official PIC is `1.2.246.21`.
 
 When an official PIC is not known or cannot be used for other reasons, a system may generate a
 [Temporary Identifier](https://www.kanta.fi/en/system-developers/test-etiquette#Temporary%20identifier).
-The `oid` for the temporary identifier is `1.2.246.10.<organization>.22.<year>`, where
-`<organization>` is the official identifier (y-tunnus) of the organization and `<year>` the year
-when the temporary identifier is generated.
+There are several ways to create `oid` for the temporary identifier but most typical ones are descriped in
+[ISO OID-yksilöintitunnuksen käytön kansalliset periaatteet sosiaali- ja terveysalalla](https://www.hl7.fi/hl7-rajapintakartta/iso-oid-yksilointitunnuksen-kayton-kansalliset-periaatteet-sosiaali-ja-terveysalalla/) document (document in finnish).
+Below there is a short description of the two main methods to create temporary identifier OID.
 
-The identifiers are presented to human readers in the 11 character format, without any oid
-information.
+1. `1.2.246.10.<organization>.22.<year>`, where `<organization>` is the official identifier (y-tunnus)
+of the organization and `<year>` the year when the temporary identifier is generated.
+2. `1.2.246.10.<organization>.10.<location>.22.<year>` where `organization` is the same as above, `location`
+is the location (toimipaikka) in which the organization is located and where the temporary identifier may
+have been created and `year` the year when the temporary identifier is generated.
+
+The identifiers are usually presented to human readers in the 11 character format, without any oid
+information. Although this is the preferred format, there are also other ways to record and pass patient
+identifiers. Be sure to always choose the appropriate format in given use case.
 
 When a PIC is used for an Patient instance, the value of the `identifier.use` field SHOULD be
 [`official`](https://www.hl7.org/fhir/codesystem-identifier-use.html#identifier-use-official) and
@@ -66,10 +73,9 @@ Clients SHOULD be prepared for cases where the name is not available. Systems ma
 to limit the amount of information that is being shared with FHIR apps. Some privacy aware systems
 do not share names or any demographic information by default.
 
+##### Time of Death
 
-##### Times
-
-Both time of birth and time of death SHOULD be recorded with the time component, if known. If the
+Time of death SHOULD be recorded with the time component, if known. If the
 time of day is not known, the date SHALL be recorded as a date only, without the time component.
 
 #### Use of non-disclosure information
