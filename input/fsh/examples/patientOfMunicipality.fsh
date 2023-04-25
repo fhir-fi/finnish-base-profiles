@@ -5,8 +5,8 @@ Description: "An example of a FI Base patient with the MunicipalityCode extensio
 Usage: #example
 * id = "patient-of-municipality"
 * identifier[PIC]
-  * type = #NNFIN
   * use = #official
+  * type = #NNFIN
   * system = #urn:oid:1.2.246.21
   * value = "010190-999Y"
 * gender = #male

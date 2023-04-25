@@ -17,7 +17,7 @@ Description: "This is the Finnish base profile for the Patient resource."
 * meta.security[non-disclosure].system = "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
 
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "When using the official Finnish personal identifier code (PIC, also known as HETU), identifier.system SHALL be #urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
@@ -25,8 +25,8 @@ Description: "This is the Finnish base profile for the Patient resource."
 
 * identifier contains PIC 0..1
   * ^short = "PIC (aka HETU)."
-* identifier[PIC].type = #NNFIN
 * identifier[PIC].use = #official
+* identifier[PIC].type = #NNFIN
 * identifier[PIC].system = #urn:oid:1.2.246.21
 
 * extension contains MunicipalityCode named municipality 0..1
