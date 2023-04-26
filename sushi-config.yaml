@@ -135,10 +135,6 @@ resources:
     name: Kanta PHR - body weight mandatory
     description: An example body weight measurement with mandatory elements.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
-  Observation/1153859e-0c86-1000-abb8-511d0000b222:
-    name: Kanta PHR - body height
-    description: An example body height measurement.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8:
     name: Kanta PHR - calorie intake optional
     description: An example calorie intake measurement with optional elements.
@@ -178,6 +174,10 @@ resources:
   Observation/mtvpa-min:
     name: Kanta PHR - physical activity mandatory
     description: An example physical activity measurement with mandatory elements.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
+  Observation/1153859e-0c86-1000-abb8-511d0000b222:
+    name: Kanta PHR - body height optional
+    description: An example body height measurement with optional elements.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9:
     name: Kanta PHR - step count optional
