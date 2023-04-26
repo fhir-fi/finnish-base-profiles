@@ -18,13 +18,13 @@
       "version" : "1.0.0-rc2",
       "date" : "2023-02-20",
       "desc" : "Ballot version for 1.0.0",
-      "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0.0-rc2/",
+      "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc2/",
       "changes" : "Ballot version for STU 1 release",
       "status" : "ballot",
       "sequence" : "STU 1 Sequence",
       "fhirversion" : "4.0.1",
       "ci-build" : "https://fhir.fi/finnish-base-profiles/",
-      "current": true
+      "current": false
     }
   ]
 }
