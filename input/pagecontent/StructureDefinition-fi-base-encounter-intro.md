@@ -37,18 +37,19 @@ resource.
 
 First thing is to identify the appropriate aggregation level of encounter. If encounter is not
 representing a *palvelutapahtuma*, but is a lower level encounter (some systems call these
-*prosessitapahtuma*), parentOf -should be used to point to upper level encounter (up until
-*palvelutapahtuma* -level is reached).
+*prosessitapahtuma*), `partOf` should be used to point to upper level encounter (up until
+*palvelutapahtuma* level is reached).
 
-*Palvelutapahtuma* -encounter is identified by identifier. When encounter has identifier with
-`use=official` it SHOULD be considered as palvelutapahtuma and that identifier should be the
-OID of *palvelutapahtuma*.
+A *palvelutapahtuma* encounter is identified by identifier. When encounter has an identifier with
+`use=official` it is considered to be a *palvelutapahtuma* and that identifier SHALL be the
+OID of a *palvelutapahtuma*.
 
-Other levels of encounter that are not *palvelutapahtuma*, MUST NOT contain `use=official` identifier.
+Other levels of encounter that are not a *palvelutapahtuma*, MUST NOT contain an ientifier with
+`use=official`.
 
 #### Organizational responsibility
 
-The unit responsible for the encounter should be communicated using the `serviceProvider` property.
+The unit responsible for the encounter SHOULD be communicated using the `serviceProvider` property.
 
-For instance, there's a [detailed example with explanations](Encounter-id-for-ward-encounter.html)
-how to fetch patients in a ward.
+For instance, there's a [detailed example with explanations](Encounter-id-for-ward-encounter.html) 
+for how to fetch patients in a ward.
