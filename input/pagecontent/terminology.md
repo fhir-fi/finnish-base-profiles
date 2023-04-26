@@ -7,13 +7,14 @@ existence.
 This version of this implementation guide does not define any terminologies. There are other, more
 use case specific implementation guides that may define terminologies for their use cases. See for
 instance:
-* [Finnish Appointment IG](https://simplifier.net/finnishappointment) for scheduling
-* [Finnish PHR STU3](https://simplifier.net/FinnishPHR) and
+* Both the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the
+  [Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) for scheduling
+* Both the [Finnish PHR STU3](https://simplifier.net/FinnishPHR) and the
   [Finnish PHR R4](https://simplifier.net/FinnishPHRR4) for health and wellbeing data in the
   national Personal Health Record platform Kanta PHR
-* [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) for prescriptions
-* [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) for welfare and social
-  affairs
+* The [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) for prescriptions
+* The [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) for welfare and
+  social affairs
 
 Most code systems used in this guide are defined in the base FHIR specification. They are not
 replicated here, but some essential concepts are presented below.
