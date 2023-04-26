@@ -45,6 +45,3 @@ Querying by location is also an option. Here the focus is on the physical locati
 organizational responsibility towards the patient.
 [This blog post](https://fhirblog.com/2013/10/24/adventures-in-searching-getting-a-list-of-patients-in-a-ward/)
 will describe the process.
-
-See [the guide](StructureDefinition-fi-base-encounter-patients-in-ward.html) for how to fetch
-patients in a ward.
