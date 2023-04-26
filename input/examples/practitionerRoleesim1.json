@@ -1,0 +1,10 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "practitionerRoleesim1",
+  "practitioner": {
+    "reference": "Practitioner/practitioneresim1"
+  },
+  "organization": {
+    "reference": "Organization/organizationesim1"
+  }
+}

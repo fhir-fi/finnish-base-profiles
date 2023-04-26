@@ -1,6 +1,6 @@
 Instance: OrganizationPrimaryCare
 InstanceOf: FiBaseOrganization
-Title: "Encounter - example primary care organization"
+Title: "Organization - example primary care organization"
 Description: "An example of a FI Base organization, a doctor's reception office. Data is from national SOTE-Rekisteri."
 Usage: #example
 * id = "1.2.246.10.2085212.10.1314"
@@ -19,4 +19,18 @@ Usage: #example
 * address[1].city = "Kyyjärvi"
 * telecom[0].system = #phone
 * telecom[0].value = "0401578947"
+* active = true
+
+// Providing minimal info of the parent organization for the example above,
+// no need to express full hierarchy here.
+Instance: OrganizationPrimaryCareParent
+InstanceOf: FiBaseOrganization
+Title: "Organization - example of a parent organization"
+Description: "An example of a FI Base organization. Acts as a parent organization for another."
+Usage: #example
+* id = "1.2.246.10.2085212.10.1306"
+* identifier.use = #official
+* identifier.system = #urn:oid:1.2.246.537.6.202.2008
+* identifier.value = "1.2.246.10.2085212.10.1306"
+* name = "Vastaanotot, SoTe kuntayhtymä Saarikka"
 * active = true

@@ -54,6 +54,10 @@ The part where HL7 FHIR is used the most is the [Kanta PHR](https://www.kanta.fi
 health record platform for storing and exchanging health and wellbeing data produced and governed
 by citizens. This part of Kanta is also the one most open to application developers.
 
+Kanta has also implemented a FHIR APIs for
+[prescription data](https://simplifier.net/PrescriptionR4) and for
+[social welfare services](https://simplifier.net/Kanta-sosiaalihuolto-R4).
+
 #### Omaolo
 
 [Omaolo](https://www.omaolo.fi) is a collection of services developed by DigiFinland, a publicly
@@ -86,8 +90,9 @@ offers a SMART App Launch method to interact with third party systems.
 
 The [FHIR Demo 2022](https://fhir.fi/en/demo2022/index.html) showcase presented integrations
 implemented between a dozen platforms and more than a dozen FHIR apps, all based on HL7 FHIR.
+The [FHIR Demo 2023](https://fhir.fi/en/demo2023/) continues the tradition.
 
-Even that showcase did not cover the full extent to which HL7 FHIR is being used in Finland.
+Even those showcases do not cover the full extent to which HL7 FHIR is being used in Finland.
 There's a lot going on!
 
 To learn about the current status, please contact [HL7 Finland](https://www.hl7.fi/). We're happy
@@ -148,8 +153,9 @@ According to those terms, this version of this implementation guide is closest t
 baseline profile. Its main purpose is to inform implementers of approaches already chosen, and
 thereby avoid re-implementing the wheel in a different form for new implementations.
 
-There are other, more use case specific FHIR implementation guides in Finland. For instance, the
-[Finnish Appointment IG](https://simplifier.net/finnishappointment) presents the basic approach and
+There are other, more use case specific FHIR implementation guides in Finland. For instance, both
+the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the 
+[Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) present the basic approach and
 profiles for scheduling.
 
 Especially the Kanta specific implementation guides for
@@ -164,6 +170,16 @@ implementation guides would derive their profiles from the base profiles present
 
 This implementation guide may also in the future be extended to cover Core profiles, in addition to
 the Base profiles of this first version.
+
+#### Must-Support Rules
+
+This version of this implementation guide does not define any
+[Must Support](https://build.fhir.org/profiling.html#obligations) rules.
+
+As explained in the FHIR specification (see link above), the meaning of the Must Support rules
+defined in the IPA specification apply as specified there for all profiles in this implementation
+guide that depend on an IPA profile.
+
 
 #### Profiles and Examples
 

@@ -17,16 +17,22 @@
         "value": "urn:uuid:a41e3987-cb6f-5224-8ea2-2a5a35125a22",
         "use": "official",
         "assigner": {
-          "type": "Organization",
-          "reference": "https://www.sensotrend.com/"
+          "identifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "https://www.sensotrend.com/"
+          },
+          "display": "Sensotrend Oy"
         }
       },
       {
         "system": "urn:ietf:rfc:3986",
         "value": "urn:uuid:c9494ac9-9303-4650-ae95-2b1cf95e32c0",
         "assigner": {
-          "type": "Organization",
-          "reference": "https://www.tidepool.org/"
+          "identifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "https://www.tidepool.org/"
+          },
+          "display": "Tidepool"
         }
       }
     ],

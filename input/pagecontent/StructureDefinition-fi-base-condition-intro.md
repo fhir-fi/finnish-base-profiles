@@ -7,8 +7,9 @@ href="#further-development-needs">further development needs</a> below.</p>
 
 Use cases:
 
-* Diagnosis -based conditions and Finnish Kayntisyy
-* Other usages?
+* Diagnosis -based conditions and Finnish *kayntisyy*, asserted by a healthcare professional
+* Reason given by patient for requesting/acquiring healthcare service. Finnish *tulosyy*
+* Other usages for various needs
 
 #### Reasons for visit (Diagnosis -based conditions and Finnish *käyntisyy*)
 
@@ -18,7 +19,7 @@ for visit that is asserted by an nurse or some other healthcare professional.
 To identify that a condition resource is a reason for visit, it MUST contain `category` code
 `reason-for-visit`.
 
-A reason for visit condition needs to be further categorized to make the distinction between 
+A reason for visit condition needs to be further categorized to make the distinction between
 clinician asserted diagnosis and other *käyntisyy* conditions. When condition is a clinician
 asserted diagnosis it MUST contain another `category` code `encounter-diagnosis`. When condition
 is not asserted by a clincian it MUST NOT contain `encounter-diagnosis` category code.
@@ -40,7 +41,8 @@ Categories match to THL specification in following way:
 
 When using [Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
 it's usage has special rules. These are described below. For reference and detailed specifications,
-see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet).
+see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet)
+version 5.11 or later.
 
 ##### Diagnosis code (reason)
 
@@ -56,6 +58,33 @@ In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-k
 in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
 Other codes, like symptom and accident type SHOULD NOT be repetitions of `code`.
 
+More than one code may be used in `code` (in `code`'s repetitions of `coding`). `code` itself cannot
+be repeated. Currently ICD-10, ICPC2 are supported by THL, in near future ICD-11, SNOMED and ORPHA
+will become supported too). Additional codes may be expressed by repeating coding. Other codes like
+sympton SHOULD not be communicated via `code`, repetitions should represent the same concept (see
+[CodeableConcept datatype specification](https://www.hl7.org/fhir/datatypes.html#CodeableConcept)).
+
+Here's a valid example of repeating `code.coding` (`code` is not repeating, but `coding` has
+repetitions expressing the same information in two code systems):
+
+``` json
+  "code" : {
+    "coding" : [
+      {
+        "system" : "1.2.246.537.6.1.1999",
+        "code" : "H36.03",
+        "display" : "Proliferatiivinen diabeettinen retinopatia"
+      },
+      {
+        "system" : "1.2.246.537.6.31.2007",
+        "code" : "F83",
+        "display" : "Retinopatia, verkkokalvon rappeuma"
+      }
+    ],
+    "text" : "..."
+  }
+```
+
 ##### Symptom code
 
 Symptom code SHOULD be communicated via `evidence`.
@@ -64,6 +93,26 @@ When using Finnish ICD-10, code MUST NOT contain special characters (`+` after t
 code indicates symptom). Pre-built pairs (like E85.9+I68.0) code . SHALL be broken down to
 constituent parts and the code part indicating symptom (in case of in case of E85.9+I68.0, `Koodi2`
 field) used here.
+
+For example:
+
+``` json
+"evidence" : [
+    {
+      "code" : [
+        {
+          "coding" : [
+            {
+              "system" : "1.2.246.537.6.1.1999",
+              "code" : "E11.3",
+              "display" : "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+```
 
 In THL specification, this data is codeId 26: Diagnoosin tai käyntisyyn oirekoodi.
 
@@ -76,13 +125,20 @@ In THL specification, this data is codeId 21: Diagnoosin tai käyntisyyn nimi.
 
 ##### Primary/main diagnosis (or käyntisyy)
 
-Use `category` code from "AR/YDIN - Diagnoosin /toimenpiteen ensisijaisuus" (1.2.246.537.5.40005.2003).
+Extension `primaryCondition` is used to express whether this is the primary/main condition for encounter.
+
+Extension is a code from terminology "AR/YDIN - Diagnoosin /toimenpiteen ensisijaisuus" (1.2.246.537.5.40005.2003).
 
 In THL specification, this data is codeId 2: Diagnoosin tai käyntisyyn ensisijaisuus.
 
 ##### Permanence (finnish "pysyvyys")
 
-Use `category` code from  "AR/YDIN - Pysyvyys" versiosta (1.2.246.537.5.40003.2003).
+Extension `permanence` is used to express the condition is permanent or not.
+
+Extension is a code from terminology "AR/YDIN - Pysyvyys" (1.2.246.537.5.40003.2003).
+
+This information has some relation to `clinicalStatus`, but "AR/YDIN - Pysyvyys" can't be mapped to
+clinicalStatus codes (doing so would redefine clinicalStatus).
 
 In THL specification, this data is codeId 8: Diagnoosin pysyvyys.
 
@@ -106,20 +162,9 @@ When `asserter` references a Practitioner, it can provide information for codeId
 in THL specification. When `asserter` references a PractitionerRole, it can provide information for
 both codeId 11: Toteajan nimi and codeId 19: Toteajan palveluyksikkö.
 
-##### Is not authored by a medical doctor (*Käyntisyy*)
+##### Type of physical exercise during which injury occurred
 
-Some conditions are very much like diagnosis but the asserter is not a medical doctor. THL
-specification identifies these as *käyntisyy*.
-
-Extension `isNotAuthoredByMedicalDoctor` with value `true` MUST be used when condition is a *käyntisyy*.
-It MAY be used with value `false` on medical doctor asserted diagnosis, but absence of this extension
-SHALL be interpreted as not being a *käyntisyy*.
-
-
-
-##### Type of sport in injury cases
-
-Extension `sport`.
+Extension `physicalExcercise`.
 
 TODO add example.
 
@@ -133,25 +178,29 @@ TODO add example.
 
 In THL specification, this data is codeId: 27 Endokrinologisen häiriön koodi.
 
-##### 28 Aiheuttajan ATC-koodi
+##### Medication that caused this condition
 
-TODO define extension and example
+Extension `conditionCausedByMedication`  
 
-##### 3 Diagnoosin ulkoinen syy
+In THL specification, this data is codeId: 28 Aiheuttajan ATC-koodi
 
-TODO define extension and example
+##### External cause for diagnosis
 
-##### 4 Diagnoosin tapaturmatyyppi
+Extension `conditionExternalCause`
 
-TODO define extension and example
+In THL specification, this data is codeId: 3 Diagnoosin ulkoinen syy
 
-##### 5 Haittavaikutuksen aiheuttaja
+##### Categorization of the type of accident
 
-TODO define extension and example
+Extension `conditionCategorizationOfAccident`
 
-##### Other category usages
+In THL specification, this data is codeId: 4 Diagnoosin tapaturmatyyppi
 
-`category` SHOULD also contain the standard `encounter-diagnosis`.
+##### Cause of an adverse effect
+
+Extension `causeOfAdverseEffect`
+
+In THL specification, this data is codeId: 5 Haittavaikutuksen aiheuttaja
 
 ##### Further development needs
 
@@ -167,9 +216,10 @@ mapping work to be done. Following list contains most relevant parts that need w
 * THL Tietosisältö 20 Diagnoosin päättymisen toteajan palveluyksikkö
 * THL Tietosisältö 22 Episodin nimi
 * THL Tietosisältö 7 Diagnoosin tai käyntisyyn varmuusaste
+    * map to [verificationStatus codes](https://hl7.org/fhir/R4/valueset-condition-ver-status.html)?
 * THL Tietosisältö 9 Diagnoosin tai käyntisyyn episoditunnus
 
-##### Links
+#### Links
 
 * [Suomalainen tautien kirjaamisen ohjekirja](https://thl.fi/documents/10531/124365/Opas%202012%2017.pdf)
 national guide for the use if ICD-10.

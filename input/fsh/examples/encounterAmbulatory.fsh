@@ -7,10 +7,10 @@ Usage: #example
 * identifier.use = #usual
 * identifier.value = "id-for-visit"
 * status = #finished
-* class.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #AMB
 * class.display = "ambulatory"
-* subject.reference = "Patient/id-for-patient"
+* subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-28T15:03:00+02:00"
 * period.end = "2022-02-28T15:33:00+02:00"
 * serviceProvider.reference = "Organization/1.2.246.10.2085212.10.1314"

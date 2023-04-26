@@ -7,7 +7,7 @@ Description: "Example of provenance that communicates custodian information for 
 * recorded = "2015-02-07T13:28:17.239+02:00"
 * agent[0].who.type = #Organization
 * agent[0].who.identifier.value = "1.2.246.10.32213043.19.0"
-* agent[0].type.coding[0].system = "http://hl7.org/fhir/ValueSet/participation-role-type"
+* agent[0].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * agent[0].type.coding[0].code = #custodian
 
 * extension[RegisterTypeCode].valueCoding.system = #urn:oid:1.2.246.537.5.40150.2009
