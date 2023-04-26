@@ -151,8 +151,9 @@ According to those terms, this version of this implementation guide is closest t
 baseline profile. Its main purpose is to inform implementers of approaches already chosen, and
 thereby avoid re-implementing the wheel in a different form for new implementations.
 
-There are other, more use case specific FHIR implementation guides in Finland. For instance, the
-[Finnish Appointment IG](https://simplifier.net/finnishappointment) presents the basic approach and
+There are other, more use case specific FHIR implementation guides in Finland. For instance, both
+the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the 
+[Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) present the basic approach and
 profiles for scheduling.
 
 Especially the Kanta specific implementation guides for
