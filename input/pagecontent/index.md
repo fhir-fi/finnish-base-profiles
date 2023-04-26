@@ -168,6 +168,16 @@ implementation guides would derive their profiles from the base profiles present
 This implementation guide may also in the future be extended to cover Core profiles, in addition to
 the Base profiles of this first version.
 
+#### Must-Support Rules
+
+This version of this implementation guide does not define any
+[Must Support](https://build.fhir.org/profiling.html#obligations) rules.
+
+As explained in the FHIR specification (see link above), the meaning of the Must Support rules
+defined in the IPA specification apply as specified there for all profiles in this implementation
+guide that depend on an IPA profile.
+
+
 #### Profiles and Examples
 
 We publish profile resources that help implementers validate their implementations.
