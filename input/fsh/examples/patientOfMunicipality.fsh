@@ -4,9 +4,11 @@ Title: "Patient - with the MunicipalityCode extension."
 Description: "An example of a FI Base patient with the MunicipalityCode extension."
 Usage: #example
 * id = "patient-of-municipality"
-* identifier[PIC].use = #official
-* identifier[PIC].system = #urn:oid:1.2.246.21
-* identifier[PIC].value = "010190-999Y"
+* identifier[PIC]
+  * use = #official
+  * type = #NNFIN
+  * system = #urn:oid:1.2.246.21
+  * value = "010190-999Y"
 * gender = #male
 * birthDate = "1990-01-01"
 * name
