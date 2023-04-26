@@ -35,7 +35,7 @@ described in
 [ISO OID-yksilöintitunnuksen käytön kansalliset periaatteet sosiaali- ja terveysalalla](https://www.hl7.fi/hl7-rajapintakartta/iso-oid-yksilointitunnuksen-kayton-kansalliset-periaatteet-sosiaali-ja-terveysalalla/)
 document (in Finnish).
 
-There are two generally used methods to create temporary identifier OID.
+There are two generally used methods to create a temporary identifier OID.
 
 1. `1.2.246.10.<organization>.22.<year>`, where `<organization>` is the official identifier
 (_y-tunnus_) of the organization and `<year>` the year when the temporary identifier is generated.
