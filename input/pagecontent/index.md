@@ -9,8 +9,8 @@ The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
 <section id="stu-ballot" class="stu-note">
   <h4>Standard for Trial Use Ballot</h4>
-  <p><strong>This is a DRAFT specification that is currently in ballot process by the members of <a
-  href="https://www.hl7.fi">HL7 Finland</a>.</p>
+  <p><strong>This is a DRAFT specification</strong> that is currently in ballot process by the
+  members of <a href="https://www.hl7.fi">HL7 Finland</a>.</p>
   <p>The <a
   href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-ballot1/">version 1.0.0-ballot1</a> of
   this implementation guide is frozen and published as a base for the official ballot within HL7
