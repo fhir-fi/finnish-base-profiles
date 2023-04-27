@@ -4,6 +4,8 @@ Id: fi-base-practitioner
 Title: "FI Base Practitioner"
 Description: "This is the Finnish base profile for the Practitioner resource."
 * id 1..1
+* identifier.assigner only Reference(FiBaseOrganization)
+* qualification.issuer only Reference(FiBaseOrganization)
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
