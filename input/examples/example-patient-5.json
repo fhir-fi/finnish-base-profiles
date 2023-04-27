@@ -1,0 +1,8 @@
+{
+  "resourceType": "Patient",
+  "id": "36749a02-1710-44e7-aa76-0e934eb4321a",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">Example patient added to make Kanta PHR examples complete.</div>"
+  }
+}

@@ -8,4 +8,8 @@ implementation guide might look like. Every effort has been made to ensure that 
 correct and useful, but they are not a normative part of the specification nor are they fully
 representative of real world examples.
 
+Before deriving any conclusions from the examples alone, please do check the
+[quality asssurance report](qa.html) of this implementation guide to learn about the identified
+issues and non-conformities of examples.
+
 {% include example-list-generator.html %}

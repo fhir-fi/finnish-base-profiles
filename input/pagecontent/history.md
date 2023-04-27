@@ -21,7 +21,7 @@ New snapshot versions will be published throughout the ballot cycle.
         <td colspan="4"><b>Current Versions</b></td>
       </tr>
       <tr>
-        <td><a href="https://fhir.fi/finnish-base-profiles/">(current)</a></td>
+        <td><a href="https://fhir.fi/finnish-base-profiles/">(latest)</a></td>
         <td>(last commit)</td><td>Current Development build (about 15min behind version control, may be incoherent and change rapidly)</td><td><a title="Home Page" href="https://fhir.fi/finnish-base-profiles/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://fhir.fi/finnish-base-profiles/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://fhir.fi/finnish-base-profiles/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package" href="https://fhir.fi/finnish-base-profiles/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
       <tr style="background-color: #f9f9f9">

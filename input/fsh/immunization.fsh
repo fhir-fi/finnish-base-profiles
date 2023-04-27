@@ -47,7 +47,7 @@ Description: "This is a base profile for Finnish Immunization resource."
   * ^short = "Vaccine preventatable disease being targetted defined by using THL code system"
 
 * protocolApplied.targetDisease.coding contains THL-code 0..1
-  * system = #urn:oid:1.2.246.537.6.609.201501 (exactly)
+* protocolApplied.targetDisease.coding[THL-code].system = #urn:oid:1.2.246.537.6.609.201501 (exactly)
 
 * reaction.detail ^short = "Reference to contained Observation resource. The contained Observation has relevant diagnose codes."
 
@@ -58,4 +58,6 @@ Id: vaccination-recorder
 Title: "Vaccination Recorder"
 Description: "Vaccination recorder may not be the same person who performed the addministration."
 * . ^short = "Vaccination recorder may not be the same person who performed the addministration."
+* ^context.type = #element
+* ^context.expression = "Immunization"
 * value[x] only Reference(Practitioner)

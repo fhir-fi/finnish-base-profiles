@@ -12,7 +12,6 @@ Usage: #example
 * occurrenceDateTime = "2023-01-10"
 * primarySource = false
 * location = Reference(LocationExample)
-* manufacturer = Reference(Organization/hl7)
 * expirationDate = "2025-02-15"
 * site.coding[Vaccination-site]
   * system = #urn:oid:1.2.246.537.6.110.2007
@@ -29,4 +28,4 @@ Usage: #example
 * performer[+].function = http://terminology.hl7.org/CodeSystem/v2-0443#AP
 * performer[=].actor = Reference(PractitionerLicensedPhysician)
 * reasonCode = http://snomed.info/sct#429060002
-* extension[vaccinationRecorder].valueReference = Reference(Practitioner/1)
+* extension[vaccinationRecorder].valueReference = Reference(PractitionerLicensedPhysician)

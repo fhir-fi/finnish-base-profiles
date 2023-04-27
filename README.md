@@ -65,14 +65,16 @@ With the above requirements installed locally, run
 #### On OSX, Linux, or Unix
 
 ``` bash
+npm install -g fsh-sushi
 ./_updatePublisher.sh --yes
 ./_genonce.sh
 ```
 
 #### On Windows
 ```
-./_updatePublisher.bat --yes
-./_genonce.bat
+npm install -g fsh-sushi
+.\_updatePublisher.bat --yes
+.\_genonce.bat
 ```
 
 ### Using Docker
