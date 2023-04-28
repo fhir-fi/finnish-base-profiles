@@ -1,8 +1,8 @@
 Instance: ColonBiopsy
 InstanceOf: FiBaseProcedure
-Usage: #example
 Title: "Biopsy of Colon procedure example"
 Description: "Sub-procedure for Colotomy procedure."
+Usage: #example
 * identifier.value = "12345"
 * partOf = Reference(ProcedureColotomy)
 * status = #completed

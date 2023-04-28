@@ -1,7 +1,8 @@
 Instance: ProvenanceExample
 InstanceOf: FiBaseProvenance
+Title: "Custodian of information (rekisterinpitäjä)"
+Description: "Example of Provenance that communicates custodian information for an episode of care."
 Usage: #example
-Description: "Example of provenance that communicates custodian information for an episode of care."
 * id = "id-for-provenance-1"
 * target = Reference(EpisodeOfCare/id-for-episode-1)
 * recorded = "2015-02-07T13:28:17.239+02:00"

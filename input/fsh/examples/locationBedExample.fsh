@@ -1,7 +1,8 @@
 Instance: LocationBedExample
 InstanceOf: FiBaseLocation
+Title: "A named bed"
+Description: "Example of a bed recorded with the Location resource."
 Usage: #example
-Description: "Example of a bed."
 * id = "id-for-bed-3"
 * mode = #instance
 * name = "Vuode 3"

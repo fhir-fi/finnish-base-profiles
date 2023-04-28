@@ -1,5 +1,6 @@
 Instance: FreeSlot
 InstanceOf: FiBaseSlot
+Title: "Free slot (kertakäynti yleislääkärillä)"
 Description: "Example of a free slot with reference to Schedule and information about service category, service type and appointment type presented in THL code system format."
 Usage: #example
 * identifier.value = "123456789"

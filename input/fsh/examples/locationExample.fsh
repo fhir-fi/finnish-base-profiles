@@ -1,7 +1,8 @@
 Instance: LocationExample
 InstanceOf: FiBaseLocation
-Usage: #example
+Title: "Outpatient clinic"
 Description: "Example of surgery outpatient clinic with refenrence to an organization."
+Usage: #example
 * address.use = #work
 * alias = "2KIRPKL"
 * identifier.system = "urn:ietf:rfc:3986"
