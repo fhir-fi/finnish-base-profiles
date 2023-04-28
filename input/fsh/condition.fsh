@@ -6,6 +6,10 @@ Description: "This is the Finnish base profile for the Condition resource."
 * ^status = #draft
 
 * subject only Reference(FiBasePatient)
+* encounter only Reference(FiBaseEncounter)
+* recorder only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole or RelatedPerson)
+* asserter only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole or RelatedPerson)
+* stage.assessment only Reference(ClinicalImpression or DiagnosticReport or FiBaseObservation)
 
 * extension contains PrimaryCondition named primaryCondition 0..1
 * extension contains Permanence named permanence 0..1

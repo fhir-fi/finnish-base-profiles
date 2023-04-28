@@ -4,6 +4,14 @@ Id: fi-base-immunization
 Title: "Fi Base Immunization"
 Description: "This is a base profile for Finnish Immunization resource."
 * ^status = #draft
+* patient only Reference(FiBasePatient)
+* encounter only Reference(FiBaseEncounter)
+* location only Reference(FiBaseLocation)
+* manufacturer only Reference(FiBaseOrganization)
+* performer.actor only Reference(FiBasePractitioner or FiBasePractitionerRole or FiBaseOrganization)
+* reasonReference only Reference(FiBaseCondition or FiBaseObservation or DiagnosticReport)
+* reaction.detail only Reference(FiBaseObservation)
+* protocolApplied.authority only Reference(FiBaseOrganization)
 
 * vaccineCode.coding ^slicing.discriminator.type = #value
 * vaccineCode.coding ^slicing.discriminator.path = "system"
@@ -60,4 +68,4 @@ Description: "Vaccination recorder may not be the same person who performed the 
 * . ^short = "Vaccination recorder may not be the same person who performed the addministration."
 * ^context.type = #element
 * ^context.expression = "Immunization"
-* value[x] only Reference(Practitioner)
+* value[x] only Reference(FiBasePractitioner)
