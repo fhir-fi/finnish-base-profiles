@@ -21,9 +21,9 @@ New snapshot versions will be published throughout the ballot cycle.
         <td colspan="4"><b>Current Versions</b></td>
       </tr>
       <tr>
-        <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/">2023-04-28</a></td>
+        <td><a href="https://www.hl7.fi/fhir/finnish-base-profiles/">2023-04-28</a></td>
         <td>1.0.0-rc15</td><td>Official ballot version for STU release 1.0.0</td>
-        <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v1.0.0-rc15" href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
+        <td><a title="Home Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/"><img src="https://hl7.org/fhir/assets/images/page.png"></a>&nbsp;<a title="Download" href="https://www.hl7.fi/fhir/finnish-base-profiles/full-ig.zip"><img src="https://hl7.org/fhir/assets/images/download.gif"></a>&nbsp;<a title="QA Page" href="https://www.hl7.fi/fhir/finnish-base-profiles/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"></a>&nbsp; <a title="NPM Package hl7.fhir.fi.base v1.0.0-rc15" href="https://www.hl7.fi/fhir/finnish-base-profiles/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"></a></td>
       </tr>
       <tr>
         <td><a href="https://fhir.fi/finnish-base-profiles/">(latest)</a></td>
