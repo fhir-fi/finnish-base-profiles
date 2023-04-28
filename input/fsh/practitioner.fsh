@@ -3,7 +3,9 @@ Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner
 Id: fi-base-practitioner
 Title: "FI Base Practitioner"
 Description: "This is the Finnish base profile for the Practitioner resource."
+* ^status = #draft
 * id 1..1
+* qualification.issuer only Reference(FiBaseOrganization)
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

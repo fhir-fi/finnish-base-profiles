@@ -3,3 +3,9 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# These examples are fake code systems - they're not expected to be checked
+Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
+Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
+Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
+Code System URI 'http://example.oma' is unknown so the code cannot be validated

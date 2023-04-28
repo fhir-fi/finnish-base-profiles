@@ -1,6 +1,10 @@
 Profiles set additional constraints for the FHIR base resources and help tighter interoperability
 between systems.
 
+### Global Profiles
+
+{% include globals-table.xhtml %}.
+
 ### Finnish Base Profiles
 
 This is the list of base profiles for FHIR resources for use in Finland, published and maintained
