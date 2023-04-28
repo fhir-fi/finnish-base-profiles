@@ -1,9 +1,10 @@
 Profiles set additional constraints for the FHIR base resources and help tighter interoperability
-between systems.
+between systems. Read more in the [Profiling](https://hl7.org/fhir/profiling.html) section of the
+FHIR specification.
 
 ### Global Profiles
 
-{% include globals-table.xhtml %}.
+{% include globals-table.xhtml %}
 
 ### Finnish Base Profiles
 

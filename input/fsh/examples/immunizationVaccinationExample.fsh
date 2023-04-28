@@ -1,6 +1,7 @@
 Instance: ImmunizationVaccinationExample
 InstanceOf: FiBaseImmunization
-Description: "Vaccination for TBE."
+Title: "Vaccination for TBE"
+Description: "An example vaccination against TBE."
 Usage: #example
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234"

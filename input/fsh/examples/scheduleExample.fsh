@@ -1,6 +1,7 @@
 Alias: $SCT = http://snomed.info/sct
 Instance: ScheduleExample
 InstanceOf: FiBaseSchedule
+Title: "SNOMED CT coded Schedule"
 Description: "This is a Schedule example for appointment book. All of the used codes are from SNOMED code system."
 Usage: #example
 * identifier.use = #usual

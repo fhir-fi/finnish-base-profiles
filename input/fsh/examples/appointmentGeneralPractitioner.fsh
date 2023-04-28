@@ -1,7 +1,8 @@
 Instance: A121801
 InstanceOf: FiBaseAppointment
 Usage: #example
-Description: "Appointment example to general practitioner."
+Title: "GP appointment"
+Description: "Example of an appointment with general practitioner."
 * id = "appointment-general-practitioner"
 * appointmentType = urn:oid:1.2.246.537.6.884.2015#101
 * created = "2023-01-20T08:45:15+02:00"

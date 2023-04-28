@@ -1,7 +1,8 @@
 Instance: AT-340
 InstanceOf: FiBaseHealthcareService
-Usage: #example
+Title: "Codified healthcare service"
 Description: "HealthcareService example which describes general practitioner services by using THL code systems."
+Usage: #example
 * id = "healthcareService-example"
 * active = true
 * appointmentRequired = true

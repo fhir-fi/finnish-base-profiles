@@ -1,6 +1,12 @@
 {
   "resourceType": "Patient",
   "id": "25a53703-27f9-4354-8f1b-a8b2f8f3ee86",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+    }
+  ],
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">Example patient added to make Kanta PHR examples complete.</div>"

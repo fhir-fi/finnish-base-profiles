@@ -1,8 +1,8 @@
 Instance: ProcedureColotomy
 InstanceOf: FiBaseProcedure
-Usage: #example
 Title: "Procedure Colotomy example"
 Description: "This example describes main procedure, colotomy, with reference to sub-procedure."
+Usage: #example
 * identifier.value = "3456"
 * status = #completed
 * category.coding[0]
