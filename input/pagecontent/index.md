@@ -9,6 +9,23 @@ This implementation guide is based on [FHIR R4](http://hl7.org/fhir/R4/). None o
 uses are changed in [FHIR R4B](http://hl7.org/fhir/R4B/), so it can be used as is with R4B systems.
 There is no plan yet to base this implementation guide on [FHIR R5](http://hl7.org/fhir/R5/).
 
+<section id="stu-ballot" class="stu-note">
+  <h4>Standard for Trial Use Ballot</h4>
+  <p><strong>This is a DRAFT specification</strong> that is currently in ballot process by the
+  members of <a href="https://www.hl7.fi">HL7 Finland</a>.</p>
+  <p>The <a
+  href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/">version 1.0.0-rc15</a> of
+  this implementation guide is frozen and published as a base for the official ballot within HL7
+  Finland.</p>
+  <p>This ballot cycle is considered a <strong>Standard for Trial Use</strong> ballot in the <a
+  href="https://confluence.hl7.org/display/HL7/HL7+Balloting">HL7 Balloting process</a>.</p>
+  <p>HL7 Finland does not use the HL7 Ballot Desktop or the Jira Ballot Process, rather feedback is
+  gathered through email to <a href="mailto:timo.kaskinen@nhg.fi">timo.kaskinen@nhg.fi</a>, the
+  chair of the Technical Committee of HL7 Finland.</p>
+  <p>See the <a href="https://www.hl7.fi/hl7-aanestys-kansalliset-fhir-soveltamisoppaat/">formal
+  notice</a> on FL7 Finland's website.</p>
+</section>
+
 #### Companion Specifications
 
 There is a separate [Finnish Implementation Guide for SMART App
