@@ -19,7 +19,7 @@ to express each visit as a separate encounter (see kanta doc for the description
 there are other examples too).
 
 For deeper techical details, se Kanta [HL7 V3 Medical Records specification](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-medical-records)
-(this again in finnish).
+(in finnish).
 
 ##### Why does encounter need this information?
 
