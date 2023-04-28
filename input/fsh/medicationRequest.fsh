@@ -15,3 +15,4 @@ Description: "This is the Finnish base profile for the MedicationRequest resourc
 * eventHistory only Reference(FiBaseProvenance)
 * priorPrescription only Reference(FiBaseMedicationRequest)
 * dispenseRequest.performer only Reference(FiBaseOrganization)
+* basedOn only Reference(CarePlan or FiBaseMedicationRequest or ServiceRequest or ImmunizationRecommendation)	
