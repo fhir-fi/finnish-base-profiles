@@ -24,7 +24,7 @@ Description: "Encoded information of whether this is the primary/main condition 
 * valueCoding 1..1
   * system = #urn:oid:1.2.246.537.5.40005.2003
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: Permanence
 Id: condition-permanence
@@ -34,7 +34,7 @@ Description: "Encoded information of whether this is the permanent."
 * valueCoding 1..1
   * system = #urn:oid:1.2.246.537.5.40003.2003
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: PhysicalExcercise
 Id: condition-physical-excercise
@@ -44,7 +44,7 @@ Description: "Encoded information of the type of physical exercise during which 
 * valueCoding 1..1
   * system = #urn:oid:1.2.246.537.6.301.201601
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: EndocrinologicalDisorder
 Id: condition-endocrinological-disorder
@@ -52,7 +52,7 @@ Title: "Endocrinological disorder"
 Description: "Code for Endocrinological disorder."
 * value[x] only Coding
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: ConditionCausedByMedication
 Id: condition-caused-by-medication
@@ -60,7 +60,7 @@ Title: "Medication that caused this condition"
 Description: "Encoded information of medication that caused this condition. Uses ATC-coding."
 * value[x] only Coding
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: ConditionExternalCause
 Id: condition-external-cause
@@ -68,7 +68,7 @@ Title: "External cause for diagnosis"
 Description: "External cause for diagnosis."
 * value[x] only Coding
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: ConditionCategorizationOfAccident
 Id: condition-categorization-of-accident
@@ -76,7 +76,7 @@ Title: "Categorization of the type of accident"
 Description: "Encoded categorization of the type of accident leading to injury, illness or death."
 * value[x] only Coding
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 Extension: CauseOfAdverseEffect
 Id: condition-cause-of-adverse-effect
@@ -84,6 +84,6 @@ Title: "Cause of an adverse effect"
 Description: "Encoded information on the cause of an adverse effect, when involving a procedure or medication"
 * value[x] only Coding
 * ^context[+].type = #element
-* ^context[=].expression = "FiBaseReasonForCare"
+* ^context[=].expression = "Condition"
 
 
