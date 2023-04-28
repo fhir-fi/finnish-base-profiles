@@ -5,7 +5,9 @@ This implementation guide specifies the Finnish FHIR base profiles.
 It builds on top of the [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
 specification.
 
-The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
+This implementation guide is based on [FHIR R4](http://hl7.org/fhir/R4/). None of the features it
+uses are changed in [FHIR R4B](http://hl7.org/fhir/R4B/), so it can be used as is with R4B systems.
+There is no plan yet to base this implementation guide on [FHIR R5](http://hl7.org/fhir/R5/).
 
 #### Companion Specifications
 
@@ -193,10 +195,10 @@ document all different approaches used.
 The profiling work is performed in a project driven by [HL7 Finland](https://www.hl7.fi).
 See the
 [announcement](https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/)
-(in Finnish), the [running
-memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#), and
-[some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
-even be compensated for your efforts.
+(in Finnish), the
+[running memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#),
+and [some more details](https://fhir.fi). We warmly welcome new participants to the project. You
+may even be compensated for your efforts.
 
 The team involved in creating the first version of the specification includes
 * Arto Huusko, CGI Oyj
@@ -215,7 +217,7 @@ The team involved in creating the first version of the specification includes
 * Tero Pekkola, Esko Systems Oy
 
 Each published major version of this implementation guide goes through the ballot and voting
-processes of HL7 Finland.
+processes of HL7 Finland, and then represents the consensus view of the Finnish FHIR community.
 
 ### Collaboration
 
