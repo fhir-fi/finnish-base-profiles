@@ -14,8 +14,9 @@ outdated.</p>
 <p>The concepts and resources are used, most notably by <a href="https://www.omaolo.fi">Omaolo</a>
 symptom assessment services and <a
 href="https://www.solita.fi/asiakkaat/palveluohjain-sujuvoittaa-suomalaisten-arkea/">AVPH</a>
-(_ajanvaraus ja palveluohjain -sovellus_) scheduling service, and the scheduling API of the
-[OMNI360](https://www.cgi.com/fi/fi/tuoteratkaisut/omni360) electronic health record system.</p>
+(<i lang="fi">ajanvaraus ja palveluohjain -sovellus</i>) scheduling service, and the scheduling API
+of the <a href="https://www.cgi.com/fi/fi/tuoteratkaisut/omni360">OMNI360</a> electronic health
+record system.</p>
 <p>Still, implementers should read these implementation guides with caution and verify the latest
 state of the art from their customers or from vendors of real world implementations.</p>
 <p>HL7 Finland is currently considering updating the published implementation guides.</p>
