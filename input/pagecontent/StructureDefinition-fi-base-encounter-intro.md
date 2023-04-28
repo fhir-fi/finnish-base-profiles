@@ -18,8 +18,12 @@ a series of treatments is considered to be a singular *palvelutapahtuma*, but sy
 to express each visit as a separate encounter (see kanta doc for the description of "hoitosarja",
 there are other examples too).
 
-For deeper techical details, se Kanta [HL7 V3 Medical Records specification](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-medical-records)
-(this again in finnish).
+For deeper techical details, see (in Finnish):
+
+* Kanta [CDA R2 Header](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-cda-r2-header) version 4.66 or later.
+    * Descriptions of *palvelutapahtuma*
+* Kanta [HL7 V3 Medical Records specification](https://www.kanta.fi/jarjestelmakehittajat/potilastiedon-arkiston-medical-records).
+    * Shows the role of *palvelutapahtuma* when making requests to Kanta
 
 ##### Why does encounter need this information?
 
