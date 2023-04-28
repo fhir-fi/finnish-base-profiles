@@ -4,9 +4,7 @@
 
 This is an example encounter diagnosis (in Finnish called *käyntidiagnoosi*, even for ward periods).
 
-`category` code `166` tells that it is a diagnosis (using the Kanta code system).
-
-`category` code `encounter-diagnosis` is used in a standard way.
+`category` code `encounter-diagnosis` communicates that is a diagnosis asserted by a clinician.
 
 #### No special characters in codes
 
