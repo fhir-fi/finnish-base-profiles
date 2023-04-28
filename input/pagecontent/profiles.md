@@ -3,7 +3,7 @@ between systems.
 
 ### Global Profiles
 
-{% include globals-table.xhtml %}.
+{% include globals-table.xhtml %}
 
 ### Finnish Base Profiles
 
