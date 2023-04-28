@@ -1,14 +1,11 @@
 Instance: DiagnosisSimple
-InstanceOf: FiBaseCondition
+InstanceOf: FiBaseReasonForCare
 Title: "Condition - an example diagnosis"
 Description: "An example of a diagnosis using the FiBaseCondition pofile. This diagnosis is asserted by a clinician."
 Usage: #example
 * id = "id-for-diagnosis-1"
-* category[0].coding.system = #https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category
-* category[0].coding.code = #reason-for-visit
-
-* category[1].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category
-* category[1].coding.code = #encounter-diagnosis
+* category[0].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category
+* category[0].coding.code = #encounter-diagnosis
 
 * subject = Reference(PatientOfMunicipality)
 * code.coding.system = #urn:oid:1.2.246.537.6.1.1999
