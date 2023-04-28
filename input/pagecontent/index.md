@@ -205,9 +205,11 @@ The team involved in creating the first version of the specification includes
 * Jari Vuonos, Apotti Oy
 * Joni Hirviniemi, Fujitsu
 * Jyrki Soikkeli, Apotti Oy
+* Kalle Moilanen, Esko Systems Oy
 * Marko Kaukonen, BCB Medical Oy
 * Markus Lind, Buddy Healthcare Oy
 * Markus Suonpää, CGI Finland Oyj
+* Miika Langille, Esko Systems Oy
 * Mika Jylhä, Esko Systems Oy
 * Mika Lentovaara, HUS
 * Mika Tuomainen, Kela
