@@ -26,6 +26,7 @@ Description: "This is the Finnish base profile for the Patient resource."
 * identifier contains PIC 0..1
   * ^short = "PIC (aka HETU)."
 * identifier[PIC].use = #official
+* identifier[PIC].type = #NNFIN
 * identifier[PIC].system = #urn:oid:1.2.246.21
 
 * extension contains MunicipalityCode named municipality 0..1

@@ -5,7 +5,9 @@ This implementation guide specifies the Finnish FHIR base profiles.
 It builds on top of the [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
 specification.
 
-The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
+This implementation guide is based on [FHIR R4](http://hl7.org/fhir/R4/). None of the features it
+uses are changed in [FHIR R4B](http://hl7.org/fhir/R4B/), so it can be used as is with R4B systems.
+There is no plan yet to base this implementation guide on [FHIR R5](http://hl7.org/fhir/R5/).
 
 <section id="stu-ballot" class="stu-note">
   <h4>Standard for Trial Use Ballot</h4>
@@ -166,8 +168,9 @@ According to those terms, this version of this implementation guide is closest t
 baseline profile. Its main purpose is to inform implementers of approaches already chosen, and
 thereby avoid re-implementing the wheel in a different form for new implementations.
 
-There are other, more use case specific FHIR implementation guides in Finland. For instance, the
-[Finnish Appointment IG](https://simplifier.net/finnishappointment) presents the basic approach and
+There are other, more use case specific FHIR implementation guides in Finland. For instance, both
+the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the 
+[Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) present the basic approach and
 profiles for scheduling.
 
 Especially the Kanta specific implementation guides for
@@ -183,6 +186,16 @@ implementation guides would derive their profiles from the base profiles present
 This implementation guide may also in the future be extended to cover Core profiles, in addition to
 the Base profiles of this first version.
 
+#### Must-Support Rules
+
+This version of this implementation guide does not define any
+[Must Support](https://build.fhir.org/profiling.html#obligations) rules.
+
+As explained in the FHIR specification (see link above), the meaning of the Must Support rules
+defined in the IPA specification apply as specified there for all profiles in this implementation
+guide that depend on an IPA profile.
+
+
 #### Profiles and Examples
 
 We publish profile resources that help implementers validate their implementations.
@@ -197,10 +210,10 @@ document all different approaches used.
 The profiling work is performed in a project driven by [HL7 Finland](https://www.hl7.fi).
 See the
 [announcement](https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/)
-(in Finnish), the [running
-memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#), and
-[some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
-even be compensated for your efforts.
+(in Finnish), the
+[running memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#),
+and [some more details](https://fhir.fi). We warmly welcome new participants to the project. You
+may even be compensated for your efforts.
 
 The team involved in creating the first version of the specification includes
 * Arto Huusko, CGI Oyj
@@ -219,7 +232,7 @@ The team involved in creating the first version of the specification includes
 * Tero Pekkola, Esko Systems Oy
 
 Each published major version of this implementation guide goes through the ballot and voting
-processes of HL7 Finland.
+processes of HL7 Finland, and then represents the consensus view of the Finnish FHIR community.
 
 ### Collaboration
 

@@ -1,10 +1,10 @@
 {
   "package-id" : "hl7.fhir.fi.base",
-  "version" : "1.0.0-ballot1",
-  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-ballot1/",
+  "version" : "1.0.0-rc15",
+  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/",
   "mode" : "working",
   "status" : "draft",
-  "sequence" : "Releases",
+  "sequence" : "STU 1 Sequence",
   "desc" : "Ballot version for 1.0.0",
   "descmd" : "Official ballot release for STU version 1.0.0.",
   "changes" : "Version frozen for official ballot",
