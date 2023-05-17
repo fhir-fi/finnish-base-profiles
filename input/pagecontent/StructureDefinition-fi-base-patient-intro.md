@@ -70,6 +70,9 @@ SHOULD still be the same when the same app asks for the patient information mult
 
 #### Additional Information
 
+##### Home municipality vs address information
+
+Home municipality is represented with MunicipalityCode extension. Municipality means in this context the municipality which is registered as the primary residence location. The home municipality is always registered by the [Digital and Population Data Services Agency](https://dvv.fi/en/municipality-of-residence). In most cases the address information contains the same information presented in MunicipalityCode extension but there are situations where `address.city` is not the same as the value in extension. Address is better understood as postal address. More information about the subject can be found on [Home municiplity](./StructureDefinition-municipality-code.html).
 ##### Name
 
 Systems SHOULD populate the `.name.text` field and clients SHOULD use that version of the name,
