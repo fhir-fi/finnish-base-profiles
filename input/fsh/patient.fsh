@@ -37,7 +37,7 @@ Description: "This is the Finnish base profile for the Patient resource."
 
 Extension: MunicipalityCode
 Id: municipality-code
-Title: "MunicipalityCode"
+Title: "Municipality Code"
 Description: "Extension for home municipality"
 * . ^short = "Municipality presents the home municipality of the patients. This information is relevant for ex. in billing and listing available healthcare services."
 * ^context.type = #element
