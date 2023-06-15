@@ -72,9 +72,20 @@ SHOULD still be the same when the same app asks for the patient information mult
 
 ##### Municipality vs address information
 
-Municipality of residence is represented with MunicipalityCode extension. Municipality means in this context the municipality which is registered as the primary residence location. The municipality of residence is always registered by the [Digital and Population Data Services Agency](https://dvv.fi/en/municipality-of-residence). In most cases the address information contains the same information presented in MunicipalityCode extension but there are situations where `address.city` is not the same as the value in the extension. Address is better understood as contact address. More information about the subject can be found on [Home municipality](./StructureDefinition-municipality-code.html).
+Municipality of residence is represented with MunicipalityCode extension. Municipality means in
+this context the municipality which is registered as the primary residence location. The
+municipality of residence is always registered by the
+[Digital and Population Data Services Agency](https://dvv.fi/en/municipality-of-residence). In most
+cases the address information contains the same information presented in MunicipalityCode extension
+but there are situations where `address.city` is not the same as the value in the extension.
+Address is better understood as contact address. More information about the subject can be found on
+[Home municipality](./StructureDefinition-municipality-code.html).
 
-The distiction between these two different location types is important e.g. when patient is being transferred from primary care to secondary care via referral. In these cases the secondary care unit invoices the primary care service provider but patient may recieve infromation about the given care via mail to address which is not located in municipality of recidence.
+The distiction between these two different location types is important e.g. when patient is being
+transferred from primary care to secondary care via referral. In these cases the secondary care
+unit invoices the primary care service provider but patient may recieve infromation about the given
+care via mail to address which is not located in municipality of recidence.
+
 ##### Name
 
 Systems SHOULD populate the `.name.text` field and clients SHOULD use that version of the name,
@@ -92,27 +103,6 @@ time of day is not known, the date SHALL be recorded as a date only, without the
 The birth time, when known, SHALL be recorded using the
 [standard extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html).
 
-#### Use of non-disclosure information
-
-Finnish citizens that have requested name and address protection
-([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) are
-labeled with the security label. The preferred way to do this is shown below.
- 
- ```
- <Patient xmlns="http://hl7.org/fhir">
-  <meta>
-    <security>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
-      <code value="R"/>
-      <display value="Restricted"/>
-    </security>
-  </meta>
-...  [snip] ...
-</Patient>
- ```
-
-Use of this label should be interpreted according to the law, rouhgly meaning that only personnel
-using systems in their work are allowed to see the name and address for the patient.
 
 #### Presenting guardian information
 
