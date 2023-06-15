@@ -94,8 +94,8 @@ The birth time, when known, SHALL be recorded using the
 
 #### Non-disclosure for personal safety
 
-DVV may grant a [non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety),
-this is communicated by `TURVAKIELTO` security label.
+DVV may grant a [non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety).
+This is communicated by `TURVAKIELTO` security label.
 
 #### Presenting guardian information
 
