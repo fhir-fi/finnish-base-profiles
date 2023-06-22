@@ -103,27 +103,10 @@ time of day is not known, the date SHALL be recorded as a date only, without the
 The birth time, when known, SHALL be recorded using the
 [standard extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html).
 
-#### Use of non-disclosure information
+#### Non-disclosure for personal safety
 
-Finnish citizens that have requested name and address protection
-([Non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety)) are
-labeled with the security label. The preferred way to do this is shown below.
- 
- ```
- <Patient xmlns="http://hl7.org/fhir">
-  <meta>
-    <security>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
-      <code value="R"/>
-      <display value="Restricted"/>
-    </security>
-  </meta>
-...  [snip] ...
-</Patient>
- ```
-
-Use of this label should be interpreted according to the law, rouhgly meaning that only personnel
-using systems in their work are allowed to see the name and address for the patient.
+DVV may grant a [non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety).
+This is communicated by `TURVAKIELTO` security label.
 
 #### Presenting guardian information
 
