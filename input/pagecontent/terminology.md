@@ -4,8 +4,8 @@ Many of these terminologies are not maintained by HL7 Finland, rather they are p
 maintained elsewhere and included into this implementation guide to raise awareness of their
 existence.
 
-This version of this implementation guide does not define any terminologies. There are other, more
-use case specific implementation guides that may define terminologies for their use cases. See for
+In addition to the terminologies defined in this implementation guide, there are other, more use
+case specific implementation guides that may define terminologies for their use cases. See, for
 instance:
 * Both the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the
   [Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) for scheduling
