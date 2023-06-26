@@ -5,7 +5,7 @@ Title: "FI Base MedicationRequest"
 Description: "This is the Finnish base profile for the MedicationRequest resource."
 * ^status = #draft
 * reportedReference only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole)
-* medicationReference only Reference(FiBaseMedication)
+* medicationReference only Reference(FiBaseMedication or FiBasePatientMedication)
 * subject only Reference(FiBasePatient)
 * encounter only Reference(FiBaseEncounter)
 * requester only Reference(FiBasePractitioner or FiBasePractitionerRole or FiBasePatient)
