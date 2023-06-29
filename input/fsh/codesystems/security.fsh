@@ -1,7 +1,7 @@
 CodeSystem: SecurityLabelCS
 Id: SecurityLabelCS
 Title: "Finnish CodeSystem for security labels"
-Description: "This is the CodeSystem for security labels in accordance with finnish authorities"
+Description: "This is the CodeSystem for security labels in accordance with finnish authorities."
 * ^status = #active
 * ^experimental = false
 * #TURVAKIELTO "Turvakielto"
