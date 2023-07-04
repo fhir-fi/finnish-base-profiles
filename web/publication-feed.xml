@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+  <channel>
+    <title>HL7 Finland FHIR Publications</title>
+    <description>New publications by HL7 Finland&gt;</description>
+    <link>http://hl7.fi/fhir/package-feed.xml</link>
+    <generator>HL7, Inc FHIR Publication tooling</generator>
+    <lastBuildDate>Tue, 04 Jul 2023 06:48:41 +0300</lastBuildDate>
+    <atom:link href="http://hl7.fi/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Jul 2023 06:48:41 +0300</pubDate>
+    <language>en&gt;</language>
+    <ttl>600</ttl>
+  
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 1.0.0-rc8</title>
+      <description>Finishing touches before 1.0.0 release</description>
+      <link>https://hl7.fi/fhir/finnish-smart/1.0.0-rc8/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/1.0.0-rc8/index.html</guid>
+      <dc:creator>HL7 Finland ry</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 04 Jul 2023 06:48:41 +0300</pubDate>
+      <fhir:details>Publication run at 04/07/2023 by mikael using vVersion 1.3.22 (Git# ea50516d7440). Built 2023-06-30T23:51:41.282Z (3 days old) source id Unknown (todo) Run #4</fhir:details>
+    </item>
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 1.0.0-rc8</title>
+      <description>Finishing touches before 1.0.0 release</description>
+      <link>https://hl7.fi/fhir/finnish-smart/1.0.0-rc8/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/1.0.0-rc8/index.html</guid>
+      <dc:creator>HL7 Finland</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 03 Jul 2023 11:48:11 +0300</pubDate>
+      <fhir:details>Publication run at 03/07/2023 by mikael using vVersion 1.3.22 (Git# ea50516d7440). Built 2023-06-30T23:51:41.282Z (56 hours old) source id Unknown (todo) Run #3</fhir:details>
+    </item>
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 1.0.0-rc7</title>
+      <description>Finishing touches before 1.0.0 release</description>
+      <link>https://hl7.fi/fhir/finnish-smart/1.0.0-rc7/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/1.0.0-rc7/index.html</guid>
+      <dc:creator>HL7 Finland</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 03 Jul 2023 10:41:51 +0300</pubDate>
+      <fhir:details>Publication run at 03/07/2023 by mikael using vVersion 1.3.22 (Git# ea50516d7440). Built 2023-06-30T23:51:41.282Z (55 hours old) source id Unknown (todo) Run #2</fhir:details>
+    </item>
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 1.0.0-rc6</title>
+      <description>Finishing touches before 1.0.0 release</description>
+      <link>https://hl7.fi/fhir/finnish-smart/1.0.0-rc6/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/1.0.0-rc6/index.html</guid>
+      <dc:creator>HL7 Finland</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 29 Jun 2023 11:16:54 +0300</pubDate>
+      <fhir:details>Publication run at 29/06/2023 by mikael using vVersion 1.3.18 (Git# a9b4f3b1138e). Built 2023-06-21T15:16:36.246Z (7 days old) source id Unknown (todo) Run #1</fhir:details>
+    </item>
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 1.0-rc5</title>
+      <description>Finishing touches before 1.0.0 release</description>
+      <link>https://hl7.fi/fhir/finnish-smart/1.0-rc5/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/1.0-rc5/index.html</guid>
+      <dc:creator>HL7 Finland</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 29 Jun 2023 11:16:54 +0300</pubDate>
+      <fhir:details>Publication run at 29/06/2023 by mikael using vVersion 1.3.18 (Git# a9b4f3b1138e). Built 2023-06-21T15:16:36.246Z (7 days old) source id Unknown (todo) Run #1</fhir:details>
+    </item>
+    
+    </channel>
+</rss>

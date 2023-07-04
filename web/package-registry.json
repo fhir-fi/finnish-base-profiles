@@ -1,0 +1,42 @@
+{
+  "packages" : [
+    {
+      "path" : "finnish-base-profiles/package-list.json",
+      "package-id" : "hl7.fhir.fi.base",
+      "title" : "Finnish Base Profiles",
+      "canonical" : "https://hl7.fi/fhir/finnish-base-profiles",
+      "category" : "National Base",
+      "ci-build" : "https://fhir.fi/finnish-base-profiles/",
+      "version-count" : 9,
+      "latest" : {
+        "version" : "1.0.0-rc15",
+        "date" : "2023-04-28",
+        "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/"
+      },
+      "milestone" : {
+        "version" : "1.0.0-rc15",
+        "date" : "2023-04-28",
+        "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/"
+      }
+    },
+    {
+      "path" : "finnish-smart/package-list.json",
+      "package-id" : "hl7.fhir.fi.smart",
+      "title" : "Finnish Implementation Guide for SMART App Launch",
+      "canonical" : "https://hl7.fi/fhir/finnish-smart",
+      "category" : "National Base",
+      "ci-build" : "https://fhir.fi/finnish-smart/",
+      "version-count" : 6,
+      "latest" : {
+        "version" : "1.0.0-rc8",
+        "date" : "2023-07-04",
+        "path" : "https://hl7.fi/fhir/finnish-smart/1.0.0-rc8"
+      },
+      "milestone" : {
+        "version" : "1.0.0-rc8",
+        "date" : "2023-07-04",
+        "path" : "https://hl7.fi/fhir/finnish-smart/1.0.0-rc8"
+      }
+    }
+  ]
+}
