@@ -45,7 +45,7 @@
       "version" : "1.0.0-rc1",
       "date" : "2023-02-14",
       "desc" : "First release candidate for 1.0.0",
-      "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc2/",
+      "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc1/",
       "status" : "ci-build",
       "sequence" : "STU 1",
       "fhirversion" : "4.0.1"
