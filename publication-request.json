@@ -1,15 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.base",
-  "version" : "1.0.0-rc15",
-  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/",
-  "mode" : "working",
-  "status" : "draft",
-  "sequence" : "STU 1 Sequence",
-  "desc" : "Ballot version for 1.0.0",
-  "descmd" : "Official ballot release for STU version 1.0.0.",
-  "changes" : "Version frozen for official ballot",
-  "title" : "Finnish Base Profiles",
-  "ci-build" : "https://fhir.fi/finnish-base-profiles/",
-  "category" : "National Base",
-  "introduction" : "A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland"
+  "version" : "1.0.0",
+  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0.0",
+  "mode" : "milestone",
+  "status" : "trial-use",
+  "sequence" : "STU 1",
+  "desc" : "Release 1.0.0, STU 1",
+  "descmd" : "Release 1.0.0, STU 1",
+  "first" : "false"
 }
