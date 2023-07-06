@@ -2,12 +2,15 @@
 
 This implementation guide specifies the Finnish FHIR base profiles.
 
-It builds on top of the [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
-specification.
+{% include cross-version-analysis-inline.xhtml %} There is no plan yet to base this implementation
+guide on [FHIR R5](https://hl7.org/fhir/R5/).
 
-This implementation guide is based on [FHIR R4](http://hl7.org/fhir/R4/). None of the features it
-uses are changed in [FHIR R4B](http://hl7.org/fhir/R4B/), so it can be used as is with R4B systems.
-There is no plan yet to base this implementation guide on [FHIR R5](http://hl7.org/fhir/R5/).
+This implementation guide depends on the
+[International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) specification, and many
+profile definitions in this guide derive from IPA profiles.
+
+{% include dependency-table-short.xhtml %}
+
 
 <section id="stu-ballot" class="stu-note">
   <h4>Standard for Trial Use Ballot</h4>
