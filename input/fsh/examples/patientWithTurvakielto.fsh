@@ -7,7 +7,8 @@ Usage: #example
 * id = "patient-with-turvakielto"
 * identifier[PIC]
   * use = #official
-  * type = #NNFIN
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #NNFIN
   * system = #urn:oid:1.2.246.21
   * value = "010190-999X"
 * birthDate = "1990-01-01"
