@@ -5,7 +5,7 @@
   "mode" : "working",
   "status" : "draft",
   "sequence" : "STU 1",
-  "desc" : "Release 1.0.0, STU 1",
-  "descmd" : "Release 1.0.0, STU 1",
+  "desc" : "CI build snapshot for v. 1.0.1",
+  "descmd" : "CI build snapshot for v. 1.0.1",
   "first" : "false"
 }
