@@ -1,6 +1,6 @@
 Version 1.0.0 is the first official release of this implementation guide. See the history of
 published versions in the
-[publication directory](htps://hl7.fi/fhir/finnish-base-profiles/history.html).
+[publication directory](https://hl7.fi/fhir/finnish-base-profiles/history.html).
 
 The development continues, with the intention to get definitions from this implementation guide
 into Normative level (see the
