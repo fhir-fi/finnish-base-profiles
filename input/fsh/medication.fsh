@@ -1,8 +1,8 @@
 Profile: FiBaseMedication
-Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication
+Parent: Medication
 Id: fi-base-medication
 Title: "FI Base Medication"
-Description: "This is the Finnish base profile for the Medication resource."
+Description: "This is the Finnish base profile for the Medication resource for other than patient access use cases."
 * ^status = #draft
 * manufacturer only Reference(FiBaseOrganization)
-* ingredient.itemReference only Reference(Substance or FiBaseMedication)
+* ingredient.itemReference only Reference(Substance or FiBaseMedication or FiBasePatientMedication)
