@@ -2,11 +2,10 @@
   "package-id" : "hl7.fhir.fi.base",
   "version" : "1.0.0-rc18",
   "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc18",
-  "mode" : "working",
-  "status" : "draft",
-  "sequence" : "STU 1 Sequence",
-  "desc" : "Ballot version for 1.0.0",
-  "descmd" : "Official ballot release for STU version 1.0.0.",
-  "changes" : "Version frozen for official ballot",
+  "mode" : "milestone",
+  "status" : "qa-preview",
+  "sequence" : "STU 1",
+  "desc" : "QA preview for final STU 1 release",
+  "descmd" : "QA preview for final STU 1 release",
   "first" : "false"
 }
