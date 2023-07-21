@@ -1,8 +1,6 @@
 ### Scope and Usage
 
-This profile is meant for use cases without patient access perspective. For patient access use
-case, please see the
-[FI Base Patient Medication Statement](StructureDefinition-fi-base-patient-medication-statement.html)
-profile.
+The FI Base MedicationStatement derives from the MedicationStatement profile of the International
+Patient Access specification.
 
 {% include fragment-medication.md %}
