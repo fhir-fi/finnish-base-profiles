@@ -38,7 +38,7 @@ resources:
   Medication/medicationesim1:
     name: Myyntiluvallinen lääkevalmiste
     description: An example Medication instance from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication
   Medication/medicationesim2:
     name: Myyntiluvallinen lääkevalmiste, joka on PKV-lääke
     description: An example Medication instance from Kanta Prescription API
@@ -66,39 +66,39 @@ resources:
   MedicationRequest/medicationrequestesim1:
     name: "1 tabletti 2 kertaa päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim2:
     name: "2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim3:
     name: "1-2 tablettia kerran päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim4:
     name: "1-2 tablettia 1-3 kertaa päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim5:
     name: "Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim6:
     name: "Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim7A:
     name: "1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim7B:
     name: "1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim8:
     name: "Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim9:
     name: "Tarvittaessa 1-2 tippaa 3-4 tunnin välein"
     description: An example MedicationRequest from Kanta Prescription API
