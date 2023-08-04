@@ -1,7 +1,7 @@
 Instance: DiagnosisSimple
 InstanceOf: FiBaseReasonForCare
 Title: "Condition - an example diagnosis"
-Description: "An example of a diagnosis using the FiBaseReasonForCare pofile. This diagnosis is asserted by a clinician."
+Description: "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis is asserted by a clinician."
 Usage: #example
 * id = "id-for-diagnosis-1"
 * category[0].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category

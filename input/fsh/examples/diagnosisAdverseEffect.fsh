@@ -1,7 +1,7 @@
 Instance: DiagnosisAdverseEffect
 InstanceOf: FiBaseReasonForCare
 Title: "Condition - an example diagnosis with an adverse effect."
-Description: "An example of a diagnosis using the FiBaseReasonForCare pofile. This diagnosis demonstrates a case that has an adverse effect."
+Description: "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has an adverse effect."
 Usage: #example
 * id = "id-for-diagnosis-3"
 * category[0].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category
