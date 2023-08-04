@@ -8,10 +8,10 @@ name: FinnishBaseProfiles
 title: Finnish Base Profiles
 description: A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 1.0.0-rc16
+version: 1.0.0-rc18
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: qa-preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#FI "Finland" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -215,14 +215,38 @@ resources:
     name: A simple practitioner role
     description: An example PractitionerRole instance from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role
-  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86: omit
-  Patient/36749a02-1710-44e7-aa76-0e934eb4321a: omit
-  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a: omit
-  Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde: omit
-  Patient/cafbe8e7-38fe-4807-b995-6770e5390365: omit
-  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad: omit
-  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c: omit
-  Patient/7257379: omit
+  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/36749a02-1710-44e7-aa76-0e934eb4321a:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/cafbe8e7-38fe-4807-b995-6770e5390365:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/7257379:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
 
 pages:
   index.md:
@@ -237,7 +261,7 @@ pages:
     title: Examples
   downloads.md:
     title: Downloads
-  history.md:
+  versions.md:
     title: Version History
 
 parameters: 
