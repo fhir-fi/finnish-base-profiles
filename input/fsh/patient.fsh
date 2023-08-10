@@ -28,7 +28,8 @@ Description: "This is the Finnish base profile for the Patient resource."
 * identifier contains PIC 0..1
   * ^short = "PIC (aka HETU)."
 * identifier[PIC].use = #official
-* identifier[PIC].type = #NNFIN
+* identifier[PIC].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PIC].type.coding.code = #NNFIN
 * identifier[PIC].system = #urn:oid:1.2.246.21
 
 * extension contains MunicipalityCode named municipality 0..1

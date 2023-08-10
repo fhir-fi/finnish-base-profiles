@@ -1,7 +1,7 @@
 Instance: DiagnosisMedicationAccident
 InstanceOf: FiBaseReasonForCare
 Title: "Condition - an example diagnosis with external cause, accident and medication information."
-Description: "An example of a diagnosis using the FiBaseReasonForCare pofile. This diagnosis demonstrates a case that has external cause, accident and medication information."
+Description: "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has external cause, accident and medication information."
 Usage: #example
 * id = "id-for-diagnosis-2"
 * category[0].coding.system = #http://terminology.hl7.org/CodeSystem/condition-category

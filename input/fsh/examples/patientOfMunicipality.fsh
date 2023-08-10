@@ -6,7 +6,8 @@ Usage: #example
 * id = "patient-of-municipality"
 * identifier[PIC]
   * use = #official
-  * type = #NNFIN
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #NNFIN
   * system = #urn:oid:1.2.246.21
   * value = "010190-999Y"
 * gender = #male

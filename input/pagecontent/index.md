@@ -2,29 +2,14 @@
 
 This implementation guide specifies the Finnish FHIR base profiles.
 
-It builds on top of the [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
-specification.
+{% include cross-version-analysis-inline.xhtml %} There is no plan yet to base this implementation
+guide on [FHIR R5](https://hl7.org/fhir/R5/).
 
-This implementation guide is based on [FHIR R4](http://hl7.org/fhir/R4/). None of the features it
-uses are changed in [FHIR R4B](http://hl7.org/fhir/R4B/), so it can be used as is with R4B systems.
-There is no plan yet to base this implementation guide on [FHIR R5](http://hl7.org/fhir/R5/).
+This implementation guide depends on the
+[International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) specification, and many
+profile definitions in this guide derive from IPA profiles.
 
-<section id="stu-ballot" class="stu-note">
-  <h4>Standard for Trial Use Ballot</h4>
-  <p><strong>This is a DRAFT specification</strong> that is currently in ballot process by the
-  members of <a href="https://www.hl7.fi">HL7 Finland</a>.</p>
-  <p>The <a
-  href="https://www.hl7.fi/fhir/finnish-base-profiles/1.0-rc15/">version 1.0.0-rc15</a> of
-  this implementation guide is frozen and published as a base for the official ballot within HL7
-  Finland.</p>
-  <p>This ballot cycle is considered a <strong>Standard for Trial Use</strong> ballot in the <a
-  href="https://confluence.hl7.org/display/HL7/HL7+Balloting">HL7 Balloting process</a>.</p>
-  <p>HL7 Finland does not use the HL7 Ballot Desktop or the Jira Ballot Process, rather feedback is
-  gathered through email to <a href="mailto:timo.kaskinen@nhg.fi">timo.kaskinen@nhg.fi</a>, the
-  chair of the Technical Committee of HL7 Finland.</p>
-  <p>See the <a href="https://www.hl7.fi/hl7-aanestys-kansalliset-fhir-soveltamisoppaat/">formal
-  notice</a> on FL7 Finland's website.</p>
-</section>
+{% include dependency-table-short.xhtml %}
 
 #### Companion Specifications
 
@@ -133,27 +118,48 @@ Finland, existing solutions have chosen to go with a more fine grained approach 
 resources and the REST interface.
 
 #### International Aspects
+<style>
+  @counter-style danose {
+    system: cyclic;
+    symbols: 🇩🇰 🇳🇴 🇸🇪;
+    suffix: " ";
+  }
+  @counter-style uscachau {
+    system: cyclic;
+    symbols: 🇺🇸 🇨🇦 🇨🇭 🇦🇺;
+    suffix: " ";
+  }
+</style>
 
 Our main intent is still to limit profiling specific to Finland. During the process, we actively
 monitor other national base profiles. We attempt to harmonize our base profiles with already
-published base profiles from other Nordic countries, specifically the Danish
-[DK Core](https://hl7.dk/fhir/core), the Norwegian
-[no-basis-Profiles](https://simplifier.net/HL7Norwayno-basis/~introduction),
-and the [Swedish Base Profiles](https://hl7.se/fhir/ig/base/).
+published base profiles from other Nordic countries:
+<ul style="list-style: danose">
+  <li style="list-style-type='🇩🇰'">the Danish <a href="https://hl7.dk/fhir/core">DK Core</a></li>
+  <li style="list-style-type='🇳🇴'">the Norwegian core profiles for R4
+    <a href="https://simplifier.net/HL7Norwayno-basis/">HL7 Norway no-basis</a></li>
+  <li style="list-style-type='🇸🇪'">the <a href="https://hl7.se/fhir/ig/base/">Swedish Base
+    Profiles</a></li>
+</ul>
 
-The Finnish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/) where applicable,
-and we will keep the specifications conformant. Should we find any constraints in IPA that we can't
-adhere to, the main resolution should be to affect the IPA specification and search for wider
-consensus and shared understanding.
+See the [presentation slides](Vitalis2023-Nordic_harmonization_of_health_data.pdf) of the session
+[Nordic harmonization of health data](https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c), given in the [Vitalis](https://vitalis.nu/) conference in May, 2023. They include an initial comparison of the Danish, Finnish, Norwegian, and Swedish base profile specifications.
 
-Other notable national base profiles under our radar are the
-[US Core](https://hl7.org/fhir/us/core/), the
-[Canadian baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/), the Swiss
-[CH Core](http://fhir.ch/ig/ch-core/index.html), and the Australian
-[AU Base](http://hl7.org.au/fhir/4.0.0/).
+Other notable national base profiles under our radar are
+<ul style="list-style: uscachau">
+  <li>the [US Core](https://hl7.org/fhir/us/core/)</li>
+  <li>the [Canadian baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/)</li>
+  <li>the Swiss [CH Core](http://fhir.ch/ig/ch-core/index.html)</li>
+  <li>the Australian [AU Base](http://hl7.org.au/fhir/4.0.0/)</li>
+</ul>
 
-See also the
+Many of the Finnish FHIR base profiles derive from the
+[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/), and we will do
+our best to keep the specifications conformant where possible. Should we find any constraints in
+IPA that we can't adhere to, the main resolution should be to affect the IPA specification and
+search for wider consensus and shared understanding.
+
+Regarding international cooperation, please see also the
 [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations)
 page in HL7 International's Confluence.
 
