@@ -4,7 +4,6 @@ Id: fi-base-patient
 Title: "FI Base Patient"
 Description: "This is the Finnish base profile for the Patient resource."
 * ^status = #draft
-* id 1..1
 * generalPractitioner only Reference(FiBaseOrganization or FiBasePractitioner or FiBasePractitionerRole)
 * managingOrganization only Reference(FiBaseOrganization)
 * link.other only Reference(FiBasePatient or RelatedPerson)
