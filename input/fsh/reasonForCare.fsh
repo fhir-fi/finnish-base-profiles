@@ -85,5 +85,3 @@ Description: "Encoded information on the cause of an adverse effect, when involv
 * value[x] only Coding
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
-
-

@@ -1,6 +1,8 @@
 ### Scope and Usage
 
-The FI Base MedicationRequest derives from the MedicationRequest profile of the International
-Patient Access specification.
+This profile is meant for use cases without patient access perspective. For patient access use
+case, please see the
+[FI Base Patient Medication Request](StructureDefinition-fi-base-patient-medication-request.html)
+profile.
 
 {% include fragment-medication.md %}
