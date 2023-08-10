@@ -1,6 +1,6 @@
 ### Scope and Usage
 
-The FI Base MedicationRequest derives from the MedicationRequest profile of the International
+The FI Base Patient MedicationRequest derives from the MedicationRequest profile of the International
 Patient Access specification.
 
 For use cases with no patient access perspective, please see also the
