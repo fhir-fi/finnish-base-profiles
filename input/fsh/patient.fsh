@@ -13,10 +13,10 @@ Description: "This is the Finnish base profile for the Patient resource."
 * meta.security ^slicing.rules = #open
 * meta.security ^slicing.description = ""
 * meta.security ^slicing.ordered = false
-  * ^short = "Information about non-disclosure (turvakielto) SHALL be handled in meta.security."
+  * ^short = "Information about TURVAKIELTO SHALL be handled in meta.security."
 
-* meta.security contains non-disclosure 0..1
-* meta.security[non-disclosure].system = "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+* meta.security contains turvakielto 0..1
+* meta.security[turvakielto].system = "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
