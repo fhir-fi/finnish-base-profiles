@@ -65,14 +65,14 @@ With the above requirements installed locally, run
 #### On OSX, Linux, or Unix
 
 ``` bash
-npm install -g fsh-sushi
+npm install -g fsh-sushi@2.10.2
 ./_updatePublisher.sh --yes
 ./_genonce.sh
 ```
 
 #### On Windows
 ```
-npm install -g fsh-sushi
+npm install -g fsh-sushi@2.10.2
 .\_updatePublisher.bat --yes
 .\_genonce.bat
 ```
