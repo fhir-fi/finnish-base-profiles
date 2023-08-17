@@ -111,7 +111,7 @@
         },
         {
           "url": "medicineIdPart",
-          "valuePositiveInt": "1"
+          "valuePositiveInt": 1
         }
       ]
     }
@@ -237,11 +237,11 @@
         "extension": [
           {
             "url": "packageFactor",
-            "valuePositiveInt": "1"
+            "valuePositiveInt": 1
           },
           {
             "url": "packageAmount",
-            "valuePositiveInt": "8"
+            "valuePositiveInt": 8
           },
           {
             "url": "packageSizeText",
