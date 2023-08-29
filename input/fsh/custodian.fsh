@@ -8,31 +8,33 @@ Description: "This is the Finnish base profile for the Provenance resource, to b
 * agent ^slicing.discriminator.path = "type"
 * agent ^slicing.rules = #open
 * agent ^slicing.description = "An agent SHALL have the `type` CST from http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
-  * ^definition = "An agent SHALL have the `type` http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST."
-  * ^short = "An agent SHALL have the `type` http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST"
+  * ^definition = "An agent SHALL have the `type` http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST, and a `role` from system `oid:1.2.246.537.5.40172` (*eArkisto - Rekisteripitäjän laji*)."
+  * ^short = "An agent with type http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST"
 
 * agent contains custodian 1..1
   * ^definition = "The custodian of information (aka *rekisterinpitäjä*)."
   * ^short = "The custodian (aka rekisterinpitäjä)."
-* agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
-* agent[custodian].type.coding.code = #CST
+* agent[custodian].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST
+* agent[custodian].role.coding.system = "urn:oid:1.2.246.537.5.40172"
+  * ^definition = "The status of the healthcare provider (*eArkisto - Rekisteripitäjän laji*), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
+  * ^short = "Public or private occupational healthcare provider"
+* agent[custodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
+* agent[custodian].who.identifier.system = "urn:oid:1.2.246.537.6.202"
+  * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.202` (*THL - SOTE-organisaatiorekisteri*)."
+  * ^short = "ID of the provider in SOTE-organisaatiorekisteri"
 
 * entity ^slicing.discriminator.type = #value
-* entity ^slicing.discriminator.path = "entity"
+* entity ^slicing.discriminator.path = "what.identifier.system"
 * entity ^slicing.rules = #open
-* entity ^slicing.description = "An entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*)"
-  * ^definition = "One entity with `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150`."
+* entity ^slicing.description = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) that indicates the type of the registry.  If the identifier has the value 4 (*työterveyshuolto*, occupational healthcare), another entity element specifies the business ID (*y-tunnus*) of the customer organization."
+  * ^definition = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) that indicates the type of the registry.  If the identifier has the value 4 (*työterveyshuolto*, occupational healthcare), another entity element specifies the business ID (*y-tunnus*) of the customer organization."
   * ^short = "Role source and a .what with an identifier with the system urn:oid:1.2.246.537.5.40150"
 
 * entity contains registerType 1..1
 * entity[registerType].role = #source
 * entity[registerType].what.identifier.system = #urn:oid:1.2.246.537.5.40150
-
-* entity contains organizationRole 0..1
-* entity[organizationRole].role = #source
-* entity[organizationRole].what.identifier.system = #urn:oid:1.2.246.537.5.40172
-  * ^definition = "The status of an occupational healthcare provider (*eArkisto - Rekisteripitäjän laji*), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
-  * ^short = "Public or private occupational healthcare provider"
+  * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*)."
+  * ^short = "Type of registry"
 
 * entity contains registerSpecifier 0..1
 * entity[registerSpecifier].role = #source

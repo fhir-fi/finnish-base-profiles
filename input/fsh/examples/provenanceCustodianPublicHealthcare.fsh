@@ -10,9 +10,18 @@ Usage: #example
   * type
     * coding[0] = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
+  * role[0]
+    * coding[0]
+      * system = "urn:oid:1.2.246.537.5.40172"
+      * code = #1
+      * display = "Julkinen"
+    * text = "Julkinen"
   * who
     * type = #Organization
-    * identifier.value = "1.2.246.10.32213086.19.0"
+    * identifier
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
+      * system = "urn:oid:1.2.246.537.6.202"
+      * value = "urn:oid:1.2.246.10.32213086.19.0"
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
 * entity[registerType]
   * role = #source
@@ -21,10 +30,3 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #2
     * display = "Julkinen terveydenhuolto"
-* entity[registerType]
-  * role = #source
-  * what
-    * identifier
-      * system = "urn:oid:1.2.246.537.5.40172"
-      * value = #1
-    * display = "Julkinen"
