@@ -21,7 +21,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #4
     * display = "Työterveyshuolto"
-* entity[privateOrg]
+* entity[organizationRole]
   * role = #source
   * what
     * identifier
