@@ -147,10 +147,10 @@ See the [presentation slides](Vitalis2023-Nordic_harmonization_of_health_data.pd
 
 Other notable national base profiles under our radar are
 <ul style="list-style: uscachau">
-  <li>the [US Core](https://hl7.org/fhir/us/core/)</li>
-  <li>the [Canadian baseline](https://build.fhir.org/ig/HL7-Canada/ca-baseline/)</li>
-  <li>the Swiss [CH Core](http://fhir.ch/ig/ch-core/index.html)</li>
-  <li>the Australian [AU Base](http://hl7.org.au/fhir/4.0.0/)</li>
+  <li>the <a href="https://hl7.org/fhir/us/core/">US Core</a></li>
+  <li>the <a href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/">Canadian baseline</a></li>
+  <li>the Swiss <a href="http://fhir.ch/ig/ch-core/index.html">CH Core</a></li>
+  <li>the Australian <a href="http://hl7.org.au/fhir/4.0.0/">AU Base</a></li>
 </ul>
 
 Many of the Finnish FHIR base profiles derive from the
