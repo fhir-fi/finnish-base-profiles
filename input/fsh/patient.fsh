@@ -20,8 +20,9 @@ Description: "This is the Finnish base profile for the Patient resource."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "When using the official Finnish personal identifier code (PIC, also known as HETU), identifier.system SHALL be #urn:oid:1.2.246.21."
+* identifier ^slicing.description = "When using the official Finnish personal identifier code (PIC, also known as HETU), identifier.system SHALL be urn:oid:1.2.246.21."
 * identifier ^slicing.ordered = false
+  * ^definition = "When using the official Finnish personal identifier code (PIC, also known as *HETU*), identifier.system SHALL be `urn:oid:1.2.246.21`."
   * ^short = "Identifier contains Finnish personal identity code which can be official or temporary. Other identifier may also be included."
 
 * identifier contains PIC 0..1
@@ -33,12 +34,13 @@ Description: "This is the Finnish base profile for the Patient resource."
 
 * extension contains MunicipalityCode named municipality 0..1
 * extension contains interpreterRequired named interpreterRequired 0..1
+* extension contains PatientProfession named patientProfession 0..1
 
 Extension: MunicipalityCode
 Id: municipality-code
 Title: "Municipality Code"
-Description: "Extension for home municipality"
-* . ^short = "Municipality presents the home municipality of the patients. This information is relevant for ex. in billing and listing available healthcare services."
+Description: "Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes."
+* . ^short = "The home municipality of the patient (not necessarily where they live)."
 * ^context.type = #element
 * ^context.expression = "Patient"
 * value[x] only Coding
