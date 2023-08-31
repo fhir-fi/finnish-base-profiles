@@ -48,12 +48,12 @@ Usage: #example
         * value = "urn:oid:1.2.246.10.32515682.10.0"
       * display = "Ratinan Terveys Oy"
 
-* entity[registerSpecifier]
+* entity[registerSpecifierCompanyId]
   * role = #source
   * what
     * identifier
       * type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX
-      * system = "https://ytj.fi/"
+      * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
   * agent[0]
