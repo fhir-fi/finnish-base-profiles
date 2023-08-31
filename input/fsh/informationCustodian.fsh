@@ -1,7 +1,7 @@
-Profile: FiBaseCustodian
+Profile: FiBaseInformationCustodian
 Parent: FiBaseProvenance
-Id: fi-base-custodian
-Title: "FI Base Custodian"
+Id: fi-base-information-custodian
+Title: "FI Base InformationCustodian"
 Description: "This is the Finnish base profile for the Provenance resource, to be used to communicate the custodian of information (*rekisterinpitäjä*)."
 
 * agent ^slicing.discriminator.type = #value
