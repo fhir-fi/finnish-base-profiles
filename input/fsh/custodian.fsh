@@ -36,9 +36,22 @@ Description: "This is the Finnish base profile for the Provenance resource, to b
   * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*)."
   * ^short = "Type of registry"
 
-* entity contains registerSpecifier 0..1
+* entity contains registerSpecifierCompanyId 0..1
 * entity[registerSpecifier].role = #source
 * entity[registerSpecifier].what.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX
-* entity[registerSpecifier].what.identifier.system = "https://ytj.fi/"
+* entity[registerSpecifier].what.identifier.system = "urn:oid:1.2.246.10"
   * ^definition = "The customer company of an occupational healthcare provider, expressed with the business ID (*y-tunnus*) registered in the Finnish organization register [ytj.fi](https://ytj.fi). This is a required specifier for Kanta system when the data registry is for occupational healthcare for private companies."
+  * ^short = "Customer company of private occupational healthcare"
+
+* entity contains registerSpecifierPersonId 0..1
+* entity[registerSpecifier].role = #source
+* entity[registerSpecifier].what.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#NNFIN
+* entity[registerSpecifier].what.identifier.system = "urn:oid:1.2.246.21"
+  * ^definition = "An individual customer of an occupational healthcare provider, expressed with the Finnish national PIC (*hetu*)."
+  * ^short = "Customer of private occupational healthcare"
+
+* entity contains registerSpecifierCompanyWithoutId 0..1
+* entity[registerSpecifier].role = #source
+* entity[registerSpecifier].what.identifier.system = "urn:oid:1.2.246.537.30"
+  * ^definition = "A company without a Finnish business ID as a customer of an occupational healthcare provider."
   * ^short = "Customer of private occupational healthcare"
