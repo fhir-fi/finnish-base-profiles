@@ -30,24 +30,6 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #4
     * display = "Työterveyshuolto"
-  * agent[0]
-    * type
-      * coding[0] = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
-      * text = "Rekisterinpitäjä"
-    * role[0]
-      * coding[0]
-        * system = "urn:oid:1.2.246.537.5.40172"
-        * code = #2
-        * display = "Yksityinen"
-      * text = "Yksityinen"
-    * who
-      * type = #Organization
-      * identifier
-        * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
-        * system = "urn:oid:1.2.246.537.6.202"
-        * value = "urn:oid:1.2.246.10.32515682.10.0"
-      * display = "Ratinan Terveys Oy"
-
 * entity[registerSpecifierCompanyId]
   * role = #source
   * what
@@ -56,20 +38,3 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
-  * agent[0]
-    * type
-      * coding[0] = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
-      * text = "Rekisterinpitäjä"
-    * role[0]
-      * coding[0]
-        * system = "urn:oid:1.2.246.537.5.40172"
-        * code = #2
-        * display = "Yksityinen"
-      * text = "Yksityinen"
-    * who
-      * type = #Organization
-      * identifier
-        * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
-        * system = "urn:oid:1.2.246.537.6.202"
-        * value = "urn:oid:1.2.246.10.32515682.10.0"
-      * display = "Ratinan Terveys Oy"
