@@ -49,10 +49,12 @@ Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot
 Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.5.40150.2009' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40172' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.110.2007' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.111.2007' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.121.201801' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.124.2008' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.125.2008' is unknown so the code cannot be validated
@@ -76,7 +78,6 @@ Code System URI 'urn:oid:1.2.246.537.6.74.2001' is unknown so the code cannot be
 Code System URI 'urn:oid:1.2.246.537.6.884.2015' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.113883.18.220' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.113883.4.642.3.20' is unknown so the code cannot be validated
-Code System URI 'urn:oid:1.2.246.537.6.140.2008' is unknown so the code cannot be validated
 
 # This is CGI's internal code system, not part of this IG, but present in some examples from CGI
 Code System URI 'https://fhir.cgi.fi/code/person-id-type' is unknown so the code cannot be validated
