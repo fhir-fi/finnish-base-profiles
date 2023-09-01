@@ -1,5 +1,5 @@
 Instance: ProvenanceCustodianPublicHealthcare
-InstanceOf: FiBaseInformationCustodian
+InstanceOf: FiBaseInformationCustodianPublic
 Title: "Custodian of information (rekisterinpitäjä), public healthcare"
 Description: "Example of Provenance that communicates a public healthcare organization as the custodian of information for an episode of care."
 Usage: #example

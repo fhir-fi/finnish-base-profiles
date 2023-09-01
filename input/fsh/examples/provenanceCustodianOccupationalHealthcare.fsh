@@ -1,7 +1,7 @@
 Instance: ProvenanceCustodianOccupationalHealthcare
-InstanceOf: FiBaseInformationCustodian
+InstanceOf: FiBaseInformationCustodianPrivate
 Title: "Custodian of information (rekisterinpitäjä), private occupational healthcare"
-Description: "Example of Provenance that communicates a public healthcare organization as the custodian of information for an episode of care."
+Description: "Example of Provenance that communicates a private occupational healthcare organization as the custodian of information for an episode of care."
 Usage: #example
 * id = "custodian-occupational-healthcare"
 * target = Reference(EpisodeOfCare/id-for-episode-1)
