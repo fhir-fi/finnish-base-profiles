@@ -6,22 +6,36 @@ Description: "This is the Finnish base profile for the Provenance resource, used
 
 * agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "type"
+* agent ^slicing.discriminator.type = #value
+* agent ^slicing.discriminator.path = "who.identifier.system"
 * agent ^slicing.rules = #open
-* agent ^slicing.description = "An agent SHALL have the `type` CST from http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
-  * ^definition = "An agent SHALL have the `type` http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST, and a `role` from system `oid:1.2.246.537.5.40172` (*eArkisto - Rekisteripitäjän laji*)."
+* agent ^slicing.description = "An agent SHALL have the `type` `CST` from http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+  * ^definition = "An agent SHALL have the `type` http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST, a `role` from system `oid:1.2.246.537.5.40172` (*eArkisto - Rekisteripitäjän laji*), and an applicable provider identifier."
   * ^short = "An agent with type http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST"
 
 * agent contains custodian 1..1
-  * ^definition = "The custodian of information (aka *rekisterinpitäjä*)."
-  * ^short = "The custodian (aka rekisterinpitäjä)."
 * agent[custodian].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST
 * agent[custodian].role.coding.system = "urn:oid:1.2.246.537.5.40172"
   * ^definition = "The status of the healthcare provider (*eArkisto - Rekisteripitäjän laji*), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
   * ^short = "Public or private occupational healthcare provider"
-* agent[custodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
-* agent[custodian].who.identifier.system = "urn:oid:1.2.246.537.6.202"
-  * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.202` (*THL - SOTE-organisaatiorekisteri*)."
+
+* agent[custodian] contains publicOrganizationCustodian 0..1
+* agent[custodian][publicOrganizationCustodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+* agent[custodian][publicOrganizationCustodian].who.identifier.system = "urn:oid:1.2.246.537.6.40174"
+  * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.40174` [(*eArkisto - Rekisterinpitäjärekisteri*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=419&versionKey=496)."
+  * ^short = "ID of the provider in Rekisterinpitäjärekisteri"
+
+* agent[custodian] contains privateOrganizationCustodian 0..1
+* agent[custodian][privateOrganizationCustodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+* agent[custodian][privateOrganizationCustodian].who.identifier.system = "urn:oid:1.2.246.537.6.202"
+  * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.202` [(*THL - SOTE-organisaatiorekisteri*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=421&versionKey=501)."
   * ^short = "ID of the provider in SOTE-organisaatiorekisteri"
+
+* agent[custodian] contains individualProviderCustodian 0..1
+* agent[custodian][individualProviderCustodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
+* agent[custodian][individualProviderCustodian].who.identifier.system = "urn:oid:1.2.246.537.6.203"
+  * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.203` [(*Valvira - Terveydenhuollon itsenäiset ammatinharjoittajat*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1163&versionKey=1303)."
+  * ^short = "ID of the provider in Terveydenhuollon itsenäiset ammatinharjoittajat"
 
 * entity ^slicing.discriminator.type = #value
 * entity ^slicing.discriminator.path = "what.identifier.system"
@@ -33,7 +47,7 @@ Description: "This is the Finnish base profile for the Provenance resource, used
 * entity contains registerType 1..1
 * entity[registerType].role = #source
 * entity[registerType].what.identifier.system = #urn:oid:1.2.246.537.5.40150
-  * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*)."
+  * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` ([*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=283&versionKey=360))."
   * ^short = "Type of registry"
 
 * entity contains registerSpecifierCompanyId 0..1

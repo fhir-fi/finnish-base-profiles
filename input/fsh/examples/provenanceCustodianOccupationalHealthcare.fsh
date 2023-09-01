@@ -19,7 +19,7 @@ Usage: #example
   * who
     * type = #Organization
     * identifier
-      * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
       * system = "urn:oid:1.2.246.537.6.202"
       * value = "urn:oid:1.2.246.10.32515682.10.0"
     * display = "Ratinan Terveys Oy"
@@ -38,3 +38,5 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
+
+

@@ -5,7 +5,7 @@
 The Finnish national healthcare infrastructure uses the concept of the information custodian
 (*rekisterinpitäjä*), also known as the data controller or register keeper.
 
-Further, most information in the system needs to be tagged with information of the information
+Most of the information in the Kanta system needs to be tagged with information of the information
 custodian and of the specific register.
 
 For details, please refer to the
