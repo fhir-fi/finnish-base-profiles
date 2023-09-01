@@ -5,7 +5,7 @@ Description: "An example of a FI Base encounter which corresponds 1-1 to palvelu
 Usage: #example
 * id = "id-for-palvelutapahtuma"
 * identifier.use = #official
-* identifier.value = "1.2.246.10.6794809.14011.2023.200035"
+* identifier.value = "urn:oid:1.2.246.10.6794809.14011.2023.200035"
 * status = #in-progress
 * class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
 * class.code = #IMP
