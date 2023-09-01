@@ -3,7 +3,7 @@
 #### How to communicate Kanta information custodian and register information
 
 The Finnish national healthcare infrastructure uses the concept of the information custodian
-(*rekisterinpitäjä*), also known as the data processor or register keeper.
+(*rekisterinpitäjä*), also known as the data controller or register keeper.
 
 Further, most information in the system needs to be tagged with information of the information
 custodian and of the specific register.
