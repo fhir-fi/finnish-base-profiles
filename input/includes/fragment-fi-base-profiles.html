@@ -31,6 +31,8 @@
     {%- assign description = description | replace: "%3A", ":" -%}
     {%- assign description = description | replace: "%20", "," -%}
     {%- assign description = description | replace: "%25", "%" -%}
+    {%- assign description = description | replace: "(*", "(<i>" -%}
+    {%- assign description = description | replace: "*)", "</i>)" -%}
   <li>
     <a href="{{ pagepath }}">{{ pagetitle }}</a>
     <p>{{ description }}</p>
