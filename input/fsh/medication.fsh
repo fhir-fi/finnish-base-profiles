@@ -3,6 +3,5 @@ Parent: Medication
 Id: fi-base-medication
 Title: "FI Base Medication"
 Description: "This is the Finnish base profile for the Medication resource for other than patient access use cases."
-* ^status = #draft
 * manufacturer only Reference(FiBaseOrganization)
 * ingredient.itemReference only Reference(Substance or FiBaseMedication or FiBasePatientMedication)

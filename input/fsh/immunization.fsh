@@ -3,7 +3,6 @@ Parent: IPAImmunization
 Id: fi-base-immunization
 Title: "Fi Base Immunization"
 Description: "This is a base profile for Finnish Immunization resource."
-* ^status = #draft
 * patient only Reference(FiBasePatient)
 * encounter only Reference(FiBaseEncounter)
 * location only Reference(FiBaseLocation)

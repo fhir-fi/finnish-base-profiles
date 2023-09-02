@@ -54,6 +54,7 @@ Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cann
 Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.110.2007' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.111.2007' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.121.201801' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.124.2008' is unknown so the code cannot be validated
 Code System URI 'urn:oid:1.2.246.537.6.125.2008' is unknown so the code cannot be validated

@@ -3,7 +3,6 @@ Parent: FiBaseCondition
 Id: fi-base-reason-for-care
 Title: "FI Base Reason for Care (encounter-diagnosis and reason for visit)"
 Description: "This is the Finnish base profile for the encounter-diagnosis and (nurse asserted) reason for visit Conditions."
-* ^status = #draft
 
 * subject only Reference(FiBasePatient)
 

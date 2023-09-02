@@ -3,7 +3,6 @@ Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest
 Id: fi-base-patient-medication-request
 Title: "FI Base Patient MedicationRequest"
 Description: "This is the Finnish base profile for the MedicationRequest resource for the patient access use case."
-* ^status = #draft
 * reportedReference only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole)
 * medicationReference only Reference(FiBasePatientMedication)
 * subject only Reference(FiBasePatient)

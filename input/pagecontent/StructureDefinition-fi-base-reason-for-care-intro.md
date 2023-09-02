@@ -70,12 +70,12 @@ repetitions expressing the same information in two code systems):
   "code" : {
     "coding" : [
       {
-        "system" : "1.2.246.537.6.1.1999",
+        "system" : "urn:oid:1.2.246.537.6.1.1999",
         "code" : "H36.03",
         "display" : "Proliferatiivinen diabeettinen retinopatia"
       },
       {
-        "system" : "1.2.246.537.6.31.2007",
+        "system" : "urn:oid:1.2.246.537.6.31.2007",
         "code" : "F83",
         "display" : "Retinopatia, verkkokalvon rappeuma"
       }
@@ -102,7 +102,7 @@ For example:
         {
           "coding" : [
             {
-              "system" : "1.2.246.537.6.1.1999",
+              "system" : "urn:oid:1.2.246.537.6.1.1999",
               "code" : "E11.3",
               "display" : "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"
             }

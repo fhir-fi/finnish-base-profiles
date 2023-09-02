@@ -3,7 +3,6 @@ Parent: MedicationRequest
 Id: fi-base-medication-request
 Title: "FI Base MedicationRequest"
 Description: "This is the Finnish base profile for the MedicationRequest resource, for other than patient access use cases."
-* ^status = #draft
 * reportedReference only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole)
 * medicationReference only Reference(FiBaseMedication or FiBasePatientMedication)
 * subject only Reference(FiBasePatient)

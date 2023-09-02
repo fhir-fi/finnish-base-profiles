@@ -3,7 +3,6 @@ Parent: Encounter
 Id: fi-base-encounter
 Title: "FI Base Encounter"
 Description: "This is the Finnish base profile for the Encounter resource."
-* ^status = #draft
 * subject only Reference(FiBasePatient or Group)
 * episodeOfCare only Reference(FiBaseEpisodeOfCare)
 * participant.individual only Reference(FiBasePractitioner or FiBasePractitionerRole or RelatedPerson)
