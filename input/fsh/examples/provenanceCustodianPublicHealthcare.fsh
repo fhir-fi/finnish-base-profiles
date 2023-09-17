@@ -19,7 +19,7 @@ Usage: #example
   * who
     * type = #Organization
     * identifier
-      * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
       * system = "urn:oid:1.2.246.537.6.40174"
       * value = "urn:oid:1.2.246.10.32213086.19.0"
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
