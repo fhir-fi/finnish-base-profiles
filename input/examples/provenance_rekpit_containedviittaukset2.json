@@ -21,6 +21,16 @@
 				}
 			],
 			"name": "Suomen Terveystalo Oy"
+		},
+		{
+			"resourceType": "Organization",
+			"id": "jarjestajaorg1",
+			"name": "Järjestäjäorganisaatio"
+		},
+		{
+			"resourceType": "Organization",
+			"id": "tuottajaorg1",
+			"name": "Tuottajaorganisaatio"
 		}
 	],
 	"extension": [
@@ -89,7 +99,7 @@
 				]
 			},
 			"who": {
-				"reference": "#jarjestajaorg1_huomEiMukanaTamanEsimerkinContainedissa"
+				"reference": "#jarjestajaorg1"
 			}
 		},
 		{
@@ -103,7 +113,7 @@
 				]
 			},
 			"who": {
-				"reference": "#tuottajaorg1_huomEiMukanaTamanEsimerkinContainedissa"
+				"reference": "#tuottajaorg1"
 			}
 		}
 	]
