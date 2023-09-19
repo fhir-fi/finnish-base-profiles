@@ -3,7 +3,7 @@
 	"id": "id-for-provenance-1",
 	"meta": {
 		"profile": [
-			"https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-provenance"
+			"https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
 		]
 	},
 	"text": {
