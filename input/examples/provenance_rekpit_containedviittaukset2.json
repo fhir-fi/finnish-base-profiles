@@ -7,13 +7,17 @@
 		]
 	},
 	"text": {
-		"status": "extensions",
+		"status": "additional",
 		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Narrative: An example provenance resource instance including information custodianship and other metadata.</b></p></div>"
 	},
 	"contained": [
 		{
 			"resourceType": "Organization",
 			"id": "custodianorg1",
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Suomen Terveystalo Oy</div>"
+			},
 			"identifier": [
 				{
 					"system": "urn:ietf:rfc:3986",
@@ -25,11 +29,19 @@
 		{
 			"resourceType": "Organization",
 			"id": "jarjestajaorg1",
+			"text": {
+				"status": "empty",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Järjestäjäorganisaatio</div>"
+			},
 			"name": "Järjestäjäorganisaatio"
 		},
 		{
 			"resourceType": "Organization",
 			"id": "tuottajaorg1",
+			"text": {
+				"status": "empty",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tuottajaorganisaatio</div>"
+			},
 			"name": "Tuottajaorganisaatio"
 		}
 	],
