@@ -13,13 +13,32 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
   * ^short = "An agent with type http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST"
 
 * agent contains custodian 1..*
+
 * agent[custodian].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST
+* agent[custodian].role 1..*
 * agent[custodian].who.identifier 1..1
 * agent[custodian].who.identifier.type 1..1
 * agent[custodian].who.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
-* agent[custodian].role 1..*
-* agent[custodian].role.coding 1..*
-* agent[custodian].role.coding.system = "urn:oid:1.2.246.537.5.40172"
+
+* agent[custodian].role ^slicing.discriminator.type = #value
+* agent[custodian].role ^slicing.discriminator.path = "coding.system"
+* agent[custodian].role ^slicing.rules = #open
+* agent[custodian].role ^slicing.description = "At least one of the roles must have a coding with a system"
+
+* agent[custodian].role contains custodianRole 1..*
+* agent[custodian].role[custodianRole].coding 1..*
+* agent[custodian].role[custodianRole].coding.system 1..1
+
+* agent[custodian].role[custodianRole].coding ^slicing.discriminator.type = #value
+* agent[custodian].role[custodianRole].coding ^slicing.discriminator.path = "system"
+* agent[custodian].role[custodianRole].coding ^slicing.rules = #open
+* agent[custodian].role[custodianRole].coding ^slicing.description = "The information custodian agent SHALL have a role with coding of `system` `urn:oid:1.2.246.537.5.40172` ([*eArkisto - Rekisteripitäjän laji*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=268&versionKey=345)), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
+  * ^definition = "The information custodian agent SHALL have a role with coding of `system` `urn:oid:1.2.246.537.5.40172` ([*eArkisto - Rekisteripitäjän laji*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=268&versionKey=345)), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
+  * ^short = "A role with type urn:oid:1.2.246.537.5.40172"
+
+* agent[custodian].role[custodianRole].coding contains custodianRoleCoding 1..*
+
+* agent[custodian].role[custodianRole].coding[custodianRoleCoding].system = "urn:oid:1.2.246.537.5.40172"
   * ^definition = "The status of the healthcare provider ([*eArkisto - Rekisteripitäjän laji*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=268&versionKey=345)), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
   * ^short = "Public or private occupational healthcare provider"
 
@@ -32,27 +51,25 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
   * ^definition = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) that indicates the type of the registry.  If the identifier has the value 4 (*työterveyshuolto*, occupational healthcare), another entity element specifies the business ID (*y-tunnus*) of the customer organization."
   * ^short = "Role source and a .what with an identifier with the system urn:oid:1.2.246.537.5.40150"
 
-* entity contains registerType 1..*
+* entity contains registerType 1..* and registerSpecifierCompanyId 0..1 and registerSpecifierPersonId 0..1 and registerSpecifierCustomerWithoutId 0..1
+
 * entity[registerType].role = #source
 * entity[registerType].what.identifier.system = #urn:oid:1.2.246.537.5.40150
   * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` ([*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=283&versionKey=360))."
   * ^short = "Type of registry"
 
-* entity contains registerSpecifierCompanyId 0..1
 * entity[registerSpecifierCompanyId].role = #source
 * entity[registerSpecifierCompanyId].what.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
 * entity[registerSpecifierCompanyId].what.identifier.system = "urn:oid:1.2.246.10"
   * ^definition = "The customer company of an occupational healthcare provider, expressed with the business ID (*y-tunnus*) registered in the Finnish organization register [ytj.fi](https://ytj.fi). This is a required specifier for Kanta system when the data registry is for occupational healthcare for private companies."
   * ^short = "Customer company of private occupational healthcare"
 
-* entity contains registerSpecifierPersonId 0..1
 * entity[registerSpecifierPersonId].role = #source
 * entity[registerSpecifierPersonId].what.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#NNFIN
 * entity[registerSpecifierPersonId].what.identifier.system = "urn:oid:1.2.246.21"
   * ^definition = "An individual customer of an occupational healthcare provider, expressed with the Finnish national PIC (*hetu*)."
   * ^short = "Customer of private occupational healthcare"
 
-* entity contains registerSpecifierCustomerWithoutId 0..1
 * entity[registerSpecifierCustomerWithoutId].role = #source
 * entity[registerSpecifierCustomerWithoutId].what.identifier.system = "urn:oid:1.2.246.537.30"
   * ^definition = "A customer without a Finnish person or business ID as a customer of an occupational healthcare provider."
