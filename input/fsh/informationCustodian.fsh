@@ -47,16 +47,20 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
 * entity ^slicing.discriminator.type = #value
 * entity ^slicing.discriminator.path = "what.identifier.system"
 * entity ^slicing.rules = #open
-* entity ^slicing.description = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) that indicates the type of the registry.  If the identifier has the value 4 (*työterveyshuolto*, occupational healthcare), another entity element specifies the business ID (*y-tunnus*) of the customer organization."
-  * ^definition = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) that indicates the type of the registry.  If the identifier has the value 4 (*työterveyshuolto*, occupational healthcare), another entity element specifies the business ID (*y-tunnus*) of the customer organization."
-  * ^short = "Role source and a .what with an identifier with the system urn:oid:1.2.246.537.5.40150"
+* entity ^slicing.description = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system specified."
+  * ^definition = "One entity SHALL have the `.role` `source` and a `.what` with an identifier with the system specified."
+  * ^short = "Role source and a .what with an identifier with the system specified"
 
 * entity contains registerType 1..* and registerSpecifierCompanyId 0..1 and registerSpecifierPersonId 0..1 and registerSpecifierCustomerWithoutId 0..1
 
 * entity[registerType].role = #source
-* entity[registerType].what.identifier.system = #urn:oid:1.2.246.537.5.40150
-  * ^definition = "The type of the information registry. From the system `oid:1.2.246.537.5.40150` ([*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=283&versionKey=360))."
-  * ^short = "Type of registry"
+* entity[registerType].what 1..1
+* entity[registerType].what.identifier 1..1
+* entity[registerType].what.identifier.system 1..1
+* entity[registerType].what.identifier.system from FiBaseRegisterIdentifier
+// "One entity SHALL have a `.what` with an identifier with either the system `urn:oid:1.2.246.537.5.40150` (*KanTa-palvelut - Potilasasiakirjan rekisteritunnus*) or the system `urn:oid:1.2.246.537.6.1264` (*Sosiaalihuolto - Asiakirjan rekisteritunnus*)."
+  * ^definition = "One entity SHALL have a `.what` with an identifier with system `urn:oid:1.2.246.537.5.40150` or system `urn:oid:1.2.246.537.6.1264`."
+  * ^short = "Role source and a .what with an identifier with the system urn:oid:1.2.246.537.5.40150 or urn:oid:1.2.246.537.6.1264"
 
 * entity[registerSpecifierCompanyId].role = #source
 * entity[registerSpecifierCompanyId].what.identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
@@ -107,3 +111,12 @@ Description: "This is the Finnish base profile for the Provenance resource, used
 * agent.who.identifier.system = "urn:oid:1.2.246.537.6.203"
   * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.203` [(*Valvira - Terveydenhuollon itsenäiset ammatinharjoittajat*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1163&versionKey=1303)."
   * ^short = "ID of the provider in Terveydenhuollon itsenäiset ammatinharjoittajat"
+
+ValueSet: FiBaseRegisterIdentifier
+Id: fi-base-register-identifier
+Title: "Finnish ValueSet for systems of registry specifiers"
+Description: "This value set contains the systems that can be used to identify the registry specifier for information custodianship."
+// Code system for register identifiers for patient records:
+* urn:ietf:rfc:3986#urn:oid:1.2.246.537.5.40150 "KanTa-palvelut - Potilasasiakirjan rekisteritunnus" 
+// Code system for register identifiers for social care customer records
+* urn:ietf:rfc:3986#urn:oid:1.2.246.537.6.1264 "Sosiaalihuolto - Asiakirjan rekisteritunnus"
