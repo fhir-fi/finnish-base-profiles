@@ -1,9 +1,9 @@
 Instance: PatientWithTurvakielto
 InstanceOf: FiBasePatient
-Title: "Patient - has TURVAKIELTO security label."
+Title: "Patient with a TURVAKIELTO security label."
 Description: "An example of a FI Base patient that has the TURVAKIELTO security label indicating non-disclosure for personal safety reasons."
 Usage: #example
-* meta.security[0] = SecurityLabelCS#TURVAKIELTO
+* meta.security[0] = FiBaseSecurityLabelCS#TURVAKIELTO
 * id = "patient-with-turvakielto"
 * identifier[PIC]
   * use = #official
