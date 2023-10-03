@@ -15,7 +15,7 @@ Description: "This is the Finnish base profile for the Patient resource."
   * ^short = "Information about TURVAKIELTO SHALL be handled in meta.security."
 
 * meta.security contains turvakielto 0..1
-* meta.security[turvakielto].system = "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"
+* meta.security[turvakielto].system = "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs"
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
