@@ -1,6 +1,6 @@
 {
 	"resourceType": "Provenance",
-	"id": "custodian-public-healthcare",
+	"id": "custodian-public-healthcare-kela",
 	"meta": {
 		"profile": [
 			"https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public"
@@ -71,7 +71,7 @@
 						"coding": [
 							{
 								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-								"code": "XX"
+								"code": "PRN"
 							}
 						]
 					},
@@ -82,29 +82,33 @@
 			}
 		},
 		{
-			"role": {
-				"coding": [
-					{
-						"system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
-						"code": "8",
-						"display": "Palvelunjärjestäjä"
-					}
-				]
-			},
+			"role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+                            "code": "8",
+                            "display": "Palvelunjärjestäjä"
+                        }
+                    ]
+                }
+            ],
 			"who": {
 				"reference": "#jarjestajaorg1"
 			}
 		},
 		{
-			"role": {
-				"coding": [
-					{
-						"system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
-						"code": "11",
-						"display": "Palveluntuottaja"
-					}
-				]
-			},
+			"role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+                            "code": "11",
+                            "display": "Palveluntuottaja"
+                        }
+                    ]
+                }
+            ],
 			"who": {
 				"reference": "#tuottajaorg1"
 			}
@@ -129,7 +133,7 @@
 						"coding": [
 							{
 								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-								"code": "TAX"
+								"code": "XX"
 							}
 						]
 					},
