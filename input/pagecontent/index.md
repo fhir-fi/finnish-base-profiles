@@ -17,6 +17,12 @@ There is a separate [Finnish Implementation Guide for SMART App
 Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
+See also [all FHIR implementation guides published by HL7 Finland](https://hl7.fi/fhir/) and also
+[HL7 Finland in Simplifier](https://simplifier.net/organization/hl7finland).
+
+The [Profiles page](profiles.html#other-finnish-profiles) lists some Finnish FHIR implementation
+guides published by other parties.
+
 ### Why Do We Need Finnish FHIR Base Profiles?
 
 Better flow of information between systems is one of the key enablers for digitalization and
