@@ -3,18 +3,25 @@ Parent: FiBaseProvenance
 Id: kanta-document-metadata-profile
 Title: "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile"
 Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and [imposing](http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html) the Finnish Base Information Custodian profile."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
-* ^extension.valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+* ^extension[=].valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
 
 * agent ^slicing.discriminator.type = #value
-* agent ^slicing.discriminator.path = "role.coding.system"
+* agent ^slicing.discriminator.path = "role"
 * agent ^slicing.rules = #open
-* agent ^slicing.description = "Kanta specific profiling"
+* agent ^slicing.description = "Ensure there is a coded role"
 
-* agent contains kantaRole 1..*
-* agent[kantaRole].role.coding 1..*
-* agent[kantaRole].role.coding.system 1..1
-* agent[kantaRole].role.coding.system = "http://gen.kanta.fi/fikanta-cs-rolecategory"
+* agent contains codedAgent 1..*
+* agent[codedAgent].role.coding 1..*
+* agent[codedAgent].role.coding.system 1..1
+
+* agent[codedAgent].role.coding ^slicing.discriminator.type = #value
+* agent[codedAgent].role.coding ^slicing.discriminator.path = "system"
+* agent[codedAgent].role.coding ^slicing.rules = #open
+* agent[codedAgent].role.coding ^slicing.description = "Kanta specific profiling"
+
+* agent[codedAgent].role.coding contains kantaCoding 1..*
+* agent[codedAgent].role.coding[kantaCoding].system = "http://gen.kanta.fi/fikanta-cs-rolecategory"
 
 Instance: KantaDocumentMetadataExample
 InstanceOf: KantaDocumentMetadata
