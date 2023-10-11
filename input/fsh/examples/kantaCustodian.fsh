@@ -14,22 +14,24 @@ Id: kanta-document-other-metadata-profile
 Title: "An imaginary profile for Kanta system, specifying things apart from the information custodian"
 Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements."
 
-* agent ^slicing.discriminator.type = #value
-* agent ^slicing.discriminator.path = "role"
-* agent ^slicing.rules = #open
-* agent ^slicing.description = "Ensure there is a coded role"
+* agent.role ^slicing.discriminator.type = #value
+* agent.role ^slicing.discriminator.path = "coding.system"
+* agent.role ^slicing.rules = #open
+* agent.role ^slicing.description = "Kanta specific profiling"
 
-* agent contains codedAgent 1..*
-* agent[codedAgent].role.coding 1..*
-* agent[codedAgent].role.coding.system 1..1
+* agent.role[kantaCoding].coding.system
 
-* agent[codedAgent].role.coding ^slicing.discriminator.type = #value
-* agent[codedAgent].role.coding ^slicing.discriminator.path = "system"
-* agent[codedAgent].role.coding ^slicing.rules = #open
-* agent[codedAgent].role.coding ^slicing.description = "Kanta specific profiling"
+* agent.role contains kantaCoding 1..*
+// * agent.role[kantaCoding].coding.system = "http://gen.kanta.fi/fikanta-cs-rolecategory"
+* agent.role[kantaCoding].coding.system from KantaProvenanceAgentRole
 
-* agent[codedAgent].role.coding contains kantaCoding 1..*
-* agent[codedAgent].role.coding[kantaCoding].system = "http://gen.kanta.fi/fikanta-cs-rolecategory"
+ValueSet: KantaProvenanceAgentRole
+Id: kanta-provenance-agent-role
+Title: "Example value set for provenance roles"
+Description: "This example value set contains the systems that can be used for agent roles in Kanta profiles"
+* ^experimental = false
+* urn:ietf:rfc:3986#http://gen.kanta.fi/fikanta-cs-rolecategory "Kanta specified roless" 
+* urn:ietf:rfc:3986#urn:oid:1.2.246.537.5.40172 "eArkisto - Rekisteripitäjän laji" 
 
 Instance: KantaDocumentMetadataExample
 InstanceOf: KantaDocumentMetadata
@@ -204,9 +206,6 @@ Usage: #example
   * type
     * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
-  * role[0]
-    * coding = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
-    * text = "Julkinen"
   * who[0]
     * type = "Organization"
     * identifier
