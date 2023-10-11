@@ -5,6 +5,14 @@ Title: "An imaginary profile for Kanta system, utilizing the Finnish Base Inform
 Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and [imposing](http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html) the Finnish Base Information Custodian profile."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
+* ^extension[=].valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile"
+
+Profile: KantaDocumentOtherMetadata
+Parent: FiBaseProvenance
+Id: kanta-document-other-metadata-profile
+Title: "An imaginary profile for Kanta system, specifying things apart from the information custodian"
+Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements."
 
 * agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "role"
