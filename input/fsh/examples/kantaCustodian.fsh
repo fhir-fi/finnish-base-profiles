@@ -67,10 +67,10 @@ Usage: #example
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#8 "Palvelunjärjestäjä"
-  * who.reference = #jarjestajaorg1
+  * who.reference = "#jarjestajaorg1"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
-  * who.reference = #tuottajaorg1
+  * who.reference = "#tuottajaorg1"
 * entity[0]
   * role = #source
   * what
@@ -128,10 +128,10 @@ Usage: #example
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#8 "Palvelunjärjestäjä"
-  * who.reference = #jarjestajaorg1
+  * who.reference = "#jarjestajaorg1"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
-  * who.reference = #tuottajaorg1
+  * who.reference = "#tuottajaorg1"
 * entity[0]
   * role = #source
   * what
@@ -179,10 +179,10 @@ Usage: #example
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#8 "Palvelunjärjestäjä"
-  * who.reference = #the-same-org
+  * who.reference = "#the-same-org"
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
-  * who.reference = #the-same-org
+  * who.reference = "#the-same-org"
 * entity[0]
   * role = #source
   * what
