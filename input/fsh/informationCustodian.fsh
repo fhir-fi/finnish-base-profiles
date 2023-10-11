@@ -84,7 +84,6 @@ Parent: FiBaseInformationCustodian
 Id: fi-base-information-custodian-public
 Title: "FI Base Information Custodian (Public Organization)"
 Description: "This is the Finnish base profile for the Provenance resource, used to communicate a public organization as the custodian of information (*rekisterinpitäjä*)."
-
 * agent.role.coding.code = #1
 * agent.who.identifier.system = "urn:oid:1.2.246.537.6.40174"
   * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.40174` [(*eArkisto - Rekisterinpitäjärekisteri*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=419&versionKey=496)."
@@ -95,7 +94,6 @@ Parent: FiBaseInformationCustodian
 Id: fi-base-information-custodian-private
 Title: "FI Base Information Custodian (Private Organization)"
 Description: "This is the Finnish base profile for the Provenance resource, used to communicate a private organization as the custodian of information (*rekisterinpitäjä*)."
-
 * agent.role.coding.code = #2
 * agent.who.identifier.system = "urn:oid:1.2.246.537.6.202"
   * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.202` [(*THL - SOTE-organisaatiorekisteri*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=421&versionKey=501)."
@@ -106,7 +104,6 @@ Parent: FiBaseInformationCustodian
 Id: fi-base-information-custodian-individual
 Title: "FI Base Information Custodian (Individual Provider)"
 Description: "This is the Finnish base profile for the Provenance resource, used to communicate an individual practitioner as the custodian of information (*rekisterinpitäjä*)."
-
 * agent.role.coding.code = #2
 * agent.who.identifier.system = "urn:oid:1.2.246.537.6.203"
   * ^definition = "The ID of the social or healthcare provider in system `oid:1.2.246.537.6.203` [(*Valvira - Terveydenhuollon itsenäiset ammatinharjoittajat*)](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1163&versionKey=1303)."
@@ -116,6 +113,7 @@ ValueSet: FiBaseRegisterIdentifier
 Id: fi-base-register-identifier
 Title: "Finnish ValueSet for systems of registry specifiers"
 Description: "This value set contains the systems that can be used to identify the registry specifier for information custodianship."
+* ^experimental = false
 // Code system for register identifiers for patient records:
 * urn:ietf:rfc:3986#urn:oid:1.2.246.537.5.40150 "KanTa-palvelut - Potilasasiakirjan rekisteritunnus" 
 // Code system for register identifiers for social care customer records
