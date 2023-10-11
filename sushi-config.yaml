@@ -250,7 +250,7 @@ resources:
   Provenance/custodian-public-healthcare-kela:
     name: Mika's Provenance example
     description: Solving Kela's problem with information custodian
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile
 
 pages:
   index.md:
