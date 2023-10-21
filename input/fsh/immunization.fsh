@@ -20,10 +20,10 @@ Description: "This is a base profile for Finnish Immunization resource."
   * ^short = "Defining administered product or substance by using ATC or VNR code."
 
 * vaccineCode.coding contains ATC 0..1
-* vaccineCode.coding[ATC].system = #urn:oid:1.2.246.537.6.32.2007 (exactly)
+* vaccineCode.coding[ATC].system = #urn:oid:1.2.246.537.6.32
 
 * vaccineCode.coding contains VNR 0..1
-* vaccineCode.coding[VNR].system = #urn:oid:1.2.246.537.6.55 (exactly)
+* vaccineCode.coding[VNR].system = #urn:oid:1.2.246.537.6.55
 
 * vaccineCode.text
   * ^short = "Insert product name."
@@ -35,7 +35,7 @@ Description: "This is a base profile for Finnish Immunization resource."
 * site.coding ^slicing.ordered = false
 
 * site.coding contains Vaccination-site 0..1
-* site.coding[Vaccination-site].system = #urn:oid:1.2.246.537.6.110.2007 (exactly)
+* site.coding[Vaccination-site].system = #urn:oid:1.2.246.537.6.110
 
 * route.coding ^slicing.discriminator.type = #value
 * route.coding ^slicing.discriminator.path = "system"
@@ -44,7 +44,7 @@ Description: "This is a base profile for Finnish Immunization resource."
 * route.coding ^slicing.ordered = false
 
 * route.coding contains Vaccination-route 0..1
-* route.coding[Vaccination-route].system = #urn:oid:1.2.246.537.6.111.2007 (exactly)
+* route.coding[Vaccination-route].system = #urn:oid:1.2.246.537.6.111
 
 * protocolApplied.targetDisease.coding ^slicing.discriminator.type = #value
 * protocolApplied.targetDisease.coding ^slicing.discriminator.path = "system"
@@ -54,7 +54,7 @@ Description: "This is a base profile for Finnish Immunization resource."
   * ^short = "Vaccine preventatable disease being targetted defined by using THL code system"
 
 * protocolApplied.targetDisease.coding contains THL-code 0..1
-* protocolApplied.targetDisease.coding[THL-code].system = #urn:oid:1.2.246.537.6.609.201501 (exactly)
+* protocolApplied.targetDisease.coding[THL-code].system = #urn:oid:1.2.246.537.6.609
 
 * reaction.detail ^short = "Reference to contained Observation resource. The contained Observation has relevant diagnose codes."
 

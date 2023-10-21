@@ -45,7 +45,7 @@ Description: "Extension for home municipality. Home municipality is relevant for
 * ^context.expression = "Patient"
 * value[x] only Coding
 * valueCoding 1..1
-  * system = #urn:oid:1.2.246.537.6.21.2003
+  * system = #urn:oid:1.2.246.537.6.21
 
 Extension: PatientProfession
 Id: patient-profession
