@@ -247,6 +247,10 @@ resources:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
     exampleBoolean: false
+  Provenance/custodian-public-healthcare-kela:
+    name: Mika's Provenance example
+    description: Solving Kela's problem with information custodian
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile
 
 pages:
   index.md:

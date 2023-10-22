@@ -10,13 +10,13 @@ Usage: #example
   * type
     * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
-  * role
-    * coding = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
+  * role[custodianRole]
+    * coding[custodianRoleCoding] = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
     * text = "Julkinen"
   * who
     * type = #Organization
     * identifier
-      * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
       * system = "urn:oid:1.2.246.537.6.40174"
       * value = "urn:oid:1.2.246.10.32213086.19.0"
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"

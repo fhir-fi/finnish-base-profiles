@@ -1,0 +1,147 @@
+{
+	"resourceType": "Provenance",
+	"id": "custodian-public-healthcare-kela",
+	"meta": {
+		"profile": [
+			"https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"custodian-public-healthcare\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;custodian-public-healthcare&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-information-custodian-public.html\">FI Base Information Custodian (Public Organization)</a></p></div><p><b>target</b>: <a href=\"EpisodeOfCare-id-for-episode-1.html\">EpisodeOfCare/id-for-episode-1</a></p><p><b>recorded</b>: Aug 25, 2023, 1:42:17 PM</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td style=\"display: none\">*</td><td>Rekisterinpitäjä <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#CST &quot;custodian&quot;)</span></td><td>Julkinen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></td><td><span>: Pirkanmaan hyvinvointialueen rekisterinpitäjä</span></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td style=\"display: none\">*</td><td>source</td><td><span>: Julkinen terveydenhuolto</span></td></tr></table></div>"
+	},
+	"contained": [
+		{
+			"resourceType": "Organization",
+			"id": "jarjestajaorg1",
+			"identifier": [
+				{
+					"system": "urn:oid:1.2.246.537.6.40174",
+					"value": "urn:oid:1.2.246.10.32213086.10.0"
+				}
+			],
+			"name": "Pirkanmaan hyvinvointialue"
+		},
+		{
+			"resourceType": "Organization",
+			"id": "tuottajaorg1",
+			"identifier": [
+				{
+					"system": "urn:oid:1.2.246.537.6.40174",
+					"value": "urn:oid:1.2.246.10.32213086.10.0"
+				}
+			],
+			"name": "Pirkanmaan hyvinvointialue"
+		}
+	],
+	"target": [
+		{
+			"reference": "EpisodeOfCare/id-for-episode-1"
+		}
+	],
+	"recorded": "2023-08-25T16:42:17.239+03:00",
+	"agent": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+						"code": "CST",
+						"display": "custodian"
+					}
+				],
+				"text": "Rekisterinpitäjä"
+			},
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "urn:oid:1.2.246.537.5.40172",
+							"code": "1",
+							"display": "Julkinen"
+						}
+					],
+					"text": "Julkinen"
+				}
+			],
+			"who": {
+				"type": "Organization",
+				"identifier": {
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+								"code": "PRN"
+							}
+						]
+					},
+					"system": "urn:oid:1.2.246.537.6.40174",
+					"value": "urn:oid:1.2.246.10.32213086.19.0"
+				},
+				"display": "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
+			}
+		},
+		{
+			"role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+                            "code": "8",
+                            "display": "Palvelunjärjestäjä"
+                        }
+                    ]
+                }
+            ],
+			"who": {
+				"reference": "#jarjestajaorg1"
+			}
+		},
+		{
+			"role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+                            "code": "11",
+                            "display": "Palveluntuottaja"
+                        }
+                    ]
+                }
+            ],
+			"who": {
+				"reference": "#tuottajaorg1"
+			}
+		}
+	],
+	"entity": [
+		{
+			"role": "source",
+			"what": {
+				"identifier": {
+					"system": "urn:oid:1.2.246.537.5.40150",
+					"value": "4"
+				},
+				"display": "Työterveyshuolto"
+			}
+		},
+		{
+			"role": "source",
+			"what": {
+				"identifier": {
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+								"code": "XX"
+							}
+						]
+					},
+					"system": "urn:oid:1.2.246.10",
+					"value": "2606155-7"
+				},
+				"display": "Sensotrend Oy"
+			}
+		}
+	]
+}
