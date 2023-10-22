@@ -8,13 +8,10 @@ Usage: #example
 * recorded = "2023-08-25T16:42:17.239+03:00"
 * agent[custodian]
   * type
-    * coding[0] = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
+    * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
   * role[custodianRole]
-    * coding[custodianRoleCoding]
-      * system = "urn:oid:1.2.246.537.5.40172"
-      * code = #1
-      * display = "Julkinen"
+    * coding[custodianRoleCoding] = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
     * text = "Julkinen"
   * who
     * type = #Organization

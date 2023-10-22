@@ -28,9 +28,9 @@ Usage: #example
 * name.family = "Doctor"
 * name.given = "Dave"
 * name.suffix = "dr."
-* qualification[0].code = urn:oid:1.2.246.537.6.140.2008#001
-* qualification[+].code = urn:oid:1.2.246.537.6.148.2008#86152-322
-* qualification[+].code = urn:oid:1.2.246.537.6.74.2001#2131
+* qualification[0].code = urn:oid:1.2.246.537.6.140|2008#001
+* qualification[+].code = urn:oid:1.2.246.537.6.148|2008#86152-322
+* qualification[+].code = urn:oid:1.2.246.537.6.74|2001#2131
 * qualification[+].code = urn:oid:2.16.840.1.113883.18.220#MD
 * telecom.system = #email
 * telecom.use = #work

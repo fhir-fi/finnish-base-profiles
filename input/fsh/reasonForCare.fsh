@@ -21,7 +21,7 @@ Title: "Primary condition for encounter"
 Description: "Encoded information of whether this is the primary/main condition for encounter."
 * value[x] only Coding
 * valueCoding 1..1
-  * system = #urn:oid:1.2.246.537.5.40005.2003
+  * system = #urn:oid:1.2.246.537.5.40005
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
 
@@ -31,7 +31,7 @@ Title: "Permanence of condition"
 Description: "Encoded information of whether this is the permanent."
 * value[x] only Coding
 * valueCoding 1..1
-  * system = #urn:oid:1.2.246.537.5.40003.2003
+  * system = #urn:oid:1.2.246.537.5.40003
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
 
