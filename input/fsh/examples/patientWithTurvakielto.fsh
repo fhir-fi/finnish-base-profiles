@@ -7,8 +7,7 @@ Usage: #example
 * id = "patient-with-turvakielto"
 * identifier[PIC]
   * use = #official
-  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-  * type.coding.code = #NNFIN
+  * type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#NNFIN
   * system = #urn:oid:1.2.246.21
   * value = "010190-999X"
 * birthDate = "1990-01-01"
@@ -17,6 +16,4 @@ Usage: #example
   * family = "Henkilö"
   * text = "Turva Henkilö"
 * active = true
-* extension[MunicipalityCode].valueCoding.system = #urn:oid:1.2.246.537.6.21.2003
-* extension[MunicipalityCode].valueCoding.code = #020
-* extension[MunicipalityCode].valueCoding.display = "Akaa"
+* extension[MunicipalityCode].valueCoding = urn:oid:1.2.246.537.6.21|2003#020 "Akaa"

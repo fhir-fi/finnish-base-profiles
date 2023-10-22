@@ -6,11 +6,8 @@ Usage: #example
 * identifier.value = "12345"
 * partOf = Reference(ProcedureColotomy)
 * status = #completed
-* category.coding[0]
-  * system = #urn:oid:1.2.246.537.6.601
-  * code = #PIENTOI
-* code.coding[0].system = "http://snomed.info/sct"
-* code.coding[0].code = #76164006
+* category.coding = urn:oid:1.2.246.537.6.601#PIENTOI
+* code.coding = http://snomed.info/sct#76164006
 * code.text = "Biopsy of colon"
 * subject = Reference(PatientOfMunicipality)
 * performer.actor = Reference(PractitionerLicensedPhysician)
