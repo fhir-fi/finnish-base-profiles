@@ -15,6 +15,7 @@ Usage: #example
 * name
   * given = "Testi"
   * family = "Henkilö"
+  * text = "Testi Henkilö"
 * telecom.system = #phone
 * telecom.value = "+358401234657"
 * address.use = #home
