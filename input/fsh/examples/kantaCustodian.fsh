@@ -30,7 +30,7 @@ Instance: KantaProvenanceAgentRole
 InstanceOf: ValueSet
 Title: "Example value set for provenance roles"
 Description: "This example value set contains the systems that can be used for agent roles in Kanta profiles"
-Usage: #example
+Usage: #definition
 * experimental = false
 * id = "kanta-provenance-agent-role"
 * url = "http://gen.kanta.fi/kanta-provenance-agent-role"
