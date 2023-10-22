@@ -4,6 +4,7 @@ Title: "Licenced physician"
 Description: "Example of Licensed Physician from CGI Pegasos EHR."
 Usage: #example
 * active = true
+* id = "practitioner-licensed-physician"
 * gender = #male
 * identifier[0].system = "urn:oid:1.2.246.537.26"
 * identifier[=].use = #official

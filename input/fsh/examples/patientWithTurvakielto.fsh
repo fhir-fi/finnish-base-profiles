@@ -14,5 +14,6 @@ Usage: #example
 * name
   * given = "Turva"
   * family = "Henkilö"
+  * text = "Turva Henkilö"
 * active = true
 * extension[MunicipalityCode].valueCoding = urn:oid:1.2.246.537.6.21|2003#020 "Akaa"
