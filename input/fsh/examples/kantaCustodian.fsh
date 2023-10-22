@@ -23,15 +23,31 @@ Description: "This is one way in which a system might use the Finnish Base Infor
 
 * agent.role contains kantaCoding 1..*
 // * agent.role[kantaCoding].coding.system = "http://gen.kanta.fi/fikanta-cs-rolecategory"
-* agent.role[kantaCoding].coding.system from KantaProvenanceAgentRole
+* agent.role[kantaCoding].coding.system from http://gen.kanta.fi/kanta-provenance-agent-role
 
-ValueSet: KantaProvenanceAgentRole
-Id: kanta-provenance-agent-role
+
+Instance: KantaProvenanceAgentRole
+InstanceOf: ValueSet
 Title: "Example value set for provenance roles"
 Description: "This example value set contains the systems that can be used for agent roles in Kanta profiles"
-* ^experimental = false
-* urn:ietf:rfc:3986#http://gen.kanta.fi/fikanta-cs-rolecategory "Kanta specified roless" 
-* urn:ietf:rfc:3986#urn:oid:1.2.246.537.5.40172 "eArkisto - Rekisteripitäjän laji" 
+Usage: #example
+* experimental = false
+* id = "kanta-provenance-agent-role"
+* url = "http://gen.kanta.fi/kanta-provenance-agent-role"
+* status = #draft
+* compose
+//  * include[0] = urn:ietf:rfc:3986#http://gen.kanta.fi/fikanta-cs-rolecategory "Kanta specified roles" 
+//  * include[+] = urn:ietf:rfc:3986#urn:oid:1.2.246.537.5.40172 "eArkisto - Rekisteripitäjän laji" 
+  * include[0]
+    * system = "urn:ietf:rfc:3986"
+    * concept
+      * code = #http://gen.kanta.fi/fikanta-cs-rolecategory
+      * display = "Kanta specified roles" 
+  * include[+]
+    * system = "urn:ietf:rfc:3986"
+    * concept
+      * code = #urn:oid:1.2.246.537.5.40172
+      * display = "eArkisto - Rekisteripitäjän laji" 
 
 Instance: KantaDocumentMetadataExample
 InstanceOf: KantaDocumentMetadata
