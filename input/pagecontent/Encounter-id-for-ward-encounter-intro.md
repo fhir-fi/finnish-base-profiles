@@ -1,6 +1,4 @@
-### Scope and Usage
-
-#### How to find a patient in a ward?
+### How to find a patient in a ward?
 
 Many systems have a need to answer the question: "How to find patients/encounters that are at ward X
 at moment T?".
@@ -30,7 +28,7 @@ these problems, the encounter SHOULD not be kept `in-progress` when the patient 
 (if there is a need for "recycling" the ward period encounter, it should be set to `finished` and
 then back to `in-progress` upon return from the ICU).  
 
-##### Why not use Location.managingOrganization?
+#### Why not use Location.managingOrganization?
 
 `Encounter`s `location` -field is a reference to `Location` that has a field
 `managingOrganization`. Use of this to find the organization responsible for the patient is
@@ -39,7 +37,7 @@ assigned to another organization) and this would have an unexpected effect on th
 responsibility-concern. `Location.managingOrganization` is "too far" from the encounter to be
 useful in this context.
 
-##### Querying by physical location
+#### Querying by physical location
 
 Querying by location is also an option. Here the focus is on the physical location and not the
 organizational responsibility towards the patient.
