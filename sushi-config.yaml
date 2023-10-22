@@ -270,6 +270,7 @@ pages:
 
 parameters: 
   ipa-comparison: "{last}" # "{current}" | "{last}"
+  extension-domain: [ http://hl7.fi/, http://phr.kanta.fi/, http://resepti.kanta.fi/ ]
 
 menu:
   Home: index.html
