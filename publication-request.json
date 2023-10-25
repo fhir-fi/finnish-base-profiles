@@ -1,7 +1,7 @@
 {
   "package-id" : "hl7.fhir.fi.base",
-  "version" : "1.0.0-rc21",
-  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc21",
+  "version" : "1.0.0-rc22",
+  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0-rc22",
   "mode" : "milestone",
   "status" : "qa-preview",
   "sequence" : "STU 1",
