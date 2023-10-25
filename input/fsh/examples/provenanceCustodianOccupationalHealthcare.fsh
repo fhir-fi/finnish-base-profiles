@@ -20,6 +20,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.6.202"
       * value = "urn:oid:1.2.246.10.32515682.10.0"
     * display = "Ratinan Terveys Oy"
+/*
 * entity[registerType]
   * role = #source
   * what
@@ -35,5 +36,4 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
-
-
+*/
