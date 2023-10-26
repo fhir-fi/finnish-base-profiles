@@ -7,9 +7,7 @@ Usage: #example
 * identifier.use = #official
 * identifier.value = "urn:oid:1.2.246.10.6794809.14011.2023.200035"
 * status = #in-progress
-* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
-* class.code = #IMP
-* class.display = "inpatient encounter"
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-27T01:03:00+02:00"
 * serviceProvider.reference = "Organization/1.2.246.10.8286189.10.100012"
@@ -21,9 +19,7 @@ Description: "An example of a FI Base encounter which is part of another encount
 Usage: #example
 * id = "id-for-child-encounter"
 * status = #in-progress
-* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
-* class.code = #IMP
-* class.display = "inpatient encounter"
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 
 * subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-27T01:03:00+02:00"
@@ -40,13 +36,10 @@ Description: "An example of a FI Base encounter which is part of another encount
 Usage: #example
 * id = "id-for-child-encounter-2"
 * status = #finished
-* class.system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
-* class.code = #OBSENC
-* class.display = "observation encounter"
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC "observation encounter"
 * partOf = Reference(EncounterPalvelutapahtuma) 
 * subject.reference = "Patient/patient-of-municipality"
 * period.start = "2022-02-28T12:03:00+02:00"
 * period.end = "2022-02-28T12:18:00+02:00"
 * serviceProvider.type = #ServiceProvider
 * serviceProvider.identifier.value = "1.2.246.10.8286189.10.100014"
-
