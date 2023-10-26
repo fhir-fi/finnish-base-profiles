@@ -20,6 +20,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.6.40174"
       * value = "urn:oid:1.2.246.10.32213086.19.0"
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
+/*
 * entity[registerType]
   * role = #source
   * what
@@ -27,3 +28,4 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = #2
     * display = "Julkinen terveydenhuolto"
+*/

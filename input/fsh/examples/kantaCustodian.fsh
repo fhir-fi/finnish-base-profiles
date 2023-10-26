@@ -86,6 +86,7 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#tuottajaorg1"
+/*
 * entity[0]
   * role = #source
   * what
@@ -101,6 +102,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
+*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
  
@@ -147,6 +149,7 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#tuottajaorg1"
+/*
 * entity[0]
   * role = #source
   * what
@@ -162,13 +165,14 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
+*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
 
 Instance: KantaDocumentMetadataFailingExample1
 InstanceOf: KantaDocumentMetadata
 Title: "A test example demonstrating that validation works"
-Description: "This example does not have the registerType entity mandated by the Finnish Base Information Custodian profile. QA report is expected to show an error."
+Description: "This example does not have the role for the agent from system urn:oid:1.2.246.537.5.40172, as would be mandated by the Finnish Base Information Custodian profile. QA report is expected to show an error."
 Usage: #example
 * id = "kanta-document-metadata-profile-test-example-1"
 * contained[0]
@@ -182,9 +186,11 @@ Usage: #example
   * type
     * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
+/*
   * role[0]
     * coding = urn:oid:1.2.246.537.5.40172#1 "Julkinen"
     * text = "Julkinen"
+*/    
   * who[0]
     * type = "Organization"
     * identifier
@@ -198,6 +204,7 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#the-same-org"
+/*
 * entity[0]
   * role = #source
   * what
@@ -206,6 +213,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
+*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
  
@@ -226,6 +234,7 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.6.40174"
       * value = "urn:oid:1.2.246.10.32213086.19.0"
     * display = "Pirkanmaan hyvinvointialueen rekisterinpitäjä"
+/*
 * entity[0]
   * role = #source
   * what
@@ -241,5 +250,6 @@ Usage: #example
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
+*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"

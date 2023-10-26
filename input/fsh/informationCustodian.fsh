@@ -42,6 +42,20 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
   * ^definition = "The status of the healthcare provider ([*eArkisto - Rekisteripitäjän laji*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=268&versionKey=345)), i.e., whether the provider is a public or private actor. The value for the identifier SHALL be 1 for public, 2 for private."
   * ^short = "Public or private occupational healthcare provider"
 
+/* REMOVED, for now.
+ * We were unable to reach consensus on how the register type and the register specifier should be
+ * presented.
+ * 
+ * This piece of profiling is left here as a reminder of the latest proposed approach. It may be
+ * useful when work on the topic resumes in the future.
+ *
+ * The main arguments for this approach are that no extensions are required, and that the register
+ * type and the register specifier seem to be entities (rather than agents, at least).
+ * The main arguments against this proposal are that this approach puts codeable information in
+ * an identifer, and that the register, especially with the roles available for it, still does not
+ * seem to be a good fit for the registry information.
+ * 
+
 * entity 1..*
 
 * entity ^slicing.discriminator.type = #value
@@ -78,6 +92,7 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
 * entity[registerSpecifierCustomerWithoutId].what.identifier.system = "urn:oid:1.2.246.537.30"
   * ^definition = "A customer without a Finnish person or business ID as a customer of an occupational healthcare provider."
   * ^short = "Customer of private occupational healthcare"
+*/
 
 Profile: FiBaseInformationCustodianPublic
 Parent: FiBaseInformationCustodian
