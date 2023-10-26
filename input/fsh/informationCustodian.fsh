@@ -47,10 +47,10 @@ Description: "This is a Finnish abstract base profile for the Provenance resourc
  * presented.
  * 
  * This piece of profiling is left here as a reminder of the latest proposed approach. It may be
- * useful when work on the topic progresses in the future.
+ * useful when work on the topic resumes in the future.
  *
  * The main arguments for this approach are that no extensions are required, and that the register
- * type and the register specifier seem to be entites (rather than agents, at least).
+ * type and the register specifier seem to be entities (rather than agents, at least).
  * The main arguments against this proposal are that this approach puts codeable information in
  * an identifer, and that the register, especially with the roles available for it, still does not
  * seem to be a good fit for the registry information.
