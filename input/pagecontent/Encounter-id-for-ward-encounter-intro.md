@@ -1,13 +1,15 @@
 ### How to find a patient in a ward?
 
-Many systems have a need to answer the question: "How to find patients/encounters that are at ward X
-at moment T?".
+Many systems have a need to answer the question: "How to find patients/encounters that are at ward
+X at moment T?".
 
 There are key points to consider when forming the search criteria:
 
-* We are most likely interested only in `IMP` (inpatient encounter) encounters, so we should filter by `class`.
+* We are most likely interested only in `IMP` (inpatient encounter) encounters, so we should filter
+  by `class`.
 * We are interested only in `in-progress` encounters, so we need to filter by `status`.
-* We are most likely interested in querying by organizational hierarchy, the organizational unit (ward) responsible for the patient (not physical location).
+* We are most likely interested in querying by organizational hierarchy, the organizational unit
+  (ward) responsible for the patient (not physical location).
 
 Organizational ward should be communicated using the `serviceProvider` property.
 
@@ -16,7 +18,7 @@ FHIR request parameters:
 
 * class = `IMP`
 * status = `in-progress`
-* period `gt` and `le` -filters as per target moment
+* period `gt` and `le` filters as per target moment
 * serviceProvider = id of the ward organization resource
 
 Historically some systems keep the ward encounter active when the patient is sent to ICU. Leaving
@@ -30,12 +32,11 @@ then back to `in-progress` upon return from the ICU).
 
 #### Why not use Location.managingOrganization?
 
-`Encounter`s `location` -field is a reference to `Location` that has a field
-`managingOrganization`. Use of this to find the organization responsible for the patient is
-problematic. `Location.managingOrganization` might change for different reasons (a room is
-assigned to another organization) and this would have an unexpected effect on the
-responsibility-concern. `Location.managingOrganization` is "too far" from the encounter to be
-useful in this context.
+`Encounter`s `location` field is a reference to `Location` that has a field `managingOrganization`.
+Use of this to find the organization responsible for the patient is problematic.
+`Location.managingOrganization` might change for different reasons (a room is assigned to another
+organization) and this would have an unexpected effect on the responsibility-concern.
+`Location.managingOrganization` is "too far" from the encounter to be useful in this context.
 
 #### Querying by physical location
 
