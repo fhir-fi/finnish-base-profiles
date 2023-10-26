@@ -5,9 +5,9 @@ href="#further-development-needs">further development needs</a> below.</p>
 
 ### Scope and Usage
 
-This profile describes Diagnosis -based conditions and Finnish *kayntisyy*.
+This profile describes Diagnosis based conditions and Finnish *kayntisyy*.
 These are `Condition` resources that are asserted by a healthcare professional and directly related
-to encounters. This profile does not describe how to communicate `problem-list-item` -level conditions.
+to encounters. This profile does not describe how to communicate `problem-list-item` level conditions.
 
 THL has a data model for Finnish diagnosis (including *käyntisyy*) in code server:
 [THL/Tietosisältö - Diagnoosit](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=543&versionKey=1543)
@@ -19,7 +19,7 @@ For high level documentation, see
 This profile SHOULD NOT be used to describe reason given by patient for requesting/acquiring
 healthcare service. Finnish *tulosyy*.
 
-#### Separating between Diagnosis -based conditions and Finnish *käyntisyy*
+#### Separating between Diagnosis based conditions and Finnish *käyntisyy*
 
 Reason for care may be a diagnosis asserted by a clinician / medical doctor or some other reason
 for visit that is asserted by an nurse or some other healthcare professional.
