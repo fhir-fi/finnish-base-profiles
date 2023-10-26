@@ -189,7 +189,7 @@ resources:
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Organization/1.2.246.10.31045308.10002.0:
     name: A high level organization
-    description: SOTE-toimintayksikko -level organization
+    description: Organization on Wellbeing Services County level
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
   Organization/organizationesim1:
     name: Testi terveysasema

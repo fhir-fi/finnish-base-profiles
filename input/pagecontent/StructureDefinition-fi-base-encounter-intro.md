@@ -52,7 +52,7 @@ A *palvelutapahtuma* encounter is identified by an identifier. When encounter ha
 with `use=official` it is considered to be a *palvelutapahtuma* and that identifier SHALL be the
 OID of a *palvelutapahtuma*.
 
-Other levels of encounter that are not a *palvelutapahtuma*, MUST NOT contain an ientifier with
+Other levels of encounter that are not a *palvelutapahtuma*, MUST NOT contain an identifier with
 `use=official`.
 
 #### Organizational responsibility
