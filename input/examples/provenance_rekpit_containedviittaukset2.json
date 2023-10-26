@@ -1,0 +1,186 @@
+{
+	"resourceType": "Provenance",
+	"id": "id-for-provenance-1",
+	"meta": {
+		"profile": [
+			"https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
+		]
+	},
+	"text": {
+		"status": "additional",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Narrative: An example provenance resource instance including information custodianship and other metadata.</b></p></div>"
+	},
+	"contained": [
+		{
+			"resourceType": "Organization",
+			"id": "custodianorg1",
+			"text": {
+				"status": "generated",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Suomen Terveystalo Oy</div>"
+			},
+			"identifier": [
+				{
+					"system": "urn:ietf:rfc:3986",
+					"value": "urn:oid:1.2.246.10.10938633.10.0"
+				}
+			],
+			"name": "Suomen Terveystalo Oy"
+		},
+		{
+			"resourceType": "Organization",
+			"id": "jarjestajaorg1",
+			"text": {
+				"status": "empty",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Järjestäjäorganisaatio</div>"
+			},
+			"name": "Järjestäjäorganisaatio"
+		},
+		{
+			"resourceType": "Organization",
+			"id": "tuottajaorg1",
+			"text": {
+				"status": "empty",
+				"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tuottajaorganisaatio</div>"
+			},
+			"name": "Tuottajaorganisaatio"
+		}
+	],
+	"extension": [
+		{
+			"url": "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterType",
+			"valueCoding": {
+				"system": "urn:oid:1.2.246.537.5.40150.2009",
+				"code": "4",
+				"display": "Työterveyshuolto"
+			}
+		},
+		{
+			"url": "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterSpecifier",
+			"extension": [
+				{
+					"url": "RegisterSpecifier",
+					"valueIdentifier": {
+						"system": "urn:oid:1.2.246.10",
+						"value": "0246246-0"
+					}
+				},
+				{
+					"url": "RegisterSpecifierName",
+					"valueString": "Kansaneläkelaitos"
+				}
+			]
+		}
+	],
+	"target": [
+		{
+			"reference": "AuditEvent/id-for-auditevent-1"
+		}
+	],
+	"recorded": "2015-02-07T13:28:17.239+02:00",
+	"agent": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+						"code": "CST",
+						"display": "custodian"
+					}
+				]
+			},
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "urn:oid:1.2.246.537.5.40172",
+							"code": "2",
+							"display": "Yksityinen"
+						},
+						{
+							"system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+							"code": "9",
+							"display": "Rekisterinpitäjä"
+						}
+					]
+				}
+			],
+			"who": {
+				"reference": "#custodianorg1",
+				"identifier": {
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+								"code": "PRN"
+							}
+						]
+					},
+					"system": "urn:ietf:rfc:3986",
+					"value": "urn:oid:1.2.246.10.10938633.10.0"
+				}
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+							"code": "8",
+							"display": "Palvelunjärjestäjä"
+						}
+					]
+				}
+			],
+			"who": {
+				"reference": "#jarjestajaorg1"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://gen.kanta.fi/fikanta-cs-rolecategory",
+							"code": "11",
+							"display": "Palveluntuottaja"
+						}
+					]
+				}
+			],
+			"who": {
+				"reference": "#tuottajaorg1"
+			}
+		}
+	],
+    "entity" : [
+        {
+          "role" : "source",
+          "what" : {
+            "identifier" : {
+              "system" : "urn:oid:1.2.246.537.5.40150",
+              "value" : "4"
+            },
+            "display" : "Työterveyshuolto"
+          }
+        },
+        {
+          "role" : "source",
+          "what" : {
+            "identifier" : {
+              "type" : {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code" : "XX"
+                  }
+                ]
+              },
+              "system" : "urn:oid:1.2.246.10",
+              "value" : "0246246-0"
+            },
+            "display" : "Kansaneläkelaitos"
+          }
+        }
+    ]
+}

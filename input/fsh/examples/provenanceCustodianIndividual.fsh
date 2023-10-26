@@ -10,8 +10,8 @@ Usage: #example
   * type
     * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
-  * role
-    * coding = urn:oid:1.2.246.537.5.40172#2 "Yksityinen"
+  * role[custodianRole]
+    * coding[custodianRoleCoding] = urn:oid:1.2.246.537.5.40172#2 "Yksityinen"
     * text = "Yksityinen"
   * who
     * type = #Practitioner

@@ -189,7 +189,7 @@ resources:
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Organization/1.2.246.10.31045308.10002.0:
     name: A high level organization
-    description: SOTE-toimintayksikko -level organization
+    description: Organization on Wellbeing Services County level
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
   Organization/organizationesim1:
     name: Testi terveysasema
@@ -247,6 +247,10 @@ resources:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
     exampleBoolean: false
+  Provenance/custodian-public-healthcare-kela:
+    name: Provenance example for Kanta
+    description: This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile
 
 pages:
   index.md:

@@ -10,13 +10,13 @@ Usage: #example
   * type
     * coding[0] = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CST "custodian"
     * text = "Rekisterinpitäjä"
-  * role[0]
-    * coding[0] = urn:oid:1.2.246.537.5.40172#2 "Yksityinen"
+  * role[custodianRole]
+    * coding[custodianRoleCoding] = urn:oid:1.2.246.537.5.40172#2 "Yksityinen"
     * text = "Yksityinen"
   * who
     * type = #Organization
     * identifier
-      * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
       * system = "urn:oid:1.2.246.537.6.202"
       * value = "urn:oid:1.2.246.10.32515682.10.0"
     * display = "Ratinan Terveys Oy"
@@ -31,7 +31,7 @@ Usage: #example
   * role = #source
   * what
     * identifier
-      * type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX
+      * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
       * system = "urn:oid:1.2.246.10"
       * value = "2606155-7"
     * display = "Sensotrend Oy"
