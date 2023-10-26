@@ -31,4 +31,4 @@ on chat.fhir.org and the GitHub issues
 [#135](https://github.com/fhir-fi/finnish-base-profiles/issues/135),
 [#141](https://github.com/fhir-fi/finnish-base-profiles/issues/141), and
 [#163](https://github.com/fhir-fi/finnish-base-profiles/issues/163).
-Implementer feedback is appreciated on how to conotinue work on the topic.
+Implementer feedback is appreciated on how to continue work on the topic.
