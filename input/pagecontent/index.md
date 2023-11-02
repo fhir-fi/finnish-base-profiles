@@ -153,7 +153,7 @@ See the [presentation slides](Vitalis2023-Nordic_harmonization_of_health_data.pd
 given in the [Vitalis](https://vitalis.nu/) conference in May, 2023. They include an initial
 comparison of the Danish, Finnish, Norwegian, and Swedish base profile specifications.
 
-Other national base profiles we have drawn inispiration from include
+Other national base profiles we have drawn inspiration from include
 <ul style="list-style: uscachauee">
   <li style="list-style-type='🇺🇸'">the <a href="https://hl7.org/fhir/us/core/">US Core</a></li>
   <li style="list-style-type='🇨🇦'">the <a
