@@ -115,5 +115,5 @@ relationship type [GUARD](http://hl7.org/fhir/R4/v3/RoleCode/cs.html#:~:text=3-,
 The Digital and Population Data Services Agency DVV may grant a
 [non-disclosure for personal safety](https://dvv.fi/en/non-disclosure-for-personal-safety).
 This is communicated by the
-[`TURVAKIELTO`](CodeSystem-SecurityLabelCS.html#SecurityLabelCS-TURVAKIELTO) security label (see
-[an example](Patient-patient-with-turvakielto.html)).
+[`TURVAKIELTO`](CodeSystem-fi-base-security-label-cs#fi-base-security-label-cs-TURVAKIELTO)
+security label (see [an example](Patient-patient-with-turvakielto.html)).
