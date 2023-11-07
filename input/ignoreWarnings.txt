@@ -4,14 +4,10 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# The validator cannot validate the codes within the Finnish code server.
-Code found in include, however: null
-
 # These examples are fake code systems and profile references - they're not expected to be checked
 Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
 Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
 Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
-Code System URI 'http://example.oma' is unknown so the code cannot be validated
 Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 
 # Kanta profiles are not included in this guide. It's OK not to validate the Kanta PHR examples imported from the Kanta IGs against them.
