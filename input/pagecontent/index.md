@@ -17,6 +17,12 @@ There is a separate [Finnish Implementation Guide for SMART App
 Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
+See also [all FHIR implementation guides published by HL7 Finland](https://hl7.fi/fhir/) and also
+[HL7 Finland in Simplifier](https://simplifier.net/organization/hl7finland).
+
+The [Profiles page](profiles.html#other-finnish-profiles) lists some Finnish FHIR implementation
+guides published by other parties.
+
 ### Why Do We Need Finnish FHIR Base Profiles?
 
 Better flow of information between systems is one of the key enablers for digitalization and
@@ -124,9 +130,9 @@ resources and the REST interface.
     symbols: 🇩🇰 🇳🇴 🇸🇪;
     suffix: " ";
   }
-  @counter-style uscachau {
+  @counter-style uscachauee {
     system: cyclic;
-    symbols: 🇺🇸 🇨🇦 🇨🇭 🇦🇺;
+    symbols: 🇺🇸 🇨🇦 🇨🇭 🇦🇺 🇪🇪;
     suffix: " ";
   }
 </style>
@@ -143,14 +149,21 @@ published base profiles from other Nordic countries:
 </ul>
 
 See the [presentation slides](Vitalis2023-Nordic_harmonization_of_health_data.pdf) of the session
-[Nordic harmonization of health data](https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c), given in the [Vitalis](https://vitalis.nu/) conference in May, 2023. They include an initial comparison of the Danish, Finnish, Norwegian, and Swedish base profile specifications.
+[Nordic harmonization of health data](https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c),
+given in the [Vitalis](https://vitalis.nu/) conference in May, 2023. They include an initial
+comparison of the Danish, Finnish, Norwegian, and Swedish base profile specifications.
 
-Other notable national base profiles under our radar are
-<ul style="list-style: uscachau">
-  <li>the <a href="https://hl7.org/fhir/us/core/">US Core</a></li>
-  <li>the <a href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/">Canadian baseline</a></li>
-  <li>the Swiss <a href="http://fhir.ch/ig/ch-core/index.html">CH Core</a></li>
-  <li>the Australian <a href="http://hl7.org.au/fhir/4.0.0/">AU Base</a></li>
+Other national base profiles we have drawn inspiration from include
+<ul style="list-style: uscachauee">
+  <li style="list-style-type='🇺🇸'">the <a href="https://hl7.org/fhir/us/core/">US Core</a></li>
+  <li style="list-style-type='🇨🇦'">the <a
+    href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/">Canadian baseline</a></li>
+  <li style="list-style-type='🇨🇭'">the Swiss <a href="http://fhir.ch/ig/ch-core/index.html">CH
+    Core</a></li>
+  <li style="list-style-type='🇦🇺'">the Australian <a href="http://hl7.org.au/fhir/4.0.0/">AU 
+    Base</a></li>
+  <li style="list-style-type='🇪🇪'">the <a
+    href="https://build.fhir.org/ig/HL7EE/ig-ee-base/">Estonian Base Implementation Guide</a></li>
 </ul>
 
 Many of the Finnish FHIR base profiles derive from the
