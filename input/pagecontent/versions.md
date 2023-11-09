@@ -2,6 +2,11 @@ Version 1.0.0 is the first official release of this implementation guide. See th
 published versions in the
 [publication directory](https://hl7.fi/fhir/finnish-base-profiles/history.html).
 
+You can track the changes between released snapshot versions through the
+Previous Version Comparison section of the [QA report](qa.html). You can also check changes
+between ballot and release versions through the
+[releases](https://github.com/fhir-fi/finnish-base-profiles/releases) in GitHub.
+
 The development continues, with the intention to get definitions from this implementation guide
 into Normative level (see the
 [standards development process](https://hl7.org/fhir/versions.html#std-process)) of the FHIR
@@ -11,7 +16,7 @@ It is foreseen that the next focus area is scheduling. There are already several
 guides for scheduling published by HL7 Finland that need updating and consolidation, as well as
 some new requirements.
 
-Development snapshots will be published throughout the development and ballot cycles.
+Development snapshots will be published throughout the development, ballot, and maintenance cycles.
 
 ### CI Build Snapshots
 The latest version of the `master` branch of the source code repository for this implementation

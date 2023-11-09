@@ -17,7 +17,7 @@ custodian is the `.agent`.
 
 {:.stu-note}
 The working group was not able to reach consensus on how to present the details of the register
-(the type of register, *reksterin tyyppi* and the register specifier, *rekisterin tarkenne*). One
+(the type of register, *rekisterin tyyppi* and the register specifier, *rekisterin tarkenne*). One
 option is to use extensions to the information custodian `.agent` or even to the Provenance
 resource instance (see
 [the ballot version](https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/StructureDefinition-fi-base-provenance.html)

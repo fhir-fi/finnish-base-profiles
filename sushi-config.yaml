@@ -8,7 +8,7 @@ name: FinnishBaseProfiles
 title: Finnish Base Profiles
 description: A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 1.0.0-rc23
+version: 1.0.0-rc24
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: qa-preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -199,22 +199,6 @@ resources:
     name: Simple Organization example
     description: An example Organization from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
-  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
-    name: Kanta PHR - patient 3
-    description: An example patient for Kanta PHR.
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Patient/patientesim1:
-    name: Karen van der Hentenryck
-    description: An example patient from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
-  Practitioner/practitioneresim1:
-    name: Lars van der Knaapi
-    description: An example practitioner from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner
-  PractitionerRole/practitionerRoleesim1:
-    name: A simple practitioner role
-    description: An example PractitionerRole instance from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role
   Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
@@ -223,6 +207,10 @@ resources:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
     exampleBoolean: false
+  Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
+    name: Kanta PHR - patient 3
+    description: An example patient for Kanta PHR.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
   Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
@@ -247,10 +235,29 @@ resources:
     name: A dummy patient entry
     description: A patient id supporting other examples, not included in the guide.
     exampleBoolean: false
+  Patient/patientesim1:
+    name: Karen van der Hentenryck
+    description: An example patient from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Practitioner/practitioneresim1:
+    name: Lars van der Knaapi
+    description: An example practitioner from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner
+  PractitionerRole/practitionerRoleesim1:
+    name: A simple practitioner role
+    description: An example PractitionerRole instance from Kanta Prescription API
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role
   Provenance/custodian-public-healthcare-kela:
     name: Provenance example for Kanta
     description: This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile
+  Provenance/id-for-provenance-1:
+    name: A simple provenance example
+    description: An example Provenance resource instance from Kanta
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian
+  StructureDefinition/kanta-document-metadata-profile: omit
+  StructureDefinition/kanta-document-other-metadata-profile: omit
+  ValueSet/kanta-provenance-agent-role: omit
 
 pages:
   index.md:
