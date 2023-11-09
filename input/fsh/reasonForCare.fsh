@@ -3,7 +3,6 @@ Parent: FiBaseCondition
 Id: fi-base-reason-for-care
 Title: "FI Base Reason for Care (encounter-diagnosis and reason for visit)"
 Description: "This is the Finnish base profile for the encounter-diagnosis and (nurse asserted) reason for visit Conditions."
-* ^status = #draft
 
 * subject only Reference(FiBasePatient)
 
@@ -22,7 +21,7 @@ Title: "Primary condition for encounter"
 Description: "Encoded information of whether this is the primary/main condition for encounter."
 * value[x] only Coding
 * valueCoding 1..1
-  * system = #urn:oid:1.2.246.537.5.40005.2003
+  * system = #urn:oid:1.2.246.537.5.40005
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
 
@@ -32,7 +31,7 @@ Title: "Permanence of condition"
 Description: "Encoded information of whether this is the permanent."
 * value[x] only Coding
 * valueCoding 1..1
-  * system = #urn:oid:1.2.246.537.5.40003.2003
+  * system = #urn:oid:1.2.246.537.5.40003
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
 
@@ -85,5 +84,3 @@ Description: "Encoded information on the cause of an adverse effect, when involv
 * value[x] only Coding
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
-
-

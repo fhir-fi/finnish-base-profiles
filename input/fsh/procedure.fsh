@@ -3,7 +3,6 @@ Parent: Procedure
 Id: fi-base-procedure
 Title: "Fi Base Procedure"
 Description: "The Base profile for Finnish Procedure resource."
-* ^status = #draft
 * partOf only Reference(FiBaseProcedure or FiBaseObservation or FiBaseMedicationAdministration)
 * subject only Reference(FiBasePatient or Group)
 * encounter only Reference(FiBaseEncounter)

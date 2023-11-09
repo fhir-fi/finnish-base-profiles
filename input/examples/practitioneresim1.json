@@ -1,10 +1,12 @@
 {
   "resourceType": "Practitioner",
   "id": "practitioneresim1",
-  "identifier": {
-    "system": "urn:oid:1.2.246.537.25",
-    "value": "000018"
-  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.246.537.25",
+      "value": "000018"
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -37,14 +39,16 @@
       ]
     }
   ],
-  "qualification": {
-    "code": {
-      "coding": [
-        {
-          "system": "urn:oid:1.2.246.537.6.140.2008",
-          "code": "034"
-        }
-      ]
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.246.537.6.140.2008",
+            "code": "034"
+          }
+        ]
+      }
     }
-  }
+  ]
 }

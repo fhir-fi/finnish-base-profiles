@@ -4,7 +4,7 @@ Usage: #example
 Title: "GP appointment"
 Description: "Example of an appointment with general practitioner."
 * id = "appointment-general-practitioner"
-* appointmentType = urn:oid:1.2.246.537.6.884.2015#101
+* appointmentType = urn:oid:1.2.246.537.6.884|2015#101
 * created = "2023-01-20T08:45:15+02:00"
 * description = "Kuume"
 * end = "2023-01-20T10:20:00+02:00"
@@ -27,8 +27,8 @@ Description: "Example of an appointment with general practitioner."
 * participant[=].status = #accepted
 * participant[+].actor = Reference(AT-340)
 * participant[=].status = #accepted
-* serviceCategory = urn:oid:1.2.246.537.6.50.201801#SOTE9.2
-* serviceType = urn:oid:1.2.246.537.6.49.201501#EEA
+* serviceCategory = urn:oid:1.2.246.537.6.50|201801#SOTE9.2
+* serviceType = urn:oid:1.2.246.537.6.49|201501#EEA
 * start = "2023-01-20T10:00:00+02:00"
 * status = #fulfilled
 * slot = Reference(FreeSlot)

@@ -38,7 +38,7 @@ resources:
   Medication/medicationesim1:
     name: Myyntiluvallinen lääkevalmiste
     description: An example Medication instance from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication
   Medication/medicationesim2:
     name: Myyntiluvallinen lääkevalmiste, joka on PKV-lääke
     description: An example Medication instance from Kanta Prescription API
@@ -66,39 +66,39 @@ resources:
   MedicationRequest/medicationrequestesim1:
     name: "1 tabletti 2 kertaa päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim2:
     name: "2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim3:
     name: "1-2 tablettia kerran päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim4:
     name: "1-2 tablettia 1-3 kertaa päivässä"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim5:
     name: "Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim6:
     name: "Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim7A:
     name: "1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim7B:
     name: "1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim8:
     name: "Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen"
     description: An example MedicationRequest from Kanta Prescription API
-    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request
   MedicationRequest/medicationrequestesim9:
     name: "Tarvittaessa 1-2 tippaa 3-4 tunnin välein"
     description: An example MedicationRequest from Kanta Prescription API
@@ -189,7 +189,7 @@ resources:
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation
   Organization/1.2.246.10.31045308.10002.0:
     name: A high level organization
-    description: SOTE-toimintayksikko -level organization
+    description: Organization on Wellbeing Services County level
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
   Organization/organizationesim1:
     name: Testi terveysasema
@@ -199,10 +199,42 @@ resources:
     name: Simple Organization example
     description: An example Organization from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization
+  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/36749a02-1710-44e7-aa76-0e934eb4321a:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
   Patient/36749a02-1710-44e7-aa76-0e934eb7860a:
     name: Kanta PHR - patient 3
     description: An example patient for Kanta PHR.
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient
+  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/cafbe8e7-38fe-4807-b995-6770e5390365:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
+  Patient/7257379:
+    name: A dummy patient entry
+    description: A patient id supporting other examples, not included in the guide.
+    exampleBoolean: false
   Patient/patientesim1:
     name: Karen van der Hentenryck
     description: An example patient from Kanta Prescription API
@@ -215,14 +247,17 @@ resources:
     name: A simple practitioner role
     description: An example PractitionerRole instance from Kanta Prescription API
     exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role
-  Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86: omit
-  Patient/36749a02-1710-44e7-aa76-0e934eb4321a: omit
-  Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a: omit
-  Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde: omit
-  Patient/cafbe8e7-38fe-4807-b995-6770e5390365: omit
-  Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad: omit
-  Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c: omit
-  Patient/7257379: omit
+  Provenance/custodian-public-healthcare-kela:
+    name: Provenance example for Kanta
+    description: This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile
+  Provenance/id-for-provenance-1:
+    name: A simple provenance example
+    description: An example Provenance resource instance from Kanta
+    exampleCanonical: https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian
+  StructureDefinition/kanta-document-metadata-profile: omit
+  StructureDefinition/kanta-document-other-metadata-profile: omit
+  ValueSet/kanta-provenance-agent-role: omit
 
 pages:
   index.md:
@@ -237,11 +272,12 @@ pages:
     title: Examples
   downloads.md:
     title: Downloads
-  history.md:
+  versions.md:
     title: Version History
 
 parameters: 
   ipa-comparison: "{last}" # "{current}" | "{last}"
+  extension-domain: [ http://hl7.fi/, http://phr.kanta.fi/, http://resepti.kanta.fi/ ]
 
 menu:
   Home: index.html
