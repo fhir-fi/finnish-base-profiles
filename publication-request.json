@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.base",
-  "version" : "1.0.0",
-  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0.0",
-  "mode" : "milestone",
-  "status" : "trial-use",
+  "version" : "1.0.1-cibuild",
+  "path" : "https://hl7.fi/fhir/finnish-base-profiles/1.0.1-cibuild",
+  "mode" : "working",
+  "status" : "draft",
   "sequence" : "STU 1",
-  "desc" : "Release 1.0.0, STU 1",
-  "descmd" : "Release 1.0.0, STU 1",
+  "desc" : "CI build snapshot for v. 1.0.1",
+  "descmd" : "CI build snapshot for v. 1.0.1",
   "first" : "false"
 }
