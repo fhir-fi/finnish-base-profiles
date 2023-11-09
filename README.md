@@ -5,9 +5,9 @@ This repo contains the source code for the Finnish FHIR base profiles.
 The profiling work is performed in a project driven by [HL7 Finland](https://www.hl7.fi).
 See the
 [announcement](https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/),
-the [running
-memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#), and
-[some more details](https://fhir.fi).
+the
+[running memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#),
+and [some more details](https://fhir.fi).
 
 The profiles are based on R4, [FHIR 4.0.1](http://hl7.org/fhir/R4/).
 
@@ -17,8 +17,9 @@ Read more about the profiling work in the [index page](input/pagecontent/index.m
 
 ### On build.fhir.org
 The results of each commit to this repository are published automatically at the build.fhir.org
-infrastructure. You can locate the built snapshot with the branch name. For instance, the latest
-commit to the `master` branch is published at
+infrastructure. You can select a built snapshot from the
+[list of branches](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/). For
+instance, the latest commit to the `master` branch is published at
 [https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master](https://build.fhir.org/ig/fhir-fi/finnish-base-profiles/branches/master).
 
 You can also browse the [list of all IG builds](https://fhir.github.io/auto-ig-builder/builds.html).
@@ -56,7 +57,7 @@ See also the repo for
 * Java 17
 * Jekyll (ruby)
 
-Or you can use docker, see [Dockerfile](Dockerfile). 
+Or you can use Docker, see [Dockerfile](Dockerfile). 
 
 ### Quick Start
 
@@ -65,19 +66,19 @@ With the above requirements installed locally, run
 #### On OSX, Linux, or Unix
 
 ``` bash
-npm install -g fsh-sushi
+npm install -g fsh-sushi@3.3.3
 ./_updatePublisher.sh --yes
 ./_genonce.sh
 ```
 
 #### On Windows
 ```
-npm install -g fsh-sushi
+npm install -g fsh-sushi@3.3.3
 .\_updatePublisher.bat --yes
 .\_genonce.bat
 ```
 
-### Using Docker
+#### Using Docker
 
 Run
 
@@ -85,5 +86,7 @@ Run
 docker-compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
 docker-compose run runner bash -c "cd /workdir && ./_genonce.sh"
 ```
+
+#### Results
 
 The implementation guide will be generated to the `output/` directory.

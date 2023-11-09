@@ -7,5 +7,4 @@ Usage: #example
 * mode = #instance
 * name = "Vuode 3"
 * status = #active
-* physicalType.coding.system = #http://terminology.hl7.org/CodeSystem/location-physical-type
-* physicalType.coding.code = #bd
+* physicalType.coding = http://terminology.hl7.org/CodeSystem/location-physical-type#bd

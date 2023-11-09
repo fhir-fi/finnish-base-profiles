@@ -4,8 +4,80 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# These examples are fake code systems - they're not expected to be checked
+# These examples are fake code systems and profile references - they're not expected to be checked
 Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
 Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
 Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
-Code System URI 'http://example.oma' is unknown so the code cannot be validated
+Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+
+# Kanta profiles are not included in this guide. It's OK not to validate the Kanta PHR examples imported from the Kanta IGs against them.
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-bloodglucose-stu3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-stu3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-macronutrientintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandardrmr' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+
+# Roche's profile definitions are not part of this IG, but are referenced by some of the examples
+Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+
+# This is a fake profile reference, offered as an example
+Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+
+# OID based code systems cannot be validated.
+Code System URI 'urn:oid:1.2.246.537.5.40003' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40005' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40118.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40172' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.1' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.110' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.111' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.121' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.124' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.125' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.140' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.140.2008' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.148' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.2' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.21' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.270.202001' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.301' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.32' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.32.2007' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.49' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.50' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.601' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.604.2014' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.609' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.74' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.246.537.6.884' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.18.220' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.4.642.3.20' is unknown so the code cannot be validated
+
+# This is CGI's internal code system, not part of this IG, but present in some examples from CGI
+Code System URI 'https://fhir.cgi.fi/code/person-id-type' is unknown so the code cannot be validated
+
+# These are Kanta code systems, not part of this IG, but present in some examples adopted from implementation guides for Kanta
+Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' is unknown so the code cannot be validated
+Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated

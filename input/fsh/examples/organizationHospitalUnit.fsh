@@ -7,7 +7,7 @@ Usage: #example
 * id = "1.2.246.10.8286189.10.100012"
 * identifier.use = #official
 * identifier.system = #urn:oid:1.2.246.537.6.202.2008
-* identifier.value = "1.2.246.10.8286189.10.100012"
+* identifier.value = "urn:oid:1.2.246.10.8286189.10.100012"
 * name = "Kirurgian vuodeosasto 4B, Länsi-Pohjan keskussairaala, LPSHP"
 * alias = "Kirurgian vuodeosasto 4B, LPKS, LPSHP"
 * address[0].type = #postal
