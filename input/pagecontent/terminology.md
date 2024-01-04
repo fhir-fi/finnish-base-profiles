@@ -70,19 +70,6 @@ only in Finnish language. The standardised data structures required by the elect
 systems in social welfare and health care as well as the central code sets of the statistical and
 register data collection are all published on the code server.
 
-The code sets are available on the Code server free of charge.
-
-The responsibility for the contents of the code sets on the code server belongs to THL as laid down
-by law,
-[Act on the Electronic Processing of Client Data in Social and Health Care, 9 Feb, 159/2007 (in Finnish)](http://www.finlex.fi/fi/laki/ajantasa/2007/20070159).
-The technical maintenance of the code server is the responsibility of the Social Insurance
-Institution of Finland (Kela).
-
-The Code Service forms a part of Kanta, the national patient data system. The Code Service
-maintains nationally integrated data structures and code sets for electronic patient case
-histories. The Code server also develops registration practices for the client data in social
-welfare.
-
 #### Snomed CT
 
 Finland
