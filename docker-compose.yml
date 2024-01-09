@@ -1,8 +1,6 @@
 version: '3.7'
 services:
   runner:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: hl7fhir/ig-publisher-base:latest
     volumes:
-      - ./:/workdir
+      - ./:/home/publisher/ig

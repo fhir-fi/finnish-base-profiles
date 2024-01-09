@@ -30,9 +30,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Setup IG publisher
-      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_updatePublisher.sh && ./_updatePublisher.sh --yes"
+      run: docker compose run runner bash -c "./_updatePublisher.sh --yes"
     - name: Generate
-      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_genonce.sh  && ./_genonce.sh"
+      run: docker compose run runner bash -c "./_genonce.sh"
     - name: Setup Pages
       uses: actions/configure-pages@v2
     - name: Upload artifact
