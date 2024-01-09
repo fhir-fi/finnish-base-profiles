@@ -83,8 +83,8 @@ npm install -g fsh-sushi@3.3.3
 Run
 
 ``` bash
-docker-compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
-docker-compose run runner bash -c "cd /workdir && ./_genonce.sh"
+docker compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
+docker compose run runner bash -c "cd /workdir && ./_genonce.sh"
 ```
 
 #### Results
