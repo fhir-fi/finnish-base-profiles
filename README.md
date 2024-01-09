@@ -54,10 +54,10 @@ See also the repo for
 
 ### Required Tools
 * NodeJS 18 
-* Java 17
+* Java 21
 * Jekyll (ruby)
 
-Or you can use Docker, see [Dockerfile](Dockerfile). 
+Or you can use Docker, see [compose file](docker-compose.yml). 
 
 ### Quick Start
 
@@ -66,14 +66,14 @@ With the above requirements installed locally, run
 #### On OSX, Linux, or Unix
 
 ``` bash
-npm install -g fsh-sushi@3.3.3
+npm install -g fsh-sushi
 ./_updatePublisher.sh --yes
 ./_genonce.sh
 ```
 
 #### On Windows
 ```
-npm install -g fsh-sushi@3.3.3
+npm install -g fsh-sushi
 .\_updatePublisher.bat --yes
 .\_genonce.bat
 ```
@@ -83,9 +83,11 @@ npm install -g fsh-sushi@3.3.3
 Run
 
 ``` bash
-docker compose run runner bash -c "cd /workdir && ./_updatePublisher.sh --yes"
-docker compose run runner bash -c "cd /workdir && ./_genonce.sh"
+docker compose run runner bash -c "./_updatePublisher.sh --yes"
+docker compose run runner bash -c "./_genonce.sh"
 ```
+
+> Switched to hl7fhir/ig-publisher-base image, remove temporary files in your working copy when switching from older image.
 
 #### Results
 

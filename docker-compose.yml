@@ -3,4 +3,4 @@ services:
   runner:
     image: hl7fhir/ig-publisher-base:latest
     volumes:
-      - ./:/workdir
+      - ./:/home/publisher/ig
