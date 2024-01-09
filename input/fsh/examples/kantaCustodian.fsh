@@ -4,8 +4,6 @@ Id: kanta-document-metadata-profile
 Title: "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile"
 Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and [imposing](http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html) the Finnish Base Information Custodian profile."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
-* ^extension[=].valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile"
 * ^extension[=].valueCanonical = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile"
 
 Profile: KantaDocumentOtherMetadata
@@ -13,17 +11,13 @@ Parent: FiBaseProvenance
 Id: kanta-document-other-metadata-profile
 Title: "An imaginary profile for Kanta system, specifying things apart from the information custodian"
 Description: "This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements."
-
 * agent.role ^slicing.discriminator.type = #value
 * agent.role ^slicing.discriminator.path = "coding.system"
 * agent.role ^slicing.rules = #open
 * agent.role ^slicing.description = "Kanta specific profiling"
-
 * agent.role[kantaCoding].coding.system
-
 * agent.role contains kantaCoding 1..*
 * agent.role[kantaCoding].coding.system from http://gen.kanta.fi/kanta-provenance-agent-role
-
 
 Instance: KantaProvenanceAgentRole
 InstanceOf: ValueSet
@@ -86,23 +80,6 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#tuottajaorg1"
-/*
-* entity[0]
-  * role = #source
-  * what
-    * identifier
-      * system = "urn:oid:1.2.246.537.5.40150"
-      * value = "4"
-    * display = "Työterveyshuolto"
-* entity[+]
-  * role = #source
-  * what
-    * identifier
-      * type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#XX
-      * system = "urn:oid:1.2.246.10"
-      * value = "2606155-7"
-    * display = "Sensotrend Oy"
-*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
  
@@ -149,23 +126,6 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#tuottajaorg1"
-/*
-* entity[0]
-  * role = #source
-  * what
-    * identifier
-      * system = "urn:oid:1.2.246.537.5.40150"
-      * value = "4"
-    * display = "Työterveyshuolto"
-* entity[+]
-  * role = #source
-  * what
-    * identifier
-      * type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#XX
-      * system = "urn:oid:1.2.246.10"
-      * value = "2606155-7"
-    * display = "Sensotrend Oy"
-*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
 
@@ -204,16 +164,6 @@ Usage: #example
 * agent[+]
   * role[0].coding = http://gen.kanta.fi/fikanta-cs-rolecategory#11 "Palveluntuottaja"
   * who.reference = "#the-same-org"
-/*
-* entity[0]
-  * role = #source
-  * what
-    * identifier
-      * type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#XX
-      * system = "urn:oid:1.2.246.10"
-      * value = "2606155-7"
-    * display = "Sensotrend Oy"
-*/
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
  
@@ -242,14 +192,6 @@ Usage: #example
       * system = "urn:oid:1.2.246.537.5.40150"
       * value = "4"
     * display = "Työterveyshuolto"
-* entity[+]
-  * role = #source
-  * what
-    * identifier
-      * type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#XX
-      * system = "urn:oid:1.2.246.10"
-      * value = "2606155-7"
-    * display = "Sensotrend Oy"
 */
 * target[0].reference = "EpisodeOfCare/id-for-episode-1"
 * recorded = "2023-08-25T16:42:17.239+03:00"
