@@ -1,7 +1,7 @@
 Instance: PractitionerRoleGP
 InstanceOf: FiBasePractitionerRole
 Title: "Licenced physician in primary care"
-Description: "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in spesific location."
+Description: "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in specific location."
 Usage: #example
 * identifier.system = "http://www.acme.org/practitioners"
 * identifier.value = "23"
