@@ -1,5 +1,3 @@
-### Welcome to the Finnish FHIR Base Profiles Specification
-
 This implementation guide specifies the Finnish FHIR base profiles.
 
 {% include cross-version-analysis-inline.xhtml %} There is no plan yet to base this implementation
@@ -11,7 +9,7 @@ profile definitions in this guide derive from IPA profiles.
 
 {% include dependency-table-short.xhtml %}
 
-#### Companion Specifications
+### Companion Specifications
 
 There is a separate [Finnish Implementation Guide for SMART App
 Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
@@ -98,7 +96,10 @@ offers a SMART App Launch method to interact with third party systems.
 
 The [FHIR Demo 2022](https://fhir.fi/en/demo2022/index.html) showcase presented integrations
 implemented between a dozen platforms and more than a dozen FHIR apps, all based on HL7 FHIR.
-The [FHIR Demo 2023](https://fhir.fi/en/demo2023/) continues the tradition.
+The [FHIR Demo 2023](https://fhir.fi/en/demo2023/) concentrated on these base profiles.
+[FHIR Demo 2024](https://fhir.fi/en/demo2024/) extended the geographical scope of the showcase
+to cover the Nordic countries. The latest FHIR Demo can always be found on
+[fhir.fi/demo](https://fhir.fi/demo/). 
 
 Even those showcases do not cover the full extent to which HL7 FHIR is being used in Finland.
 There's a lot going on!
@@ -191,8 +192,7 @@ thereby avoid re-implementing the wheel in a different form for new implementati
 
 There are other, more use case specific FHIR implementation guides in Finland. For instance, both
 the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the 
-[Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) present the basic approach and
-profiles for scheduling.
+[Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) focus on scheduling.
 
 Especially the Kanta specific implementation guides for
 [Finnish PHR](https://simplifier.net/FinnishPHRR4),
@@ -200,12 +200,8 @@ Especially the Kanta specific implementation guides for
 [Kanta sosiaalihuolto](https://simplifier.net/Kanta-sosiaalihuolto-R4) are closer to national Core
 profile specifications.
 
-Currently there is no formal process synchronizing the profiles in this implementation guide with
-the more use case driven ones listed here. We hope that future updates of the use case specific
-implementation guides would derive their profiles from the base profiles presented here.
-
-This implementation guide may also in the future be extended to cover Core profiles, in addition to
-the Base profiles of this first version.
+This implementation guide may also in the future be extended to cover core profiles, in addition to
+the base profiles of this version.
 
 #### Must-Support Rules
 
@@ -216,7 +212,6 @@ As explained in the FHIR specification (see link above), the meaning of the Must
 defined in the IPA specification apply as specified there for all profiles in this implementation
 guide that depend on an IPA profile.
 
-
 #### Profiles and Examples
 
 We publish profile resources that help implementers validate their implementations.
@@ -225,6 +220,15 @@ We also publish examples, as we think they are another good way to interoperabil
 
 Also, where we cannot find consensus and agree on one single approach, we attempt to
 document all different approaches used.
+
+The main aim of this implementation guide is to *inform* vendors on how to implement the FHIR
+specification in Finnish context. Requirements and constraints are limited, in order to allow for
+maximum reusability across a variety of use cases.
+
+In the first versions of the implementation guide, a lot of profiling is done on resource type
+level. For instance, the patient identifier is profiled for the Patient profile. Another approach
+would be to concentrate on data types. We may evolve the profiling towards that direction in the
+future.
 
 ### Governance
 
