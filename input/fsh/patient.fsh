@@ -1,5 +1,5 @@
 Profile: FiBasePatient
-Parent: IPAPatient
+Parent: Patient
 Id: fi-base-patient
 Title: "FI Base Patient"
 Description: "This is the Finnish base profile for the Patient resource."
