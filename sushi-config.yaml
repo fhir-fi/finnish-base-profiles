@@ -19,9 +19,6 @@ publisher:
   url: https://www.hl7.fi/
   email: mikael@sensotrend.com
 
-dependencies:
-  hl7.fhir.uv.ipa: 1.0.0
-
 resources:
   Bundle/diabetes-data-bundle:
     name: Patient generated glucose observations and insulin administrations as a bundle, in Finnish

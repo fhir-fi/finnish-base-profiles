@@ -1,5 +1,5 @@
 Profile: FiBasePractitioner
-Parent: http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner
+Parent: Practitioner
 Id: fi-base-practitioner
 Title: "FI Base Practitioner"
 Description: "This is the Finnish base profile for the Practitioner resource."
