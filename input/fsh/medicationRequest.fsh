@@ -4,7 +4,7 @@ Id: fi-base-medication-request
 Title: "FI Base MedicationRequest"
 Description: "This is the Finnish base profile for the MedicationRequest resource, for other than patient access use cases."
 * reportedReference only Reference(FiBasePatient or FiBasePractitioner or FiBasePractitionerRole)
-* medicationReference only Reference(FiBaseMedication or FiBasePatientMedication)
+* medicationReference only Reference(FiBaseMedication)
 * subject only Reference(FiBasePatient)
 * encounter only Reference(FiBaseEncounter)
 * requester only Reference(FiBasePractitioner or FiBasePractitionerRole or FiBasePatient)
@@ -12,6 +12,6 @@ Description: "This is the Finnish base profile for the MedicationRequest resourc
 * recorder only Reference(FiBasePractitioner or FiBasePractitionerRole)
 * reasonReference only Reference(FiBaseCondition or FiBaseObservation)
 * eventHistory only Reference(FiBaseProvenance)
-* priorPrescription only Reference(FiBaseMedicationRequest or FiBasePatientMedicationRequest)
+* priorPrescription only Reference(FiBaseMedicationRequest)
 * dispenseRequest.performer only Reference(FiBaseOrganization)
-* basedOn only Reference(CarePlan or FiBaseMedicationRequest or FiBasePatientMedicationRequest or ServiceRequest or ImmunizationRecommendation)	
+* basedOn only Reference(CarePlan or FiBaseMedicationRequest or ServiceRequest or ImmunizationRecommendation)	

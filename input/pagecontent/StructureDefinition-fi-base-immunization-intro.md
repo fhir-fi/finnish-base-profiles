@@ -4,12 +4,6 @@ This profile sets minimum expectations for the Immunization resource. It identif
 elements, extensions, vocabularies, and value sets could be present in the resource when using this
 profile. It provides the floor for standards development for specific use cases.
 
-#### IPA Immunization profile limitations
-
-Finnish base immunization profile is based on the
-[IPA immunization profile](https://hl7.org/fhir/us/core/StructureDefinition-us-core-immunization.html)
-which imposes some further constraints on the base Immunization resource. 
-
 #### Vaccination Recorder extension
 
 In some cases the practitioner who performed the addministration is not be the same person who

@@ -4,7 +4,7 @@ Id: fi-base-medication-administration
 Title: "FI Base MedicationAdministration"
 Description: "This is the Finnish base profile for the MedicationAdministration resource."
 * partOf only Reference(FiBaseProcedure or FiBaseMedicationAdministration)
-* medicationReference only Reference(FiBasePatientMedication)
+* medicationReference only Reference(FiBaseMedication)
 * subject only Reference(FiBasePatient or Group)
 * context only Reference(FiBaseEncounter or FiBaseEpisodeOfCare)
 * performer.actor only Reference(FiBasePractitioner or FiBasePractitionerRole or FiBasePatient or RelatedPerson or Device)

@@ -3,16 +3,20 @@ This implementation guide specifies the Finnish FHIR base profiles.
 {% include cross-version-analysis-inline.xhtml %} There is no plan yet to base this implementation
 guide on [FHIR R5](https://hl7.org/fhir/R5/).
 
-This implementation guide depends on the
-[International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) specification, and many
-profile definitions in this guide derive from IPA profiles.
-
 {% include dependency-table-short.xhtml %}
+
+The previous version of this implementation guide depended on the
+[International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) specification, and many
+profile definitions of that version derive from IPA profiles. These IPA-derived profiles are now
+moved to the
+[Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart/).
+
 
 ### Companion Specifications
 
-There is a separate [Finnish Implementation Guide for SMART App
-Launch](https://hl7.fi/fhir/finnish-smart/) that describes how the
+There is a separate
+[Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart/) that
+describes how the
 [SMART](https://hl7.org/fhir/smart-app-launch/) specification is applied in Finland.
 
 See also [all FHIR implementation guides published by HL7 Finland](https://hl7.fi/fhir/) and also
@@ -167,12 +171,6 @@ Other national base profiles we have drawn inspiration from include
     href="https://build.fhir.org/ig/HL7EE/ig-ee-base/">Estonian Base Implementation Guide</a></li>
 </ul>
 
-Many of the Finnish FHIR base profiles derive from the
-[International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/), and we will do
-our best to keep the specifications conformant where possible. Should we find any constraints in
-IPA that we can't adhere to, the main resolution should be to affect the IPA specification and
-search for wider consensus and shared understanding.
-
 Regarding international cooperation, please see also the
 [National IG Implementations](https://confluence.hl7.org/display/IC/National+IG+Implementations)
 page in HL7 International's Confluence.
@@ -207,10 +205,6 @@ the base profiles of this version.
 
 This version of this implementation guide does not define any
 [Must Support](https://build.fhir.org/profiling.html#obligations) rules.
-
-As explained in the FHIR specification (see link above), the meaning of the Must Support rules
-defined in the IPA specification apply as specified there for all profiles in this implementation
-guide that depend on an IPA profile.
 
 #### Profiles and Examples
 
