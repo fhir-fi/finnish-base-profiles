@@ -41,19 +41,26 @@ and will archive lab results directly to Kanta. It receives encounter id in SMAR
 context. Laboratory system can resolve *palvelutapahtuma*'s OID identifier by fetching the
 encounter resource.
 
-##### How to communicate palvelutapahtuma via FHIR encounter?
+##### How to communicate the *palvelutapahtuma* via the Encounter resource
 
-First thing is to identify the appropriate aggregation level of encounter. If encounter is not
-representing a *palvelutapahtuma*, but is a lower level encounter (some systems call these
-*prosessitapahtuma*), `partOf` should be used to point to upper level encounter (up until
-*palvelutapahtuma* level is reached).
+This method is applicable for resources that have a direct link to Encounter.
 
-A *palvelutapahtuma* encounter is identified by an identifier. When encounter has an identifier
-with `use=official` it is considered to be a *palvelutapahtuma* and that identifier SHALL be the
-OID of a *palvelutapahtuma*.
+An Encounter that is a *palvelutapahtuma* SHALL have an identifier with `use=official` and the
+value of that identifier SHALL be the OID of a *palvelutapahtuma*.
 
 Other levels of encounter that are not a *palvelutapahtuma*, MUST NOT contain an identifier with
 `use=official`.
+
+The resource referring to the Encounter, may link to the *palvelutapahtuma* Encounter directly, or
+to a lower level Encounter (some systems call these
+*prosessitapahtuma*). In this case, the lower level Encounters SHALL have a chain of `.partOf`
+links eventually leading to the *palvelutapahtuma* Encounter.
+
+##### How to communicate the *palvelutapahtuma* without an Encounter resource
+
+When the resource does not have a direct link to Encounter or if the chaining of Encounter
+resources is considered too complex, the
+[ServiceEvent extension](StructureDefinition-service-event.html) can be used instead.
 
 #### Organizational responsibility
 
