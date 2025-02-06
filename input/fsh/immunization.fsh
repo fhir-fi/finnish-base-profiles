@@ -1,5 +1,5 @@
 Profile: FiBaseImmunization
-Parent: IPAImmunization
+Parent: Immunization
 Id: fi-base-immunization
 Title: "Fi Base Immunization"
 Description: "This is a base profile for Finnish Immunization resource."
