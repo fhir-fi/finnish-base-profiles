@@ -1,5 +1,6 @@
-Version 1.0.0 is the first official release of this implementation guide. See the history of
-published versions in the
+This is the STU 2 version of this implementation guide.
+
+See the history of published versions in the
 [publication directory](https://hl7.fi/fhir/finnish-base-profiles/history.html).
 
 You can track the changes between released snapshot versions through the
@@ -12,11 +13,17 @@ into Normative level (see the
 [standards development process](https://hl7.org/fhir/versions.html#std-process)) of the FHIR
 specification), and to extend the coverage of resources.
 
-It is foreseen that the next focus area is scheduling. There are already several implementation
-guides for scheduling published by HL7 Finland that need updating and consolidation, as well as
-some new requirements.
-
 Development snapshots will be published throughout the development, ballot, and maintenance cycles.
+
+### Notable Changes
+
+* An extension was added for *palvelutapahtuma* to be able to communicate it also from resources
+  that do not have a reference to Encounter.
+* Some extensions were adopted from implementation guides for Scheduling, to make them usable in
+  wider contexts.
+* Dependencies to International Patient Access (IPA) specification have been moved from the base
+  profiles to the
+  [Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart).
 
 ### CI Build Snapshots
 The latest version of the `master` branch of the source code repository for this implementation
