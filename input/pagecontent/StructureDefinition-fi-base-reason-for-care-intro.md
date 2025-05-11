@@ -7,7 +7,8 @@ href="#further-development-needs">further development needs</a> below.</p>
 
 This profile describes Diagnosis based conditions and Finnish *kayntisyy*.
 These are `Condition` resources that are asserted by a healthcare professional and directly related
-to encounters. This profile does not describe how to communicate `problem-list-item` level conditions.
+to encounters. This profile does not describe how to communicate `problem-list-item` level
+conditions.
 
 THL has a data model for Finnish diagnosis (including *käyntisyy*) in code server:
 [THL/Tietosisältö - Diagnoosit](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=543&versionKey=1543)
@@ -24,23 +25,26 @@ healthcare service. Finnish *tulosyy*.
 Reason for care may be a diagnosis asserted by a clinician / medical doctor or some other reason
 for visit that is asserted by an nurse or some other healthcare professional.
 
-A reason for care condition needs to be categorized to make the distinction between
-clinician asserted diagnosis and other *käyntisyy* conditions. When reason for care is a clinician
-asserted diagnosis it MUST contain another `category` code `encounter-diagnosis`. When condition
-is not asserted by a clincian it MUST NOT contain `encounter-diagnosis` category code.
+A reason for care condition needs to be categorized to make the distinction between clinician
+asserted diagnosis and other *käyntisyy* conditions. When reason for care is a clinician asserted
+diagnosis it MUST contain another `category` code `encounter-diagnosis`. When condition is not
+asserted by a clincian it MUST NOT contain `encounter-diagnosis` category code.
 
 Categories match to THL specification in following way:
 
-* when additionally `encounter-diagnosis` is present --> This is a diagnosis and is not a *käyntisyy*
+* when additionally `encounter-diagnosis` is present --> This is a diagnosis and is not a
+  *käyntisyy*
     * In THL specification, codeId 23: Käyntisyy has value False
 * when `encounter-diagnosis` is not present --> This is a *käyntisyy*
     * In THL specification, codeId 23: Käyntisyy has value True
 
 ##### Diagnosis Code Systems
 
-When using [Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
+When using
+[Finnish ICD-10](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=23&versionKey=58)
 it's usage has special rules. These are described below. For reference and detailed specifications,
-see [Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet)
+see
+[Potilastiedon arkiston Kertomus ja lomakkeet](https://www.kanta.fi/jarjestelmakehittajat/kertomus-ja-lomakkeet)
 version 5.11 or later.
 
 ##### Diagnosis code (reason)
@@ -48,19 +52,20 @@ version 5.11 or later.
 `code` SHALL only contain the reason code.
 
 When using Finnish ICD-10, the code MUST NOT contain special characters (`+`,`&`,`#` after the code
-indicate reason). Pre-built pairs (like E85.9+I68.0) SHALL be broken down to constituent parts and the
-code part indicating reason (in case of E85.9+I68.0, `Koodi1` field) used here.
+indicate reason). Pre-built pairs (like E85.9+I68.0) SHALL be broken down to constituent parts and
+the code part indicating reason (in case of E85.9+I68.0, `Koodi1` field) used here.
 
 In THL specification, this data is codeId 1: Diagnoosi.
 
-In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-koodille". This MAY be
-in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
+In THL specification, there is another codeId 6: "ICD-10 -vastaavuuskoodi ICPC-koodille". This MAY
+be in `code` (it's the same code, but coded in another code system, so repetition of `code` is ok).
 Other codes, like symptom and accident type SHOULD NOT be repetitions of `code`.
 
-More than one code may be used in `code` (in `code`'s repetitions of `coding`). `code` itself cannot
-be repeated. Currently ICD-10, ICPC2 are supported by THL, in near future ICD-11, SNOMED and ORPHA
-will become supported too. Additional codes may be expressed by repeating coding. Other codes like
-a symptom SHOULD NOT be communicated via `code`, repetitions should represent the same concept (see
+More than one code may be used in `code` (in `code`'s repetitions of `coding`). `code` itself
+cannot be repeated. Currently ICD-10, ICPC2 are supported by THL, in near future ICD-11, SNOMED and
+ORPHA will become supported too. Additional codes may be expressed by repeating coding. Other codes
+like a symptom SHOULD NOT be communicated via `code`, repetitions should represent the same concept
+(see
 [CodeableConcept datatype specification](https://www.hl7.org/fhir/datatypes.html#CodeableConcept)).
 
 Here's a valid example of repeating `code.coding` (`code` is not repeating, but `coding` has
@@ -232,4 +237,4 @@ Extension `causeOfAdverseEffect` is used.
 #### Links
 
 * [*Suomalainen tautien kirjaamisen ohjekirja*](https://thl.fi/documents/10531/124365/Opas%202012%2017.pdf),
-the national guide for the use of ICD-10.
+  the national guide for the use of ICD-10.

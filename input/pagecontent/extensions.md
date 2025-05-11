@@ -13,8 +13,7 @@ This list includes the extensions for base profiles defined by HL7 Finland.
 
 There are other, more use case specific extensions defined in other implementation guides. For
 instance:
-* Both the [Finnish Appointment IG](https://simplifier.net/finnishappointment) and the
-  [Finnish Scheduling IG](https://simplifier.net/finnishschedulingr4/) for scheduling
+* The [Finnish Scheduling](https://hl7.fi/fhir/finnish-scheduling/) IG for scheduling
 * Both the [Finnish PHR STU3](https://simplifier.net/FinnishPHR) and the
   [Finnish PHR R4](https://simplifier.net/FinnishPHRR4) for health and wellbeing data in the
   national Personal Health Record platform Kanta PHR

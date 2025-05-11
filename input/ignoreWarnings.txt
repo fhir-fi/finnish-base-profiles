@@ -4,11 +4,20 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
+# We really want to be liberal about where to use the service event extension
+Review the extension type for service-event: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+
 # These examples are fake code systems and profile references - they're not expected to be checked
+A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.org/CodeSystem/categories' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://ownSystem.com/phr-cs-fitnesscategory' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://ownSystem.fi/CodeSystem/cs-insulincode' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://terminology.own.com' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://ownSystem.com/phr-cs-fitnesscategory' could not be found, so the code cannot be validated
 Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+URL value 'http://ownSystem.com/phr-cs-fitnesscategory' does not resolve
+URL value 'http://ownSystem.fi/CodeSystem/cs-insulincode' does not resolve
+URL value 'http://terminology.own.com' does not resolve
+Canonical URL 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public' does not resolve
 
 # Kanta profiles are not included in this guide. It's OK not to validate the Kanta PHR examples imported from the Kanta IGs against them.
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-bloodglucose-stu3' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
@@ -24,17 +33,31 @@ Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandar
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+%URL value 'http://phr.kanta.fi/%
+%URL value 'http://resepti.kanta.fi/%
+%URL value 'http://gen.kanta.fi/%
+%URL value 'https://gen.kanta.fi/fhir/StructureDefinition/%
+%Canonical URL 'http://phr.kanta.fi/StructureDefinition/%
+A definition for CodeSystem 'http://gen.kanta.fi/fikanta-cs-rolecategory' could not be found, so the code cannot be validated
+
+# Kanta extensions are not included in this guide
+# %The extension https://gen.kanta.fi/fhir/StructureDefinition/extension/%
 
 # Roche's profile definitions are not part of this IG, but are referenced by some of the examples
 Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-
-# This is a fake profile reference, offered as an example
-Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+Canonical URL 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation' does not resolve
+Canonical URL 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration' does not resolve
 
 # OID based code systems cannot be validated.
 %A definition for CodeSystem 'urn:oid:1.2.246.%
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.%
+%URL value 'urn:oid:1.2.246.537%
+URL value 'urn:oid:1.2.246.10' does not resolve
+URL value 'urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325' does not resolve
+URL value 'urn:oid:1.2.246.21' does not resolve
+URL value 'urn:oid:2.16.840.1.113883.4.642.3.20' does not resolve
+Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.246.537.5.40202.201901
 
 # This is CGI's internal code system, not part of this IG, but present in some examples from CGI
 A definition for CodeSystem 'https://fhir.cgi.fi/code/person-id-type' could not be found, so the code cannot be validated
@@ -43,3 +66,9 @@ A definition for CodeSystem 'https://fhir.cgi.fi/code/person-id-type' could not 
 A definition for CodeSystem 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' could not be found, so the code cannot be validated
+Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyheight' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+Profile reference 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+
+# This is a valueset imported from Kanta to support an example. We are not publishing it in this IG, so let's keep the canonical as it is.
+%resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
+% the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)%
