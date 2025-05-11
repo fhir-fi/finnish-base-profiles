@@ -38,10 +38,11 @@ document (in Finnish).
 There are two generally used methods to create a temporary identifier `oid`.
 
 1. `1.2.246.10.<organization>.22.<year>`, where `<organization>` is the official identifier
-(_y-tunnus_) of the organization and `<year>` the year when the temporary identifier is generated.
+  (_y-tunnus_) of the organization and `<year>` the year when the temporary identifier is
+  generated.
 2. `1.2.246.10.<organization>.10.<location>.22.<year>` where both the `organization` and the `year`
-are the same as above, and the `location` is the more specific location or unit (_toimipaikka_) of
-the organization in which the temporary identifier is created.
+  are the same as above, and the `location` is the more specific location or unit (_toimipaikka_)
+  of the organization in which the temporary identifier is created.
 
 The first method is
 [recommended](https://yhteistyotilat.fi/wiki08/display/JULPOKY/7+Potilaan+perustiedot#id-7Potilaanperustiedot-7.1Henkil%C3%B6nyksil%C3%B6intitiedot).

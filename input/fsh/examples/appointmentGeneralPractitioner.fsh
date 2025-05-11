@@ -8,14 +8,13 @@ Description: "Example of an appointment with general practitioner."
 * created = "2023-01-20T08:45:15+02:00"
 * description = "Kuume"
 * end = "2023-01-20T10:20:00+02:00"
-* extension[0].url = "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt"
-* extension[=].valueIdentifier.system = "urn:ietf:rfc:3986"
-* extension[=].valueIdentifier.value = "urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325"
+* extension[0].url = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/service-event"
+* extension[=].valueOid = "urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325"
 * extension[+].extension[0].url = "Cancellable"
 * extension[=].extension[=].valueBoolean = false
 * extension[=].extension[+].url = "Reschedulable"
 * extension[=].extension[=].valueBoolean = false
-* extension[=].url = "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension"
+* extension[=].url = "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable"
 * participant[0].actor = Reference(PatientOfMunicipality)
 * participant[=].required = #required
 * participant[=].status = #accepted

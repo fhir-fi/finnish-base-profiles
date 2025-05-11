@@ -2,6 +2,7 @@ ValueSet: FiBaseRestrictionParentVS
 Id: fi-base-restriction-parent-vs
 Title: "fi-base-restriction-parent-vs"
 Description: "Value set, jota käytetään ilmoittamaan, saako alaikäisen tietoja luovuttaa huoltajille. Value set sisältää koodiston THL - Alaikäisen potilastietojen luovuttaminen huoltajille arvot 1-4."
+* ^experimental = false
 * urn:oid:1.2.246.537.5.40202.201901#1 "Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille"
 * urn:oid:1.2.246.537.5.40202.201901#1 ^designation[0].language = #fi
 * urn:oid:1.2.246.537.5.40202.201901#1 ^designation[=].value = "Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille"
