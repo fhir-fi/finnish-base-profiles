@@ -1,5 +1,7 @@
 This implementation guide specifies the Finnish FHIR base profiles.
 
+This is an official HL7 Finland standard, with the oid `1.2.246.777.11.2025.4`.
+
 {% include cross-version-analysis-inline.xhtml %} There is no plan yet to base this implementation
 guide on [FHIR R5](https://hl7.org/fhir/R5/).
 
@@ -10,7 +12,6 @@ The previous version of this implementation guide depended on the
 profile definitions of that version derive from IPA profiles. These IPA-derived profiles are now
 moved to the
 [Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart/).
-
 
 ### Companion Specifications
 

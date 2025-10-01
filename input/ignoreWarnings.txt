@@ -13,6 +13,7 @@ A definition for CodeSystem 'http://example.org/CodeSystem/categories' could not
 A definition for CodeSystem 'http://ownSystem.com/phr-cs-fitnesscategory' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://ownSystem.fi/CodeSystem/cs-insulincode' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://terminology.own.com' could not be found, so the code cannot be validated
+A definition could not be found for Canonical URL 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public'
 Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 
 # Kanta profiles are not included in this guide. It's OK not to validate the Kanta PHR examples imported from the Kanta IGs against them.
@@ -31,7 +32,6 @@ Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient' has
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 %URL value 'http://phr.kanta.fi/%
 %URL value 'http://resepti.kanta.fi/%
-%URL value 'http://gen.kanta.fi/%
 %URL value 'https://gen.kanta.fi/fhir/StructureDefinition/%
 %Canonical URL 'http://phr.kanta.fi/StructureDefinition/%
 A definition for CodeSystem 'http://gen.kanta.fi/fikanta-cs-rolecategory' could not be found, so the code cannot be validated
@@ -40,18 +40,27 @@ A definition for CodeSystem 'http://gen.kanta.fi/fikanta-cs-rolecategory' could 
 %The extension https://gen.kanta.fi/fhir/StructureDefinition/extension/%
 
 # Roche's profile definitions are not part of this IG, but are referenced by some of the examples
+A definition could not be found for Canonical URL 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation'
+A definition could not be found for Canonical URL 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration'
 Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 
 # OID based code systems cannot be validated.
 %A definition for CodeSystem 'urn:oid:1.2.246.%
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.%
+No definition could be found for URL value 'urn:oid:1.2.246.10'
+No definition could be found for URL value 'urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325'
+No definition could be found for URL value 'urn:oid:1.2.246.21'
+
 %URL value 'urn:oid:1.2.246.537%
 %No definition could be found for URL value 'urn:oid:1.2.246.%
 Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.246.537.5.40202.201901
 
 # This is CGI's internal code system, not part of this IG, but present in some examples from CGI
 A definition for CodeSystem 'https://fhir.cgi.fi/code/person-id-type' could not be found, so the code cannot be validated
+
+#This example from CGI is only a partial one, and missing the referred Encounter
+The link 'Encounter/SE-289490' for "Encounter/SE-289490" cannot be resolved
 
 # These are Kanta code systems, not part of this IG, but present in some examples adopted from implementation guides for Kanta
 A definition for CodeSystem 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' could not be found, so the code cannot be validated
@@ -62,8 +71,15 @@ Profile reference 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefi
 A definition could not be found for Canonical URL 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public'
 
 # This is a valueset imported from Kanta to support an example. We are not publishing it in this IG, so let's keep the canonical as it is.
+URL Mismatch https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role vs http://gen.kanta.fi/kanta-provenance-agent-role
 %resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
 % the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)%
+Conformance resource /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
+Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
 
-# We use automated version pinning, at least for now. We have a lot of these. We don't want to pollute the QA report with these messages.
-PIN_VERSION
+We intentionally do not want to fix canonical versions in this release of the base profiles. We may do that in a future version.
+TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS
+
+# This is a purposefully crafted example to show how the validator catches the error.
+Provenance.agent.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|2.0.0-rc3)
+Slice 'Provenance.agent.role:kantaCoding': a matching slice is required, but not found (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|2.0.0-rc3). Note that other slices are allowed in addition to this required slice

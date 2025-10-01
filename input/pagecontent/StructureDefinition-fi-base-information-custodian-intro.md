@@ -15,20 +15,36 @@ specification, version 4.66 or later, chapters 2.2.17, 2.4.21, and 2.4.22.
 These details are expressed with the Provenance resource conforming to this profile. Information
 custodian is the `.agent`.
 
-{:.stu-note}
-The working group was not able to reach consensus on how to present the details of the register
-(the type of register, *rekisterin tyyppi* and the register specifier, *rekisterin tarkenne*). One
-option is to use extensions to the information custodian `.agent` or even to the Provenance
-resource instance (see
-[the ballot version](https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/StructureDefinition-fi-base-provenance.html)
-as one example). Another proposed approach is to
-encode this information in `.entity` instances (see
-[version 1.0.0-rc21](https://hl7.fi/fhir/finnish-base-profiles/1.0-rc21/StructureDefinition-fi-base-information-custodian.html)
-for details). See also the
-[discussion thread](https://chat.fhir.org/#narrow/stream/179247-Security-and-Privacy/topic/Specific.20register.20in.20Provenance/near/385117093)
-on chat.fhir.org and the GitHub issues
-[#88](https://github.com/fhir-fi/finnish-base-profiles/issues/88),
-[#135](https://github.com/fhir-fi/finnish-base-profiles/issues/135),
-[#141](https://github.com/fhir-fi/finnish-base-profiles/issues/141), and
-[#163](https://github.com/fhir-fi/finnish-base-profiles/issues/163).
-Implementer feedback is appreciated on how to continue work on the topic.
+<div class="stu-note">
+  <p>The working group was not able to reach consensus on how to present the details of the
+  register (the type of register, <i lang="fi">rekisterin tyyppi</i> and the register specifier, <i
+  lang="fi">rekisterin tarkenne</i>).</p>
+  <p>Proposed alternatives are:</p>
+  <ol>
+    <li>use extensions either to the <code>.agent</code> field or to the root of the Provenance
+    resource (see the <a
+    href="https://hl7.fi/fhir/finnish-base-profiles/1.0-rc15/Provenance-id-for-provenance-1.html"
+    >proposal in the first ballot version</a> and the <a href="Provenance-id-for-provenance-1.html"
+    >example from Kanta</a>)</li>
+    <li>encode the information in <code>.entity</code> fields of Provenance instances (see
+    examples for <a
+    href="https://hl7.fi/fhir/finnish-base-profiles/1.0-rc21/Provenance-custodian-public-healthcare.html"
+    >public healthcare</a> and for <a
+    href="https://hl7.fi/fhir/finnish-base-profiles/1.0-rc21/Provenance-custodian-occupational-healthcare.html"
+    >private healthcare</a>)</li>
+    <li>include the register information in the <code>.reason</code> field of the Provenance
+    resource (see <a href="Provenance-ESE-289490.html">example from CGI</a>)</li>
+  </ol>
+  <p>See also the <a
+  href="https://chat.fhir.org/#narrow/stream/179247-Security-and-Privacy/topic/Specific.20register.20in.20Provenance/near/385117093"
+  >discussion thread</a> on chat.fhir.org and the GitHub issues <a
+  href="https://github.com/fhir-fi/finnish-base-profiles/issues/88">#88</a>, <a
+  href="https://github.com/fhir-fi/finnish-base-profiles/issues/135">#135</a>, <a
+  href="https://github.com/fhir-fi/finnish-base-profiles/issues/141">#141</a>, and <a
+  href="https://github.com/fhir-fi/finnish-base-profiles/issues/163">#163</a>.</p>
+  <p>Implementer feedback is appreciated on how to continue work on the topic.</p>
+</div>
+
+
+
+
