@@ -8,7 +8,7 @@ order to draw the readers attention to another implementation guide published by
 In addition to implementation guides published by HL7 Finland, there is also ongoing work on FHIR
 APIs for scheduling in the national Kanta system.
 
-<section class="dragon">
+<div class="dragon">
 <p>Do note also the older implementation guides by HL7 Finland:</p>
 <ul>
 <li><a href="https://simplifier.net/finnishappointment/">Finnish Appointment</a></li>
@@ -24,4 +24,4 @@ and the scheduling API of the <a href="https://www.cgi.com/fi/fi/tuoteratkaisut/
 <p>Implementers should read these implementation guides with caution and verify the latest state of
 the art from their customers or from vendors of real world implementations.</p>
 <p>HL7 Finland is currently considering updating the published implementation guides.</p>
-</section>
+</div>
