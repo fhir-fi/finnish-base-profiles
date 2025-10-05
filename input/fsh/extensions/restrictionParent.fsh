@@ -2,7 +2,7 @@ Extension: RestrictionParent
 Id: RestrictionParent
 Title: "RestrictionParent"
 Description: "The extension informs, using the THL - Release of minor's patient information to guardians classification, whether guardians have the right to see their minor child's appointment information (e.g. in Omakanta) and whether the disclosure of appointment information to them is permitted in healthcare services. / *Laajennuksella ilmoitetaan THL - Alaikäisen potilastietojen luovuttaminen huoltajille -luokitusta käyttäen, onko huoltajilla oikeus nähdä alaikäisen lapsensa ajanvaraustiedot (esim. Omakannassa) ja onko ajanvaraustietojen luovuttaminen heille sallittu terveydenhuollon palveluissa*."
-Context: Provenance, FiBaseAppointment
+Context: Provenance, Appointment
 * . ..1
 * . ^short = "Huoltajille luovuttamisen kielto"
 * . ^definition = "Huoltajille luovuttamisen kielto THL - Alaikäisen potilastietojen luovuttaminen huoltajille -luokitusta käyttäen. Sallitut arvot 1-4."

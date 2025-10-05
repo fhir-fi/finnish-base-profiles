@@ -1,0 +1,62 @@
+{
+  "resourceType": "Provenance",
+  "recorded": "2025-08-31T17:14:02.117+03:00",
+  "agent": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "1",
+              "system": "urn:oid:1.2.246.537.5.40172"
+            }
+          ]
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "CST",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+          }
+        ]
+      },
+      "who": {
+        "display": "Logica",
+        "identifier": {
+          "system": "urn:oid:1.2.246.537.6.40174",
+          "type": {
+            "coding": [
+              {
+                "code": "PRN",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+              }
+            ]
+          },
+          "value": "1.2.246.10.3575029.19.0"
+        }
+      }
+    }
+  ],
+  "id": "ESE-289490",
+  "reason": [
+    {
+      "coding": [
+        {
+          "code": "2",
+          "system": "urn:oid:1.2.246.537.5.40150"
+        }
+      ]
+    }
+  ],
+  "target": [
+    {
+      "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "use": "official",
+        "value": "urn:oid:1.2.246.10.3575029.10.99.14131.2025.289490"
+      },
+      "reference": "Encounter/SE-289490"
+    }
+  ]
+}
