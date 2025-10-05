@@ -279,7 +279,6 @@ pages:
 
 parameters: 
   ipa-comparison: "{last}"
-  ips-comparison: "{last}"
   extension-domain: [ https://hl7.fi/, http://hl7.fi/, https://gen.kanta.fi/, http://phr.kanta.fi/, http://resepti.kanta.fi/ ]
   special-url: http://gen.kanta.fi/kanta-provenance-agent-role
   releaselabel: "STU 2"
