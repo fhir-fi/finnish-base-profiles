@@ -53,23 +53,20 @@ A definition for CodeSystem 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observation
 A definition for CodeSystem 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' could not be found, so the code cannot be validated
 Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyheight' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 
-#This example from CGI is only a partial one, and missing the referred Encounter
+# This example from CGI is only a partial one, and missing the referred Encounter
 The link 'Encounter/SE-289490' for "Encounter/SE-289490" cannot be resolved
 
 # This is a purposefully crafted example to show how the validator catches the error.
 Provenance.agent.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|2.0.0)
 Slice 'Provenance.agent.role:kantaCoding': a matching slice is required, but not found (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|2.0.0). Note that other slices are allowed in addition to this required slice
 
-# This is a valueset imported from Kanta to support an example. We are not publishing it in this IG, so let's keep the canonical as it is.
-%resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
-% the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)%
-Conformance resource /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
+# This is a valueset imported from Kanta to support an example. We are not publishing it in this IG, so let's keep the value set as it is.
 Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
 
 # This is CGI's internal code system, not part of this IG, but present in some examples from CGI
 A definition for CodeSystem 'https://fhir.cgi.fi/code/person-id-type' could not be found, so the code cannot be validated
 
-We intentionally do not want to fix canonical versions in this release of the base profiles. We may do that in a future version.
+# We intentionally do not want to fix canonical versions in this release of the base profiles. We may do that in a future version.
 TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS
 
 # We really want to be liberal about where to use the service event extension
