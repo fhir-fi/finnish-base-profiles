@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.base",
-  "version" : "2.0.0",
-  "path" : "https://hl7.fi/fhir/finnish-base-profiles/2.0.0",
-  "mode" : "milestone",
-  "status" : "trial-use",
+  "version" : "2.0.0-ci",
+  "path" : "https://fhir.fi/finnish-base-profiles/",
+  "mode" : "working",
+  "status" : "draft",
   "sequence" : "STU 2",
-  "desc" : "Release v2.0.0, STU2",
-  "descmd" : "Release v2.0.0, STU 2.",
+  "desc" : "Continuous integration build",
+  "descmd" : "Continuous integration build.",
   "first" : "false"
 }
